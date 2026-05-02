@@ -39,18 +39,24 @@ The frontend is a Vite/React application.
 
 **Recommended Platform:** [Vercel](https://vercel.com/) or [Render (Static Site)](https://render.com/)
 
-### If using Vercel:
-1. Sign up/Log in to Vercel and click **Add New > Project**.
-2. Import your GitHub repository.
-3. **Configuration:**
-   - **Root Directory:** `client`
-   - **Framework Preset:** `Vite`
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-4. **CRITICAL STEP:** You must tell the client where the server is.
-   - Go to `client/src/App.jsx` (or wherever you initialize socket.io).
-   - Change the connection URL to your Backend URL from Step 2.
-   - *Example:* `const socket = io("https://ouroboros-server.onrender.com");`
+### If using Netlify (Frontend Only):
+1. Sign up/Log in to [Netlify](https://app.netlify.com/).
+2. Click **Add new site > Import from an existing project**.
+3. Connect your GitHub and select the `Ouroboros` repo.
+4. **Build Settings:**
+   - **Base directory:** `client`
+   - **Build command:** `npm run build`
+   - **Publish directory:** `client/dist`
+5. Click **Deploy**.
+
+---
+
+## ⚠️ Important Note on Backend Hosting
+Netlify is a **Serverless** platform. While it is perfect for the frontend (Client), it **cannot host the Backend (Server)** because:
+1. **WebSockets:** Netlify Functions do not support the persistent connections required by Socket.io.
+2. **State:** The backend uses an in-memory `Map` to store players. Serverless functions are "stateless," meaning they forget everyone as soon as the function finishes.
+
+**Solution:** Host your **Frontend on Netlify** and your **Backend on Render** (or Railway). They work together perfectly as long as you update the connection URL in your client code.
 
 ---
 
