@@ -9,8 +9,11 @@ let puzzles = JSON.parse(fs.readFileSync(puzzlesPath, 'utf-8'));
 const firstPuzzle = puzzles.find(p => p.id === 'L0-0');
 let otherPuzzles = puzzles.filter(p => p.id !== 'L0-0');
 
-// Shuffle the other puzzles randomly
-otherPuzzles.sort(() => Math.random() - 0.5);
+// Shuffle the other puzzles using Fisher-Yates for a true, unbiased random distribution
+for (let i = otherPuzzles.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [otherPuzzles[i], otherPuzzles[j]] = [otherPuzzles[j], otherPuzzles[i]];
+}
 
 // Reassemble with L0-0 at the start
 puzzles = [firstPuzzle, ...otherPuzzles];
