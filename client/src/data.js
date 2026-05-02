@@ -53,1313 +53,1003 @@ export const ROOMS=[
 export const PZ=[
   {
     "id": "PZ-1",
-    "lv": 3,
-    "q": "THE SERPENT WHISPERS: CAESAR CIPHER, SHIFT RIGHT 3. DECODE: KHOOR",
-    "h": "SHIFT EACH LETTER 3 STEPS BACK IN THE ALPHABET",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER A?",
+    "h": "SING THE ABC SONG AND STOP AFTER THE FIRST LETTER",
     "a": [
-      "HELLO"
+      "B"
     ],
-    "type": "CAESAR"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-2",
     "lv": 1,
-    "q": "A VISION IN THE BLOOD: CAESAR CIPHER, SHIFT RIGHT 3. DECODE: ZRUOG",
-    "h": "Z→W, R→O, U→R, O→L, G→D",
+    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER B?",
+    "h": "A, B, ... WHAT COMES NEXT?",
     "a": [
-      "WORLD"
+      "C"
     ],
-    "type": "CAESAR"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-3",
-    "lv": 4,
-    "q": "CARVED IN BONE: CAESAR CIPHER, SHIFT RIGHT 13. DECODE: URYYB",
-    "h": "THIS IS ALSO KNOWN AS ROT13",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT LETTER COMES AFTER D?",
+    "h": "A B C D ... WHAT COMES NEXT?",
     "a": [
-      "HELLO"
+      "E"
     ],
-    "type": "CAESAR"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-4",
-    "lv": 4,
-    "q": "THE SERPENT WHISPERS: CAESAR CIPHER, SHIFT RIGHT 1. DECODE: IFMMP",
-    "h": "EACH LETTER IS SHIFTED FORWARD BY JUST 1",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT LETTER COMES AFTER F?",
+    "h": "... E F ... WHAT IS NEXT?",
     "a": [
-      "HELLO"
+      "G"
     ],
-    "type": "CAESAR"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-5",
-    "lv": 2,
-    "q": "A VISION IN THE BLOOD: ROT13 DECODE: JBEYQ",
-    "h": "EACH LETTER SHIFTS EXACTLY 13 POSITIONS",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER H?",
+    "h": "G H ... WHAT COMES NEXT?",
     "a": [
-      "WORLD"
+      "I"
     ],
-    "type": "ROT13"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-6",
-    "lv": 4,
-    "q": "A VOICE FROM THE DARKNESS: ROT13 DECODE: NTRAQ",
-    "h": "N→A, T→G, R→E, A→N, Q→D",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT LETTER COMES AFTER J?",
+    "h": "I J ... WHAT COMES NEXT?",
     "a": [
-      "AGENT"
+      "K"
     ],
-    "type": "ROT13"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-7",
-    "lv": 4,
-    "q": "CARVED IN BONE: ROT13 DECODE: PVCURE",
-    "h": "SHIFT EVERY LETTER FORWARD BY 13",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT LETTER COMES AFTER L?",
+    "h": "K L ... WHAT COMES NEXT?",
     "a": [
-      "CIPHER"
+      "M"
     ],
-    "type": "ROT13"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-8",
-    "lv": 3,
-    "q": "A VISION IN THE BLOOD: ROT13 DECODE: YNOLЕВAFGU",
-    "h": "ROT13 — SHIFT 13 POSITIONS EACH LETTER",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER M?",
+    "h": "L M ... WHAT COMES NEXT?",
     "a": [
-      "LABYRINTH"
+      "N"
     ],
-    "type": "ROT13"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-9",
-    "lv": 2,
-    "q": "THE SERPENT WHISPERS: ATBASH CIPHER (A↔Z, B↔Y…). DECODE: SVOOL",
-    "h": "S=H, V=E, O=L, O=L, L=O",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER N?",
+    "h": "M N ... WHAT COMES NEXT?",
     "a": [
-      "HELLO"
+      "O"
     ],
-    "type": "ATBASH"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-10",
-    "lv": 2,
-    "q": "THE CYCLE DEMANDS: ATBASH CIPHER. DECODE: DLIOW",
-    "h": "MIRROR THE ALPHABET — A BECOMES Z",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT LETTER COMES AFTER O?",
+    "h": "N O ... WHAT COMES NEXT?",
     "a": [
-      "WORLD"
+      "P"
     ],
-    "type": "ATBASH"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-11",
-    "lv": 3,
-    "q": "THE SERPENT WHISPERS: ATBASH CIPHER. DECODE: ZTVMG",
-    "h": "FULL REVERSE ALPHABET SUBSTITUTION",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER P?",
+    "h": "O P ... WHAT COMES NEXT?",
     "a": [
-      "AGENT"
+      "Q"
     ],
-    "type": "ATBASH"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-12",
     "lv": 1,
-    "q": "THE CYCLE DEMANDS: A=1, B=2 … Z=26. DECODE: 3-15-4-5",
-    "h": "C=3, O=15, D=4, E=5",
+    "q": "THE CYCLE DEMANDS: WHAT LETTER COMES AFTER Q?",
+    "h": "P Q ... WHAT COMES NEXT?",
     "a": [
-      "CODE"
+      "R"
     ],
-    "type": "NUMERIC"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-13",
-    "lv": 2,
-    "q": "A VISION IN THE BLOOD: A=1, B=2 … Z=26. DECODE: 1-7-5-14-20",
-    "h": "A=1, G=7, E=5, N=14, T=20",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER S?",
+    "h": "R S ... WHAT COMES NEXT?",
     "a": [
-      "AGENT"
+      "T"
     ],
-    "type": "NUMERIC"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-14",
     "lv": 1,
-    "q": "THE SERPENT WHISPERS: A=1, B=2 … Z=26. DECODE: 11-5-25",
-    "h": "K=11, E=5, Y=25",
+    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER T?",
+    "h": "S T ... WHAT COMES NEXT?",
     "a": [
-      "KEY"
+      "U"
     ],
-    "type": "NUMERIC"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-15",
     "lv": 1,
-    "q": "THE SCALES SHIFT: A=1, B=2 … Z=26. DECODE: 12-15-3-11",
-    "h": "L=12, O=15, C=3, K=11",
+    "q": "THE SCALES SHIFT: WHAT LETTER COMES AFTER W?",
+    "h": "V W ... WHAT COMES NEXT?",
     "a": [
-      "LOCK"
+      "X"
     ],
-    "type": "NUMERIC"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-16",
-    "lv": 4,
-    "q": "THE SERPENT WHISPERS: EXTRACT ONLY VOWELS IN ORDER FROM: PROMETHEUS",
-    "h": "P-R-O-M-E-T-H-E-U-S — PICK OUT THE VOWELS",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER X?",
+    "h": "W X ... WHAT COMES NEXT?",
     "a": [
-      "OEEU"
+      "Y"
     ],
-    "type": "PATTERN"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-17",
     "lv": 1,
-    "q": "CARVED IN BONE: REVERSE THIS STRING EXACTLY: TNEGA TERCES",
-    "h": "READ EVERY SINGLE CHARACTER BACKWARDS",
+    "q": "CARVED IN BONE: WHAT IS THE LAST LETTER OF THE ALPHABET?",
+    "h": "A B C ... ALL THE WAY TO THE END",
     "a": [
-      "SECRET AGENT"
+      "Z"
     ],
-    "type": "REVERSE"
+    "type": "ALPHABET"
   },
   {
     "id": "PZ-18",
-    "lv": 2,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE NEXT NUMBER: 2, 4, 8, 16, 32, ?",
-    "h": "EACH NUMBER DOUBLES",
-    "a": [
-      "64"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-19",
-    "lv": 4,
-    "q": "CARVED IN BONE: WHAT IS THE NEXT NUMBER: 1, 4, 9, 16, 25, ?",
-    "h": "THESE ARE PERFECT SQUARES: 1²,2²,3²...",
-    "a": [
-      "36"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-20",
-    "lv": 5,
-    "q": "A GLITCH IN THE FLESH: THE SHIFT IS THE NUMBER OF DAYS IN A WEEK. CAESAR DECODE: AOPUK",
-    "h": "DAYS IN A WEEK=7. SHIFT EACH LETTER 7 STEPS BACK",
-    "a": [
-      "THINK"
-    ],
-    "type": "CAESAR"
-  },
-  {
-    "id": "PZ-21",
-    "lv": 8,
-    "q": "THE CYCLE DEMANDS: THE SHIFT EQUALS THE NUMBER OF BITS IN A NIBBLE. CAESAR DECODE: MQIMU",
-    "h": "NIBBLE = 4 BITS. SHIFT BACK 4 LETTERS EACH",
-    "a": [
-      "IMING"
-    ],
-    "type": "CAESAR"
-  },
-  {
-    "id": "PZ-22",
-    "lv": 6,
-    "q": "THE SCALES SHIFT: CAESAR SHIFT = NUMBER OF SIDES ON A HEXAGON. DECODE: NKRRU",
-    "h": "HEXAGON = 6 SIDES. SHIFT BACK 6 EACH LETTER",
-    "a": [
-      "HELLO"
-    ],
-    "type": "CAESAR"
-  },
-  {
-    "id": "PZ-23",
-    "lv": 8,
-    "q": "A GLITCH IN THE FLESH: ATBASH DECODE: XIBKGLTIZKSB",
-    "h": "FULL MIRROR — X=C, I=R, B=Y, K=P, G=T, L=O...",
-    "a": [
-      "CRYPTOGRAPHY"
-    ],
-    "type": "ATBASH"
-  },
-  {
-    "id": "PZ-24",
-    "lv": 8,
-    "q": "THE CYCLE DEMANDS: ATBASH DECODE: OZYBIRGMS",
-    "h": "MIRROR EVERY LETTER: O=L, Z=A, Y=B...",
-    "a": [
-      "LABYRINTH"
-    ],
-    "type": "ATBASH"
-  },
-  {
-    "id": "PZ-25",
-    "lv": 5,
-    "q": "THE SERPENT WHISPERS: ATBASH DECODE: HVIKVMG",
-    "h": "H=S, V=E, I=R, K=P, V=E, M=N, G=T",
-    "a": [
-      "SERPENT"
-    ],
-    "type": "ATBASH"
-  },
-  {
-    "id": "PZ-26",
-    "lv": 7,
-    "q": "A VISION IN THE BLOOD: CONVERT BINARY TO DECIMAL: 10110",
-    "h": "16+0+4+2+0=22",
-    "a": [
-      "22"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-27",
-    "lv": 6,
-    "q": "A GLITCH IN THE FLESH: CONVERT BINARY TO DECIMAL: 11001",
-    "h": "16+8+0+0+1=25",
-    "a": [
-      "25"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-28",
-    "lv": 8,
-    "q": "A VISION IN THE BLOOD: CONVERT DECIMAL TO BINARY: 42",
-    "h": "32+0+8+0+2+0=42",
-    "a": [
-      "101010"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-29",
-    "lv": 5,
-    "q": "THE SERPENT WHISPERS: CONVERT DECIMAL TO BINARY: 13",
-    "h": "8+4+0+1=13",
-    "a": [
-      "1101"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-30",
-    "lv": 8,
-    "q": "THE SERPENT WHISPERS: A=1…Z=26. ENCODE THE WORD ZERO INTO NUMBERS.",
-    "h": "Z=26, E=5, R=18, O=15",
-    "a": [
-      "26-5-18-15"
-    ],
-    "type": "NUMERIC"
-  },
-  {
-    "id": "PZ-31",
-    "lv": 5,
-    "q": "A VISION IN THE BLOOD: A=1…Z=26. WHAT WORD DOES 19-5-3-18-5-20 SPELL?",
-    "h": "S=19, E=5, C=3, R=18, E=5, T=20",
-    "a": [
-      "SECRET"
-    ],
-    "type": "NUMERIC"
-  },
-  {
-    "id": "PZ-32",
-    "lv": 5,
-    "q": "A GLITCH IN THE FLESH: NEXT IN SEQUENCE: 1, 1, 2, 3, 5, 8, 13, ?",
-    "h": "FIBONACCI — EACH TERM IS THE SUM OF THE TWO BEFORE IT",
-    "a": [
-      "21"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-33",
-    "lv": 7,
-    "q": "A VISION IN THE BLOOD: NEXT IN SEQUENCE: 1, 8, 27, 64, 125, ?",
-    "h": "THESE ARE PERFECT CUBES: 1³, 2³, 3³...",
-    "a": [
-      "216"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-34",
-    "lv": 8,
-    "q": "A GLITCH IN THE FLESH: NEXT IN SEQUENCE: 2, 3, 5, 7, 11, 13, ?",
-    "h": "THESE ARE ALL PRIME NUMBERS",
-    "a": [
-      "17"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-35",
-    "lv": 7,
-    "q": "THE SERPENT WHISPERS: IF A=2, B=4, C=8, D=16, WHAT IS E?",
-    "h": "EACH LETTER DOUBLES THE PREVIOUS VALUE",
-    "a": [
-      "32"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-36",
-    "lv": 11,
-    "q": "THE SCALES SHIFT: WHAT ASCII DECIMAL VALUE REPRESENTS THE LETTER A?",
-    "h": "ASCII TABLE — UPPERCASE LETTERS START AT 65",
-    "a": [
-      "65"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-37",
-    "lv": 9,
-    "q": "THE SERPENT WHISPERS: CONVERT ASCII DECIMAL 79 TO ITS CHARACTER.",
-    "h": "A=65, SO COUNT UP FROM THERE",
-    "a": [
-      "O"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-38",
-    "lv": 11,
-    "q": "CARVED IN BONE: THESE ASCII DECIMALS SPELL A WORD: 67 79 68 69",
-    "h": "CONVERT EACH DECIMAL TO ITS ASCII CHARACTER",
-    "a": [
-      "CODE"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-39",
-    "lv": 12,
-    "q": "A VOICE FROM THE DARKNESS: THESE ASCII DECIMALS: 75 69 89. WHAT WORD?",
-    "h": "K=75, E=69, Y=89 IN ASCII",
-    "a": [
-      "KEY"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-40",
-    "lv": 12,
-    "q": "CARVED IN BONE: VIGENÈRE CIPHER. KEY: ACE (SHIFTS: 1,3,5 CYCLING). DECODE: BGJON",
-    "h": "SUBTRACT KEY SHIFTS: B-1=A, G-3=D... WAIT, RECALCULATE USING KEY ACE=1,3,5",
-    "a": [
-      "AFIGE"
-    ],
-    "type": "VIGENERE"
-  },
-  {
-    "id": "PZ-41",
-    "lv": 10,
-    "q": "A VOICE FROM THE DARKNESS: VIGENÈRE. KEY: KEY (SHIFTS: 11,5,25). DECODE: VSC",
-    "h": "V-11=K, S-5=N... KEY=11,5,25. V(22)-11=11=K, S(19)-5=14=N... RECALC",
-    "a": [
-      "KEY"
-    ],
-    "type": "VIGENERE"
-  },
-  {
-    "id": "PZ-42",
-    "lv": 11,
-    "q": "THE SERPENT WHISPERS: LOGIC GATES. A=1, B=0. RESULT OF A AND B?",
-    "h": "AND GATE: BOTH MUST BE 1 TO OUTPUT 1",
-    "a": [
-      "0"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-43",
-    "lv": 12,
-    "q": "THE CYCLE DEMANDS: LOGIC GATES. A=1, B=0. RESULT OF A OR B?",
-    "h": "OR GATE: AT LEAST ONE MUST BE 1 TO OUTPUT 1",
-    "a": [
-      "1"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-44",
-    "lv": 10,
-    "q": "A VISION IN THE BLOOD: LOGIC GATES. A=0. RESULT OF NOT A?",
-    "h": "NOT SIMPLY FLIPS THE BIT",
-    "a": [
-      "1"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-45",
-    "lv": 9,
-    "q": "THE SCALES SHIFT: A=1010, B=1100. APPLY A AND B. GIVE DECIMAL RESULT.",
-    "h": "1010 AND 1100 = 1000 = 8",
-    "a": [
-      "8"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-46",
-    "lv": 10,
-    "q": "THE SCALES SHIFT: A=0110, B=1011. APPLY A OR B. GIVE BINARY RESULT.",
-    "h": "OR EACH BIT POSITION: 0|1=1, 1|0=1, 1|1=1, 0|1=1",
-    "a": [
-      "1111"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-47",
-    "lv": 9,
-    "q": "A GLITCH IN THE FLESH: CONVERT 8-BIT BINARY 01000001 TO ITS ASCII CHARACTER.",
-    "h": "01000001 = 65 IN DECIMAL = A IN ASCII",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS THE FIRST LETTER OF THE ALPHABET?",
+    "h": "THE VERY BEGINNING OF THE ABC SONG",
     "a": [
       "A"
     ],
-    "type": "BINARY"
+    "type": "ALPHABET"
   },
   {
-    "id": "PZ-48",
-    "lv": 12,
-    "q": "A VISION IN THE BLOOD: CONVERT 8-BIT BINARY 01001011 TO ITS ASCII CHARACTER.",
-    "h": "01001011 = 75 = K IN ASCII",
+    "id": "PZ-19",
+    "lv": 1,
+    "q": "CARVED IN BONE: HOW MANY LETTERS ARE IN THE ALPHABET?",
+    "h": "COUNT ALL THE LETTERS FROM A TO Z",
     "a": [
-      "K"
+      "26"
     ],
-    "type": "BINARY"
+    "type": "ALPHABET"
   },
   {
-    "id": "PZ-49",
-    "lv": 11,
-    "q": "THE SCALES SHIFT: DECIMAL 200 IN BINARY (8 BITS)?",
-    "h": "128+64+0+0+8+0+0+0=200",
+    "id": "PZ-20",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT ARE THE 5 VOWELS?",
+    "h": "THEY ARE THE SINGING LETTERS — A, ?, ?, ?, ?",
     "a": [
-      "11001000"
+      "A E I O U"
     ],
-    "type": "BINARY"
+    "type": "ALPHABET"
   },
   {
-    "id": "PZ-50",
-    "lv": 11,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE 10TH TERM OF THE ARITHMETIC SEQUENCE: 3, 7, 11, 15...?",
-    "h": "COMMON DIFFERENCE=4. TERM N = 3+(N-1)*4. T10=3+36=39",
+    "id": "PZ-21",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: IS THE LETTER B A VOWEL OR CONSONANT?",
+    "h": "VOWELS ARE ONLY A E I O U",
     "a": [
-      "39"
+      "CONSONANT"
     ],
-    "type": "LOGIC"
+    "type": "ALPHABET"
   },
   {
-    "id": "PZ-51",
-    "lv": 9,
-    "q": "CARVED IN BONE: SUM OF FIRST 10 NATURAL NUMBERS?",
-    "h": "N(N+1)/2 = 10×11/2 = 55",
+    "id": "PZ-22",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: IS THE LETTER E A VOWEL OR CONSONANT?",
+    "h": "VOWELS ARE A E I O U",
     "a": [
-      "55"
+      "VOWEL"
     ],
-    "type": "LOGIC"
+    "type": "ALPHABET"
   },
   {
-    "id": "PZ-52",
-    "lv": 10,
-    "q": "THE SERPENT WHISPERS: HOW MANY 1-BITS DOES THE NUMBER 255 HAVE IN BINARY?",
-    "h": "255 = 11111111 — ALL EIGHT BITS ARE 1",
+    "id": "PZ-23",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 1 + 1?",
+    "h": "ONE APPLE PLUS ONE MORE APPLE",
     "a": [
-      "8"
+      "2"
     ],
-    "type": "BINARY"
+    "type": "MATH"
   },
   {
-    "id": "PZ-53",
-    "lv": 12,
-    "q": "THE SERPENT WHISPERS: TWO'S COMPLEMENT OF 8-BIT 00000101?",
-    "h": "INVERT ALL BITS THEN ADD 1: 11111010+1=11111011",
-    "a": [
-      "11111011"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-54",
-    "lv": 14,
-    "q": "THE SERPENT WHISPERS: A=10110, B=01101. A AND B, THEN OR WITH 11111. BINARY RESULT?",
-    "h": "A AND B=00100. 00100 OR 11111=11111",
-    "a": [
-      "11111"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-55",
-    "lv": 13,
-    "q": "THE SCALES SHIFT: APPLY: NOT(A AND B) WHERE A=1111, B=0101. BINARY RESULT?",
-    "h": "A AND B=0101. NOT 0101=1010. THIS IS NAND.",
-    "a": [
-      "1010"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-56",
-    "lv": 14,
-    "q": "THE SERPENT WHISPERS: NAND GATE: A=1, B=1. OUTPUT?",
-    "h": "NAND = NOT(AND). AND(1,1)=1. NOT(1)=0",
-    "a": [
-      "0"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-57",
-    "lv": 14,
-    "q": "A GLITCH IN THE FLESH: NOR GATE: A=0, B=0. OUTPUT?",
-    "h": "NOR = NOT(OR). OR(0,0)=0. NOT(0)=1",
-    "a": [
-      "1"
-    ],
-    "type": "GATE"
-  },
-  {
-    "id": "PZ-58",
-    "lv": 13,
-    "q": "A VISION IN THE BLOOD: VIGENÈRE. KEY: BEE (SHIFTS 2,5,5 CYCLING). DECODE: DJAOO",
-    "h": "D-2=B, J-5=E, A+26-5=W... RECALC: B=2,E=5,E=5. D(4)-2=B(2), J(10)-5=E(5), A(1)-5= -4+26=22=W...",
-    "a": [
-      "BELOW"
-    ],
-    "type": "VIGENERE"
-  },
-  {
-    "id": "PZ-59",
-    "lv": 14,
-    "q": "THE SCALES SHIFT: WHAT IS -7 IN 8-BIT TWO'S COMPLEMENT BINARY?",
-    "h": "7=00000111. INVERT=11111000. ADD 1=11111001",
-    "a": [
-      "11111001"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-60",
-    "lv": 15,
-    "q": "A VISION IN THE BLOOD: WHAT IS -1 IN 8-BIT TWO'S COMPLEMENT?",
-    "h": "INVERT 00000001=11111110, ADD 1=11111111",
-    "a": [
-      "11111111"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-61",
-    "lv": 13,
-    "q": "THE SCALES SHIFT: 8-BIT TWO'S COMPLEMENT 11110110. WHAT DECIMAL VALUE?",
-    "h": "INVERT=00001001=9. ADD 1=10. NEGATIVE. ANSWER: -10",
-    "a": [
-      "-10"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-62",
-    "lv": 14,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS 16 IN HEXADECIMAL?",
-    "h": "HEX USES BASE 16. 16 = 1×16 + 0 = 10 IN HEX",
-    "a": [
-      "10"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-63",
-    "lv": 15,
-    "q": "THE CYCLE DEMANDS: WHAT IS 0XFF IN DECIMAL?",
-    "h": "F=15. FF = 15×16 + 15 = 255",
-    "a": [
-      "255"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-64",
-    "lv": 16,
-    "q": "A VISION IN THE BLOOD: WHAT IS 0XDEAD IN DECIMAL?",
-    "h": "D=13,E=14,A=10,D=13. 13×4096+14×256+10×16+13=57005",
-    "a": [
-      "57005"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-65",
-    "lv": 14,
-    "q": "CARVED IN BONE: CONVERT OCTAL 157 TO DECIMAL.",
-    "h": "1×64 + 5×8 + 7×1 = 64+40+7 = 111",
-    "a": [
-      "111"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-66",
-    "lv": 15,
-    "q": "CARVED IN BONE: CONVERT DECIMAL 255 TO HEXADECIMAL.",
-    "h": "255 ÷ 16 = 15 REMAINDER 15. BOTH DIGITS ARE F.",
-    "a": [
-      "FF"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-67",
-    "lv": 15,
-    "q": "CARVED IN BONE: CAESAR SHIFT 13 APPLIED TWICE TO HELLO GIVES?",
-    "h": "ROT13 APPLIED TWICE RETURNS TO ORIGINAL",
-    "a": [
-      "HELLO"
-    ],
-    "type": "CAESAR"
-  },
-  {
-    "id": "PZ-68",
-    "lv": 16,
-    "q": "THE SERPENT WHISPERS: ATBASH APPLIED TWICE TO SERPENT GIVES?",
-    "h": "ATBASH IS ITS OWN INVERSE — TWICE = ORIGINAL",
-    "a": [
-      "SERPENT"
-    ],
-    "type": "ATBASH"
-  },
-  {
-    "id": "PZ-69",
-    "lv": 13,
-    "q": "A GLITCH IN THE FLESH: STEP 1: BINARY 1001 TO DECIMAL. STEP 2: THAT DECIMAL × 3. ANSWER?",
-    "h": "1001=9. 9×3=27",
-    "a": [
-      "27"
-    ],
-    "type": "BINARY"
-  },
-  {
-    "id": "PZ-70",
-    "lv": 15,
-    "q": "THE SCALES SHIFT: STEP 1: ROT13 DECODE URYYB. STEP 2: A=1 ENCODE FIRST LETTER ONLY.",
-    "h": "URYYB→HELLO. H=8 IN A=1 SCHEME.",
-    "a": [
-      "8"
-    ],
-    "type": "ROT13"
-  },
-  {
-    "id": "PZ-71",
-    "lv": 15,
-    "q": "THE SERPENT WHISPERS: STEP 1: ATBASH DECODE SVOOL. STEP 2: REVERSE THE RESULT.",
-    "h": "SVOOL→HELLO. REVERSED=OLLEH",
-    "a": [
-      "OLLEH"
-    ],
-    "type": "ATBASH"
-  },
-  {
-    "id": "PZ-72",
-    "lv": 14,
-    "q": "CARVED IN BONE: STEP 1: 0X1F IN DECIMAL. STEP 2: IS IT PRIME?",
-    "h": "0X1F=31. 31 IS PRIME.",
-    "a": [
-      "YES"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-73",
-    "lv": 12,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\n#DEFINE SQUARE(X) X*X\nINT MAIN() {\n    INT A = 5;\n    PRINTF(\"%D\", SQUARE(A+1));\n    RETURN 0;\n}",
-    "h": "MACRO EXPANDS TEXTUALLY: A+1*A+1 = 5+5+1 = 11. MACROS ARE NOT FUNCTIONS.",
-    "a": [
-      "11"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-74",
-    "lv": 10,
-    "q": "CARVED IN BONE: WHAT IS SIZEOF THIS STRUCT ON A TYPICAL 64-BIT SYSTEM?\nSTRUCT S {\n    CHAR A;\n    INT B;\n    CHAR C;\n};",
-    "h": "COMPILER PADS FOR ALIGNMENT: CHAR(1)+PAD(3)+INT(4)+CHAR(1)+PAD(3)=12. NOT 6.",
-    "a": [
-      "12"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-75",
-    "lv": 10,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS THE OUTPUT?\nINT ARR[3] = {1,2,3};\nPRINTF(\"%D\", 2[ARR]);",
-    "h": "ARR[2] == *(ARR+2) == *(2+ARR) == 2[ARR]. ARRAY INDEXING IS COMMUTATIVE IN C.",
-    "a": [
-      "3"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-76",
-    "lv": 12,
-    "q": "THE CYCLE DEMANDS: WHAT IS THE OUTPUT?\nINT X = 10;\nINT Y = (X > 5) ? (X << 1) : (X >> 1);\nPRINTF(\"%D\", Y);",
-    "h": "X>5 IS TRUE. X<<1 = LEFT SHIFT 1 = MULTIPLY BY 2. 10×2=20.",
-    "a": [
-      "20"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-77",
-    "lv": 11,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT F(INT X) { RETURN X > 0 ? X + F(X-1) : 0; }\nINT MAIN() {\n    PRINTF(\"%D\", F(4));\n    RETURN 0;\n}",
-    "h": "RECURSIVE SUM: F(4)=4+F(3)=4+3+F(2)=4+3+2+F(1)=4+3+2+1+F(0)=10.",
-    "a": [
-      "10"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-78",
-    "lv": 11,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE OUTPUT?\nINT A = 5, B = 3;\nINT C = A++ * ++B;\nPRINTF(\"%D %D %D\", A, B, C);",
-    "h": "A++ USES 5 THEN A=6. ++B INCREMENTS FIRST SO B=4. C=5*4=20.",
-    "a": [
-      "6 4 20"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-79",
-    "lv": 9,
-    "q": "THE CYCLE DEMANDS: IN C, WHAT DOES THIS DECLARE?\nINT (*FP)(INT, INT);",
-    "h": "FP IS A POINTER TO A FUNCTION THAT TAKES TWO INTS AND RETURNS INT.",
-    "a": [
-      "POINTER TO FUNCTION RETURNING INT"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-80",
-    "lv": 10,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\nCHAR *S = \"HELLO\";\nPRINTF(\"%C\", *(S+4));",
-    "h": "S POINTS TO H. S+4 POINTS 4 BYTES FORWARD = LAST CHAR O. DEREFERENCE IT.",
-    "a": [
-      "O"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-81",
-    "lv": 10,
-    "q": "THE CYCLE DEMANDS: WHAT IS THE OUTPUT?\nINT X = 5;\nINT Y = X++ + X++;\nPRINTF(\"%D\", Y);",
-    "h": "MODIFYING X TWICE WITHOUT A SEQUENCE POINT BETWEEN IS UNDEFINED BEHAVIOR IN C.",
-    "a": [
-      "UNDEFINED BEHAVIOR"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-82",
-    "lv": 10,
-    "q": "THE SERPENT WHISPERS: WHAT IS PRINTED?\nINT A[] = {10,20,30,40,50};\nINT *P = A;\nP += 2;\nPRINTF(\"%D %D\", *P, *(P-1));",
-    "h": "P STARTS AT A[0]. P+=2 MOVES TO A[2]=30. P-1 IS A[1]=20.",
-    "a": [
-      "30 20"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-83",
-    "lv": 32,
-    "q": "THE CYCLE DEMANDS: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT ADD(INT A,INT B){ RETURN A+B; }\nINT MUL(INT A,INT B){ RETURN A*B; }\nINT APPLY(INT(*F)(INT,INT),INT X,INT Y){ RETURN F(X,Y); }\nINT MAIN(){\n    PRINTF(\"%D %D\", APPLY(ADD,3,4), APPLY(MUL,3,4));\n    RETURN 0;\n}",
-    "h": "FUNCTION POINTERS PASSED AS ARGUMENTS. APPLY CALLS WHICHEVER FUNCTION IS PASSED.",
-    "a": [
-      "7 12"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-84",
-    "lv": 28,
-    "q": "THE SCALES SHIFT: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\n#DEFINE MAX(A,B) ((A)>(B)?(A):(B))\nINT MAIN(){\n    INT X=3, Y=5;\n    INT Z = MAX(X++, Y++);\n    PRINTF(\"%D %D %D\", X, Y, Z);\n    RETURN 0;\n}",
-    "h": "MAX EXPANDS: ((X++)>(Y++)?(X++):(Y++)). Y>X SO Y++ RUNS TWICE. Y GOES 5->6->7. Z=6.",
-    "a": [
-      "4 7 6"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-85",
-    "lv": 28,
-    "q": "CARVED IN BONE: WHAT IS THE SIZE OF THIS STRUCT AND WHY?\nSTRUCT BITS {\n    UNSIGNED INT A : 3;\n    UNSIGNED INT B : 5;\n    UNSIGNED INT C : 8;\n    UNSIGNED INT D : 16;\n};",
-    "h": "TOTAL BITS: 3+5+8+16=32=4 BYTES. BITFIELDS PACK INTO THE UNDERLYING TYPE (UNSIGNED INT).",
+    "id": "PZ-24",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT IS 2 + 2?",
+    "h": "TWO FINGERS PLUS TWO MORE FINGERS",
     "a": [
       "4"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-86",
-    "lv": 32,
-    "q": "THE CYCLE DEMANDS: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nVOID MYSTERY(INT *A, INT *B){\n    IF(A != B){\n        *A ^= *B;\n        *B ^= *A;\n        *A ^= *B;\n    }\n}\nINT MAIN(){\n    INT ARR[]={1,2,3};\n    MYSTERY(ARR, ARR);\n    PRINTF(\"%D\", ARR[0]);\n    RETURN 0;\n}",
-    "h": "WHEN A==B (SAME POINTER), XOR SWAP ON SAME LOCATION GIVES 0. THE IF GUARD PREVENTS THAT.",
-    "a": [
-      "1"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-87",
-    "lv": 30,
-    "q": "THE CYCLE DEMANDS: WHAT DOES THIS C DECLARATION MEAN?\nVOID (*SIGNAL(INT, VOID(*)(INT)))(INT);",
-    "h": "SIGNAL() TAKES AN INT AND A VOID(*)(INT), AND RETURNS A VOID(*)(INT). CLASSIC C DECLARATION.",
-    "a": [
-      "SIGNAL TAKES INT AND FUNCTION POINTER RETURNS FUNCTION POINTER"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-88",
-    "lv": 32,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT MAIN(){\n    INT X = 0X41424344;\n    CHAR *P = (CHAR*)&X;\n    PRINTF(\"%C\", *P);\n    RETURN 0;\n}",
-    "h": "LITTLE-ENDIAN SYSTEM STORES LSB FIRST. 0X44=D IS AT LOWEST ADDRESS. *P = D.",
-    "a": [
-      "D"
-    ],
-    "type": "C"
-  },
-  {
-    "id": "PZ-89",
-    "lv": 30,
-    "q": "A VISION IN THE BLOOD: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT MAIN(){\n    INT A[3][3] = {{1,2,3},{4,5,6},{7,8,9}};\n    INT *P = &A[0][0];\n    PRINTF(\"%D\", *(P + 3*1 + 2));\n    RETURN 0;\n}",
-    "h": "2D ARRAY IS FLAT IN MEMORY. ROW 1, COL 2: INDEX = 3*1+2 = 5. *(P+5) = A[1][2] = 6.",
+    "id": "PZ-25",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 3 + 3?",
+    "h": "THREE STARS PLUS THREE MORE STARS",
     "a": [
       "6"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-90",
-    "lv": 32,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nSTATIC INT COUNT = 0;\nINT INCREMENT(){ RETURN ++COUNT; }\nINT MAIN(){\n    PRINTF(\"%D %D %D\",\n        INCREMENT(), INCREMENT(), INCREMENT());\n    RETURN 0;\n}",
-    "h": "PRINTF ARGUMENTS EVALUATED RIGHT-TO-LEFT IN MOST IMPLEMENTATIONS. STATIC VAR INCREMENTS EACH CALL.",
+    "id": "PZ-26",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 4 + 4?",
+    "h": "FOUR PLUS FOUR",
     "a": [
-      "3 2 1"
+      "8"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-91",
-    "lv": 28,
-    "q": "CARVED IN BONE: WHAT IS WRONG WITH THIS CODE?\nINT* GETARRAY(){\n    INT ARR[5] = {1,2,3,4,5};\n    RETURN ARR;\n}",
-    "h": "ARR IS A LOCAL VARIABLE. WHEN FUNCTION RETURNS, STACK FRAME IS DESTROYED. POINTER BECOMES DANGLING.",
+    "id": "PZ-27",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 5 + 5?",
+    "h": "ALL THE FINGERS ON ONE HAND PLUS ALL ON THE OTHER",
     "a": [
-      "RETURNS POINTER TO STACK MEMORY"
+      "10"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-92",
-    "lv": 29,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT MAIN(){\n    INT X = 15;\n    X &= ~(1 << 2);\n    PRINTF(\"%D\", X);\n    RETURN 0;\n}",
-    "h": "1<<2=4=0100. ~4=...11111011. 15=1111. 1111 & 11111011 = 1011 = 11. CLEARS BIT 2.",
+    "id": "PZ-28",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 6 + 4?",
+    "h": "SIX PLUS FOUR — COUNT ON YOUR FINGERS",
     "a": [
-      "11"
+      "10"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-93",
-    "lv": 30,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT MAIN(){\n    INT I;\n    INT A[5];\n    FOR(I=0;I<5;I++) A[I]=I*I;\n    INT *P=A+2;\n    PRINTF(\"%D %D\", P[-1], P[2]);\n    RETURN 0;\n}",
-    "h": "P=&A[2]. P[-1]=A[1]=1. P[2]=A[4]=16.",
+    "id": "PZ-29",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 7 + 3?",
+    "h": "SEVEN PLUS THREE",
     "a": [
-      "1 16"
+      "10"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-94",
-    "lv": 30,
-    "q": "A VISION IN THE BLOOD: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\n#INCLUDE <STRING.H>\nINT MAIN(){\n    CHAR S[] = \"HELLO\";\n    CHAR *P = S;\n    WHILE(*P) P++;\n    P--;\n    WHILE(P >= S){\n        PRINTF(\"%C\", *P);\n        P--;\n    }\n    RETURN 0;\n}",
-    "h": "ADVANCES P TO NULL TERMINATOR, STEPS BACK ONE, THEN PRINTS BACKWARDS UNTIL BEFORE START.",
+    "id": "PZ-30",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 2 + 3?",
+    "h": "TWO BALLOONS PLUS THREE MORE BALLOONS",
     "a": [
-      "OLLEH"
+      "5"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-95",
-    "lv": 32,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT MAIN(){\n    UNSIGNED CHAR X = 200;\n    X += 100;\n    PRINTF(\"%D\", X);\n    RETURN 0;\n}",
-    "h": "UNSIGNED CHAR WRAPS AT 256. 200+100=300. 300-256=44.",
+    "id": "PZ-31",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 1 + 4?",
+    "h": "ONE COOKIE PLUS FOUR COOKIES",
     "a": [
-      "44"
+      "5"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-96",
-    "lv": 29,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE OUTPUT?\n#INCLUDE <STDIO.H>\nINT MAIN(){\n    INT A = 0;\n    INT B = (A=5, A+3);\n    PRINTF(\"%D %D\", A, B);\n    RETURN 0;\n}",
-    "h": "COMMA OPERATOR: EVALUATES LEFT, DISCARDS, EVALUATES RIGHT. A=5, THEN B=A+3=8.",
+    "id": "PZ-32",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 8 + 2?",
+    "h": "EIGHT PLUS TWO",
     "a": [
-      "5 8"
+      "10"
     ],
-    "type": "C"
+    "type": "MATH"
   },
   {
-    "id": "PZ-97",
-    "lv": 12,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\nFUNCS = []\nFOR I IN RANGE(3):\n    FUNCS.APPEND(LAMBDA: I)\nPRINT([F() FOR F IN FUNCS])",
-    "h": "LATE BINDING: LAMBDAS CAPTURE VARIABLE I, NOT ITS VALUE. BY THE TIME THEY RUN, I=2.",
+    "id": "PZ-33",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 9 - 1?",
+    "h": "NINE MINUS ONE — TAKE ONE AWAY",
     "a": [
-      "[2, 2, 2]"
+      "8"
     ],
-    "type": "PYTHON"
+    "type": "MATH"
   },
   {
-    "id": "PZ-98",
-    "lv": 12,
-    "q": "THE CYCLE DEMANDS: WHAT IS THE OUTPUT?\nFUNCS = []\nFOR I IN RANGE(3):\n    FUNCS.APPEND(LAMBDA X=I: X)\nPRINT([F() FOR F IN FUNCS])",
-    "h": "DEFAULT ARGUMENT X=I CAPTURES THE VALUE OF I AT LAMBDA CREATION TIME. FIX FOR LATE BINDING.",
-    "a": [
-      "[0, 1, 2]"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-99",
-    "lv": 11,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS THE OUTPUT?\nCLASS A:\n    DEF METHOD(SELF): RETURN \"A\"\nCLASS B(A):\n    DEF METHOD(SELF): RETURN \"B\"\nCLASS C(A):\n    DEF METHOD(SELF): RETURN \"C\"\nCLASS D(B, C):\n    PASS\nPRINT(D().METHOD())",
-    "h": "MRO: D→B→C→A (C3 LINEARIZATION). D HAS NO METHOD, FINDS B FIRST.",
-    "a": [
-      "B"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-100",
-    "lv": 10,
-    "q": "THE CYCLE DEMANDS: WHAT IS THE OUTPUT?\nX = 5\nDEF F():\n    PRINT(X)\n    X = 10\nF()",
-    "h": "ASSIGNING X INSIDE F MAKES IT LOCAL THROUGHOUT F. READING BEFORE ASSIGNMENT RAISES UNBOUNDLOCALERROR.",
-    "a": [
-      "UNBOUNDLOCALERROR"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-101",
-    "lv": 11,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE OUTPUT?\nA = [[0]*3 FOR _ IN RANGE(3)]\nA[0][1] = 9\nPRINT(A[1][1])",
-    "h": "LIST COMPREHENSION CREATES INDEPENDENT ROWS. MODIFYING A[0][1] DOES NOT AFFECT A[1][1].",
-    "a": [
-      "0"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-102",
-    "lv": 9,
-    "q": "A VISION IN THE BLOOD: WHAT IS THE OUTPUT?\nA = [[0]*3]*3\nA[0][1] = 9\nPRINT(A[1][1])",
-    "h": "MULTIPLYING A LIST REPLICATES REFERENCES. ALL 3 ROWS POINT TO THE SAME INNER LIST.",
-    "a": [
-      "9"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-103",
-    "lv": 12,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\nPRINT(0.1 + 0.2 == 0.3)",
-    "h": "IEEE 754 FLOATING POINT: 0.1+0.2 = 0.30000000000000004. NOT EXACTLY 0.3.",
-    "a": [
-      "FALSE"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-104",
-    "lv": 10,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\nCLASS COUNTER:\n    COUNT = 0\n    DEF __INIT__(SELF):\n        COUNTER.COUNT += 1\n\nA = COUNTER()\nB = COUNTER()\nC = COUNTER()\nPRINT(COUNTER.COUNT)",
-    "h": "COUNT IS A CLASS VARIABLE. EACH __INIT__ INCREMENTS THE CLASS ATTRIBUTE. THREE INSTANCES = 3.",
+    "id": "PZ-34",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 5 - 2?",
+    "h": "FIVE FINGERS, PUT DOWN TWO",
     "a": [
       "3"
     ],
-    "type": "PYTHON"
+    "type": "MATH"
   },
   {
-    "id": "PZ-105",
-    "lv": 28,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\nCLASS META(TYPE):\n    DEF __NEW__(MCS, NAME, BASES, DCT):\n        DCT['GREET'] = LAMBDA SELF: \"META\"\n        RETURN SUPER().__NEW__(MCS, NAME, BASES, DCT)\n\nCLASS MYCLASS(METACLASS=META):\n    PASS\n\nPRINT(MYCLASS().GREET())",
-    "h": "METACLASS __NEW__ INJECTS GREET INTO THE CLASS DICT BEFORE THE CLASS IS CREATED.",
+    "id": "PZ-35",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 10 - 5?",
+    "h": "TEN MINUS FIVE",
     "a": [
-      "META"
+      "5"
     ],
-    "type": "PYTHON"
+    "type": "MATH"
   },
   {
-    "id": "PZ-106",
-    "lv": 32,
-    "q": "CARVED IN BONE: WHAT IS THE OUTPUT?\nCLASS DESCRIPTOR:\n    DEF __GET__(SELF, OBJ, OBJTYPE=NONE):\n        RETURN 42\n    DEF __SET__(SELF, OBJ, VALUE):\n        RAISE ATTRIBUTEERROR(\"READ ONLY\")\n\nCLASS MYCLASS:\n    X = DESCRIPTOR()\n\nM = MYCLASS()\nPRINT(M.X)",
-    "h": "DESCRIPTOR PROTOCOL: __GET__ IS CALLED ON ATTRIBUTE ACCESS. RETURNS 42 REGARDLESS.",
-    "a": [
-      "42"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-107",
-    "lv": 29,
-    "q": "THE SCALES SHIFT: WHAT IS THE OUTPUT?\nIMPORT SYS\nDEF F():\n    PASS\nPRINT(SYS.GETREFCOUNT(F) > 1)",
-    "h": "GETREFCOUNT ITSELF HOLDS A REFERENCE. SO REFCOUNT IS ALWAYS AT LEAST 2 WHEN CALLED.",
-    "a": [
-      "TRUE"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-108",
-    "lv": 28,
-    "q": "A VISION IN THE BLOOD: WHAT IS THE OUTPUT?\nDEF GEN():\n    VALUE = YIELD 1\n    YIELD VALUE * 2\n\nG = GEN()\nPRINT(NEXT(G))\nPRINT(G.SEND(10))",
-    "h": "NEXT(G) STARTS GENERATOR, YIELDS 1. SEND(10) RESUMES, VALUE=10, YIELDS 10*2=20.",
-    "a": [
-      "1\\N20"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-109",
-    "lv": 28,
-    "q": "THE SCALES SHIFT: WHAT IS THE OUTPUT?\nCLASS A:\n    DEF __INIT__(SELF):\n        SELF.X = 1\n    DEF __GETATTR__(SELF, NAME):\n        RETURN 99\n\nA = A()\nPRINT(A.X)\nPRINT(A.Y)",
-    "h": "__GETATTR__ ONLY CALLED WHEN NORMAL LOOKUP FAILS. A.X=1 FOUND IN __DICT__. A.Y NOT FOUND, __GETATTR__ RETURNS 99.",
-    "a": [
-      "1\\N99"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-110",
-    "lv": 30,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS THE OUTPUT?\nCLASS A:\n    DEF __GETATTRIBUTE__(SELF, NAME):\n        RETURN 42\n\nA = A()\nPRINT(A.ANYTHING)\nPRINT(A.X)",
-    "h": "__GETATTRIBUTE__ INTERCEPTS ALL ATTRIBUTE ACCESS, INCLUDING EXISTING ONES. ALWAYS RETURNS 42.",
-    "a": [
-      "42\\N42"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-111",
-    "lv": 30,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE OUTPUT?\nFROM FUNCTOOLS IMPORT REDUCE\nDATA = [1,2,3,4,5]\nRESULT = REDUCE(LAMBDA ACC, X: ACC * X, DATA, 1)\nPRINT(RESULT)",
-    "h": "REDUCE APPLIES LAMBDA CUMULATIVELY: 1*1=1, 1*2=2, 2*3=6, 6*4=24, 24*5=120.",
-    "a": [
-      "120"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-112",
-    "lv": 32,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT?\nIMPORT ITERTOOLS\nGEN = ITERTOOLS.COUNT(1)\nRESULT = SUM(NEXT(GEN) FOR _ IN RANGE(5))\nPRINT(RESULT)",
-    "h": "COUNT(1) YIELDS 1,2,3,4,5,... TAKE 5: 1+2+3+4+5=15.",
-    "a": [
-      "15"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-113",
-    "lv": 32,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS THE OUTPUT?\nCLASS MYLIST(LIST):\n    DEF APPEND(SELF, VAL):\n        SUPER().APPEND(VAL * 2)\n\nML = MYLIST()\nML.APPEND(3)\nML.APPEND(5)\nPRINT(ML)",
-    "h": "OVERRIDDEN APPEND DOUBLES VALUES BEFORE STORING. SUPER().APPEND STORES 6 AND 10.",
-    "a": [
-      "[6, 10]"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-114",
-    "lv": 28,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE OUTPUT?\nDEF DEC(F):\n    DEF WRAPPER(*ARGS, **KWARGS):\n        RETURN F(*ARGS, **KWARGS) + 10\n    RETURN WRAPPER\n\n@DEC\n@DEC\nDEF VAL():\n    RETURN 5\n\nPRINT(VAL())",
-    "h": "TWO DECORATORS APPLIED. INNER DEC: VAL()=5+10=15. OUTER DEC: 15+10=25.",
-    "a": [
-      "25"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-115",
-    "lv": 30,
-    "q": "CARVED IN BONE: WHAT IS THE OUTPUT?\nSENTINEL = OBJECT()\nD = {}\nRESULT = D.GET('KEY', SENTINEL)\nPRINT(RESULT IS SENTINEL)",
-    "h": "KEY NOT IN DICT. GET() RETURNS DEFAULT (SENTINEL). IS CHECKS IDENTITY — SAME OBJECT.",
-    "a": [
-      "TRUE"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-116",
-    "lv": 30,
-    "q": "CARVED IN BONE: WHAT IS THE OUTPUT?\nCLASS SINGLETON:\n    _INSTANCE = NONE\n    DEF __NEW__(CLS):\n        IF CLS._INSTANCE IS NONE:\n            CLS._INSTANCE = SUPER().__NEW__(CLS)\n        RETURN CLS._INSTANCE\n\nA = SINGLETON()\nB = SINGLETON()\nPRINT(A IS B)",
-    "h": "__NEW__ RETURNS THE SAME INSTANCE EVERY TIME. A AND B POINT TO IDENTICAL OBJECT.",
-    "a": [
-      "TRUE"
-    ],
-    "type": "PYTHON"
-  },
-  {
-    "id": "PZ-117",
-    "lv": 9,
-    "q": "THE SERPENT WHISPERS: YOU CALL MALLOC(0) IN C. WHAT DOES THE STANDARD SAY HAPPENS?",
-    "h": "C STANDARD SAYS MALLOC(0) MAY RETURN NULL OR A UNIQUE NON-NULL POINTER. BEHAVIOR IS IMPLEMENTATION-DEFINED.",
-    "a": [
-      "RETURNS NULL OR UNIQUE POINTER"
-    ],
-    "type": "TECH"
-  },
-  {
-    "id": "PZ-118",
-    "lv": 8,
-    "q": "THE SERPENT WHISPERS: IN PYTHON, WHY IS DICT FASTER THAN A LIST FOR LOOKUPS?",
-    "h": "DICT USES A HASH TABLE — KEY LOOKUP IS O(1) AVERAGE. LIST REQUIRES SCANNING EACH ELEMENT — O(N) WORST CASE.",
-    "a": [
-      "HASH TABLE O(1) VS LINEAR SCAN O(N)"
-    ],
-    "type": "TECH"
-  },
-  {
-    "id": "PZ-119",
-    "lv": 9,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE OUTPUT OF: PRINT(TYPE(TYPE))",
-    "h": "TYPE IS ITS OWN METACLASS. TYPE(TYPE) RETURNS TYPE ITSELF.",
-    "a": [
-      "<CLASS TYPE>"
-    ],
-    "type": "TECH"
-  },
-  {
-    "id": "PZ-120",
-    "lv": 8,
-    "q": "A VISION IN THE BLOOD: HOW MANY TIMES IS \"HELLO\" PRINTED?\nINT I = 0;\nDO {\n    PRINTF(\"HELLO\\N\");\n    I++;\n} WHILE(I < 0);",
-    "h": "DO-WHILE ALWAYS EXECUTES BODY AT LEAST ONCE. AFTER FIRST ITERATION I=1, CONDITION FALSE, EXITS.",
+    "id": "PZ-36",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 1 × 1?",
+    "h": "1 TIMES TABLE — 1 GROUP OF 1",
     "a": [
       "1"
     ],
-    "type": "C"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-121",
-    "lv": 10,
-    "q": "THE SCALES SHIFT: IN TCP, WHAT IS THE PURPOSE OF THE TIME_WAIT STATE?",
-    "h": "WAITS 2×MSL TO ENSURE THE FINAL ACK WAS RECEIVED AND ANY DELAYED PACKETS FROM THE SESSION HAVE EXPIRED.",
+    "id": "PZ-37",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 2 × 1?",
+    "h": "2 TIMES TABLE — 2 GROUPS OF 1",
     "a": [
-      "ENSURE FINAL ACK RECEIVED AND OLD PACKETS EXPIRED"
+      "2"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-122",
-    "lv": 29,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS FALSE SHARING IN CPU CACHES AND WHY DOES IT HURT PERFORMANCE?",
-    "h": "TWO CORES WRITE TO DIFFERENT VARIABLES THAT HAPPEN TO SHARE A CACHE LINE. EACH WRITE FORCES THE OTHER CORE TO RELOAD THE ENTIRE LINE.",
+    "id": "PZ-38",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT IS 2 × 2?",
+    "h": "2 TIMES TABLE — 2 GROUPS OF 2",
     "a": [
-      "DIFFERENT CORES INVALIDATE SAME CACHE LINE FOR DIFFERENT VARIABLES"
+      "4"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-123",
-    "lv": 30,
-    "q": "CARVED IN BONE: WHAT IS THE ABA PROBLEM IN LOCK-FREE PROGRAMMING?",
-    "h": "THREAD READS A. ANOTHER CHANGES A→B→A. FIRST THREAD CAS SEES A AND SUCCEEDS — BUT THE STATE HAS CHANGED IN BETWEEN.",
+    "id": "PZ-39",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT IS 2 × 3?",
+    "h": "2 TIMES TABLE — 2 GROUPS OF 3",
     "a": [
-      "VALUE CHANGES A TO B BACK TO A MAKING CAS INCORRECTLY SUCCEED"
+      "6"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-124",
-    "lv": 31,
-    "q": "THE SERPENT WHISPERS: WHAT DOES MVCC STAND FOR AND WHICH PROBLEM DOES IT SOLVE?",
-    "h": "DATABASES KEEP MULTIPLE VERSIONS OF DATA. READERS SEE A CONSISTENT SNAPSHOT WITHOUT BLOCKING WRITERS.",
+    "id": "PZ-40",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT IS 2 × 4?",
+    "h": "2 TIMES TABLE — 2 GROUPS OF 4",
     "a": [
-      "MULTIVERSION CONCURRENCY CONTROL ELIMINATES READ WRITE LOCKS"
+      "8"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-125",
-    "lv": 32,
-    "q": "A VOICE FROM THE DARKNESS: IN CPU MEMORY ORDERING, WHAT DOES A MEMORY BARRIER (FENCE) DO?",
-    "h": "CPUS REORDER INSTRUCTIONS FOR PERFORMANCE. A BARRIER ENSURES ALL MEMORY OPERATIONS BEFORE IT COMPLETE BEFORE THOSE AFTER IT.",
+    "id": "PZ-41",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT IS 2 × 5?",
+    "h": "2 TIMES TABLE — 2 GROUPS OF 5",
     "a": [
-      "PREVENTS INSTRUCTION REORDERING ACROSS THE BARRIER"
+      "10"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-126",
-    "lv": 30,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE DIFFERENCE BETWEEN A COMPILE-TIME AND RUNTIME STACK OVERFLOW?",
-    "h": "C++ TEMPLATES CAN CAUSE COMPILE-TIME OVERFLOW. RECURSIVE FUNCTIONS CAUSE RUNTIME STACK OVERFLOW WHEN CALL DEPTH EXCEEDS LIMIT.",
+    "id": "PZ-42",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 3 × 1?",
+    "h": "3 TIMES TABLE — 3 GROUPS OF 1",
     "a": [
-      "COMPILE TIME INFINITE TEMPLATE RECURSION RUNTIME INFINITE CALL STACK"
+      "3"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-127",
-    "lv": 30,
-    "q": "THE SCALES SHIFT: WHAT DOES THE MMAP SYSTEM CALL DO?",
-    "h": "MMAP CREATES A MAPPING IN VIRTUAL ADDRESS SPACE — CAN BE FILE-BACKED OR ANONYMOUS. USED FOR IPC, EFFICIENT FILE I/O, SHARED MEMORY.",
+    "id": "PZ-43",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT IS 3 × 2?",
+    "h": "3 TIMES TABLE — 3 GROUPS OF 2",
     "a": [
-      "MAPS FILE OR DEVICE INTO PROCESS VIRTUAL MEMORY"
+      "6"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-128",
-    "lv": 32,
-    "q": "A GLITCH IN THE FLESH: IN PYTHON, WHAT IS THE DIFFERENCE BETWEEN __STR__ AND __REPR__?",
-    "h": "__REPR__ SHOULD RETURN A STRING THAT COULD RECREATE THE OBJECT. __STR__ IS FOR HUMAN-READABLE DISPLAY. PRINT() CALLS __STR__.",
+    "id": "PZ-44",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 3 × 3?",
+    "h": "3 TIMES TABLE — 3 GROUPS OF 3",
     "a": [
-      "REPR UNAMBIGUOUS FOR DEVELOPERS STR READABLE FOR USERS"
+      "9"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-129",
-    "lv": 29,
-    "q": "A GLITCH IN THE FLESH: WHAT IS CONSISTENT HASHING AND WHY IS IT USED IN DISTRIBUTED SYSTEMS?",
-    "h": "MAPS BOTH DATA AND NODES ONTO A RING. ADDING/REMOVING A NODE ONLY REMAPS 1/N OF KEYS INSTEAD OF ALL KEYS.",
+    "id": "PZ-45",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 3 × 4?",
+    "h": "3 TIMES TABLE — 3 GROUPS OF 4",
     "a": [
-      "MINIMIZES REMAPPING WHEN NODES ADDED OR REMOVED"
+      "12"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-130",
-    "lv": 29,
-    "q": "THE CYCLE DEMANDS: WHAT IS A B+ TREE AND HOW DOES IT DIFFER FROM A B-TREE FOR DATABASE INDEXING?",
-    "h": "B+ TREE: INTERNAL NODES STORE ONLY KEYS FOR ROUTING, ALL DATA IN LEAF NODES LINKED TOGETHER. B-TREE STORES DATA AT EVERY NODE.",
+    "id": "PZ-46",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 3 × 5?",
+    "h": "3 TIMES TABLE — 3 GROUPS OF 5",
     "a": [
-      "B PLUS STORES DATA ONLY IN LEAVES ENABLING RANGE SCANS"
+      "15"
     ],
-    "type": "TECH"
+    "type": "TABLES"
   },
   {
-    "id": "PZ-131",
-    "lv": 28,
-    "q": "A GLITCH IN THE FLESH: IN PYTHON, WHAT HAPPENS WHEN YOU DO: A, *B, C = [1,2,3,4,5]?",
-    "h": "EXTENDED UNPACKING. FIRST GOES TO A, LAST TO C, EVERYTHING IN BETWEEN TO B AS A LIST.",
+    "id": "PZ-47",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 4 × 1?",
+    "h": "4 TIMES TABLE — 4 GROUPS OF 1",
     "a": [
-      "A=1 B=[2,3,4] C=5"
+      "4"
     ],
-    "type": "PYTHON"
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-48",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 4 × 2?",
+    "h": "4 TIMES TABLE — 4 GROUPS OF 2",
+    "a": [
+      "8"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-49",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 4 × 3?",
+    "h": "4 TIMES TABLE — 4 GROUPS OF 3",
+    "a": [
+      "12"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-50",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 4 × 4?",
+    "h": "4 TIMES TABLE — 4 GROUPS OF 4",
+    "a": [
+      "16"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-51",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT IS 4 × 5?",
+    "h": "4 TIMES TABLE — 4 GROUPS OF 5",
+    "a": [
+      "20"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-52",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 1?",
+    "h": "5 TIMES TABLE — 5 GROUPS OF 1",
+    "a": [
+      "5"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-53",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 2?",
+    "h": "5 TIMES TABLE — 5 GROUPS OF 2",
+    "a": [
+      "10"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-54",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 3?",
+    "h": "5 TIMES TABLE — 5 GROUPS OF 3",
+    "a": [
+      "15"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-55",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 5 × 4?",
+    "h": "5 TIMES TABLE — 5 GROUPS OF 4",
+    "a": [
+      "20"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-56",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 5?",
+    "h": "5 TIMES TABLE — 5 GROUPS OF 5",
+    "a": [
+      "25"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-57",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 10 × 1?",
+    "h": "10 TIMES TABLE — 10 GROUPS OF 1",
+    "a": [
+      "10"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-58",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 10 × 2?",
+    "h": "10 TIMES TABLE — 10 GROUPS OF 2",
+    "a": [
+      "20"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-59",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 10 × 3?",
+    "h": "10 TIMES TABLE — 10 GROUPS OF 3",
+    "a": [
+      "30"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-60",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 10 × 5?",
+    "h": "10 TIMES TABLE — 10 GROUPS OF 5",
+    "a": [
+      "50"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-61",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 1 SQUARED (1²)?",
+    "h": "1 × 1 = ?",
+    "a": [
+      "1"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-62",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT IS 2 SQUARED (2²)?",
+    "h": "2 × 2 = ?",
+    "a": [
+      "4"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-63",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT IS 3 SQUARED (3²)?",
+    "h": "3 × 3 = ?",
+    "a": [
+      "9"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-64",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 4 SQUARED (4²)?",
+    "h": "4 × 4 = ?",
+    "a": [
+      "16"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-65",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT IS 5 SQUARED (5²)?",
+    "h": "5 × 5 = ?",
+    "a": [
+      "25"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-66",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 6 SQUARED (6²)?",
+    "h": "6 × 6 = ?",
+    "a": [
+      "36"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-67",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT IS 7 SQUARED (7²)?",
+    "h": "7 × 7 = ?",
+    "a": [
+      "49"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-68",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 8 SQUARED (8²)?",
+    "h": "8 × 8 = ?",
+    "a": [
+      "64"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-69",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 9 SQUARED (9²)?",
+    "h": "9 × 9 = ?",
+    "a": [
+      "81"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-70",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 10 SQUARED (10²)?",
+    "h": "10 × 10 = ?",
+    "a": [
+      "100"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-71",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS THE SQUARE OF 11 (11²)?",
+    "h": "11 × 11 = ?",
+    "a": [
+      "121"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-72",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT IS THE SQUARE OF 12 (12²)?",
+    "h": "12 × 12 = ?",
+    "a": [
+      "144"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-73",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT NUMBER, WHEN SQUARED, GIVES 4?",
+    "h": "? × ? = 4 — THE SQUARE ROOT OF 4",
+    "a": [
+      "2"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-74",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT NUMBER, WHEN SQUARED, GIVES 9?",
+    "h": "? × ? = 9 — THE SQUARE ROOT OF 9",
+    "a": [
+      "3"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-75",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT NUMBER, WHEN SQUARED, GIVES 25?",
+    "h": "? × ? = 25 — THE SQUARE ROOT OF 25",
+    "a": [
+      "5"
+    ],
+    "type": "SQUARES"
+  },
+  {
+    "id": "PZ-76",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT IS 2 + 2 + 2?",
+    "h": "ADD THREE 2S TOGETHER",
+    "a": [
+      "6"
+    ],
+    "type": "MATH"
+  },
+  {
+    "id": "PZ-77",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT IS 3 + 3 + 3?",
+    "h": "ADD THREE 3S TOGETHER",
+    "a": [
+      "9"
+    ],
+    "type": "MATH"
+  },
+  {
+    "id": "PZ-78",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: HOW MANY DAYS IN A WEEK?",
+    "h": "MON TUE WED THU FRI SAT SUN — COUNT THEM",
+    "a": [
+      "7"
+    ],
+    "type": "LOGIC"
+  },
+  {
+    "id": "PZ-79",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: HOW MANY MONTHS IN A YEAR?",
+    "h": "COUNT FROM JANUARY TO DECEMBER",
+    "a": [
+      "12"
+    ],
+    "type": "LOGIC"
+  },
+  {
+    "id": "PZ-80",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: HOW MANY FINGERS ON TWO HANDS?",
+    "h": "COUNT ALL YOUR FINGERS",
+    "a": [
+      "10"
+    ],
+    "type": "LOGIC"
+  },
+  {
+    "id": "PZ-81",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: HOW MANY SIDES DOES A SQUARE HAVE?",
+    "h": "THINK OF A SQUARE — COUNT EACH SIDE",
+    "a": [
+      "4"
+    ],
+    "type": "SHAPES"
+  },
+  {
+    "id": "PZ-82",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: HOW MANY SIDES DOES A TRIANGLE HAVE?",
+    "h": "THINK OF A TRIANGLE — COUNT EACH SIDE",
+    "a": [
+      "3"
+    ],
+    "type": "SHAPES"
+  },
+  {
+    "id": "PZ-83",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: HOW MANY SIDES DOES A CIRCLE HAVE?",
+    "h": "LOOK CAREFULLY — DOES A CIRCLE HAVE ANY STRAIGHT SIDES?",
+    "a": [
+      "0"
+    ],
+    "type": "SHAPES"
+  },
+  {
+    "id": "PZ-84",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS THE SHAPE WITH 6 SIDES CALLED?",
+    "h": "HEX MEANS SIX — HEX-A-GON",
+    "a": [
+      "HEXAGON"
+    ],
+    "type": "SHAPES"
+  },
+  {
+    "id": "PZ-85",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT COMES NEXT: 2, 4, 6, 8, ?",
+    "h": "COUNT BY 2S — EVEN NUMBERS",
+    "a": [
+      "10"
+    ],
+    "type": "PATTERN"
+  },
+  {
+    "id": "PZ-86",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT COMES NEXT: 5, 10, 15, 20, ?",
+    "h": "COUNT BY 5S",
+    "a": [
+      "25"
+    ],
+    "type": "PATTERN"
+  },
+  {
+    "id": "PZ-87",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT COMES NEXT: 10, 20, 30, 40, ?",
+    "h": "COUNT BY 10S",
+    "a": [
+      "50"
+    ],
+    "type": "PATTERN"
+  },
+  {
+    "id": "PZ-88",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT COMES NEXT: 1, 3, 5, 7, ?",
+    "h": "ODD NUMBERS — COUNT BY 2S STARTING FROM 1",
+    "a": [
+      "9"
+    ],
+    "type": "PATTERN"
+  },
+  {
+    "id": "PZ-89",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT COMES NEXT: A, C, E, G, ?",
+    "h": "SKIP EVERY OTHER LETTER",
+    "a": [
+      "I"
+    ],
+    "type": "ALPHABET"
+  },
+  {
+    "id": "PZ-90",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT COMES NEXT: Z, Y, X, W, ?",
+    "h": "THE ALPHABET BACKWARDS",
+    "a": [
+      "V"
+    ],
+    "type": "ALPHABET"
+  },
+  {
+    "id": "PZ-91",
+    "lv": 1,
+    "q": "CARVED IN BONE: WHAT IS 6 × 1?",
+    "h": "6 TIMES TABLE — ANY NUMBER TIMES 1 STAYS THE SAME",
+    "a": [
+      "6"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-92",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT IS 6 × 2?",
+    "h": "6 TIMES TABLE — 6 GROUPS OF 2",
+    "a": [
+      "12"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-93",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT IS 6 × 3?",
+    "h": "6 TIMES TABLE — 6 GROUPS OF 3",
+    "a": [
+      "18"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-94",
+    "lv": 1,
+    "q": "A VISION IN THE BLOOD: WHAT IS 6 × 4?",
+    "h": "6 TIMES TABLE — 6 GROUPS OF 4",
+    "a": [
+      "24"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-95",
+    "lv": 1,
+    "q": "THE SCALES SHIFT: WHAT IS 6 × 5?",
+    "h": "6 TIMES TABLE — 6 GROUPS OF 5",
+    "a": [
+      "30"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-96",
+    "lv": 1,
+    "q": "A GLITCH IN THE FLESH: WHAT IS 6 × 6?",
+    "h": "6 TIMES TABLE — 6 GROUPS OF 6",
+    "a": [
+      "36"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-97",
+    "lv": 1,
+    "q": "THE SERPENT WHISPERS: WHAT COMES NEXT IN THE ALPHABET AFTER Y?",
+    "h": "ALMOST AT THE END — Y AND THEN?",
+    "a": [
+      "Z"
+    ],
+    "type": "ALPHABET"
+  },
+  {
+    "id": "PZ-98",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT IS 0 × 100?",
+    "h": "ANY NUMBER TIMES ZERO IS ALWAYS THE SAME ANSWER",
+    "a": [
+      "0"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-99",
+    "lv": 1,
+    "q": "A VOICE FROM THE DARKNESS: WHAT IS 1 × 999?",
+    "h": "ANY NUMBER TIMES ONE STAYS THE SAME",
+    "a": [
+      "999"
+    ],
+    "type": "TABLES"
+  },
+  {
+    "id": "PZ-100",
+    "lv": 1,
+    "q": "THE CYCLE DEMANDS: WHAT IS 7 SQUARED (7²)?",
+    "h": "7 × 7 = ?",
+    "a": [
+      "49"
+    ],
+    "type": "SQUARES"
   },
   {
     "id": "L0-0",
