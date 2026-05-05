@@ -31,7 +31,9 @@ io.on('connection', (socket) => {
       score: 0,
       solved: 0,
       cps: 0,
-      status: 'active' // 'active', 'dead', 'won'
+      fails: 0,
+      hintsUsed: 0,
+      status: 'active' // 'active', 'dead', 'won', 'disqualified'
     });
     totalSoulsConsumed++;
     
@@ -47,8 +49,24 @@ io.on('connection', (socket) => {
       player.score = data.score;
       player.solved = data.solved;
       player.cps = data.cps;
+      player.fails = data.fails || 0;
+      player.hintsUsed = data.hintsUsed || 0;
       broadcastLeaderboard();
     }
+  });
+  
+  // Admin disqualifies a player
+  socket.on('disqualify', (targetId) => {
+    console.log(`[!] Admin action: Disqualifying ${targetId}`);
+    // Broadcast to everyone. The specific client will catch it.
+    io.emit('force_dq', targetId);
+    
+    // Update server state status
+    const target = players.get(targetId);
+    if (target) {
+      target.status = 'disqualified';
+    }
+    broadcastLeaderboard();
   });
   
   // Player dies or severs

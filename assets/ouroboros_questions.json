@@ -1,0 +1,4019 @@
+{
+  "meta": {
+    "title": "OUROBOROS — Official Puzzle Database",
+    "version": "2.0",
+    "total": 500,
+    "categories": {
+      "APTITUDE": 100,
+      "C": 125,
+      "PYTHON": 125,
+      "TECH_CSE": 150
+    },
+    "difficulty": {
+      "MEDIUM": 251,
+      "HARD": 249
+    }
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What is the LCM of 12 and 18?",
+      "answer": "36"
+    },
+    {
+      "id": "Q002",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What is the HCF of 36 and 48?",
+      "answer": "12"
+    },
+    {
+      "id": "Q003",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "A train travels 360 km in 4 hours. What is its speed in km/h?",
+      "answer": "90"
+    },
+    {
+      "id": "Q004",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What percentage of 200 is 50?",
+      "answer": "25"
+    },
+    {
+      "id": "Q005",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "If 20% of a number is 80, what is the number?",
+      "answer": "400"
+    },
+    {
+      "id": "Q006",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What is the simple interest on Rs.1000 at 10% per annum for 2 years?",
+      "answer": "200"
+    },
+    {
+      "id": "Q007",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "A pipe fills a tank in 6 hours. What fraction of the tank is filled in 1 hour?",
+      "answer": "sixth"
+    },
+    {
+      "id": "Q008",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What is 15% of 400?",
+      "answer": "60"
+    },
+    {
+      "id": "Q009",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "The ratio of two numbers is 3:5 and their sum is 80. What is the smaller number?",
+      "answer": "30"
+    },
+    {
+      "id": "Q010",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "A shopkeeper sells an item for Rs.120 at a 20% profit. What was the cost price?",
+      "answer": "100"
+    },
+    {
+      "id": "Q011",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What is the square root of 1024?",
+      "answer": "32"
+    },
+    {
+      "id": "Q012",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What is the cube root of 512?",
+      "answer": "8"
+    },
+    {
+      "id": "Q013",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "A person walks 4 km north, then 3 km east. What is the straight line distance from start?",
+      "answer": "5"
+    },
+    {
+      "id": "Q014",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "How many prime numbers exist between 10 and 30?",
+      "answer": "6"
+    },
+    {
+      "id": "Q015",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ARITHMETIC",
+      "question": "What is 2 raised to the power of 10?",
+      "answer": "1024"
+    },
+    {
+      "id": "Q016",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "In a sequence 2, 6, 18, 54 — what is the next term?",
+      "answer": "162"
+    },
+    {
+      "id": "Q017",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "If ALL cats are animals and SOME animals are dogs, can we say ALL cats are dogs?",
+      "answer": "NO"
+    },
+    {
+      "id": "Q018",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "A is taller than B. B is taller than C. Who is the shortest?",
+      "answer": "C"
+    },
+    {
+      "id": "Q019",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "Which number is the odd one out: 4, 9, 16, 20, 25?",
+      "answer": "20"
+    },
+    {
+      "id": "Q020",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "How many sides does a heptagon have?",
+      "answer": "7"
+    },
+    {
+      "id": "Q021",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "What comes next in the series: 1, 4, 9, 16, 25, ?",
+      "answer": "36"
+    },
+    {
+      "id": "Q022",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "If MANGO is coded as OCPIQ, what cipher is being used?",
+      "answer": "CAESAR"
+    },
+    {
+      "id": "Q023",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+      "answer": "zero"
+    },
+    {
+      "id": "Q024",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "What is the next prime after 23?",
+      "answer": "29"
+    },
+    {
+      "id": "Q025",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "LOGIC",
+      "question": "If 6 workers complete a job in 12 days, how many days for 9 workers?",
+      "answer": "8"
+    },
+    {
+      "id": "Q026",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "PROBABILITY",
+      "question": "A coin is tossed twice. How many possible outcomes are there?",
+      "answer": "4"
+    },
+    {
+      "id": "Q027",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "PROBABILITY",
+      "question": "What is the probability of getting a head in a single fair coin toss? (fraction)",
+      "answer": "half"
+    },
+    {
+      "id": "Q028",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "PROBABILITY",
+      "question": "A die is rolled. What is the probability of getting an even number? (fraction)",
+      "answer": "half"
+    },
+    {
+      "id": "Q029",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "PROBABILITY",
+      "question": "How many ways can 3 people be arranged in a row?",
+      "answer": "6"
+    },
+    {
+      "id": "Q030",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "PROBABILITY",
+      "question": "How many combinations can be chosen from 5 items taking 2 at a time?",
+      "answer": "10"
+    },
+    {
+      "id": "Q031",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ALGEBRA",
+      "question": "If x + 5 = 12, what is x?",
+      "answer": "7"
+    },
+    {
+      "id": "Q032",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ALGEBRA",
+      "question": "If 3x - 6 = 9, what is x?",
+      "answer": "5"
+    },
+    {
+      "id": "Q033",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ALGEBRA",
+      "question": "What is the value of x² when x = 7?",
+      "answer": "49"
+    },
+    {
+      "id": "Q034",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ALGEBRA",
+      "question": "If a + b = 10 and a - b = 4, what is a?",
+      "answer": "7"
+    },
+    {
+      "id": "Q035",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "ALGEBRA",
+      "question": "What is the discriminant of x² - 5x + 6 = 0?",
+      "answer": "1"
+    },
+    {
+      "id": "Q036",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "GEOMETRY",
+      "question": "What is the area of a circle with radius 7? (use π = 22/7)",
+      "answer": "154"
+    },
+    {
+      "id": "Q037",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "GEOMETRY",
+      "question": "What is the perimeter of a rectangle with length 8 and width 5?",
+      "answer": "26"
+    },
+    {
+      "id": "Q038",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "GEOMETRY",
+      "question": "What is the area of a triangle with base 10 and height 6?",
+      "answer": "30"
+    },
+    {
+      "id": "Q039",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "GEOMETRY",
+      "question": "How many degrees are in the sum of interior angles of a hexagon?",
+      "answer": "720"
+    },
+    {
+      "id": "Q040",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "GEOMETRY",
+      "question": "What is the volume of a cube with side 4?",
+      "answer": "64"
+    },
+    {
+      "id": "Q041",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SPEED",
+      "question": "If a car travels at 60 km/h for 2.5 hours, how many km does it cover?",
+      "answer": "150"
+    },
+    {
+      "id": "Q042",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SPEED",
+      "question": "Two trains approach each other at 40 km/h and 60 km/h. Combined relative speed?",
+      "answer": "100"
+    },
+    {
+      "id": "Q043",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SPEED",
+      "question": "A boat goes 12 km upstream in 3 hours. What is its upstream speed in km/h?",
+      "answer": "4"
+    },
+    {
+      "id": "Q044",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SPEED",
+      "question": "If speed is doubled, time taken for same distance becomes what fraction of original?",
+      "answer": "half"
+    },
+    {
+      "id": "Q045",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SPEED",
+      "question": "A person covers 500m in 100 seconds. Speed in m/s?",
+      "answer": "5"
+    },
+    {
+      "id": "Q046",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SERIES",
+      "question": "What is the 8th Fibonacci number (starting 1,1,2,3,5...)?",
+      "answer": "21"
+    },
+    {
+      "id": "Q047",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SERIES",
+      "question": "What is the sum of first 10 natural numbers?",
+      "answer": "55"
+    },
+    {
+      "id": "Q048",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SERIES",
+      "question": "What is the sum of first 5 odd numbers?",
+      "answer": "25"
+    },
+    {
+      "id": "Q049",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SERIES",
+      "question": "What is the 10th term of arithmetic sequence 3, 7, 11, 15...?",
+      "answer": "39"
+    },
+    {
+      "id": "Q050",
+      "category": "APTITUDE",
+      "difficulty": "MEDIUM",
+      "type": "SERIES",
+      "question": "What is 1 + 2 + 3 + ... + 100?",
+      "answer": "5050"
+    },
+    {
+      "id": "Q051",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "The compound interest on Rs.10000 at 10% per annum for 2 years compounded annually?",
+      "answer": "2100"
+    },
+    {
+      "id": "Q052",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "Two pipes fill a tank in 12 and 15 hours. Together, in how many hours will they fill the tank?",
+      "answer": "6"
+    },
+    {
+      "id": "Q053",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "A shopkeeper marks goods 25% above cost and gives 10% discount. Profit percentage?",
+      "answer": "12.5"
+    },
+    {
+      "id": "Q054",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "If log₂(x) = 8, what is x?",
+      "answer": "256"
+    },
+    {
+      "id": "Q055",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "A can do a work in 15 days. B in 20 days. Together in how many days? (whole number part)",
+      "answer": "8"
+    },
+    {
+      "id": "Q056",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "What is the remainder when 2^100 is divided by 3?",
+      "answer": "1"
+    },
+    {
+      "id": "Q057",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "How many zeros are at the end of 100 factorial?",
+      "answer": "24"
+    },
+    {
+      "id": "Q058",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "What is the sum of all even numbers from 2 to 100?",
+      "answer": "2550"
+    },
+    {
+      "id": "Q059",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "If x² + y² = 25 and xy = 12, what is (x+y)²?",
+      "answer": "49"
+    },
+    {
+      "id": "Q060",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ARITHMETIC",
+      "question": "What is the number of diagonals in a decagon (10-sided polygon)?",
+      "answer": "35"
+    },
+    {
+      "id": "Q061",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "LOGIC",
+      "question": "In a group of 100 students, 60 like math, 50 like science, 30 like both. How many like neither?",
+      "answer": "20"
+    },
+    {
+      "id": "Q062",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "LOGIC",
+      "question": "If 5 cats catch 5 mice in 5 minutes, how many cats to catch 100 mice in 100 minutes?",
+      "answer": "5"
+    },
+    {
+      "id": "Q063",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "LOGIC",
+      "question": "A clock gains 5 minutes every hour. How many minutes fast after 12 hours?",
+      "answer": "60"
+    },
+    {
+      "id": "Q064",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "LOGIC",
+      "question": "What is the maximum number of regions a plane is divided into by 4 straight lines?",
+      "answer": "11"
+    },
+    {
+      "id": "Q065",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "LOGIC",
+      "question": "A father is 3 times as old as his son. In 12 years, he'll be twice as old. Son's current age?",
+      "answer": "12"
+    },
+    {
+      "id": "Q066",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "PROBABILITY",
+      "question": "How many 3-digit numbers can be formed using digits 1–5 without repetition?",
+      "answer": "60"
+    },
+    {
+      "id": "Q067",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "PROBABILITY",
+      "question": "In how many ways can the letters of LEVEL be arranged?",
+      "answer": "30"
+    },
+    {
+      "id": "Q068",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "PROBABILITY",
+      "question": "A bag has 3 red and 5 blue balls. Probability of drawing 2 red in a row without replacement? Numerator of 3/28?",
+      "answer": "3"
+    },
+    {
+      "id": "Q069",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "PROBABILITY",
+      "question": "How many 4-letter codes from letters A,B,C,D,E with no repetition?",
+      "answer": "120"
+    },
+    {
+      "id": "Q070",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "PROBABILITY",
+      "question": "In how many ways can 4 people be seated in a circular table?",
+      "answer": "6"
+    },
+    {
+      "id": "Q071",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ALGEBRA",
+      "question": "If α and β are roots of x²-5x+6=0, what is α+β?",
+      "answer": "5"
+    },
+    {
+      "id": "Q072",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ALGEBRA",
+      "question": "If α and β are roots of x²-5x+6=0, what is αβ?",
+      "answer": "6"
+    },
+    {
+      "id": "Q073",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ALGEBRA",
+      "question": "What is the sum of a geometric series 1+2+4+8+...+128?",
+      "answer": "255"
+    },
+    {
+      "id": "Q074",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ALGEBRA",
+      "question": "If 2^x = 32, what is x?",
+      "answer": "5"
+    },
+    {
+      "id": "Q075",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "ALGEBRA",
+      "question": "What is the value of log₁₀(1000)?",
+      "answer": "3"
+    },
+    {
+      "id": "Q076",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "GEOMETRY",
+      "question": "What is the surface area of a sphere with radius 7? (use π=22/7)",
+      "answer": "616"
+    },
+    {
+      "id": "Q077",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "GEOMETRY",
+      "question": "What is the volume of a cylinder with radius 7 and height 10? (use π=22/7)",
+      "answer": "1540"
+    },
+    {
+      "id": "Q078",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "GEOMETRY",
+      "question": "A cone has radius 6 and slant height 10. What is its curved surface area? (use π=22/7)",
+      "answer": "1886"
+    },
+    {
+      "id": "Q079",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "GEOMETRY",
+      "question": "What is the length of a diagonal of a rectangle with sides 5 and 12?",
+      "answer": "13"
+    },
+    {
+      "id": "Q080",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "GEOMETRY",
+      "question": "Sum of interior angles of a polygon is 1440°. How many sides does it have?",
+      "answer": "10"
+    },
+    {
+      "id": "Q081",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SPEED",
+      "question": "A train 200m long passes a pole in 10 seconds. Speed in m/s?",
+      "answer": "20"
+    },
+    {
+      "id": "Q082",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SPEED",
+      "question": "Two people start from the same point in opposite directions at 4 km/h and 6 km/h. Distance apart after 2 hours?",
+      "answer": "20"
+    },
+    {
+      "id": "Q083",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SPEED",
+      "question": "Speed of stream is 3 km/h. Boat speed still water is 9 km/h. Upstream speed in km/h?",
+      "answer": "6"
+    },
+    {
+      "id": "Q084",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SPEED",
+      "question": "A train 300m long crosses another 200m long train coming opposite at 60 and 40 km/h. Time in seconds?",
+      "answer": "18"
+    },
+    {
+      "id": "Q085",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SPEED",
+      "question": "Ratio of speed of A to B is 2:3. If B runs 300m, how far does A run in same time?",
+      "answer": "200"
+    },
+    {
+      "id": "Q086",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SERIES",
+      "question": "What is the geometric mean of 4 and 16?",
+      "answer": "8"
+    },
+    {
+      "id": "Q087",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SERIES",
+      "question": "What is the harmonic mean of 2 and 6?",
+      "answer": "3"
+    },
+    {
+      "id": "Q088",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SERIES",
+      "question": "Find n if nC2 = 15?",
+      "answer": "6"
+    },
+    {
+      "id": "Q089",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SERIES",
+      "question": "What is the 20th term of AP: 5, 8, 11, 14...?",
+      "answer": "62"
+    },
+    {
+      "id": "Q090",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SERIES",
+      "question": "Sum of first n natural numbers formula — value when n=15?",
+      "answer": "120"
+    },
+    {
+      "id": "Q091",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SETS",
+      "question": "If A={1,2,3} and B={2,3,4}, what is |A union B|?",
+      "answer": "4"
+    },
+    {
+      "id": "Q092",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SETS",
+      "question": "If |A|=5, |B|=6, |A∩B|=2, what is |A∪B|?",
+      "answer": "9"
+    },
+    {
+      "id": "Q093",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SETS",
+      "question": "Power set of a set with 4 elements has how many elements?",
+      "answer": "16"
+    },
+    {
+      "id": "Q094",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SETS",
+      "question": "How many subsets does a set of 5 elements have?",
+      "answer": "32"
+    },
+    {
+      "id": "Q095",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "SETS",
+      "question": "In a class of 40, 25 play cricket, 20 play football, 10 play both. How many play neither?",
+      "answer": "5"
+    },
+    {
+      "id": "Q096",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "MATRIX",
+      "question": "What is the determinant of the identity matrix of order 2?",
+      "answer": "1"
+    },
+    {
+      "id": "Q097",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "MATRIX",
+      "question": "A 3x4 matrix multiplied by a 4x2 matrix gives a matrix of what order? (rows)",
+      "answer": "3"
+    },
+    {
+      "id": "Q098",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "MATRIX",
+      "question": "Transpose of a 3x2 matrix has how many columns?",
+      "answer": "3"
+    },
+    {
+      "id": "Q099",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "MATRIX",
+      "question": "What is the trace of matrix [[1,2],[3,4]]?",
+      "answer": "5"
+    },
+    {
+      "id": "Q100",
+      "category": "APTITUDE",
+      "difficulty": "HARD",
+      "type": "MATRIX",
+      "question": "det([[2,3],[1,4]]) = ?",
+      "answer": "5"
+    },
+    {
+      "id": "Q101",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=5; printf('%d',x++); — what is printed?",
+      "answer": "5"
+    },
+    {
+      "id": "Q102",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=5; printf('%d',++x); — what is printed?",
+      "answer": "6"
+    },
+    {
+      "id": "Q103",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d', 10/3); — what is printed?",
+      "answer": "3"
+    },
+    {
+      "id": "Q104",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d', 10%3); — what is printed?",
+      "answer": "1"
+    },
+    {
+      "id": "Q105",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=0; while(x<3) x++; printf('%d',x); — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q106",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "char c='A'; printf('%d',c); — output?",
+      "answer": "65"
+    },
+    {
+      "id": "Q107",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int a=5,b=3; printf('%d',a&b); — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q108",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int a=5,b=3; printf('%d',a|b); — output?",
+      "answer": "7"
+    },
+    {
+      "id": "Q109",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int a=5,b=3; printf('%d',a^b); — output?",
+      "answer": "6"
+    },
+    {
+      "id": "Q110",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=8; printf('%d',x>>1); — output?",
+      "answer": "4"
+    },
+    {
+      "id": "Q111",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=4; printf('%d',x<<2); — output?",
+      "answer": "16"
+    },
+    {
+      "id": "Q112",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "sizeof(int) on a 32-bit system returns?",
+      "answer": "4"
+    },
+    {
+      "id": "Q113",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "sizeof(char) always returns?",
+      "answer": "1"
+    },
+    {
+      "id": "Q114",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "sizeof(double) typically returns?",
+      "answer": "8"
+    },
+    {
+      "id": "Q115",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword is used to define a constant in C?",
+      "answer": "const"
+    },
+    {
+      "id": "Q116",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword prevents a variable from being optimized by the compiler?",
+      "answer": "volatile"
+    },
+    {
+      "id": "Q117",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword makes a function or variable local to its file in C?",
+      "answer": "static"
+    },
+    {
+      "id": "Q118",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the return type of malloc in C?",
+      "answer": "void"
+    },
+    {
+      "id": "Q119",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which function frees dynamically allocated memory?",
+      "answer": "free"
+    },
+    {
+      "id": "Q120",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which header file contains printf and scanf?",
+      "answer": "stdio"
+    },
+    {
+      "id": "Q121",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which format specifier prints an unsigned hex integer?",
+      "answer": "%x"
+    },
+    {
+      "id": "Q122",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What does scanf return on successful read of one variable?",
+      "answer": "1"
+    },
+    {
+      "id": "Q123",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What operator is used to get the address of a variable in C?",
+      "answer": "&"
+    },
+    {
+      "id": "Q124",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What operator dereferences a pointer in C?",
+      "answer": "*"
+    },
+    {
+      "id": "Q125",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is NULL equivalent to numerically in C?",
+      "answer": "0"
+    },
+    {
+      "id": "Q126",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int arr[]={1,2,3}; printf('%d',arr[1]); — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q127",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int arr[]={5,10,15}; printf('%d',*arr); — output?",
+      "answer": "5"
+    },
+    {
+      "id": "Q128",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int arr[]={5,10,15}; printf('%d',*(arr+2)); — output?",
+      "answer": "15"
+    },
+    {
+      "id": "Q129",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "char s[]='hello'; printf('%c',s[4]); — output?",
+      "answer": "o"
+    },
+    {
+      "id": "Q130",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "char s[]='hello'; printf('%d',strlen(s)); — output?",
+      "answer": "5"
+    },
+    {
+      "id": "Q131",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d',!0); — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q132",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d',!1); — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q133",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=5; printf('%d',x==5); — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q134",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=5; printf('%d',x!=5); — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q135",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What does do-while guarantee over while loop?",
+      "answer": "once"
+    },
+    {
+      "id": "Q136",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword skips the current iteration of a loop?",
+      "answer": "continue"
+    },
+    {
+      "id": "Q137",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword exits a loop immediately in C?",
+      "answer": "break"
+    },
+    {
+      "id": "Q138",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword returns control from a function in C?",
+      "answer": "return"
+    },
+    {
+      "id": "Q139",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Arrays in C are passed to functions by?",
+      "answer": "reference"
+    },
+    {
+      "id": "Q140",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which memory segment stores local variables in C?",
+      "answer": "stack"
+    },
+    {
+      "id": "Q141",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which memory segment stores malloc allocated memory?",
+      "answer": "heap"
+    },
+    {
+      "id": "Q142",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which segment stores global variables in C?",
+      "answer": "data"
+    },
+    {
+      "id": "Q143",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the index of the first element of an array in C?",
+      "answer": "0"
+    },
+    {
+      "id": "Q144",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the default return type of main in C?",
+      "answer": "int"
+    },
+    {
+      "id": "Q145",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=3,y=4; printf('%d',x>y?x:y); — output?",
+      "answer": "4"
+    },
+    {
+      "id": "Q146",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d',2<<3); — output?",
+      "answer": "16"
+    },
+    {
+      "id": "Q147",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d',16>>2); — output?",
+      "answer": "4"
+    },
+    {
+      "id": "Q148",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d',5*2+3); — output?",
+      "answer": "13"
+    },
+    {
+      "id": "Q149",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "printf('%d',(int)3.9); — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q150",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which function copies one string to another in C?",
+      "answer": "strcpy"
+    },
+    {
+      "id": "Q151",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which function compares two strings in C?",
+      "answer": "strcmp"
+    },
+    {
+      "id": "Q152",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which function concatenates two strings in C?",
+      "answer": "strcat"
+    },
+    {
+      "id": "Q153",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which function finds the length of a string in C?",
+      "answer": "strlen"
+    },
+    {
+      "id": "Q154",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword defines a type alias in C?",
+      "answer": "typedef"
+    },
+    {
+      "id": "Q155",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What does the extern keyword signify for a variable?",
+      "answer": "external"
+    },
+    {
+      "id": "Q156",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "How many bytes does short int typically use?",
+      "answer": "2"
+    },
+    {
+      "id": "Q157",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the maximum value of unsigned 8-bit integer?",
+      "answer": "255"
+    },
+    {
+      "id": "Q158",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the name for a function that calls itself?",
+      "answer": "recursive"
+    },
+    {
+      "id": "Q159",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int i=0; for(i=0;i<3;i++); printf('%d',i); — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q160",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "int x=15; printf('%d',x&~(1<<0)); — output? (clears bit 0)",
+      "answer": "14"
+    },
+    {
+      "id": "Q161",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "calloc initializes allocated memory to what value?",
+      "answer": "0"
+    },
+    {
+      "id": "Q162",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which function reallocates memory in C?",
+      "answer": "realloc"
+    },
+    {
+      "id": "Q163",
+      "category": "C",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "A pointer to pointer is declared with how many asterisks?",
+      "answer": "2"
+    },
+    {
+      "id": "Q164",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "#define SQUARE(x) x*x — SQUARE(3+1) evaluates to?",
+      "answer": "7"
+    },
+    {
+      "id": "Q165",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=5; int y=x++ + x++; — is this behavior defined or undefined?",
+      "answer": "undefined"
+    },
+    {
+      "id": "Q166",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "unsigned char x=250; x+=10; — what is x?",
+      "answer": "4"
+    },
+    {
+      "id": "Q167",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int arr[3]={1,2,3}; printf('%d',2[arr]); — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q168",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=0x41; printf('%c',x); — output?",
+      "answer": "A"
+    },
+    {
+      "id": "Q169",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=-1; printf('%u',x); on 32-bit system — output?",
+      "answer": "4294967295"
+    },
+    {
+      "id": "Q170",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int a=0; int b=(a=5,a+3); printf('%d',b); — output?",
+      "answer": "8"
+    },
+    {
+      "id": "Q171",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "static int c=0; c++; called 3 times — final c value?",
+      "answer": "3"
+    },
+    {
+      "id": "Q172",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=10; x&=~(1<<1); printf('%d',x); — output?",
+      "answer": "8"
+    },
+    {
+      "id": "Q173",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=7; x|=(1<<3); printf('%d',x); — output?",
+      "answer": "15"
+    },
+    {
+      "id": "Q174",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int a=5,b=3; a^=b; b^=a; a^=b; printf('%d',a); — a after XOR swap?",
+      "answer": "3"
+    },
+    {
+      "id": "Q175",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}}; int *p=&arr[0][0]; printf('%d',*(p+5)); — output?",
+      "answer": "6"
+    },
+    {
+      "id": "Q176",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "char *s='hello'; printf('%c',*(s+4)); — output?",
+      "answer": "o"
+    },
+    {
+      "id": "Q177",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=5,y=10; printf('%d',x>y?x:y); — output?",
+      "answer": "10"
+    },
+    {
+      "id": "Q178",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int a=5; printf('%d %d',a++,++a); — well defined output first arg?",
+      "answer": "undefined"
+    },
+    {
+      "id": "Q179",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the size in bytes of struct{char a; int b; char c;} on 64-bit (with padding)?",
+      "answer": "12"
+    },
+    {
+      "id": "Q180",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "struct{unsigned int a:3; unsigned int b:5;} — total bits used?",
+      "answer": "8"
+    },
+    {
+      "id": "Q181",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "On a little-endian machine, 0x01020304 stored at address — what byte is at lowest address?",
+      "answer": "4"
+    },
+    {
+      "id": "Q182",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is a dangling pointer?",
+      "answer": "freed"
+    },
+    {
+      "id": "Q183",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What does free(NULL) do in C?",
+      "answer": "nothing"
+    },
+    {
+      "id": "Q184",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Accessing float memory via int pointer violates which C rule?",
+      "answer": "aliasing"
+    },
+    {
+      "id": "Q185",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is a memory leak caused by in C?",
+      "answer": "malloc"
+    },
+    {
+      "id": "Q186",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Returning address of a local variable causes what kind of pointer?",
+      "answer": "dangling"
+    },
+    {
+      "id": "Q187",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What does the restrict keyword tell the compiler about a pointer?",
+      "answer": "noalias"
+    },
+    {
+      "id": "Q188",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "NAND(1,1) gate output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q189",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "NOR(0,0) gate output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q190",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "XOR(1,1) output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q191",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "XOR applied twice to same value gives?",
+      "answer": "original"
+    },
+    {
+      "id": "Q192",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the two's complement of 8-bit 00000111 (decimal 7)?",
+      "answer": "11111001"
+    },
+    {
+      "id": "Q193",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What decimal does 8-bit two's complement 11111111 represent?",
+      "answer": "-1"
+    },
+    {
+      "id": "Q194",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "0xFF in decimal is?",
+      "answer": "255"
+    },
+    {
+      "id": "Q195",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "0x1F in decimal is?",
+      "answer": "31"
+    },
+    {
+      "id": "Q196",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Octal 017 in decimal is?",
+      "answer": "15"
+    },
+    {
+      "id": "Q197",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "printf('%d',sizeof(int)*2+1); on 32-bit system — output?",
+      "answer": "9"
+    },
+    {
+      "id": "Q198",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=255; printf('%x',x); — output?",
+      "answer": "ff"
+    },
+    {
+      "id": "Q199",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=8; printf('%o',x); — output in octal?",
+      "answer": "10"
+    },
+    {
+      "id": "Q200",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "printf('%d', 0x0F & 0xFF); — output?",
+      "answer": "15"
+    },
+    {
+      "id": "Q201",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "printf('%d', ~0); on 32-bit signed — output?",
+      "answer": "-1"
+    },
+    {
+      "id": "Q202",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=12,y=10; printf('%d',x^y); — output?",
+      "answer": "6"
+    },
+    {
+      "id": "Q203",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int *p=NULL; if(p) printf('yes'); else printf('no'); — output?",
+      "answer": "no"
+    },
+    {
+      "id": "Q204",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the union keyword used for?",
+      "answer": "shared"
+    },
+    {
+      "id": "Q205",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "In a union, all members share the same?",
+      "answer": "memory"
+    },
+    {
+      "id": "Q206",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the size of a union with int(4) and double(8)? (in bytes)",
+      "answer": "8"
+    },
+    {
+      "id": "Q207",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Which storage class stores variable between function calls on stack?",
+      "answer": "static"
+    },
+    {
+      "id": "Q208",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Function pointers store what kind of address?",
+      "answer": "function"
+    },
+    {
+      "id": "Q209",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=100; printf('%d',x>>2); — output?",
+      "answer": "25"
+    },
+    {
+      "id": "Q210",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=3; printf('%d',x<<3); — output?",
+      "answer": "24"
+    },
+    {
+      "id": "Q211",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "A buffer overflow overwrites what critical stack element to gain control?",
+      "answer": "return"
+    },
+    {
+      "id": "Q212",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the printf format specifier for long int?",
+      "answer": "%ld"
+    },
+    {
+      "id": "Q213",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What does getchar() return when EOF is reached?",
+      "answer": "-1"
+    },
+    {
+      "id": "Q214",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=5; printf('%d',x*=2); — output?",
+      "answer": "10"
+    },
+    {
+      "id": "Q215",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int x=10; printf('%d',x/=3); — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q216",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Which C library function searches a character in a string?",
+      "answer": "strchr"
+    },
+    {
+      "id": "Q217",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Which function finds the first occurrence of substring in a string?",
+      "answer": "strstr"
+    },
+    {
+      "id": "Q218",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "printf('%d',1&&0||1); — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q219",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "printf('%d',1&&0&&1); — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q220",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "printf('%d',0||0||1); — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q221",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "In C, macro arguments are expanded how (literally/evaluated)?",
+      "answer": "literally"
+    },
+    {
+      "id": "Q222",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the correct way to swap two numbers without a temp in C? (technique name)",
+      "answer": "XOR"
+    },
+    {
+      "id": "Q223",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the name for writing beyond an array's boundary in C?",
+      "answer": "overflow"
+    },
+    {
+      "id": "Q224",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "int a=10; int b=a; b=20; printf('%d',a); — output?",
+      "answer": "10"
+    },
+    {
+      "id": "Q225",
+      "category": "C",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "How many arguments does main() accept at most in standard C?",
+      "answer": "2"
+    },
+    {
+      "id": "Q226",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(type(1/2)) — what class is printed?",
+      "answer": "float"
+    },
+    {
+      "id": "Q227",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(type(1//2)) — what class is printed?",
+      "answer": "int"
+    },
+    {
+      "id": "Q228",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(10%3) — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q229",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(2**10) — output?",
+      "answer": "1024"
+    },
+    {
+      "id": "Q230",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(bool('')) — output?",
+      "answer": "False"
+    },
+    {
+      "id": "Q231",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(bool('0')) — output?",
+      "answer": "True"
+    },
+    {
+      "id": "Q232",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(bool(0)) — output?",
+      "answer": "False"
+    },
+    {
+      "id": "Q233",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(bool([])) — output?",
+      "answer": "False"
+    },
+    {
+      "id": "Q234",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "x=[1,2,3]; x.append(4); print(len(x)); — output?",
+      "answer": "4"
+    },
+    {
+      "id": "Q235",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "x=[1,2,3]; print(x[-1]) — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q236",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "x=[1,2,3,4,5]; print(x[1:3]) — output?",
+      "answer": "[2,3]"
+    },
+    {
+      "id": "Q237",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "x=[1,2,3]; print(x[::-1]) — output?",
+      "answer": "[3,2,1]"
+    },
+    {
+      "id": "Q238",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(len('hello world')) — output?",
+      "answer": "11"
+    },
+    {
+      "id": "Q239",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print('hello'.upper()) — output?",
+      "answer": "HELLO"
+    },
+    {
+      "id": "Q240",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print('HELLO'.lower()) — output?",
+      "answer": "hello"
+    },
+    {
+      "id": "Q241",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print('hello world'.split()[0]) — output?",
+      "answer": "hello"
+    },
+    {
+      "id": "Q242",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(','.join(['a','b','c'])) — output?",
+      "answer": "a,b,c"
+    },
+    {
+      "id": "Q243",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(type([]).__name__) — output?",
+      "answer": "list"
+    },
+    {
+      "id": "Q244",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(type({}).__name__) — output?",
+      "answer": "dict"
+    },
+    {
+      "id": "Q245",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(type(()).__name__) — output?",
+      "answer": "tuple"
+    },
+    {
+      "id": "Q246",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "x=(1,2,3); print(x[1]) — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q247",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "d={'a':1,'b':2}; print(d['a']) — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q248",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "d={'a':1}; print(d.get('b',0)) — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q249",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(list(range(1,6))) — output?",
+      "answer": "[1,2,3,4,5]"
+    },
+    {
+      "id": "Q250",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(sum([1,2,3,4,5])) — output?",
+      "answer": "15"
+    },
+    {
+      "id": "Q251",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(max([3,1,4,1,5,9])) — output?",
+      "answer": "9"
+    },
+    {
+      "id": "Q252",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(min([3,1,4,1,5,9])) — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q253",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(sorted([3,1,2])) — output?",
+      "answer": "[1,2,3]"
+    },
+    {
+      "id": "Q254",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(abs(-7)) — output?",
+      "answer": "7"
+    },
+    {
+      "id": "Q255",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(round(3.7)) — output?",
+      "answer": "4"
+    },
+    {
+      "id": "Q256",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword is used to define a function in Python?",
+      "answer": "def"
+    },
+    {
+      "id": "Q257",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword defines a class in Python?",
+      "answer": "class"
+    },
+    {
+      "id": "Q258",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the first argument of every instance method in Python?",
+      "answer": "self"
+    },
+    {
+      "id": "Q259",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What method is called when an object is created in Python?",
+      "answer": "__init__"
+    },
+    {
+      "id": "Q260",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword is used to inherit from a parent class?",
+      "answer": "super"
+    },
+    {
+      "id": "Q261",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword makes a variable available in outer scope from inner function?",
+      "answer": "nonlocal"
+    },
+    {
+      "id": "Q262",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword makes a variable global inside a function?",
+      "answer": "global"
+    },
+    {
+      "id": "Q263",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword creates an anonymous function in Python?",
+      "answer": "lambda"
+    },
+    {
+      "id": "Q264",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword is used for exception handling in Python?",
+      "answer": "try"
+    },
+    {
+      "id": "Q265",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword catches an exception in Python?",
+      "answer": "except"
+    },
+    {
+      "id": "Q266",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword always executes after try-except?",
+      "answer": "finally"
+    },
+    {
+      "id": "Q267",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword raises an exception in Python?",
+      "answer": "raise"
+    },
+    {
+      "id": "Q268",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(0.1+0.2==0.3) — output?",
+      "answer": "False"
+    },
+    {
+      "id": "Q269",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(256 is 256) — output?",
+      "answer": "True"
+    },
+    {
+      "id": "Q270",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "x=[1,2]; y=x; y.append(3); print(len(x)) — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q271",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "x=[1,2]; y=x.copy(); y.append(3); print(len(x)) — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q272",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print([x**2 for x in range(4)]) — output?",
+      "answer": "[0,1,4,9]"
+    },
+    {
+      "id": "Q273",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(list(filter(lambda x:x%2==0,[1,2,3,4]))) — output?",
+      "answer": "[2,4]"
+    },
+    {
+      "id": "Q274",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print(list(map(lambda x:x*2,[1,2,3]))) — output?",
+      "answer": "[2,4,6]"
+    },
+    {
+      "id": "Q275",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What does GIL stand for in CPython?",
+      "answer": "lock"
+    },
+    {
+      "id": "Q276",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which Python data type is immutable — list or tuple?",
+      "answer": "tuple"
+    },
+    {
+      "id": "Q277",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "Which built-in type stores unique values in Python?",
+      "answer": "set"
+    },
+    {
+      "id": "Q278",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the time complexity of dict lookup in Python?",
+      "answer": "O(1)"
+    },
+    {
+      "id": "Q279",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is the method to add a key-value pair to a dict?",
+      "answer": "update"
+    },
+    {
+      "id": "Q280",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What does the pop() method return when called on a list?",
+      "answer": "removed"
+    },
+    {
+      "id": "Q281",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "s={1,2,3}; s.add(2); print(len(s)) — output?",
+      "answer": "3"
+    },
+    {
+      "id": "Q282",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print({1,2,3}&{2,3,4}) — set intersection?",
+      "answer": "{2,3}"
+    },
+    {
+      "id": "Q283",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "OUTPUT",
+      "question": "print({1,2}|{3,4}) — set union length?",
+      "answer": "4"
+    },
+    {
+      "id": "Q284",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What operator checks membership in a Python list?",
+      "answer": "in"
+    },
+    {
+      "id": "Q285",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What keyword pauses a function and returns a value lazily?",
+      "answer": "yield"
+    },
+    {
+      "id": "Q286",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "A function using yield is called a?",
+      "answer": "generator"
+    },
+    {
+      "id": "Q287",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What is Python's decorator syntax symbol?",
+      "answer": "@"
+    },
+    {
+      "id": "Q288",
+      "category": "PYTHON",
+      "difficulty": "MEDIUM",
+      "type": "CONCEPT",
+      "question": "What does __name__=='__main__' check?",
+      "answer": "main"
+    },
+    {
+      "id": "Q289",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "funcs=[lambda:i for i in range(3)]; print(funcs[0]()) — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q290",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "funcs=[lambda x=i:x for i in range(3)]; print(funcs[0]()) — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q291",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "a=[[0]*3]*3; a[0][0]=9; print(a[2][0]) — output?",
+      "answer": "9"
+    },
+    {
+      "id": "Q292",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "a=[[0]*3 for _ in range(3)]; a[0][0]=9; print(a[1][0]) — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q293",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "class A: x=[] — a1=A(); a2=A(); a1.x.append(1); print(a2.x) — output?",
+      "answer": "[1]"
+    },
+    {
+      "id": "Q294",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "def f(a,b=[]): b.append(a); return b — print(f(1)) then print(f(2)) second call?",
+      "answer": "[1,2]"
+    },
+    {
+      "id": "Q295",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "x=5; def f(): print(x); x=10; f() — raises what error?",
+      "answer": "UnboundLocalError"
+    },
+    {
+      "id": "Q296",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(257 is 257) in standard CPython at module level — output?",
+      "answer": "True"
+    },
+    {
+      "id": "Q297",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(type(type)) — what is returned?",
+      "answer": "type"
+    },
+    {
+      "id": "Q298",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "from functools import reduce; print(reduce(lambda a,x:a*x,[1,2,3,4],1)) — output?",
+      "answer": "24"
+    },
+    {
+      "id": "Q299",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "g=(x**2 for x in range(4)); print(next(g)) — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q300",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "def gen(): value=yield 1; yield value*2 — g=gen(); next(g); print(g.send(5)) — output?",
+      "answer": "10"
+    },
+    {
+      "id": "Q301",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "class A: pass; a=A(); a.x=10; print(a.__dict__['x']) — output?",
+      "answer": "10"
+    },
+    {
+      "id": "Q302",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(1 or 2) — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q303",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(0 or 2) — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q304",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(1 and 2) — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q305",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(0 and 2) — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q306",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "a,*b,c=[1,2,3,4,5]; print(b) — output?",
+      "answer": "[2,3,4]"
+    },
+    {
+      "id": "Q307",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(list(zip([1,2],[3,4]))) — output?",
+      "answer": "[(1,3),(2,4)]"
+    },
+    {
+      "id": "Q308",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(list(enumerate(['a','b']))[0]) — output?",
+      "answer": "(0,'a')"
+    },
+    {
+      "id": "Q309",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "d={1:'a',2:'b'}; print(list(d.values())) — output?",
+      "answer": "['a','b']"
+    },
+    {
+      "id": "Q310",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "d={1:'a',2:'b'}; d.pop(1); print(len(d)) — output?",
+      "answer": "1"
+    },
+    {
+      "id": "Q311",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "__getattr__ is called when attribute lookup?",
+      "answer": "fails"
+    },
+    {
+      "id": "Q312",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "__getattribute__ is called on every attribute access — always or only on failure?",
+      "answer": "always"
+    },
+    {
+      "id": "Q313",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What Python concept prevents arbitrary instance attributes?",
+      "answer": "__slots__"
+    },
+    {
+      "id": "Q314",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Which dunder method implements the descriptor protocol for reads?",
+      "answer": "__get__"
+    },
+    {
+      "id": "Q315",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is a shallow copy missing that deepcopy provides?",
+      "answer": "nested"
+    },
+    {
+      "id": "Q316",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What does asyncio.run() execute?",
+      "answer": "coroutine"
+    },
+    {
+      "id": "Q317",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What keyword is used to call a coroutine in async Python?",
+      "answer": "await"
+    },
+    {
+      "id": "Q318",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Python garbage collects circular references using what mechanism?",
+      "answer": "cyclic"
+    },
+    {
+      "id": "Q319",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Which __dunder__ is called when a new class is defined using a metaclass?",
+      "answer": "__new__"
+    },
+    {
+      "id": "Q320",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Which __dunder__ is called on EVERY subclass creation automatically?",
+      "answer": "__init_subclass__"
+    },
+    {
+      "id": "Q321",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "class A: def __new__(cls): return 42 — print(A()) — output?",
+      "answer": "42"
+    },
+    {
+      "id": "Q322",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "x='hello'; print(x.replace('l','r')) — output?",
+      "answer": "herro"
+    },
+    {
+      "id": "Q323",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print('abc'*3) — output?",
+      "answer": "abcabcabc"
+    },
+    {
+      "id": "Q324",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print('{:05d}'.format(42)) — output?",
+      "answer": "00042"
+    },
+    {
+      "id": "Q325",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "import sys; print(sys.getrecursionlimit()==1000) — typically?",
+      "answer": "True"
+    },
+    {
+      "id": "Q326",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "x=frozenset([1,2,3]); x.add(4) — raises what?",
+      "answer": "AttributeError"
+    },
+    {
+      "id": "Q327",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(divmod(10,3)) — output?",
+      "answer": "(3,1)"
+    },
+    {
+      "id": "Q328",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(all([1,2,0,3])) — output?",
+      "answer": "False"
+    },
+    {
+      "id": "Q329",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(any([0,0,1,0])) — output?",
+      "answer": "True"
+    },
+    {
+      "id": "Q330",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(bin(10)) — output?",
+      "answer": "0b1010"
+    },
+    {
+      "id": "Q331",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(hex(255)) — output?",
+      "answer": "0xff"
+    },
+    {
+      "id": "Q332",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(oct(8)) — output?",
+      "answer": "0o10"
+    },
+    {
+      "id": "Q333",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(ord('A')) — output?",
+      "answer": "65"
+    },
+    {
+      "id": "Q334",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(chr(90)) — output?",
+      "answer": "Z"
+    },
+    {
+      "id": "Q335",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is Python's reference counting garbage collection strategy called?",
+      "answer": "refcount"
+    },
+    {
+      "id": "Q336",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What module provides deepcopy in Python?",
+      "answer": "copy"
+    },
+    {
+      "id": "Q337",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the name of Python's built-in profiler module?",
+      "answer": "cProfile"
+    },
+    {
+      "id": "Q338",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What does *args capture in a function?",
+      "answer": "positional"
+    },
+    {
+      "id": "Q339",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What does **kwargs capture in a function?",
+      "answer": "keyword"
+    },
+    {
+      "id": "Q340",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the name for a function defined inside another function?",
+      "answer": "closure"
+    },
+    {
+      "id": "Q341",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(type(lambda:None).__name__) — output?",
+      "answer": "function"
+    },
+    {
+      "id": "Q342",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(isinstance(True,int)) — output?",
+      "answer": "True"
+    },
+    {
+      "id": "Q343",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(True+True) — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q344",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "print(True*5) — output?",
+      "answer": "5"
+    },
+    {
+      "id": "Q345",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Which Python keyword skips rest of loop body?",
+      "answer": "continue"
+    },
+    {
+      "id": "Q346",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "Python's else on a for loop executes when loop completes without?",
+      "answer": "break"
+    },
+    {
+      "id": "Q347",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "d={}; d.setdefault('x',[]); d['x'].append(1); print(d) — output key count?",
+      "answer": "1"
+    },
+    {
+      "id": "Q348",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "from collections import Counter; c=Counter('aabbc'); print(c['a']) — output?",
+      "answer": "2"
+    },
+    {
+      "id": "Q349",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "OUTPUT",
+      "question": "from collections import deque; d=deque([1,2,3]); d.appendleft(0); print(d[0]) — output?",
+      "answer": "0"
+    },
+    {
+      "id": "Q350",
+      "category": "PYTHON",
+      "difficulty": "HARD",
+      "type": "CONCEPT",
+      "question": "What is the name of Python's abstract base class module?",
+      "answer": "abc"
+    },
+    {
+      "id": "Q351",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What is the time complexity of binary search?",
+      "answer": "O(logN)"
+    },
+    {
+      "id": "Q352",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What data structure uses LIFO order?",
+      "answer": "stack"
+    },
+    {
+      "id": "Q353",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What data structure uses FIFO order?",
+      "answer": "queue"
+    },
+    {
+      "id": "Q354",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What is the time complexity of linear search in worst case?",
+      "answer": "O(N)"
+    },
+    {
+      "id": "Q355",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "Which sorting algorithm has guaranteed O(N log N) in all cases?",
+      "answer": "mergesort"
+    },
+    {
+      "id": "Q356",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What is the worst case time complexity of quicksort?",
+      "answer": "O(N2)"
+    },
+    {
+      "id": "Q357",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What sorting algorithm is best for nearly sorted data?",
+      "answer": "insertion"
+    },
+    {
+      "id": "Q358",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What data structure is used to implement a recursive function?",
+      "answer": "stack"
+    },
+    {
+      "id": "Q359",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What is the space complexity of merge sort?",
+      "answer": "O(N)"
+    },
+    {
+      "id": "Q360",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "In a binary tree, what is the maximum nodes at level L?",
+      "answer": "2L"
+    },
+    {
+      "id": "Q361",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What traversal visits left, root, right in a BST?",
+      "answer": "inorder"
+    },
+    {
+      "id": "Q362",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What traversal visits root, left, right?",
+      "answer": "preorder"
+    },
+    {
+      "id": "Q363",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What traversal visits left, right, root?",
+      "answer": "postorder"
+    },
+    {
+      "id": "Q364",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "Which data structure is used in BFS traversal?",
+      "answer": "queue"
+    },
+    {
+      "id": "Q365",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "Which data structure is used in DFS traversal?",
+      "answer": "stack"
+    },
+    {
+      "id": "Q366",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What is a hash collision resolution technique that uses linked lists?",
+      "answer": "chaining"
+    },
+    {
+      "id": "Q367",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What is the average time complexity for hash table lookup?",
+      "answer": "O(1)"
+    },
+    {
+      "id": "Q368",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "A priority queue is best implemented using which data structure?",
+      "answer": "heap"
+    },
+    {
+      "id": "Q369",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "In a max-heap, the root is always the?",
+      "answer": "maximum"
+    },
+    {
+      "id": "Q370",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DSA",
+      "question": "What is the height of a balanced BST with n nodes?",
+      "answer": "O(logN)"
+    },
+    {
+      "id": "Q371",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What does CPU scheduling algorithm FCFS stand for?",
+      "answer": "FCFS"
+    },
+    {
+      "id": "Q372",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What scheduling gives CPU to the process with shortest burst time?",
+      "answer": "SJF"
+    },
+    {
+      "id": "Q373",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What OS scheduling algorithm uses a time quantum?",
+      "answer": "roundrobin"
+    },
+    {
+      "id": "Q374",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What is a deadlock?",
+      "answer": "circular"
+    },
+    {
+      "id": "Q375",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "Which OS concept prevents a process from running too long?",
+      "answer": "preemption"
+    },
+    {
+      "id": "Q376",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What is the name for the table mapping virtual to physical addresses?",
+      "answer": "pagetable"
+    },
+    {
+      "id": "Q377",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What is swapping unused memory pages to disk called?",
+      "answer": "paging"
+    },
+    {
+      "id": "Q378",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What is the term for a process waiting indefinitely for a resource?",
+      "answer": "starvation"
+    },
+    {
+      "id": "Q379",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What synchronization primitive allows only one thread in critical section?",
+      "answer": "mutex"
+    },
+    {
+      "id": "Q380",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OS",
+      "question": "What is a semaphore with count > 1 called?",
+      "answer": "counting"
+    },
+    {
+      "id": "Q381",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "What does IP stand for?",
+      "answer": "Internet"
+    },
+    {
+      "id": "Q382",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "Which protocol guarantees reliable ordered delivery?",
+      "answer": "TCP"
+    },
+    {
+      "id": "Q383",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "Which protocol does NOT guarantee delivery?",
+      "answer": "UDP"
+    },
+    {
+      "id": "Q384",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "What port does HTTP use by default?",
+      "answer": "80"
+    },
+    {
+      "id": "Q385",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "What port does HTTPS use by default?",
+      "answer": "443"
+    },
+    {
+      "id": "Q386",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "What is the loopback IP address?",
+      "answer": "127.0.0.1"
+    },
+    {
+      "id": "Q387",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "What translates domain names to IP addresses?",
+      "answer": "DNS"
+    },
+    {
+      "id": "Q388",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "What layer of OSI model handles routing?",
+      "answer": "network"
+    },
+    {
+      "id": "Q389",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "How many layers does the OSI model have?",
+      "answer": "7"
+    },
+    {
+      "id": "Q390",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "NETWORKING",
+      "question": "What does MAC address stand for?",
+      "answer": "Media"
+    },
+    {
+      "id": "Q391",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "What does SQL stand for?",
+      "answer": "Structured"
+    },
+    {
+      "id": "Q392",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "Which SQL command retrieves data?",
+      "answer": "SELECT"
+    },
+    {
+      "id": "Q393",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "Which SQL command adds new records?",
+      "answer": "INSERT"
+    },
+    {
+      "id": "Q394",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "Which SQL command modifies existing data?",
+      "answer": "UPDATE"
+    },
+    {
+      "id": "Q395",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "Which SQL command removes records?",
+      "answer": "DELETE"
+    },
+    {
+      "id": "Q396",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "What constraint ensures uniqueness of a column?",
+      "answer": "UNIQUE"
+    },
+    {
+      "id": "Q397",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "What is a foreign key?",
+      "answer": "reference"
+    },
+    {
+      "id": "Q398",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "What SQL keyword filters groups?",
+      "answer": "HAVING"
+    },
+    {
+      "id": "Q399",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "What is the normal form that eliminates partial dependencies?",
+      "answer": "2NF"
+    },
+    {
+      "id": "Q400",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "DBMS",
+      "question": "What type of join returns all records from both tables?",
+      "answer": "FULL"
+    },
+    {
+      "id": "Q401",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What OOP principle hides internal details from outside?",
+      "answer": "encapsulation"
+    },
+    {
+      "id": "Q402",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What OOP principle allows a class to inherit from another?",
+      "answer": "inheritance"
+    },
+    {
+      "id": "Q403",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What OOP principle allows same method name to behave differently?",
+      "answer": "polymorphism"
+    },
+    {
+      "id": "Q404",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What OOP principle represents real-world entities as objects?",
+      "answer": "abstraction"
+    },
+    {
+      "id": "Q405",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What is a class that cannot be instantiated called?",
+      "answer": "abstract"
+    },
+    {
+      "id": "Q406",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What is overriding a method in a subclass called?",
+      "answer": "overriding"
+    },
+    {
+      "id": "Q407",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What is having multiple methods with same name but different params called?",
+      "answer": "overloading"
+    },
+    {
+      "id": "Q408",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What keyword refers to the current instance in Java and C++?",
+      "answer": "this"
+    },
+    {
+      "id": "Q409",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What design pattern ensures only one instance of a class exists?",
+      "answer": "singleton"
+    },
+    {
+      "id": "Q410",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "OOP",
+      "question": "What design pattern separates object construction from representation?",
+      "answer": "builder"
+    },
+    {
+      "id": "Q411",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command stages changes for commit?",
+      "answer": "add"
+    },
+    {
+      "id": "Q412",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command saves staged changes permanently?",
+      "answer": "commit"
+    },
+    {
+      "id": "Q413",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command uploads local commits to remote?",
+      "answer": "push"
+    },
+    {
+      "id": "Q414",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command downloads and merges remote changes?",
+      "answer": "pull"
+    },
+    {
+      "id": "Q415",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command creates a new branch?",
+      "answer": "branch"
+    },
+    {
+      "id": "Q416",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command switches between branches?",
+      "answer": "checkout"
+    },
+    {
+      "id": "Q417",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command merges another branch into current?",
+      "answer": "merge"
+    },
+    {
+      "id": "Q418",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command shows commit history?",
+      "answer": "log"
+    },
+    {
+      "id": "Q419",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command shows uncommitted changes?",
+      "answer": "status"
+    },
+    {
+      "id": "Q420",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "GIT",
+      "question": "What git command clones a remote repository locally?",
+      "answer": "clone"
+    },
+    {
+      "id": "Q421",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "SECURITY",
+      "question": "What type of attack injects malicious SQL into a query?",
+      "answer": "injection"
+    },
+    {
+      "id": "Q422",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "SECURITY",
+      "question": "What does XSS stand for in web security?",
+      "answer": "crosssite"
+    },
+    {
+      "id": "Q423",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "SECURITY",
+      "question": "What hashing algorithm produces a 256-bit digest?",
+      "answer": "SHA256"
+    },
+    {
+      "id": "Q424",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "SECURITY",
+      "question": "What type of encryption uses same key for encrypt and decrypt?",
+      "answer": "symmetric"
+    },
+    {
+      "id": "Q425",
+      "category": "TECH_CSE",
+      "difficulty": "MEDIUM",
+      "type": "SECURITY",
+      "question": "In RSA, which key is used to encrypt a message?",
+      "answer": "public"
+    },
+    {
+      "id": "Q426",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What is the time complexity of building a heap from an array?",
+      "answer": "O(N)"
+    },
+    {
+      "id": "Q427",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What is Dijkstra's algorithm used for?",
+      "answer": "shortest"
+    },
+    {
+      "id": "Q428",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What algorithm detects negative weight cycles in a graph?",
+      "answer": "Bellman"
+    },
+    {
+      "id": "Q429",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What graph algorithm finds minimum spanning tree greedily?",
+      "answer": "Kruskal"
+    },
+    {
+      "id": "Q430",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What is the time complexity of Floyd-Warshall algorithm?",
+      "answer": "O(N3)"
+    },
+    {
+      "id": "Q431",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What data structure does Prim's algorithm use to pick minimum edge?",
+      "answer": "heap"
+    },
+    {
+      "id": "Q432",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What property does a balanced BST maintain?",
+      "answer": "height"
+    },
+    {
+      "id": "Q433",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "AVL trees maintain balance by tracking what value per node?",
+      "answer": "balance"
+    },
+    {
+      "id": "Q434",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "Red-Black trees color nodes with which two colors?",
+      "answer": "red"
+    },
+    {
+      "id": "Q435",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What DP technique solves longest common subsequence?",
+      "answer": "memoization"
+    },
+    {
+      "id": "Q436",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What is the space complexity of DFS on a graph with V vertices?",
+      "answer": "O(V)"
+    },
+    {
+      "id": "Q437",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What is amortized time complexity of push on a dynamic array?",
+      "answer": "O(1)"
+    },
+    {
+      "id": "Q438",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What does topological sort require about a graph?",
+      "answer": "DAG"
+    },
+    {
+      "id": "Q439",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What data structure supports O(log N) insert and O(1) max?",
+      "answer": "heap"
+    },
+    {
+      "id": "Q440",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DSA",
+      "question": "What is the time complexity of inserting into a hash table in worst case?",
+      "answer": "O(N)"
+    },
+    {
+      "id": "Q441",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What is the name for a process that has finished but whose parent hasn't collected its status?",
+      "answer": "zombie"
+    },
+    {
+      "id": "Q442",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What is false sharing in CPU caches?",
+      "answer": "cacheline"
+    },
+    {
+      "id": "Q443",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What is the ABA problem in lock-free programming?",
+      "answer": "ABA"
+    },
+    {
+      "id": "Q444",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What CPU instruction atomically compares and swaps a value?",
+      "answer": "CAS"
+    },
+    {
+      "id": "Q445",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What does mmap system call do?",
+      "answer": "maps"
+    },
+    {
+      "id": "Q446",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What is the name for memory pages moved to disk?",
+      "answer": "swapped"
+    },
+    {
+      "id": "Q447",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What is thrashing in virtual memory systems?",
+      "answer": "thrashing"
+    },
+    {
+      "id": "Q448",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What POSIX function creates a new process?",
+      "answer": "fork"
+    },
+    {
+      "id": "Q449",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What POSIX function replaces process image with a new program?",
+      "answer": "exec"
+    },
+    {
+      "id": "Q450",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "Which page replacement algorithm causes Belady's anomaly?",
+      "answer": "FIFO"
+    },
+    {
+      "id": "Q451",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "Which page replacement algorithm is theoretically optimal?",
+      "answer": "optimal"
+    },
+    {
+      "id": "Q452",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What OS structure maps process virtual addresses to physical frames?",
+      "answer": "pagetable"
+    },
+    {
+      "id": "Q453",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What is a TLB used for in virtual memory?",
+      "answer": "translation"
+    },
+    {
+      "id": "Q454",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What synchronization issue causes two threads to block each other indefinitely?",
+      "answer": "deadlock"
+    },
+    {
+      "id": "Q455",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "OS",
+      "question": "What condition must be broken to prevent deadlock — mutual exclusion, hold and wait, no preemption, or circular wait?",
+      "answer": "circular"
+    },
+    {
+      "id": "Q456",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What is the purpose of TCP's TIME_WAIT state?",
+      "answer": "expiry"
+    },
+    {
+      "id": "Q457",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What TCP mechanism controls how much data sender can transmit before ACK?",
+      "answer": "window"
+    },
+    {
+      "id": "Q458",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What TCP algorithm reduces congestion window on packet loss?",
+      "answer": "slowstart"
+    },
+    {
+      "id": "Q459",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What does CIDR stand for in networking?",
+      "answer": "classless"
+    },
+    {
+      "id": "Q460",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "How many bits in an IPv4 address?",
+      "answer": "32"
+    },
+    {
+      "id": "Q461",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "How many bits in an IPv6 address?",
+      "answer": "128"
+    },
+    {
+      "id": "Q462",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What protocol does ping use?",
+      "answer": "ICMP"
+    },
+    {
+      "id": "Q463",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What is the maximum segment size in TCP called?",
+      "answer": "MSS"
+    },
+    {
+      "id": "Q464",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What OSI layer does TLS operate at?",
+      "answer": "session"
+    },
+    {
+      "id": "Q465",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "NETWORKING",
+      "question": "What is the name for splitting a large network into smaller ones?",
+      "answer": "subnetting"
+    },
+    {
+      "id": "Q466",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What does ACID stand for — first word?",
+      "answer": "Atomicity"
+    },
+    {
+      "id": "Q467",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What is a phantom read in database transactions?",
+      "answer": "phantom"
+    },
+    {
+      "id": "Q468",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What isolation level prevents dirty reads but allows non-repeatable reads?",
+      "answer": "committed"
+    },
+    {
+      "id": "Q469",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What does MVCC stand for?",
+      "answer": "multiversion"
+    },
+    {
+      "id": "Q470",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What index structure does most RDBMS use for primary keys?",
+      "answer": "Btree"
+    },
+    {
+      "id": "Q471",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What is a B+ tree's advantage over B-tree for range queries?",
+      "answer": "linked"
+    },
+    {
+      "id": "Q472",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What database property ensures changes survive crashes?",
+      "answer": "Durability"
+    },
+    {
+      "id": "Q473",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "In 3NF, every non-prime attribute must depend on what?",
+      "answer": "key"
+    },
+    {
+      "id": "Q474",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What is a lossless join decomposition requirement in normalization?",
+      "answer": "lossless"
+    },
+    {
+      "id": "Q475",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "DBMS",
+      "question": "What technique does database WAL use for crash recovery?",
+      "answer": "logging"
+    },
+    {
+      "id": "Q476",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What does CPU cache L1 store that makes it faster than L2?",
+      "answer": "smaller"
+    },
+    {
+      "id": "Q477",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What is the name for out-of-order CPU instruction execution?",
+      "answer": "speculative"
+    },
+    {
+      "id": "Q478",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What CPU vulnerability exploited speculative execution in 2018?",
+      "answer": "Spectre"
+    },
+    {
+      "id": "Q479",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What memory ordering fence prevents all reordering?",
+      "answer": "full"
+    },
+    {
+      "id": "Q480",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What is the name for CPU pipeline stall caused by data dependency?",
+      "answer": "hazard"
+    },
+    {
+      "id": "Q481",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SECURITY",
+      "question": "What attack exploits same-origin policy via forged requests?",
+      "answer": "CSRF"
+    },
+    {
+      "id": "Q482",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SECURITY",
+      "question": "What cryptographic protocol provides forward secrecy?",
+      "answer": "DHE"
+    },
+    {
+      "id": "Q483",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SECURITY",
+      "question": "What type of attack is dictionary attack targeting?",
+      "answer": "password"
+    },
+    {
+      "id": "Q484",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SECURITY",
+      "question": "What function combines password with random data before hashing?",
+      "answer": "salt"
+    },
+    {
+      "id": "Q485",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SECURITY",
+      "question": "What does PKI stand for?",
+      "answer": "infrastructure"
+    },
+    {
+      "id": "Q486",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What is consistent hashing used for in distributed systems?",
+      "answer": "remapping"
+    },
+    {
+      "id": "Q487",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What does the CAP theorem say cannot all be guaranteed simultaneously?",
+      "answer": "three"
+    },
+    {
+      "id": "Q488",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What consistency model do most NoSQL databases provide?",
+      "answer": "eventual"
+    },
+    {
+      "id": "Q489",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What pattern distributes reads across multiple database replicas?",
+      "answer": "replication"
+    },
+    {
+      "id": "Q490",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What algorithm achieves consensus in distributed systems?",
+      "answer": "Raft"
+    },
+    {
+      "id": "Q491",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "COMPLEXITY",
+      "question": "What complexity class contains problems solvable in polynomial time?",
+      "answer": "P"
+    },
+    {
+      "id": "Q492",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "COMPLEXITY",
+      "question": "What complexity class contains problems verifiable in polynomial time?",
+      "answer": "NP"
+    },
+    {
+      "id": "Q493",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "COMPLEXITY",
+      "question": "What is the most difficult problem in NP called?",
+      "answer": "NP-hard"
+    },
+    {
+      "id": "Q494",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "COMPLEXITY",
+      "question": "Is the travelling salesman problem NP-complete?",
+      "answer": "yes"
+    },
+    {
+      "id": "Q495",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "COMPLEXITY",
+      "question": "What technique reduces one problem to another to prove NP-hardness?",
+      "answer": "reduction"
+    },
+    {
+      "id": "Q496",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What is the name for the process of converting object to byte stream?",
+      "answer": "serialization"
+    },
+    {
+      "id": "Q497",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What architectural pattern separates read and write operations?",
+      "answer": "CQRS"
+    },
+    {
+      "id": "Q498",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What is the name for building software as small independent services?",
+      "answer": "microservices"
+    },
+    {
+      "id": "Q499",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What type of queue allows publisher and subscriber to be decoupled?",
+      "answer": "message"
+    },
+    {
+      "id": "Q500",
+      "category": "TECH_CSE",
+      "difficulty": "HARD",
+      "type": "SYSTEMS",
+      "question": "What does CDN stand for?",
+      "answer": "network"
+    }
+  ]
+}

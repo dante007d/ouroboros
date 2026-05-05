@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import LeaderboardDashboard from './components/LeaderboardDashboard';
-import { BOOT, THOUGHTS, ROOMS, PZ, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE } from './data';
+import { BOOT, THOUGHTS, ROOMS, PZ, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE, SAVAGES, TIMER_INSULTS } from './data';
 
 const PM = {};
 PZ.forEach(p => { PM[p.id] = p; });
@@ -13,7 +13,7 @@ const App = () => {
   const [bootLines, setBootLines] = useState([]);
   const [name, setName] = useState('');
   const [S, setS] = useState({
-    id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, score: 0, path: ['L0-0'], waiting: false
+    id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: ''
   });
   
   const [leaderboard, setLeaderboard] = useState({ players: [], totalSouls: 0 });
@@ -27,7 +27,39 @@ const App = () => {
   const [timerActive, setTimerActive] = useState(false);
   const [feedback, setFeedback] = useState({ msg: '', status: '' });
   const [hintVisible, setHintVisible] = useState(false);
+  const [failAnswerOverlay, setFailAnswerOverlay] = useState(null);
   const [roomChoices, setRoomChoices] = useState([]);
+
+  // Persistence: Load initial state from localStorage if available
+  useEffect(() => {
+    const savedName = localStorage.getItem('ouro_name');
+    const savedS = localStorage.getItem('ouro_state');
+    const defaultS = { 
+      id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
+      maxLv: 1, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['L0-0'], 
+      waiting: false, hintUsed: false, savageMsg: '' 
+    };
+
+    if (savedName) setName(savedName);
+    if (savedS) {
+      try {
+        const parsed = JSON.parse(savedS);
+        // Merge parsed state with default state to handle new fields (like hintsLeft)
+        setS({ ...defaultS, ...parsed, waiting: false, streak: 0 });
+      } catch (e) { 
+        console.error("Failed to load state", e); 
+        setS(defaultS);
+      }
+    }
+  }, []);
+
+  // Persistence: Save state whenever S or name changes
+  useEffect(() => {
+    if (name) localStorage.setItem('ouro_name', name);
+    if (S.solved > 0 || S.id !== 'L0-0') {
+      localStorage.setItem('ouro_state', JSON.stringify(S));
+    }
+  }, [S, name]);
 
   // Socket
   useEffect(() => {
@@ -62,10 +94,27 @@ const App = () => {
         maxLv: S.maxLv,
         score: S.score,
         solved: S.solved,
-        cps: S.cps
+        cps: S.cps,
+        fails: S.totalFails,
+        hintsUsed: S.hintsUsed
       });
     }
-  }, [S.maxLv, S.score, S.solved, S.cps, screen]);
+  }, [S.maxLv, S.score, S.solved, S.cps, S.totalFails, S.hintsUsed, screen]);
+
+  // Socket listeners for Admin actions
+  useEffect(() => {
+    socket.on('force_dq', (targetId) => {
+      // Check if THIS client is the one being DQ'd
+      if (socket.id === targetId) {
+        console.log("!! DISQUALIFIED BY ADMINISTRATOR !!");
+        setScreen('end');
+        setS(prev => ({ ...prev, status: 'disqualified' }));
+      }
+    });
+    return () => {
+      socket.off('force_dq');
+    };
+  }, []);
 
   const showToast = (msg, type) => {
     setToast({ msg, type });
@@ -74,7 +123,7 @@ const App = () => {
 
   const startGame = () => {
     const code = accessCode.trim().toUpperCase();
-    if (code === 'ADMIN') {
+    if (code === 'FUCK IEEE') {
       setScreen('admin');
       return;
     }
@@ -100,22 +149,33 @@ const App = () => {
   const doSubmit = () => {
     if (S.waiting) return;
     const p = PM[S.id];
-    const raw = answerInput.trim().toLowerCase();
+    if (!p || !p.a) return;
+
+    const raw = answerInput.trim().toLowerCase().replace(/[.,!?;:]+$/, "");
     if (!raw) return;
 
-    const ok = p.a.some(a => raw === a.toLowerCase() || raw.includes(a.toLowerCase()) || a.toLowerCase().includes(raw));
+    const ok = p.a.some(a => {
+      const normalizedA = a.toString().toLowerCase().trim().replace(/[.,!?;:]+$/, "");
+      return raw === normalizedA;
+    });
     
     if (ok) {
       setTimerActive(false);
       setFeedback({ msg: '>> TRANSMISSION ACCEPTED. THE CYCLE DEEPENS...', status: 'ok' });
       setFailCount(0);
-      let newS = { ...S, solved: S.solved + 1, streak: S.streak + 1, score: S.score + p.lv * 100 };
+
+      let newS = { 
+        ...S, 
+        solved: S.solved + 1, 
+        streak: S.hintUsed ? 0 : S.streak + 1, 
+        hintUsed: false 
+      };
+
       if (p.lv > newS.maxLv) newS.maxLv = p.lv;
       
       if (p.lv > 0 && p.lv % 3 === 0) {
         newS.cps += 1;
-        newS.score += 500;
-        newS.cpData = { id: S.id, score: newS.score, solved: newS.solved, path: [...S.path] };
+        newS.cpData = { id: S.id, solved: newS.solved, hintsLeft: newS.hintsLeft, path: [...S.path] };
         setCpBanner(true);
         setTimeout(() => setCpBanner(false), 3500);
       }
@@ -131,10 +191,12 @@ const App = () => {
             const nextLv = Math.min(...availableLevels);
             const nextPuzzles = PZ.filter(pz => pz.lv === nextLv);
             setS(prev => ({ ...prev, waiting: true }));
-            // Instead of client-side Math.random(), pick deterministically so all players get the same puzzle at this level.
-            // (The puzzles were already globally shuffled by patch_data.js)
-            const pool = [ROOMS[nextLv % ROOMS.length]];
-            const choices = [nextPuzzles[0]];
+            
+            // Randomly pick ONE puzzle from the pool for this level
+            const randomPuzzle = nextPuzzles[Math.floor(Math.random() * nextPuzzles.length)];
+            const roomIdx = Math.floor(nextLv) % ROOMS.length;
+            const pool = [ROOMS[roomIdx]];
+            const choices = [randomPuzzle];
             setRoomChoices(choices.map((c, i) => ({ cid: c.id, room: pool[i] || ROOMS[0] })));
           } else {
             endGame(true);
@@ -148,32 +210,50 @@ const App = () => {
 
   const triggerFail = (reason = 'incorrect') => {
     setTimerActive(false);
+    const insult = SAVAGES[Math.floor(Math.random() * SAVAGES.length)];
+    
     if (reason === 'timeout') {
-      setFeedback({ msg: 'X TIME EXPIRED. THE CYCLE REJECTS YOU.', status: 'bad' });
+      setFeedback({ msg: `X TIME EXPIRED. ${insult}`, status: 'bad' });
     } else {
-      setFeedback({ msg: 'X INCORRECT. THE SNAKE SWALLOWS YOU WHOLE.', status: 'bad' });
+      setFeedback({ msg: `X INCORRECT. ${insult}`, status: 'bad' });
     }
+    
+    setS(prev => ({ ...prev, streak: 0, savageMsg: insult, totalFails: prev.totalFails + 1 }));
+    setFailAnswerOverlay(insult);
+    showToast(`!! ${insult}`, 'err');
     
     const nextFailCount = failCount + 1;
     setFailCount(nextFailCount);
-    setS(prev => ({ ...prev, streak: 0 }));
     
     setTimeout(() => {
+      setFailAnswerOverlay(null);
+      const getRandId = (lv) => {
+        const pool = PZ.filter(p => p.lv === lv);
+        return pool[Math.floor(Math.random() * pool.length)].id;
+      };
+
       if (nextFailCount >= 2) {
-        setS(prev => ({ ...prev, id: 'L0-0', path: ['L0-0'], streak: 0, waiting: false }));
+        // PUNISHMENT: RESET TO BEGINNING
+        const resetS = { id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, hintsLeft: 15, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' };
+        setS(resetS);
         setFailCount(0);
-        showToast('X CONSECUTIVE FAILURE: RESET TO BEGINNING', 'err');
+        showToast('X CONSECUTIVE FAILURE: FULL RESET', 'err');
       } else if (S.cpData) {
-        setS(prev => ({ ...prev, id: prev.cpData.id, score: prev.cpData.score, solved: prev.cpData.solved, path: [...prev.cpData.path], streak: 0, waiting: false }));
+        // PUNISHMENT: RETURN TO LAST CHECKPOINT
+        const cpPuz = PM[S.cpData.id];
+        const newId = getRandId(cpPuz.lv);
+        setS(prev => ({ ...prev, id: newId, solved: prev.cpData.solved, hintsLeft: prev.cpData.hintsLeft, path: [...prev.cpData.path], streak: 0, waiting: false, hintUsed: false, savageMsg: '' }));
         showToast('| CHECKPOINT RESTORED', 'cp');
       } else {
+        // PUNISHMENT: NO CHECKPOINT RESET
+        // No checkpoint found. Back to the start.
         setS(prev => ({ ...prev, id: 'L0-0', path: ['L0-0'], streak: 0, waiting: false }));
         showToast('X RETURNED TO THE BEGINNING', 'err');
       }
       setFeedback({ msg: '', status: '' });
       setAnswerInput('');
       setHintVisible(false);
-    }, 1400);
+    }, 3000);
   };
 
   // Timer countdown
@@ -181,7 +261,15 @@ const App = () => {
     let interval = null;
     if (timerActive && timeLeft > 0) {
       interval = setInterval(() => {
-        setTimeLeft(prev => prev - 1);
+        setTimeLeft(prev => {
+          const next = prev - 1;
+          if (next === 20) {
+            const insult = TIMER_INSULTS[Math.floor(Math.random() * TIMER_INSULTS.length)];
+            setS(s => ({ ...s, savageMsg: insult }));
+            showToast(`!! ${insult}`, 'warn');
+          }
+          return next;
+        });
       }, 1000);
     } else if (timeLeft === 0 && timerActive) {
       triggerFail('timeout');
@@ -193,7 +281,12 @@ const App = () => {
   useEffect(() => {
     if (screen === 'game' && S.id) {
       const p = PM[S.id];
-      const duration = p.lv > 30 ? 45 : 60;
+      // Updated Timer Logic: Medium = 45s, Hard = 60s
+      let duration = 60;
+      if (p.difficulty === 'MEDIUM') duration = 45;
+      else if (p.difficulty === 'HARD') duration = 60;
+      else duration = 60; // Default for Lore/Easy
+      
       setTimeLeft(duration);
       setTimerActive(true);
     } else {
@@ -217,8 +310,15 @@ const App = () => {
     });
   };
 
+  const disqualifyPlayer = (id) => {
+    console.log(`[ADMIN] Requesting DQ for: ${id}`);
+    if (window.confirm("ARE YOU SURE YOU WANT TO DISQUALIFY THIS SOUL?")) {
+      socket.emit('disqualify', id);
+    }
+  };
+
   const handleRoomSelect = (cid) => {
-    setS(prev => ({ ...prev, path: [...prev.path, cid], id: cid, waiting: false }));
+    setS(prev => ({ ...prev, path: [...prev.path, cid], id: cid, waiting: false, hintUsed: false }));
     setRoomChoices([]);
     setFeedback({ msg: '', status: '' });
     setAnswerInput('');
@@ -226,9 +326,24 @@ const App = () => {
   };
 
   const showHint = () => {
+    if (S.hintUsed) return;
+    if (S.hintsLeft <= 0) {
+      showToast('X THE WELL OF WISDOM IS DRY. YOU ARE ON YOUR OWN.', 'err');
+      return;
+    }
+
+    const insult = SAVAGES[Math.floor(Math.random() * SAVAGES.length)];
+
     setHintVisible(true);
-    setS(prev => ({ ...prev, score: Math.max(0, prev.score - 50) }));
-    showToast('!! HINT UNLOCKED [-50 PTS]', 'err');
+    setS(prev => ({ 
+      ...prev, 
+      hintsLeft: prev.hintsLeft - 1,
+      hintsUsed: prev.hintsUsed + 1,
+      streak: 0,
+      hintUsed: true,
+      savageMsg: insult
+    }));
+    showToast(`!! ${insult}`, 'err');
   };
 
   const currPZ = PM[S.id];
@@ -261,12 +376,16 @@ const App = () => {
       {(screen === 'game' || screen === 'end') && (
         <div id="hud" style={{ display: 'block' }}>
             <div className="hi">
-              <div className="hl">| AGENT: <span>{name.toUpperCase() || 'UNKNOWN'}</span> &nbsp;-&gt;&nbsp; DEPTH: LV<span>{S.maxLv}</span>/60</div>
+              <div className="hl" style={{ fontSize: '1.2rem' }}>
+                | AGENT: <span style={{ color: 'var(--c1)' }}>{name.toUpperCase() || 'UNKNOWN'}</span> 
+                &nbsp;&nbsp;&nbsp;
+                | DEPTH: <span style={{ color: 'var(--c5)', fontWeight: 'bold' }}>LV {currPZ ? currPZ.lv : S.maxLv}</span>/60
+              </div>
               <div className="hr">
-                <div className={`hs ${timeLeft < 10 ? 'blood' : ''}`} style={{ border: '1px solid var(--d2)', padding: '0 8px' }}>
-                  TIME: <b style={{ color: timeLeft < 10 ? 'var(--c2)' : 'var(--c5)' }}>{timeLeft}s</b>
+                <div className={`hs ${timeLeft < 10 ? 'blood' : ''}`} style={{ border: '2px solid var(--c4)', padding: '4px 12px', fontSize: '1.3rem' }}>
+                  TIME: <b style={{ color: timeLeft < 10 ? 'var(--c2)' : 'var(--c5)', textShadow: timeLeft < 10 ? '0 0 10px var(--c2)' : 'none' }}>{timeLeft}s</b>
                 </div>
-                <div className="hs">SCORE: <b>{S.score}</b></div>
+                <div className="hs" style={{ fontSize: '1.1rem' }}>HINTS: <b style={{ color: (S.hintsLeft || 0) < 5 ? 'var(--c2)' : 'var(--c1)' }}>{S.hintsLeft ?? 15}</b></div>
                 <div className="cpr">
                   [<div className={`cpd ${S.streak > 0 ? 'on' : ''}`}></div>
                    <div className={`cpd ${S.streak > 1 ? 'on' : ''}`}></div>
@@ -356,7 +475,7 @@ const App = () => {
               <div className="nlabel">!! ENTER ACCESS CODE !!</div>
               <div className="nwrap">
                 <div className="nprompt">C:\&gt;</div>
-                <input className="ninput" type="text" maxLength="20" placeholder="ACCESS CODE_" 
+                <input className="ninput" type="password" maxLength="20" placeholder="ACCESS CODE_" 
                   value={accessCode} onChange={e => setAccessCode(e.target.value)} 
                   onKeyDown={e => { if (e.key === 'Enter') startGame(); }} />
                 <div className="ncursor"></div>
@@ -364,11 +483,12 @@ const App = () => {
             </div>
 
             <div className="sysbox" data-l="[ LAWS OF THE ETERNAL CYCLE ]">
-              <div className="rp">  <span className="rh">*</span> SOLVE A RIDDLE   -&gt;   THREE NEW CHAMBERS OPEN<br/>
-  <span className="rh">*</span> ANSWER WRONG     -&gt;   RETURNED TO THE BEGINNING<br/>
-  <span className="rh">*</span> EVERY 3 SOLVED   -&gt;   CHECKPOINT INSCRIBED IN THE FLESH<br/>
-  <span className="rh">*</span> CHECKPOINT       -&gt;   RESTORE LAST SAVE POINT<br/>
-  <span className="rv">*</span> WINNER           -&gt;   DEEPEST LEVEL + MOST CHECKPOINTS<br/>
+              <div className="rp">  <span className="rh">*</span> SOLVE A RIDDLE   -&gt;   THE NEXT CHAMBER OPENS<br/>
+  <span className="rh">*</span> FIRST FAILURE    -&gt;   RETRACE TO LAST CHECKPOINT<br/>
+  <span className="rh">*</span> SECOND FAILURE   -&gt;   TOTAL COLLAPSE & FULL RESET<br/>
+  <span className="rh">*</span> EVERY 3 SOLVED    -&gt;   CHECKPOINT INSCRIBED IN FLESH<br/>
+  <span className="rv">*</span> HINT POOL        -&gt;   15 USES TOTAL. ONCE GONE, VOID.<br/>
+  <span className="rv">*</span> PERSISTENCE      -&gt;   THE CYCLE IS REMEMBERED ON LOAD<br/>
   <span className="rd">* THE SNAKE ALWAYS FINDS ITS WAY BACK TO ITS OWN MOUTH *</span></div>
             </div>
 
@@ -393,9 +513,35 @@ const App = () => {
       )}
 
       {screen === 'game' && (
-        <div className="screen" id="gameScreen">
+        <div className={`screen ${timeLeft < 10 ? 'unstable' : ''}`} id="gameScreen">
           <div className="gi">
             <div className="dl poison" style={{ fontSize: '12px' }}>--------------------------------------------------------------------------------------------------</div>
+            <div className="hud">
+              <div className="stat">
+                <div className="label">SOLVED</div>
+                <div className="value">{S.solved}</div>
+              </div>
+              <div className="stat">
+                <div className="label">STREAK</div>
+                <div className="value" style={{ color: S.streak > 4 ? 'var(--c1)' : 'inherit' }}>{S.streak}</div>
+              </div>
+              <div className="stat">
+                <div className="label">HINTS</div>
+                <div className="value" style={{ color: S.hintsLeft < 5 ? 'var(--c2)' : 'inherit' }}>{S.hintsLeft}</div>
+              </div>
+              <div className={`stat ${timeLeft <= 10 ? 'urgent' : timeLeft <= 20 ? 'warning' : ''}`}>
+                <div className="label">TIME</div>
+                <div className="value-wrap">
+                  <div className="value" key={timeLeft}>{timeLeft}s</div>
+                  <div className="timer-bar">
+                    <div 
+                      className="timer-progress" 
+                      style={{ width: `${(timeLeft / 60) * 100}%` }}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="bc" id="bc">
               <span className="bc">ROOT</span>
               {S.path.slice(1).map((p, i) => (
@@ -411,12 +557,19 @@ const App = () => {
                 <div className="acard-top">+========================================================================+</div>
                 <div className="acard-body">
                   <div className="chdr">
-                    <div className="clv">* CHAMBER DEPTH {currPZ?.lv}/60 *</div>
+                    <div className="clv">
+                      <span className="gtag purple">{currPZ?.difficulty || 'CORE'}</span>
+                      <span className="gtag cyan">{currPZ?.type}</span>
+                      <span style={{ marginLeft: '10px', color: 'var(--c5)', fontWeight: 'bold' }}>* CHAMBER DEPTH {currPZ?.lv}/60 *</span>
+                    </div>
                     <div className="cid">SIG:{currPZ?.id}</div>
                   </div>
                   <div className="dl blood" style={{ fontSize: '12px', marginBottom: '8px' }}>------------------------------------------------------------------------</div>
                   <div className="pq">{currPZ?.q}</div>
-                  <div className={`phint ${hintVisible ? 'vis' : ''}`}>HINT: {currPZ?.h}</div>
+                  <div className={`phint ${hintVisible ? 'vis' : ''}`}>
+                    <div style={{ color: 'var(--c2)', fontWeight: 'bold', marginBottom: '4px', textDecoration: 'underline' }}>SYSTEM LOG: {S.savageMsg}</div>
+                    HINT: {currPZ?.h}
+                  </div>
                   <div className="dl vio" style={{ fontSize: '12px', marginBottom: '8px' }}>------------------------------------------------------------------------</div>
                   <div className="aa">
                     <div className="ap">&gt;&gt;&gt;</div>
@@ -458,24 +611,29 @@ const App = () => {
             </div>
             <div className="dl poison" style={{ fontSize: '12px' }}>--------------------------------------------------------------------------------------------------</div>
           </div>
-          <LeaderboardDashboard players={leaderboard.players} totalSouls={leaderboard.totalSouls} />
         </div>
       )}
 
       {screen === 'end' && (
         <div className="screen" id="endScreen">
-          <pre className={`eart ${socket.connected ? 'win' : 'lose'}`}>{socket.connected ? WIN_ART : LOSE_ART}</pre>
-          <div className={`etitle ${socket.connected ? 'win' : 'lose'}`}>{socket.connected ? 'o CYCLE BROKEN o' : 'X CONSUMED X'}</div>
+          <pre className={`eart ${S.status === 'disqualified' ? 'lose' : (socket.connected ? 'win' : 'lose')}`}>
+            {S.status === 'disqualified' ? LOSE_ART : (socket.connected ? WIN_ART : LOSE_ART)}
+          </pre>
+          <div className={`etitle ${S.status === 'disqualified' ? 'lose' : (socket.connected ? 'win' : 'lose')}`}>
+            {S.status === 'disqualified' ? 'X DISQUALIFIED X' : (socket.connected ? 'o CYCLE BROKEN o' : 'X CONSUMED X')}
+          </div>
           <div className="ebox">
+            <div className="erow" style={{ color: 'var(--c2)', fontWeight: 'bold', textAlign: 'center', display: S.status === 'disqualified' ? 'block' : 'none', marginBottom: '10px' }}>
+              !!! THE HIGH COMMAND HAS SEVERED YOUR THREAD !!!
+            </div>
             <div className="erow"><label>- AGENT ID</label><value>{name.toUpperCase()}</value></div>
             <div className="erow"><label>- DEEPEST LEVEL</label><value>{S.maxLv}/60</value></div>
             <div className="erow"><label>- RIDDLES SOLVED</label><value>{S.solved}</value></div>
+            <div className="erow"><label>- HINTS REMAINING</label><value>{S.hintsLeft}</value></div>
             <div className="erow"><label>- CHECKPOINTS</label><value>{S.cps}</value></div>
-            <div className="erow"><label>- FINAL SCORE</label><value><span className="sbig">{S.score + S.cps * 200}</span></value></div>
           </div>
           <pre className="eart">{socket.connected ? WIN_SNAKE : LOSE_SNAKE}</pre>
-          <button className="btn btn-p" onClick={() => { socket.emit('join', { name }); setScreen('game'); setS({ id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, score: 0, path: ['L0-0'], waiting: false }); }}>&gt; RE-ENTER THE CYCLE &lt;</button>
-          <LeaderboardDashboard players={leaderboard.players} totalSouls={leaderboard.totalSouls} />
+          <button className="btn btn-p" onClick={() => { socket.emit('join', { name }); setScreen('game'); setS({ id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, hintsLeft: 15, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' }); }}>&gt; RE-ENTER THE CYCLE &lt;</button>
         </div>
       )}
 
@@ -493,7 +651,12 @@ const App = () => {
             borderRadius: '4px',
             marginBottom: '20px'
           }}>
-            <LeaderboardDashboard players={leaderboard.players} totalSouls={leaderboard.totalSouls} isFullScreen={true} />
+            <LeaderboardDashboard 
+              players={leaderboard.players} 
+              totalSouls={leaderboard.totalSouls} 
+              isFullScreen={true} 
+              onDisqualify={disqualifyPlayer}
+            />
           </div>
           <div className="dl bright">==================================================================================</div>
           <div style={{ textAlign: 'center', marginTop: '20px' }}>
@@ -505,10 +668,27 @@ const App = () => {
       {toast && <div id="toast" className={`show ${toast.type}`}>{toast.msg}</div>}
       <div id="cpbanner" className={cpBanner ? 'show' : ''}>| CHECKPOINT {S.cps} INSCRIBED [+500] |</div>
 
+      {failAnswerOverlay && (
+        <div id="failOverlay" className="show">
+          <div className="fail-content">
+            <div className="fail-label">SYSTEM FAILURE:</div>
+            <div className="fail-answer">{failAnswerOverlay.toUpperCase()}</div>
+            <div className="fail-sub">RE-CALIBRATING CYCLE...</div>
+          </div>
+        </div>
+      )}
+
       {modal && (
         <div id="modal" className="show" onClick={() => setModal(null)}>
           <div className="mbox" onClick={e => e.stopPropagation()}>
             <div className="mhdr"><span>### OUROBOROS SYSTEM ###</span><span>{modal.title}</span></div>
+            <div className="gsec" id="gsec">
+              <div className="ginfo">
+                <span className="gtag purple">{currPZ.difficulty || 'CORE'}</span>
+                <span className="gtag cyan">{currPZ.type}</span>
+                <span className="gtag gold" style={{ border: '1px solid var(--c5)', color: 'var(--c5)', fontWeight: 'bold' }}>CHAMBER LV {currPZ.lv}</span>
+              </div>
+            </div>
             <div className="mbody">
               <div className="micon">{modal.icon}</div>
               <div className="mtitle">{modal.title}</div>

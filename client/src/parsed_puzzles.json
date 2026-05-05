@@ -1,1012 +1,5513 @@
 [
   {
-    "id": "PZ-1",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER A?",
-    "h": "SING THE ABC SONG AND STOP AFTER THE FIRST LETTER",
-    "a": [
-      "B"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-2",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER B?",
-    "h": "A, B, ... WHAT COMES NEXT?",
-    "a": [
-      "C"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-3",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT LETTER COMES AFTER D?",
-    "h": "A B C D ... WHAT COMES NEXT?",
-    "a": [
-      "E"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-4",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT LETTER COMES AFTER F?",
-    "h": "... E F ... WHAT IS NEXT?",
-    "a": [
-      "G"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-5",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER H?",
-    "h": "G H ... WHAT COMES NEXT?",
-    "a": [
-      "I"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-6",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT LETTER COMES AFTER J?",
-    "h": "I J ... WHAT COMES NEXT?",
-    "a": [
-      "K"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-7",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT LETTER COMES AFTER L?",
-    "h": "K L ... WHAT COMES NEXT?",
-    "a": [
-      "M"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-8",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER M?",
-    "h": "L M ... WHAT COMES NEXT?",
-    "a": [
-      "N"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-9",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER N?",
-    "h": "M N ... WHAT COMES NEXT?",
-    "a": [
-      "O"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-10",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT LETTER COMES AFTER O?",
-    "h": "N O ... WHAT COMES NEXT?",
-    "a": [
-      "P"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-11",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER P?",
-    "h": "O P ... WHAT COMES NEXT?",
-    "a": [
-      "Q"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-12",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT LETTER COMES AFTER Q?",
-    "h": "P Q ... WHAT COMES NEXT?",
-    "a": [
-      "R"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-13",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT LETTER COMES AFTER S?",
-    "h": "R S ... WHAT COMES NEXT?",
-    "a": [
-      "T"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-14",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER T?",
-    "h": "S T ... WHAT COMES NEXT?",
-    "a": [
-      "U"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-15",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT LETTER COMES AFTER W?",
-    "h": "V W ... WHAT COMES NEXT?",
-    "a": [
-      "X"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-16",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT LETTER COMES AFTER X?",
-    "h": "W X ... WHAT COMES NEXT?",
-    "a": [
-      "Y"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-17",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS THE LAST LETTER OF THE ALPHABET?",
-    "h": "A B C ... ALL THE WAY TO THE END",
-    "a": [
-      "Z"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-18",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS THE FIRST LETTER OF THE ALPHABET?",
-    "h": "THE VERY BEGINNING OF THE ABC SONG",
-    "a": [
-      "A"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-19",
-    "lv": 1,
-    "q": "CARVED IN BONE: HOW MANY LETTERS ARE IN THE ALPHABET?",
-    "h": "COUNT ALL THE LETTERS FROM A TO Z",
-    "a": [
-      "26"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-20",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT ARE THE 5 VOWELS?",
-    "h": "THEY ARE THE SINGING LETTERS — A, ?, ?, ?, ?",
-    "a": [
-      "A E I O U"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-21",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: IS THE LETTER B A VOWEL OR CONSONANT?",
-    "h": "VOWELS ARE ONLY A E I O U",
-    "a": [
-      "CONSONANT"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-22",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: IS THE LETTER E A VOWEL OR CONSONANT?",
-    "h": "VOWELS ARE A E I O U",
-    "a": [
-      "VOWEL"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-23",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 1 + 1?",
-    "h": "ONE APPLE PLUS ONE MORE APPLE",
-    "a": [
-      "2"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-24",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT IS 2 + 2?",
-    "h": "TWO FINGERS PLUS TWO MORE FINGERS",
-    "a": [
-      "4"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-25",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 3 + 3?",
-    "h": "THREE STARS PLUS THREE MORE STARS",
-    "a": [
-      "6"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-26",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 4 + 4?",
-    "h": "FOUR PLUS FOUR",
-    "a": [
-      "8"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-27",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 5 + 5?",
-    "h": "ALL THE FINGERS ON ONE HAND PLUS ALL ON THE OTHER",
-    "a": [
-      "10"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-28",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 6 + 4?",
-    "h": "SIX PLUS FOUR — COUNT ON YOUR FINGERS",
-    "a": [
-      "10"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-29",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 7 + 3?",
-    "h": "SEVEN PLUS THREE",
-    "a": [
-      "10"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-30",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 2 + 3?",
-    "h": "TWO BALLOONS PLUS THREE MORE BALLOONS",
-    "a": [
-      "5"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-31",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 1 + 4?",
-    "h": "ONE COOKIE PLUS FOUR COOKIES",
-    "a": [
-      "5"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-32",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 8 + 2?",
-    "h": "EIGHT PLUS TWO",
-    "a": [
-      "10"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-33",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 9 - 1?",
-    "h": "NINE MINUS ONE — TAKE ONE AWAY",
-    "a": [
-      "8"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-34",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 5 - 2?",
-    "h": "FIVE FINGERS, PUT DOWN TWO",
-    "a": [
-      "3"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-35",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 10 - 5?",
-    "h": "TEN MINUS FIVE",
-    "a": [
-      "5"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-36",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 1 × 1?",
-    "h": "1 TIMES TABLE — 1 GROUP OF 1",
-    "a": [
-      "1"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-37",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 2 × 1?",
-    "h": "2 TIMES TABLE — 2 GROUPS OF 1",
-    "a": [
-      "2"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-38",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS 2 × 2?",
-    "h": "2 TIMES TABLE — 2 GROUPS OF 2",
-    "a": [
-      "4"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-39",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS 2 × 3?",
-    "h": "2 TIMES TABLE — 2 GROUPS OF 3",
-    "a": [
-      "6"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-40",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS 2 × 4?",
-    "h": "2 TIMES TABLE — 2 GROUPS OF 4",
-    "a": [
-      "8"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-41",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS 2 × 5?",
-    "h": "2 TIMES TABLE — 2 GROUPS OF 5",
-    "a": [
-      "10"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-42",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 3 × 1?",
-    "h": "3 TIMES TABLE — 3 GROUPS OF 1",
-    "a": [
-      "3"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-43",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT IS 3 × 2?",
-    "h": "3 TIMES TABLE — 3 GROUPS OF 2",
-    "a": [
-      "6"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-44",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 3 × 3?",
-    "h": "3 TIMES TABLE — 3 GROUPS OF 3",
-    "a": [
-      "9"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-45",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 3 × 4?",
-    "h": "3 TIMES TABLE — 3 GROUPS OF 4",
-    "a": [
-      "12"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-46",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 3 × 5?",
-    "h": "3 TIMES TABLE — 3 GROUPS OF 5",
-    "a": [
-      "15"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-47",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 4 × 1?",
-    "h": "4 TIMES TABLE — 4 GROUPS OF 1",
-    "a": [
-      "4"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-48",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 4 × 2?",
-    "h": "4 TIMES TABLE — 4 GROUPS OF 2",
-    "a": [
-      "8"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-49",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 4 × 3?",
-    "h": "4 TIMES TABLE — 4 GROUPS OF 3",
-    "a": [
-      "12"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-50",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 4 × 4?",
-    "h": "4 TIMES TABLE — 4 GROUPS OF 4",
-    "a": [
-      "16"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-51",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS 4 × 5?",
-    "h": "4 TIMES TABLE — 4 GROUPS OF 5",
-    "a": [
-      "20"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-52",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 1?",
-    "h": "5 TIMES TABLE — 5 GROUPS OF 1",
-    "a": [
-      "5"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-53",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 2?",
-    "h": "5 TIMES TABLE — 5 GROUPS OF 2",
-    "a": [
-      "10"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-54",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 3?",
-    "h": "5 TIMES TABLE — 5 GROUPS OF 3",
-    "a": [
-      "15"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-55",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 5 × 4?",
-    "h": "5 TIMES TABLE — 5 GROUPS OF 4",
-    "a": [
-      "20"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-56",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 5 × 5?",
-    "h": "5 TIMES TABLE — 5 GROUPS OF 5",
-    "a": [
-      "25"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-57",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 10 × 1?",
-    "h": "10 TIMES TABLE — 10 GROUPS OF 1",
-    "a": [
-      "10"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-58",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 10 × 2?",
-    "h": "10 TIMES TABLE — 10 GROUPS OF 2",
-    "a": [
-      "20"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-59",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 10 × 3?",
-    "h": "10 TIMES TABLE — 10 GROUPS OF 3",
-    "a": [
-      "30"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-60",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 10 × 5?",
-    "h": "10 TIMES TABLE — 10 GROUPS OF 5",
-    "a": [
-      "50"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-61",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 1 SQUARED (1²)?",
-    "h": "1 × 1 = ?",
-    "a": [
-      "1"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-62",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS 2 SQUARED (2²)?",
-    "h": "2 × 2 = ?",
-    "a": [
-      "4"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-63",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT IS 3 SQUARED (3²)?",
-    "h": "3 × 3 = ?",
-    "a": [
-      "9"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-64",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 4 SQUARED (4²)?",
-    "h": "4 × 4 = ?",
-    "a": [
-      "16"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-65",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS 5 SQUARED (5²)?",
-    "h": "5 × 5 = ?",
-    "a": [
-      "25"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-66",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 6 SQUARED (6²)?",
-    "h": "6 × 6 = ?",
-    "a": [
-      "36"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-67",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS 7 SQUARED (7²)?",
-    "h": "7 × 7 = ?",
-    "a": [
-      "49"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-68",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 8 SQUARED (8²)?",
-    "h": "8 × 8 = ?",
-    "a": [
-      "64"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-69",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 9 SQUARED (9²)?",
-    "h": "9 × 9 = ?",
-    "a": [
-      "81"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-70",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 10 SQUARED (10²)?",
-    "h": "10 × 10 = ?",
-    "a": [
-      "100"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-71",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS THE SQUARE OF 11 (11²)?",
-    "h": "11 × 11 = ?",
-    "a": [
-      "121"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-72",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS THE SQUARE OF 12 (12²)?",
-    "h": "12 × 12 = ?",
-    "a": [
-      "144"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-73",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT NUMBER, WHEN SQUARED, GIVES 4?",
-    "h": "? × ? = 4 — THE SQUARE ROOT OF 4",
-    "a": [
-      "2"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-74",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT NUMBER, WHEN SQUARED, GIVES 9?",
-    "h": "? × ? = 9 — THE SQUARE ROOT OF 9",
-    "a": [
-      "3"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-75",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT NUMBER, WHEN SQUARED, GIVES 25?",
-    "h": "? × ? = 25 — THE SQUARE ROOT OF 25",
-    "a": [
-      "5"
-    ],
-    "type": "SQUARES"
-  },
-  {
-    "id": "PZ-76",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT IS 2 + 2 + 2?",
-    "h": "ADD THREE 2S TOGETHER",
-    "a": [
-      "6"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-77",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS 3 + 3 + 3?",
-    "h": "ADD THREE 3S TOGETHER",
-    "a": [
-      "9"
-    ],
-    "type": "MATH"
-  },
-  {
-    "id": "PZ-78",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: HOW MANY DAYS IN A WEEK?",
-    "h": "MON TUE WED THU FRI SAT SUN — COUNT THEM",
-    "a": [
-      "7"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-79",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: HOW MANY MONTHS IN A YEAR?",
-    "h": "COUNT FROM JANUARY TO DECEMBER",
-    "a": [
-      "12"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-80",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: HOW MANY FINGERS ON TWO HANDS?",
-    "h": "COUNT ALL YOUR FINGERS",
-    "a": [
-      "10"
-    ],
-    "type": "LOGIC"
-  },
-  {
-    "id": "PZ-81",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: HOW MANY SIDES DOES A SQUARE HAVE?",
-    "h": "THINK OF A SQUARE — COUNT EACH SIDE",
-    "a": [
-      "4"
-    ],
-    "type": "SHAPES"
-  },
-  {
-    "id": "PZ-82",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: HOW MANY SIDES DOES A TRIANGLE HAVE?",
-    "h": "THINK OF A TRIANGLE — COUNT EACH SIDE",
-    "a": [
-      "3"
-    ],
-    "type": "SHAPES"
-  },
-  {
-    "id": "PZ-83",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: HOW MANY SIDES DOES A CIRCLE HAVE?",
-    "h": "LOOK CAREFULLY — DOES A CIRCLE HAVE ANY STRAIGHT SIDES?",
-    "a": [
-      "0"
-    ],
-    "type": "SHAPES"
-  },
-  {
-    "id": "PZ-84",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS THE SHAPE WITH 6 SIDES CALLED?",
-    "h": "HEX MEANS SIX — HEX-A-GON",
-    "a": [
-      "HEXAGON"
-    ],
-    "type": "SHAPES"
-  },
-  {
-    "id": "PZ-85",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT COMES NEXT: 2, 4, 6, 8, ?",
-    "h": "COUNT BY 2S — EVEN NUMBERS",
-    "a": [
-      "10"
-    ],
-    "type": "PATTERN"
-  },
-  {
-    "id": "PZ-86",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT COMES NEXT: 5, 10, 15, 20, ?",
-    "h": "COUNT BY 5S",
-    "a": [
-      "25"
-    ],
-    "type": "PATTERN"
-  },
-  {
-    "id": "PZ-87",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT COMES NEXT: 10, 20, 30, 40, ?",
-    "h": "COUNT BY 10S",
-    "a": [
-      "50"
-    ],
-    "type": "PATTERN"
-  },
-  {
-    "id": "PZ-88",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT COMES NEXT: 1, 3, 5, 7, ?",
-    "h": "ODD NUMBERS — COUNT BY 2S STARTING FROM 1",
-    "a": [
-      "9"
-    ],
-    "type": "PATTERN"
-  },
-  {
-    "id": "PZ-89",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT COMES NEXT: A, C, E, G, ?",
-    "h": "SKIP EVERY OTHER LETTER",
-    "a": [
-      "I"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-90",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT COMES NEXT: Z, Y, X, W, ?",
-    "h": "THE ALPHABET BACKWARDS",
-    "a": [
-      "V"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-91",
-    "lv": 1,
-    "q": "CARVED IN BONE: WHAT IS 6 × 1?",
-    "h": "6 TIMES TABLE — ANY NUMBER TIMES 1 STAYS THE SAME",
-    "a": [
-      "6"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-92",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS 6 × 2?",
-    "h": "6 TIMES TABLE — 6 GROUPS OF 2",
-    "a": [
-      "12"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-93",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT IS 6 × 3?",
-    "h": "6 TIMES TABLE — 6 GROUPS OF 3",
-    "a": [
-      "18"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-94",
-    "lv": 1,
-    "q": "A VISION IN THE BLOOD: WHAT IS 6 × 4?",
-    "h": "6 TIMES TABLE — 6 GROUPS OF 4",
-    "a": [
-      "24"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-95",
-    "lv": 1,
-    "q": "THE SCALES SHIFT: WHAT IS 6 × 5?",
-    "h": "6 TIMES TABLE — 6 GROUPS OF 5",
-    "a": [
-      "30"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-96",
-    "lv": 1,
-    "q": "A GLITCH IN THE FLESH: WHAT IS 6 × 6?",
-    "h": "6 TIMES TABLE — 6 GROUPS OF 6",
-    "a": [
-      "36"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-97",
-    "lv": 1,
-    "q": "THE SERPENT WHISPERS: WHAT COMES NEXT IN THE ALPHABET AFTER Y?",
-    "h": "ALMOST AT THE END — Y AND THEN?",
-    "a": [
-      "Z"
-    ],
-    "type": "ALPHABET"
-  },
-  {
-    "id": "PZ-98",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT IS 0 × 100?",
-    "h": "ANY NUMBER TIMES ZERO IS ALWAYS THE SAME ANSWER",
-    "a": [
-      "0"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-99",
-    "lv": 1,
-    "q": "A VOICE FROM THE DARKNESS: WHAT IS 1 × 999?",
-    "h": "ANY NUMBER TIMES ONE STAYS THE SAME",
-    "a": [
-      "999"
-    ],
-    "type": "TABLES"
-  },
-  {
-    "id": "PZ-100",
-    "lv": 1,
-    "q": "THE CYCLE DEMANDS: WHAT IS 7 SQUARED (7²)?",
-    "h": "7 × 7 = ?",
-    "a": [
-      "49"
-    ],
-    "type": "SQUARES"
-  },
-  {
     "id": "L0-0",
-    "lv": 1,
+    "lv": 0,
     "q": "THE SERPENT HUNGERS. WHAT IS ITS TRUE NAME?",
     "a": [
       "OUROBOROS"
     ],
     "h": "THE POISON IS IN THE TAIL.",
-    "type": "LORE"
+    "type": "LORE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-Q001",
+    "lv": 1,
+    "q": "What is the LCM of 12 and 18?",
+    "a": [
+      "36"
+    ],
+    "h": "Find prime factors of both numbers. LCM = product of highest powers of all prime factors. 12=2\u00b2\u00d73, 18=2\u00d73\u00b2. LCM=2\u00b2\u00d73\u00b2=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q002",
+    "lv": 1,
+    "q": "What is the HCF of 36 and 48?",
+    "a": [
+      "12"
+    ],
+    "h": "List factors of both. HCF = largest number dividing both. Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. Largest common = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q003",
+    "lv": 1,
+    "q": "A train travels 360 km in 4 hours. What is its speed in km/h?",
+    "a": [
+      "90"
+    ],
+    "h": "Use Speed = Distance \u00f7 Time. Distance=360km, Time=4hrs. 360\u00f74=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q004",
+    "lv": 1,
+    "q": "What percentage of 200 is 50?",
+    "a": [
+      "25"
+    ],
+    "h": "Use formula: (Part\u00f7Whole)\u00d7100. (50\u00f7200)\u00d7100 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q005",
+    "lv": 1,
+    "q": "If 20% of a number is 80, what is the number?",
+    "a": [
+      "400"
+    ],
+    "h": "If 20% = 80, then 1% = 80\u00f720 = 4. So 100% = 4\u00d7100 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q006",
+    "lv": 1,
+    "q": "What is the simple interest on Rs.1000 at 10% per annum for 2 years?",
+    "a": [
+      "200"
+    ],
+    "h": "SI = (P\u00d7R\u00d7T)/100. P=1000, R=10, T=2. (1000\u00d710\u00d72)/100 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q007",
+    "lv": 1,
+    "q": "A pipe fills a tank in 6 hours. What fraction of the tank is filled in 1 hour?",
+    "a": [
+      "sixth"
+    ],
+    "h": "If full tank filled in 6 hours, in 1 hour it fills 1/6 of the tank.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q008",
+    "lv": 1,
+    "q": "What is 15% of 400?",
+    "a": [
+      "60"
+    ],
+    "h": "15% of 400 = (15/100)\u00d7400 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q009",
+    "lv": 1,
+    "q": "The ratio of two numbers is 3:5 and their sum is 80. What is the smaller number?",
+    "a": [
+      "30"
+    ],
+    "h": "Smaller number = (3/8)\u00d780. Total parts = 3+5=8. Smaller = (3/8)\u00d780 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q010",
+    "lv": 1,
+    "q": "A shopkeeper sells an item for Rs.120 at a 20% profit. What was the cost price?",
+    "a": [
+      "100"
+    ],
+    "h": "Cost Price = SP\u00f7(1+profit%). SP=120, profit=20%=0.2. CP = 120\u00f71.2 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q011",
+    "lv": 1,
+    "q": "What is the square root of 1024?",
+    "a": [
+      "32"
+    ],
+    "h": "32\u00d732=1024. Or use: 2^10=1024, \u221a1024=2^5=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q012",
+    "lv": 1,
+    "q": "What is the cube root of 512?",
+    "a": [
+      "8"
+    ],
+    "h": "8\u00d78\u00d78=512. So cube root of 512 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q013",
+    "lv": 1,
+    "q": "A person walks 4 km north, then 3 km east. What is the straight line distance from start?",
+    "a": [
+      "5"
+    ],
+    "h": "This forms a right triangle. Use Pythagoras: \u221a(4\u00b2+3\u00b2)=\u221a(16+9)=\u221a25=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q014",
+    "lv": 1,
+    "q": "How many prime numbers exist between 10 and 30?",
+    "a": [
+      "6"
+    ],
+    "h": "Primes between 10 and 30: 11,13,17,19,23,29. Count them = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q015",
+    "lv": 1,
+    "q": "What is 2 raised to the power of 10?",
+    "a": [
+      "1024"
+    ],
+    "h": "2^10 = 2\u00d72\u00d72\u00d72\u00d72\u00d72\u00d72\u00d72\u00d72\u00d72 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q016",
+    "lv": 1,
+    "q": "In a sequence 2, 6, 18, 54 \u2014 what is the next term?",
+    "a": [
+      "162"
+    ],
+    "h": "Each term is multiplied by 3. 54\u00d73=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q017",
+    "lv": 1,
+    "q": "If ALL cats are animals and SOME animals are dogs, can we say ALL cats are dogs?",
+    "a": [
+      "NO"
+    ],
+    "h": "Logical syllogism. Cats\u2282Animals. Dogs\u2282Animals. But Cats\u2229Dogs is not guaranteed. Answer: ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q018",
+    "lv": 1,
+    "q": "A is taller than B. B is taller than C. Who is the shortest?",
+    "a": [
+      "C"
+    ],
+    "h": "Order from tallest: A > B > ?. ? is at the bottom, so ? is the shortest.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q019",
+    "lv": 1,
+    "q": "Which number is the odd one out: 4, 9, 16, 20, 25?",
+    "a": [
+      "20"
+    ],
+    "h": "4=2\u00b2, 9=3\u00b2, 16=4\u00b2, 25=5\u00b2 are all perfect squares. 20 is not a perfect square. Odd one out = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q020",
+    "lv": 1,
+    "q": "How many sides does a heptagon have?",
+    "a": [
+      "7"
+    ],
+    "h": "Hepta = ? in Latin/Greek. Heptagon has ? sides.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q021",
+    "lv": 1,
+    "q": "What comes next in the series: 1, 4, 9, 16, 25, ?",
+    "a": [
+      "36"
+    ],
+    "h": "These are n\u00b2. 1\u00b2=1, 2\u00b2=4, 3\u00b2=9, 4\u00b2=16, 5\u00b2=25, 6\u00b2=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q022",
+    "lv": 1,
+    "q": "If MANGO is coded as OCPIQ, what cipher is being used?",
+    "a": [
+      "CAESAR"
+    ],
+    "h": "M\u2192O (+2), A\u2192C (+2), N\u2192P (+2), G\u2192I (+2), O\u2192Q (+2). Shift of +2 means it is a ? cipher.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q023",
+    "lv": 1,
+    "q": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "a": [
+      "zero"
+    ],
+    "h": "At 3:15, minute hand is at 3 (15min = 90\u00b0). Hour hand at 3:15 is also very close to 3. Angle \u2248 0\u00b0 (?).",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q024",
+    "lv": 1,
+    "q": "What is the next prime after 23?",
+    "a": [
+      "29"
+    ],
+    "h": "After 23, check 24(not prime, 24=2\u00d712), 25(not prime, 5\u00b2), 26(not prime), 27(not prime), 28(not prime), 29(prime). Answer = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q025",
+    "lv": 1,
+    "q": "If 6 workers complete a job in 12 days, how many days for 9 workers?",
+    "a": [
+      "8"
+    ],
+    "h": "Workers \u00d7 Days = constant (same work). 6\u00d712 = 9\u00d7D. D = 72\u00f79 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q026",
+    "lv": 1,
+    "q": "A coin is tossed twice. How many possible outcomes are there?",
+    "a": [
+      "4"
+    ],
+    "h": "Each toss has 2 outcomes: H or T. Two tosses: 2\u00d72=? total outcomes (HH,HT,TH,TT).",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q027",
+    "lv": 1,
+    "q": "What is the probability of getting a head in a single fair coin toss? (fraction)",
+    "a": [
+      "half"
+    ],
+    "h": "1 head out of 2 outcomes. Probability = 1/2 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q028",
+    "lv": 1,
+    "q": "A die is rolled. What is the probability of getting an even number? (fraction)",
+    "a": [
+      "half"
+    ],
+    "h": "Even numbers on a die: 2,4,6. That's 3 out of 6. Probability = 3/6 = 1/2 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q029",
+    "lv": 1,
+    "q": "How many ways can 3 people be arranged in a row?",
+    "a": [
+      "6"
+    ],
+    "h": "3 people in a row = 3! = 3\u00d72\u00d71 = ? arrangements.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q030",
+    "lv": 1,
+    "q": "How many combinations can be chosen from 5 items taking 2 at a time?",
+    "a": [
+      "10"
+    ],
+    "h": "C(5,2) = 5!/(2!\u00d73!) = (5\u00d74)/(2\u00d71) = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q031",
+    "lv": 1,
+    "q": "If x + 5 = 12, what is x?",
+    "a": [
+      "7"
+    ],
+    "h": "x+5=12. Subtract 5 from both sides: x=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q032",
+    "lv": 1,
+    "q": "If 3x - 6 = 9, what is x?",
+    "a": [
+      "5"
+    ],
+    "h": "3x-6=9. Add 6: 3x=15. Divide by 3: x=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q033",
+    "lv": 1,
+    "q": "What is the value of x\u00b2 when x = 7?",
+    "a": [
+      "49"
+    ],
+    "h": "7\u00b2=7\u00d77=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q034",
+    "lv": 1,
+    "q": "If a + b = 10 and a - b = 4, what is a?",
+    "a": [
+      "7"
+    ],
+    "h": "Add both equations: 2a=14, so a=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q035",
+    "lv": 1,
+    "q": "What is the discriminant of x\u00b2 - 5x + 6 = 0?",
+    "a": [
+      "1"
+    ],
+    "h": "Discriminant = b\u00b2-4ac. a=1,b=-5,c=6. D=25-24=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q036",
+    "lv": 1,
+    "q": "What is the area of a circle with radius 7? (use \u03c0 = 22/7)",
+    "a": [
+      "154"
+    ],
+    "h": "Area=\u03c0r\u00b2=(22/7)\u00d77\u00d77=22\u00d77=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q037",
+    "lv": 1,
+    "q": "What is the perimeter of a rectangle with length 8 and width 5?",
+    "a": [
+      "26"
+    ],
+    "h": "Perimeter=2(l+w)=2(8+5)=2\u00d713=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q038",
+    "lv": 1,
+    "q": "What is the area of a triangle with base 10 and height 6?",
+    "a": [
+      "30"
+    ],
+    "h": "Area=(1/2)\u00d7base\u00d7height=(1/2)\u00d710\u00d76=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q039",
+    "lv": 1,
+    "q": "How many degrees are in the sum of interior angles of a hexagon?",
+    "a": [
+      "720"
+    ],
+    "h": "Sum of interior angles = (n-2)\u00d7180. n=6. (6-2)\u00d7180=4\u00d7180=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q040",
+    "lv": 1,
+    "q": "What is the volume of a cube with side 4?",
+    "a": [
+      "64"
+    ],
+    "h": "Volume of cube = side\u00b3 = 4\u00b3 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q041",
+    "lv": 1,
+    "q": "If a car travels at 60 km/h for 2.5 hours, how many km does it cover?",
+    "a": [
+      "150"
+    ],
+    "h": "Distance = Speed \u00d7 Time = 60 \u00d7 2.5 = 150km.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q042",
+    "lv": 1,
+    "q": "Two trains approach each other at 40 km/h and 60 km/h. Combined relative speed?",
+    "a": [
+      "100"
+    ],
+    "h": "When trains move towards each other, add their speeds. 40+60=? km/h relative speed.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q043",
+    "lv": 1,
+    "q": "A boat goes 12 km upstream in 3 hours. What is its upstream speed in km/h?",
+    "a": [
+      "4"
+    ],
+    "h": "Upstream speed = Distance\u00f7Time = 12\u00f73 = ? km/h.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q044",
+    "lv": 1,
+    "q": "If speed is doubled, time taken for same distance becomes what fraction of original?",
+    "a": [
+      "half"
+    ],
+    "h": "Speed = Distance\u00f7Time. If speed doubles, time = Distance\u00f7(2\u00d7Speed) = ? original time.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q045",
+    "lv": 1,
+    "q": "A person covers 500m in 100 seconds. Speed in m/s?",
+    "a": [
+      "5"
+    ],
+    "h": "Speed = Distance\u00f7Time = 500\u00f7100 = ? m/s.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q046",
+    "lv": 1,
+    "q": "What is the 8th Fibonacci number (starting 1,1,2,3,5...)?",
+    "a": [
+      "21"
+    ],
+    "h": "Fibonacci: 1,1,2,3,5,8,13,21. Count 8 terms. 8th term = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q047",
+    "lv": 1,
+    "q": "What is the sum of first 10 natural numbers?",
+    "a": [
+      "55"
+    ],
+    "h": "Formula: n(n+1)/2 = 10\u00d711/2 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q048",
+    "lv": 1,
+    "q": "What is the sum of first 5 odd numbers?",
+    "a": [
+      "25"
+    ],
+    "h": "First n odd numbers sum = n\u00b2. First 5 odd numbers: 1+3+5+7+9=?=5\u00b2.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q049",
+    "lv": 1,
+    "q": "What is the 10th term of arithmetic sequence 3, 7, 11, 15...?",
+    "a": [
+      "39"
+    ],
+    "h": "Arithmetic sequence: a=3, d=4. T\u2081\u2080=a+(10-1)d=3+9\u00d74=3+36=?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q050",
+    "lv": 1,
+    "q": "What is 1 + 2 + 3 + ... + 100?",
+    "a": [
+      "5050"
+    ],
+    "h": "Sum = n(n+1)/2 = 100\u00d7101/2 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q051",
+    "lv": 1,
+    "q": "The compound interest on Rs.10000 at 10% per annum for 2 years compounded annually?",
+    "a": [
+      "2100"
+    ],
+    "h": "CI = P\u00d7[(1+R/100)^T - 1] = 10000\u00d7[(1.1)\u00b2-1] = 10000\u00d70.21 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q052",
+    "lv": 1,
+    "q": "Two pipes fill a tank in 12 and 15 hours. Together, in how many hours will they fill the tank?",
+    "a": [
+      "6"
+    ],
+    "h": "Combined rate = 1/12+1/15 = 5/60+4/60 = 9/60 = 3/20. Time = 20/3 \u2248 ?.67. Nearest whole = ? (trick: exact is 20/3, but question implies integer \u2014 check: LCM(12,15)=60. Together fill 60\u00f7(5+4)=60/9=?.67hrs \u2248 ?).",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q053",
+    "lv": 1,
+    "q": "A shopkeeper marks goods 25% above cost and gives 10% discount. Profit percentage?",
+    "a": [
+      "12.5"
+    ],
+    "h": "Let CP=100. Mark=125. After 10% discount: SP=125\u00d70.9=112.5. Profit%=(112.5-100)/100\u00d7100=?%.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q054",
+    "lv": 1,
+    "q": "If log\u2082(x) = 8, what is x?",
+    "a": [
+      "256"
+    ],
+    "h": "log\u2082(x)=8 means 2^8=x. 2^8=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q055",
+    "lv": 1,
+    "q": "A can do a work in 15 days. B in 20 days. Together in how many days? (whole number part)",
+    "a": [
+      "8"
+    ],
+    "h": "Combined rate = 1/15+1/20 = 4/60+3/60 = 7/60. Days = 60/7 \u2248 8.57. Whole number part = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q056",
+    "lv": 1,
+    "q": "What is the remainder when 2^100 is divided by 3?",
+    "a": [
+      "1"
+    ],
+    "h": "2^1 mod 3=2, 2^2 mod 3=1, 2^3 mod 3=2, cycle length 2. 100 is even, so 2^100 mod 3 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q057",
+    "lv": 1,
+    "q": "How many zeros are at the end of 100 factorial?",
+    "a": [
+      "24"
+    ],
+    "h": "Count factors of 5 in 100!: \u230a100/5\u230b+\u230a100/25\u230b=20+4=? trailing zeros.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q058",
+    "lv": 1,
+    "q": "What is the sum of all even numbers from 2 to 100?",
+    "a": [
+      "2550"
+    ],
+    "h": "Sum of even numbers 2+4+...+100 = 2(1+2+...+50) = 2\u00d7(50\u00d751/2) = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q059",
+    "lv": 1,
+    "q": "If x\u00b2 + y\u00b2 = 25 and xy = 12, what is (x+y)\u00b2?",
+    "a": [
+      "49"
+    ],
+    "h": "(x+y)\u00b2 = x\u00b2+y\u00b2+2xy = 25+2\u00d712 = 25+24 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q060",
+    "lv": 1,
+    "q": "What is the number of diagonals in a decagon (10-sided polygon)?",
+    "a": [
+      "35"
+    ],
+    "h": "Diagonals in n-gon = n(n-3)/2. n=10: 10\u00d77/2 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q061",
+    "lv": 1,
+    "q": "In a group of 100 students, 60 like math, 50 like science, 30 like both. How many like neither?",
+    "a": [
+      "20"
+    ],
+    "h": "n(M\u222aS) = n(M)+n(S)-n(M\u2229S) = 60+50-30 = 80. Neither = 100-80 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q062",
+    "lv": 1,
+    "q": "If 5 cats catch 5 mice in 5 minutes, how many cats to catch 100 mice in 100 minutes?",
+    "a": [
+      "5"
+    ],
+    "h": "Rate = 5 mice/5 min/5 cats = 1 mouse/min/cat. For 100 mice in 100 min = 1 mouse/min = 1 cat. But wait \u2014 5 cats give rate of 1 mouse/min total. 1 mouse/min for 100 min = 100 mice. Answer = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q063",
+    "lv": 1,
+    "q": "A clock gains 5 minutes every hour. How many minutes fast after 12 hours?",
+    "a": [
+      "60"
+    ],
+    "h": "Gains 5 min per hour. In 12 hours: 5\u00d712 = ? minutes fast.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q064",
+    "lv": 1,
+    "q": "What is the maximum number of regions a plane is divided into by 4 straight lines?",
+    "a": [
+      "11"
+    ],
+    "h": "Formula: max regions by n lines = n(n+1)/2 + 1. n=4: 4\u00d75/2+1=10+1=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q065",
+    "lv": 1,
+    "q": "A father is 3 times as old as his son. In 12 years, he'll be twice as old. Son's current age?",
+    "a": [
+      "12"
+    ],
+    "h": "Father=3\u00d7son. In 12 years: 3s+12=2(s+12). 3s+12=2s+24. s=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q066",
+    "lv": 1,
+    "q": "How many 3-digit numbers can be formed using digits 1\u20135 without repetition?",
+    "a": [
+      "60"
+    ],
+    "h": "5 digits, choose 3, arrange them = P(5,3) = 5\u00d74\u00d73 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q067",
+    "lv": 1,
+    "q": "In how many ways can the letters of LEVEL be arranged?",
+    "a": [
+      "30"
+    ],
+    "h": "LEVEL has 5 letters: L(2),E(2),V(1). Arrangements = 5!/(2!\u00d72!) = 120/4 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q068",
+    "lv": 1,
+    "q": "A bag has 3 red and 5 blue balls. Probability of drawing 2 red in a row without replacement? Numerator of 3/28?",
+    "a": [
+      "3"
+    ],
+    "h": "P(2 red) = (3/8)\u00d7(2/7) = 6/56 = 3/28. Numerator = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q069",
+    "lv": 1,
+    "q": "How many 4-letter codes from letters A,B,C,D,E with no repetition?",
+    "a": [
+      "120"
+    ],
+    "h": "P(5,4) = 5\u00d74\u00d73\u00d72 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q070",
+    "lv": 1,
+    "q": "In how many ways can 4 people be seated in a circular table?",
+    "a": [
+      "6"
+    ],
+    "h": "Circular arrangements = (n-1)! = (4-1)! = 3! = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q071",
+    "lv": 1,
+    "q": "If \u03b1 and \u03b2 are roots of x\u00b2-5x+6=0, what is \u03b1+\u03b2?",
+    "a": [
+      "5"
+    ],
+    "h": "For ax\u00b2+bx+c=0, sum of roots = -b/a = 5/1 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q072",
+    "lv": 1,
+    "q": "If \u03b1 and \u03b2 are roots of x\u00b2-5x+6=0, what is \u03b1\u03b2?",
+    "a": [
+      "6"
+    ],
+    "h": "Product of roots = c/a = 6/1 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q073",
+    "lv": 1,
+    "q": "What is the sum of a geometric series 1+2+4+8+...+128?",
+    "a": [
+      "255"
+    ],
+    "h": "GP sum = a(r^n-1)/(r-1) = 1\u00d7(2^8-1)/(2-1) = ?. (Series: 1,2,4,...,128 = 8 terms.)",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q074",
+    "lv": 1,
+    "q": "If 2^x = 32, what is x?",
+    "a": [
+      "5"
+    ],
+    "h": "2^x=32=2^5. So x=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q075",
+    "lv": 1,
+    "q": "What is the value of log\u2081\u2080(1000)?",
+    "a": [
+      "3"
+    ],
+    "h": "log\u2081\u2080(1000)=log\u2081\u2080(10\u00b3)=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q076",
+    "lv": 1,
+    "q": "What is the surface area of a sphere with radius 7? (use \u03c0=22/7)",
+    "a": [
+      "616"
+    ],
+    "h": "SA=4\u03c0r\u00b2=4\u00d7(22/7)\u00d749=4\u00d722\u00d77=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q077",
+    "lv": 1,
+    "q": "What is the volume of a cylinder with radius 7 and height 10? (use \u03c0=22/7)",
+    "a": [
+      "1540"
+    ],
+    "h": "V=\u03c0r\u00b2h=(22/7)\u00d749\u00d710=22\u00d77\u00d710=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q078",
+    "lv": 1,
+    "q": "A cone has radius 6 and slant height 10. What is its curved surface area? (use \u03c0=22/7)",
+    "a": [
+      "1886"
+    ],
+    "h": "CSA=\u03c0rl=(22/7)\u00d76\u00d710=(22\u00d760)/7\u2248188.57. Exact: 1885.7\u2248?.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q079",
+    "lv": 1,
+    "q": "What is the length of a diagonal of a rectangle with sides 5 and 12?",
+    "a": [
+      "13"
+    ],
+    "h": "Use Pythagoras on diagonal: \u221a(5\u00b2+12\u00b2)=\u221a(25+144)=\u221a169=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q080",
+    "lv": 1,
+    "q": "Sum of interior angles of a polygon is 1440\u00b0. How many sides does it have?",
+    "a": [
+      "10"
+    ],
+    "h": "(n-2)\u00d7180=1440. n-2=8. n=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q081",
+    "lv": 1,
+    "q": "A train 200m long passes a pole in 10 seconds. Speed in m/s?",
+    "a": [
+      "20"
+    ],
+    "h": "Speed=Length/Time=200/10=? m/s.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q082",
+    "lv": 1,
+    "q": "Two people start from the same point in opposite directions at 4 km/h and 6 km/h. Distance apart after 2 hours?",
+    "a": [
+      "20"
+    ],
+    "h": "Combined distance = (4+6)\u00d72 = 20km apart.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q083",
+    "lv": 1,
+    "q": "Speed of stream is 3 km/h. Boat speed still water is 9 km/h. Upstream speed in km/h?",
+    "a": [
+      "6"
+    ],
+    "h": "Upstream = Boat speed - Stream speed = 9-3 = ? km/h.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q084",
+    "lv": 1,
+    "q": "A train 300m long crosses another 200m long train coming opposite at 60 and 40 km/h. Time in seconds?",
+    "a": [
+      "18"
+    ],
+    "h": "Total length=300+200=500m. Relative speed=60+40=100km/h=100\u00d7(5/?)=250/9 m/s. Time=500\u00f7(250/9)=500\u00d79/250=18s.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q085",
+    "lv": 1,
+    "q": "Ratio of speed of A to B is 2:3. If B runs 300m, how far does A run in same time?",
+    "a": [
+      "200"
+    ],
+    "h": "Speed ratio A:B = 2:3. In same time, distance ratio = speed ratio. B runs 300m \u2192 A runs (2/3)\u00d7300=200m.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q086",
+    "lv": 1,
+    "q": "What is the geometric mean of 4 and 16?",
+    "a": [
+      "8"
+    ],
+    "h": "GM of a and b = \u221a(ab) = \u221a(4\u00d716) = \u221a64 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q087",
+    "lv": 1,
+    "q": "What is the harmonic mean of 2 and 6?",
+    "a": [
+      "3"
+    ],
+    "h": "HM of a and b = 2ab/(a+b) = 2\u00d72\u00d76/(2+6) = 24/8 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q088",
+    "lv": 1,
+    "q": "Find n if nC2 = 15?",
+    "a": [
+      "6"
+    ],
+    "h": "nC2=n(n-1)/2=15. n(n-1)=30. n=? (?\u00d75=30).",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q089",
+    "lv": 1,
+    "q": "What is the 20th term of AP: 5, 8, 11, 14...?",
+    "a": [
+      "62"
+    ],
+    "h": "T\u2082\u2080=a+(20-1)d=5+19\u00d73=5+57=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q090",
+    "lv": 1,
+    "q": "Sum of first n natural numbers formula \u2014 value when n=15?",
+    "a": [
+      "120"
+    ],
+    "h": "n(n+1)/2 = 15\u00d716/2 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q091",
+    "lv": 1,
+    "q": "If A={1,2,3} and B={2,3,4}, what is |A union B|?",
+    "a": [
+      "4"
+    ],
+    "h": "A\u222aB = {1,2,3,4}. |A\u222aB|=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q092",
+    "lv": 1,
+    "q": "If |A|=5, |B|=6, |A\u2229B|=2, what is |A\u222aB|?",
+    "a": [
+      "9"
+    ],
+    "h": "|A\u222aB|=|A|+|B|-|A\u2229B|=5+6-2=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q093",
+    "lv": 1,
+    "q": "Power set of a set with 4 elements has how many elements?",
+    "a": [
+      "16"
+    ],
+    "h": "Power set size = 2^n = 2^4 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q094",
+    "lv": 1,
+    "q": "How many subsets does a set of 5 elements have?",
+    "a": [
+      "32"
+    ],
+    "h": "2^n = 2^5 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q095",
+    "lv": 1,
+    "q": "In a class of 40, 25 play cricket, 20 play football, 10 play both. How many play neither?",
+    "a": [
+      "5"
+    ],
+    "h": "|C\u222aF|=25+20-10=35. Neither=40-35=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q096",
+    "lv": 1,
+    "q": "What is the determinant of the identity matrix of order 2?",
+    "a": [
+      "1"
+    ],
+    "h": "Identity matrix I has 1s on diagonal, 0s elsewhere. det(I)=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q097",
+    "lv": 1,
+    "q": "A 3x4 matrix multiplied by a 4x2 matrix gives a matrix of what order? (rows)",
+    "a": [
+      "3"
+    ],
+    "h": "(3\u00d74)\u00d7(4\u00d72) = 3\u00d72 matrix. Rows=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q098",
+    "lv": 1,
+    "q": "Transpose of a 3x2 matrix has how many columns?",
+    "a": [
+      "3"
+    ],
+    "h": "Transpose swaps rows and columns. (3\u00d72)^T = (2\u00d73). Columns of transpose=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q099",
+    "lv": 1,
+    "q": "What is the trace of matrix [[1,2],[3,4]]?",
+    "a": [
+      "5"
+    ],
+    "h": "Trace = sum of diagonal elements = 1+4 = ?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q100",
+    "lv": 1,
+    "q": "det([[2,3],[1,4]]) = ?",
+    "a": [
+      "5"
+    ],
+    "h": "det([[a,b],[c,d]])=ad-bc=2\u00d74-3\u00d71=8-3=?",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q101",
+    "lv": 1,
+    "q": "int x=5; printf('%d',x++); \u2014 what is printed?",
+    "a": [
+      "5"
+    ],
+    "h": "Post-increment: value is USED first, THEN incremented. printf sees x=? before increment happens.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q102",
+    "lv": 1,
+    "q": "int x=5; printf('%d',++x); \u2014 what is printed?",
+    "a": [
+      "6"
+    ],
+    "h": "Pre-increment: value is incremented FIRST, THEN used. x becomes ? before printf sees it.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q103",
+    "lv": 1,
+    "q": "printf('%d', 10/3); \u2014 what is printed?",
+    "a": [
+      "3"
+    ],
+    "h": "Integer division in C truncates toward zero. 10\u00f73=3.33... truncated to ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q104",
+    "lv": 1,
+    "q": "printf('%d', 10%3); \u2014 what is printed?",
+    "a": [
+      "1"
+    ],
+    "h": "Modulo gives remainder. 10=3\u00d73+1. Remainder=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q105",
+    "lv": 1,
+    "q": "int x=0; while(x<3) x++; printf('%d',x); \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "Loop increments x from 0: 0,1,2. When x=3, condition x<3 fails. Loop exits with x=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q106",
+    "lv": 1,
+    "q": "char c='A'; printf('%d',c); \u2014 output?",
+    "a": [
+      "65"
+    ],
+    "h": "printf with %d prints the ASCII value. 'A' has ASCII value ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q107",
+    "lv": 1,
+    "q": "int a=5,b=3; printf('%d',a&b); \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "Bitwise AND: 5=101, 3=011. 101 AND 011=001=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q108",
+    "lv": 1,
+    "q": "int a=5,b=3; printf('%d',a|b); \u2014 output?",
+    "a": [
+      "7"
+    ],
+    "h": "Bitwise OR: 5=101, 3=011. 101 OR 011=111=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q109",
+    "lv": 1,
+    "q": "int a=5,b=3; printf('%d',a^b); \u2014 output?",
+    "a": [
+      "6"
+    ],
+    "h": "Bitwise XOR: 5=101, 3=011. 101 XOR 011=110=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q110",
+    "lv": 1,
+    "q": "int x=8; printf('%d',x>>1); \u2014 output?",
+    "a": [
+      "4"
+    ],
+    "h": "Right shift by 1 divides by 2. 8>>1=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q111",
+    "lv": 1,
+    "q": "int x=4; printf('%d',x<<2); \u2014 output?",
+    "a": [
+      "16"
+    ],
+    "h": "Left shift by 2 multiplies by 4. 4<<2=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q112",
+    "lv": 1,
+    "q": "sizeof(int) on a 32-bit system returns?",
+    "a": [
+      "4"
+    ],
+    "h": "On 32-bit system, int is ? bytes. sizeof returns the number of bytes.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q113",
+    "lv": 1,
+    "q": "sizeof(char) always returns?",
+    "a": [
+      "1"
+    ],
+    "h": "C standard guarantees sizeof(char)=? on all platforms. Always.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q114",
+    "lv": 1,
+    "q": "sizeof(double) typically returns?",
+    "a": [
+      "8"
+    ],
+    "h": "double is 64-bit floating point = ? bytes on standard systems.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q115",
+    "lv": 1,
+    "q": "What keyword is used to define a constant in C?",
+    "a": [
+      "const"
+    ],
+    "h": "The keyword '?' makes a variable constant \u2014 cannot be changed after initialization.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q116",
+    "lv": 1,
+    "q": "What keyword prevents a variable from being optimized by the compiler?",
+    "a": [
+      "volatile"
+    ],
+    "h": "volatile tells the compiler: never cache this variable in a register, always re-read from memory.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q117",
+    "lv": 1,
+    "q": "What keyword makes a function or variable local to its file in C?",
+    "a": [
+      "static"
+    ],
+    "h": "static at file scope limits visibility to that file. ? local vars persist between calls.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q118",
+    "lv": 1,
+    "q": "What is the return type of malloc in C?",
+    "a": [
+      "void"
+    ],
+    "h": "malloc returns ?* \u2014 a generic pointer that can be cast to any type.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q119",
+    "lv": 1,
+    "q": "Which function frees dynamically allocated memory?",
+    "a": [
+      "free"
+    ],
+    "h": "free() releases heap memory. Takes the pointer returned by malloc.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q120",
+    "lv": 1,
+    "q": "Which header file contains printf and scanf?",
+    "a": [
+      "stdio"
+    ],
+    "h": "stdio.h = Standard Input Output header. Contains printf, scanf, fprintf, fgets etc.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q121",
+    "lv": 1,
+    "q": "Which format specifier prints an unsigned hex integer?",
+    "a": [
+      "%x"
+    ],
+    "h": "%x prints integer in lowercase hexadecimal. ? for uppercase.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q122",
+    "lv": 1,
+    "q": "What does scanf return on successful read of one variable?",
+    "a": [
+      "1"
+    ],
+    "h": "scanf returns the number of items successfully read. One variable \u2192 returns ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q123",
+    "lv": 1,
+    "q": "What operator is used to get the address of a variable in C?",
+    "a": [
+      "&"
+    ],
+    "h": "& is the address-of operator. &x gives the memory address of variable x.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q124",
+    "lv": 1,
+    "q": "What operator dereferences a pointer in C?",
+    "a": [
+      "*"
+    ],
+    "h": "* is the dereference operator. *p gives the value at the address stored in pointer p.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q125",
+    "lv": 1,
+    "q": "What is NULL equivalent to numerically in C?",
+    "a": [
+      "0"
+    ],
+    "h": "NULL is defined as (void*)? or simply ?. It represents a null pointer.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q126",
+    "lv": 1,
+    "q": "int arr[]={1,2,3}; printf('%d',arr[1]); \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": "Arrays are 0-indexed. arr[1] is the second element = ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q127",
+    "lv": 1,
+    "q": "int arr[]={5,10,15}; printf('%d',*arr); \u2014 output?",
+    "a": [
+      "5"
+    ],
+    "h": "*arr dereferences the array name (which is a pointer to first element). arr[0]=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q128",
+    "lv": 1,
+    "q": "int arr[]={5,10,15}; printf('%d',*(arr+2)); \u2014 output?",
+    "a": [
+      "15"
+    ],
+    "h": "*(arr+2) = arr[2]. Third element = ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q129",
+    "lv": 1,
+    "q": "char s[]='hello'; printf('%c',s[4]); \u2014 output?",
+    "a": [
+      "o"
+    ],
+    "h": "s[4] is the 5th character (0-indexed). 'hello'[4]='?'.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q130",
+    "lv": 1,
+    "q": "char s[]='hello'; printf('%d',strlen(s)); \u2014 output?",
+    "a": [
+      "5"
+    ],
+    "h": "strlen counts characters until null terminator. 'hello' has ? chars.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q131",
+    "lv": 1,
+    "q": "printf('%d',!0); \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "!0 = logical NOT of false = ? (true).",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q132",
+    "lv": 1,
+    "q": "printf('%d',!1); \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "!1 = logical NOT of true = ? (false).",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q133",
+    "lv": 1,
+    "q": "int x=5; printf('%d',x==5); \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "x==5 evaluates to 1 (true) when x is 5. %d prints ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q134",
+    "lv": 1,
+    "q": "int x=5; printf('%d',x!=5); \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "x!=5 evaluates to 0 (false) when x IS 5. %d prints ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q135",
+    "lv": 1,
+    "q": "What does do-while guarantee over while loop?",
+    "a": [
+      "once"
+    ],
+    "h": "do-while executes body first, checks condition after. Guarantees at least one execution.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q136",
+    "lv": 1,
+    "q": "What keyword skips the current iteration of a loop?",
+    "a": [
+      "continue"
+    ],
+    "h": "continue skips the rest of the current iteration and goes to the next loop iteration.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q137",
+    "lv": 1,
+    "q": "What keyword exits a loop immediately in C?",
+    "a": [
+      "break"
+    ],
+    "h": "break immediately exits the nearest enclosing loop or switch statement.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q138",
+    "lv": 1,
+    "q": "What keyword returns control from a function in C?",
+    "a": [
+      "return"
+    ],
+    "h": "return transfers control back to the caller, optionally passing a value.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q139",
+    "lv": 1,
+    "q": "Arrays in C are passed to functions by?",
+    "a": [
+      "reference"
+    ],
+    "h": "Arrays decay to pointers when passed to functions. Changes inside function affect original.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q140",
+    "lv": 1,
+    "q": "Which memory segment stores local variables in C?",
+    "a": [
+      "stack"
+    ],
+    "h": "Local variables (auto storage class) live on the ? \u2014 automatically allocated/freed.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q141",
+    "lv": 1,
+    "q": "Which memory segment stores malloc allocated memory?",
+    "a": [
+      "heap"
+    ],
+    "h": "malloc/calloc/realloc allocate on the ? \u2014 persists until explicitly freed.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q142",
+    "lv": 1,
+    "q": "Which segment stores global variables in C?",
+    "a": [
+      "data"
+    ],
+    "h": "Global and static variables are stored in the ? segment of the program.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q143",
+    "lv": 1,
+    "q": "What is the index of the first element of an array in C?",
+    "a": [
+      "0"
+    ],
+    "h": "C arrays are 0-indexed. First element is at index ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q144",
+    "lv": 1,
+    "q": "What is the default return type of main in C?",
+    "a": [
+      "int"
+    ],
+    "h": "C standard specifies main returns ?. Return 0 signals success to OS.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q145",
+    "lv": 1,
+    "q": "int x=3,y=4; printf('%d',x>y?x:y); \u2014 output?",
+    "a": [
+      "4"
+    ],
+    "h": "Ternary operator: condition?valueIfTrue:valueIfFalse. x=3,y=4. x>y is false \u2192 returns y=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q146",
+    "lv": 1,
+    "q": "printf('%d',2<<3); \u2014 output?",
+    "a": [
+      "16"
+    ],
+    "h": "2<<3 = 2\u00d72\u00b3 = 2\u00d78 = ?. Left shift n = multiply by 2^n.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q147",
+    "lv": 1,
+    "q": "printf('%d',16>>2); \u2014 output?",
+    "a": [
+      "4"
+    ],
+    "h": "16>>2 = 16\u00f72\u00b2 = 16\u00f7? = ?. Right shift n = divide by 2^n.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q148",
+    "lv": 1,
+    "q": "printf('%d',5*2+3); \u2014 output?",
+    "a": [
+      "13"
+    ],
+    "h": "Operator precedence: * before +. 5*2=10, 10+3=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q149",
+    "lv": 1,
+    "q": "printf('%d',(int)3.9); \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "Casting float to int truncates (floor toward zero). (int)3.9 = ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q150",
+    "lv": 1,
+    "q": "Which function copies one string to another in C?",
+    "a": [
+      "strcpy"
+    ],
+    "h": "strcpy(dest, src) copies string including null terminator from src to dest.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q151",
+    "lv": 1,
+    "q": "Which function compares two strings in C?",
+    "a": [
+      "strcmp"
+    ],
+    "h": "strcmp returns 0 if equal, negative if s1<s2, positive if s1>s2.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q152",
+    "lv": 1,
+    "q": "Which function concatenates two strings in C?",
+    "a": [
+      "strcat"
+    ],
+    "h": "strcat appends src to end of dest. Both must be null-terminated strings.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q153",
+    "lv": 1,
+    "q": "Which function finds the length of a string in C?",
+    "a": [
+      "strlen"
+    ],
+    "h": "strlen counts bytes up to but not including the null terminator '\\\\0'.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q154",
+    "lv": 1,
+    "q": "What keyword defines a type alias in C?",
+    "a": [
+      "typedef"
+    ],
+    "h": "typedef creates an alias: ? unsigned int uint; makes uint a valid type name.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q155",
+    "lv": 1,
+    "q": "What does the extern keyword signify for a variable?",
+    "a": [
+      "external"
+    ],
+    "h": "extern declares a variable/function defined in another file. Links at compile time.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q156",
+    "lv": 1,
+    "q": "How many bytes does short int typically use?",
+    "a": [
+      "2"
+    ],
+    "h": "short int = ? bytes = 16 bits. Range: -32768 to 32767 (signed).",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q157",
+    "lv": 1,
+    "q": "What is the maximum value of unsigned 8-bit integer?",
+    "a": [
+      "255"
+    ],
+    "h": "Unsigned 8-bit: 0 to 2^8-1 = 0 to ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q158",
+    "lv": 1,
+    "q": "What is the name for a function that calls itself?",
+    "a": [
+      "recursive"
+    ],
+    "h": "A ? function calls itself. Must have a base case to avoid infinite recursion.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q159",
+    "lv": 1,
+    "q": "int i=0; for(i=0;i<3;i++); printf('%d',i); \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "Loop runs for i=0,1,2. After last iteration i++ makes i=3. Semicolon after for() means empty body. printf sees i=?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q160",
+    "lv": 1,
+    "q": "int x=15; printf('%d',x&~(1<<0)); \u2014 output? (clears bit 0)",
+    "a": [
+      "14"
+    ],
+    "h": "~(1<<0) = ~1 = ...11111110. 15 & ...11111110 = ?. Clears bit 0 of 15.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q161",
+    "lv": 1,
+    "q": "calloc initializes allocated memory to what value?",
+    "a": [
+      "0"
+    ],
+    "h": "calloc(n,size) allocates n elements of size bytes each, ALL initialized to ?",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q162",
+    "lv": 1,
+    "q": "Which function reallocates memory in C?",
+    "a": [
+      "realloc"
+    ],
+    "h": "realloc(ptr, newSize) resizes previously allocated memory block.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q163",
+    "lv": 1,
+    "q": "A pointer to pointer is declared with how many asterisks?",
+    "a": [
+      "2"
+    ],
+    "h": "int **pp declares a pointer to a pointer to int. Two levels of indirection.",
+    "type": "C",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q164",
+    "lv": 1,
+    "q": "#define SQUARE(x) x*x \u2014 SQUARE(3+1) evaluates to?",
+    "a": [
+      "7"
+    ],
+    "h": "#define SQUARE(x) x*x expands textually. SQUARE(3+1)=3+1*3+1=3+3+1=?. Use (x)*(x) to fix.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q165",
+    "lv": 1,
+    "q": "int x=5; int y=x++ + x++; \u2014 is this behavior defined or undefined?",
+    "a": [
+      "undefined"
+    ],
+    "h": "C standard says modifying x twice between sequence points is ? behavior. Compiler can do anything.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q166",
+    "lv": 1,
+    "q": "unsigned char x=250; x+=10; \u2014 what is x?",
+    "a": [
+      "4"
+    ],
+    "h": "unsigned char max=255. 250+10=260. 260 mod 256=?. Unsigned wraps around.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q167",
+    "lv": 1,
+    "q": "int arr[3]={1,2,3}; printf('%d',2[arr]); \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "Array subscript is commutative: a[b] == b[a] == *(a+b). 2[arr]=arr[2]=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q168",
+    "lv": 1,
+    "q": "int x=0x41; printf('%c',x); \u2014 output?",
+    "a": [
+      "A"
+    ],
+    "h": "0x41=65 in decimal. ASCII 65='?'. %c prints the character.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q169",
+    "lv": 1,
+    "q": "int x=-1; printf('%u',x); on 32-bit system \u2014 output?",
+    "a": [
+      "4294967295"
+    ],
+    "h": "-1 in 32-bit two's complement = all 1s = ? as unsigned.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q170",
+    "lv": 1,
+    "q": "int a=0; int b=(a=5,a+3); printf('%d',b); \u2014 output?",
+    "a": [
+      "8"
+    ],
+    "h": "Comma operator evaluates left (a=5), discards result, evaluates right (a+3=8). b=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q171",
+    "lv": 1,
+    "q": "static int c=0; c++; called 3 times \u2014 final c value?",
+    "a": [
+      "3"
+    ],
+    "h": "static variable persists across calls. Starts at 0. Three calls: c becomes 1,2,3. Final=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q172",
+    "lv": 1,
+    "q": "int x=10; x&=~(1<<1); printf('%d',x); \u2014 output?",
+    "a": [
+      "8"
+    ],
+    "h": "~(1<<1)=~2=...11111101. 10 & ...11111101: 1010 & ...11111101=1000=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q173",
+    "lv": 1,
+    "q": "int x=7; x|=(1<<3); printf('%d',x); \u2014 output?",
+    "a": [
+      "15"
+    ],
+    "h": "(1<<3)=8=1000. 7|8=0111|1000=1111=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q174",
+    "lv": 1,
+    "q": "int a=5,b=3; a^=b; b^=a; a^=b; printf('%d',a); \u2014 a after XOR swap?",
+    "a": [
+      "3"
+    ],
+    "h": "XOR swap: a^=b makes a=5^3=6. b^=a makes b=3^6=5. a^=b makes a=6^5=3. a=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q175",
+    "lv": 1,
+    "q": "int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}}; int *p=&arr[0][0]; printf('%d',*(p+5)); \u2014 output?",
+    "a": [
+      "6"
+    ],
+    "h": "2D array is flat in memory. arr[1][2] = element at flat index 3*1+2=5. *(p+5)=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q176",
+    "lv": 1,
+    "q": "char *s='hello'; printf('%c',*(s+4)); \u2014 output?",
+    "a": [
+      "o"
+    ],
+    "h": "s points to 'h'. s+4 points to 5th char='?'. *( s+4)='?'.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q177",
+    "lv": 1,
+    "q": "int x=5,y=10; printf('%d',x>y?x:y); \u2014 output?",
+    "a": [
+      "10"
+    ],
+    "h": "x=5,y=10. x>y is false. Ternary returns y=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q178",
+    "lv": 1,
+    "q": "int a=5; printf('%d %d',a++,++a); \u2014 well defined output first arg?",
+    "a": [
+      "undefined"
+    ],
+    "h": "Evaluating a++ and ++a in same expression modifies a between sequence points. ? behavior.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q179",
+    "lv": 1,
+    "q": "What is the size in bytes of struct{char a; int b; char c;} on 64-bit (with padding)?",
+    "a": [
+      "12"
+    ],
+    "h": "char(1)+padding(3)+int(4)+char(1)+padding(3)=?. Compiler pads to align int on 4-byte boundary.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q180",
+    "lv": 1,
+    "q": "struct{unsigned int a:3; unsigned int b:5;} \u2014 total bits used?",
+    "a": [
+      "8"
+    ],
+    "h": "3+5=? bits. Bitfields pack tightly within the underlying unsigned int type.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q181",
+    "lv": 1,
+    "q": "On a little-endian machine, 0x01020304 stored at address \u2014 what byte is at lowest address?",
+    "a": [
+      "4"
+    ],
+    "h": "Little-endian stores least significant byte first. 0x01020304: byte at lowest address=0x04=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q182",
+    "lv": 1,
+    "q": "What is a dangling pointer?",
+    "a": [
+      "freed"
+    ],
+    "h": "Dangling pointer points to ? memory. Accessing it is undefined behavior.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q183",
+    "lv": 1,
+    "q": "What does free(NULL) do in C?",
+    "a": [
+      "nothing"
+    ],
+    "h": "C standard guarantees free(NULL) is a safe no-operation. No crash, no effect.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q184",
+    "lv": 1,
+    "q": "Accessing float memory via int pointer violates which C rule?",
+    "a": [
+      "aliasing"
+    ],
+    "h": "Strict ? rule: accessing an object through a pointer of incompatible type is undefined behavior.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q185",
+    "lv": 1,
+    "q": "What is a memory leak caused by in C?",
+    "a": [
+      "malloc"
+    ],
+    "h": "Memory leak = calling ? without a corresponding free. Memory is never returned to OS.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q186",
+    "lv": 1,
+    "q": "Returning address of a local variable causes what kind of pointer?",
+    "a": [
+      "dangling"
+    ],
+    "h": "Local variables live on stack. When function returns, stack frame is gone. Pointer to it = ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q187",
+    "lv": 1,
+    "q": "What does the restrict keyword tell the compiler about a pointer?",
+    "a": [
+      "noalias"
+    ],
+    "h": "restrict tells compiler: no other pointer aliases this memory. Enables aggressive optimization.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q188",
+    "lv": 1,
+    "q": "NAND(1,1) gate output?",
+    "a": [
+      "0"
+    ],
+    "h": "NAND=NOT(AND). AND(1,1)=1. NOT(1)=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q189",
+    "lv": 1,
+    "q": "NOR(0,0) gate output?",
+    "a": [
+      "1"
+    ],
+    "h": "NOR=NOT(OR). OR(0,0)=0. NOT(0)=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q190",
+    "lv": 1,
+    "q": "XOR(1,1) output?",
+    "a": [
+      "0"
+    ],
+    "h": "XOR(1,1)=?. Same inputs always give ? in XOR.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q191",
+    "lv": 1,
+    "q": "XOR applied twice to same value gives?",
+    "a": [
+      "original"
+    ],
+    "h": "XOR is self-inverse. A XOR B XOR B = A. Applying XOR twice with same key restores ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q192",
+    "lv": 1,
+    "q": "What is the two's complement of 8-bit 00000111 (decimal 7)?",
+    "a": [
+      "11111001"
+    ],
+    "h": "7=00000111. Invert all bits: 11111000. Add 1: ?. This is -7 in two's complement.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q193",
+    "lv": 1,
+    "q": "What decimal does 8-bit two's complement 11111111 represent?",
+    "a": [
+      "-1"
+    ],
+    "h": "11111111: invert=00000000, add 1=00000001=1. So 11111111 represents ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q194",
+    "lv": 1,
+    "q": "0xFF in decimal is?",
+    "a": [
+      "255"
+    ],
+    "h": "0xFF = 15\u00d716+15 = 240+15 = ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q195",
+    "lv": 1,
+    "q": "0x1F in decimal is?",
+    "a": [
+      "31"
+    ],
+    "h": "0x1F = 1\u00d716+15 = 16+15 = ?. ? is prime.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q196",
+    "lv": 1,
+    "q": "Octal 017 in decimal is?",
+    "a": [
+      "15"
+    ],
+    "h": "Octal: each digit \u00d7 8^position. 017 = 0\u00d78\u00b2+1\u00d78+7 = 0+8+7 = ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q197",
+    "lv": 1,
+    "q": "printf('%d',sizeof(int)*2+1); on 32-bit system \u2014 output?",
+    "a": [
+      "9"
+    ],
+    "h": "sizeof(int)=4 on 32-bit. 4*2+1=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q198",
+    "lv": 1,
+    "q": "int x=255; printf('%x',x); \u2014 output?",
+    "a": [
+      "ff"
+    ],
+    "h": "%x prints in hex. 255=0xFF. Output=? (lowercase).",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q199",
+    "lv": 1,
+    "q": "int x=8; printf('%o',x); \u2014 output in octal?",
+    "a": [
+      "10"
+    ],
+    "h": "%o prints in octal. 8=8\u00b9=? in octal.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q200",
+    "lv": 1,
+    "q": "printf('%d', 0x0F & 0xFF); \u2014 output?",
+    "a": [
+      "15"
+    ],
+    "h": "0x0F=00001111, 0xFF=11111111. AND=00001111=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q201",
+    "lv": 1,
+    "q": "printf('%d', ~0); on 32-bit signed \u2014 output?",
+    "a": [
+      "-1"
+    ],
+    "h": "~0 flips all bits of 0. On 32-bit: 0x00000000\u21920xFFFFFFFF = ? in signed.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q202",
+    "lv": 1,
+    "q": "int x=12,y=10; printf('%d',x^y); \u2014 output?",
+    "a": [
+      "6"
+    ],
+    "h": "12=1100, 10=1010. XOR: 1100 XOR 1010=0110=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q203",
+    "lv": 1,
+    "q": "int *p=NULL; if(p) printf('yes'); else printf('no'); \u2014 output?",
+    "a": [
+      "no"
+    ],
+    "h": "NULL=0=false. if(p) is false. Prints '?'.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q204",
+    "lv": 1,
+    "q": "What is the union keyword used for?",
+    "a": [
+      "shared"
+    ],
+    "h": "union allows members to share the same memory space. Only one member holds valid data at a time.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q205",
+    "lv": 1,
+    "q": "In a union, all members share the same?",
+    "a": [
+      "memory"
+    ],
+    "h": "All members of a union share the same ? location. Last written member is valid.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q206",
+    "lv": 1,
+    "q": "What is the size of a union with int(4) and double(8)? (in bytes)",
+    "a": [
+      "8"
+    ],
+    "h": "Union size = size of largest member. double=8 bytes > int=4 bytes. Size=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q207",
+    "lv": 1,
+    "q": "Which storage class stores variable between function calls on stack?",
+    "a": [
+      "static"
+    ],
+    "h": "static local variable is stored in data segment, persists between function calls.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q208",
+    "lv": 1,
+    "q": "Function pointers store what kind of address?",
+    "a": [
+      "function"
+    ],
+    "h": "Function pointers store the memory address of a ?. Can be called through the pointer.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q209",
+    "lv": 1,
+    "q": "int x=100; printf('%d',x>>2); \u2014 output?",
+    "a": [
+      "25"
+    ],
+    "h": "100>>2=100\u00f74=?. Right shift n = divide by 2^n.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q210",
+    "lv": 1,
+    "q": "int x=3; printf('%d',x<<3); \u2014 output?",
+    "a": [
+      "24"
+    ],
+    "h": "3<<3=3\u00d78=?. Left shift n = multiply by 2^n.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q211",
+    "lv": 1,
+    "q": "A buffer overflow overwrites what critical stack element to gain control?",
+    "a": [
+      "return"
+    ],
+    "h": "Buffer overflow overwrites ? address on stack. Attacker redirects execution to malicious code.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q212",
+    "lv": 1,
+    "q": "What is the printf format specifier for long int?",
+    "a": [
+      "%ld"
+    ],
+    "h": "%ld is for long int. %d for int, %lld for long long int.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q213",
+    "lv": 1,
+    "q": "What does getchar() return when EOF is reached?",
+    "a": [
+      "-1"
+    ],
+    "h": "getchar() returns int. EOF is ? (0xFFFFFFFF). It returns int so it can hold all char values plus EOF.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q214",
+    "lv": 1,
+    "q": "int x=5; printf('%d',x*=2); \u2014 output?",
+    "a": [
+      "10"
+    ],
+    "h": "x*=2 is x=x*2. 5*2=10. printf prints result of assignment = ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q215",
+    "lv": 1,
+    "q": "int x=10; printf('%d',x/=3); \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "x/=3 is x=x/3. 10/3=3 (integer division truncates). Result=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q216",
+    "lv": 1,
+    "q": "Which C library function searches a character in a string?",
+    "a": [
+      "strchr"
+    ],
+    "h": "strchr(str, ch) returns pointer to first occurrence of character ch in string str.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q217",
+    "lv": 1,
+    "q": "Which function finds the first occurrence of substring in a string?",
+    "a": [
+      "strstr"
+    ],
+    "h": "strstr(haystack, needle) returns pointer to first occurrence of needle in haystack.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q218",
+    "lv": 1,
+    "q": "printf('%d',1&&0||1); \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "&&  has higher precedence than ||. (1&&0)=0. 0||1=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q219",
+    "lv": 1,
+    "q": "printf('%d',1&&0&&1); \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "Short-circuit: 1&&0=0. Then 0&&1=0 (short-circuits). Output=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q220",
+    "lv": 1,
+    "q": "printf('%d',0||0||1); \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "Short-circuit: 0||0=0. Then 0||1=1. Output=?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q221",
+    "lv": 1,
+    "q": "In C, macro arguments are expanded how (literally/evaluated)?",
+    "a": [
+      "literally"
+    ],
+    "h": "Macros are text-substituted by preprocessor. Arguments replaced ?, not evaluated first.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q222",
+    "lv": 1,
+    "q": "What is the correct way to swap two numbers without a temp in C? (technique name)",
+    "a": [
+      "XOR"
+    ],
+    "h": "XOR swap: a^=b; b^=a; a^=b; swaps values without temporary variable.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q223",
+    "lv": 1,
+    "q": "What is the name for writing beyond an array's boundary in C?",
+    "a": [
+      "overflow"
+    ],
+    "h": "Writing past array end corrupts adjacent memory. Called a buffer ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q224",
+    "lv": 1,
+    "q": "int a=10; int b=a; b=20; printf('%d',a); \u2014 output?",
+    "a": [
+      "10"
+    ],
+    "h": "b=a copies the VALUE of a, not a reference. b=20 only changes b. a remains ?",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q225",
+    "lv": 1,
+    "q": "How many arguments does main() accept at most in standard C?",
+    "a": [
+      "2"
+    ],
+    "h": "int main(int argc, char *argv[]). argc=count, argv=argument strings. So ? arguments maximum.",
+    "type": "C",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q226",
+    "lv": 1,
+    "q": "print(type(1/2)) \u2014 what class is printed?",
+    "a": [
+      "float"
+    ],
+    "h": "In Python 3, / always returns ?. 1/2=0.5 which is ? type.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q227",
+    "lv": 1,
+    "q": "print(type(1//2)) \u2014 what class is printed?",
+    "a": [
+      "int"
+    ],
+    "h": "// is integer (floor) division. 1//2=0 which is ? type.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q228",
+    "lv": 1,
+    "q": "print(10%3) \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "% is modulo. 10=3\u00d73+1. Remainder=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q229",
+    "lv": 1,
+    "q": "print(2**10) \u2014 output?",
+    "a": [
+      "1024"
+    ],
+    "h": "** is the power operator. 2**10=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q230",
+    "lv": 1,
+    "q": "print(bool('')) \u2014 output?",
+    "a": [
+      "False"
+    ],
+    "h": "Empty string is falsy. bool('')=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q231",
+    "lv": 1,
+    "q": "print(bool('0')) \u2014 output?",
+    "a": [
+      "True"
+    ],
+    "h": "Any non-empty string is truthy, even '0'. bool('0')=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q232",
+    "lv": 1,
+    "q": "print(bool(0)) \u2014 output?",
+    "a": [
+      "False"
+    ],
+    "h": "Zero is always falsy. bool(0)=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q233",
+    "lv": 1,
+    "q": "print(bool([])) \u2014 output?",
+    "a": [
+      "False"
+    ],
+    "h": "Empty list is falsy. bool([])=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q234",
+    "lv": 1,
+    "q": "x=[1,2,3]; x.append(4); print(len(x)); \u2014 output?",
+    "a": [
+      "4"
+    ],
+    "h": "append() adds one element. List goes from length 3 to ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q235",
+    "lv": 1,
+    "q": "x=[1,2,3]; print(x[-1]) \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "Negative index -1 means last element. [1,2,3][-1]=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q236",
+    "lv": 1,
+    "q": "x=[1,2,3,4,5]; print(x[1:3]) \u2014 output?",
+    "a": [
+      "[2,3]"
+    ],
+    "h": "Slice [1:3] returns elements at indices 1 and 2 (stop is exclusive). ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q237",
+    "lv": 1,
+    "q": "x=[1,2,3]; print(x[::-1]) \u2014 output?",
+    "a": [
+      "[3,2,1]"
+    ],
+    "h": "Slice [::\u22121] reverses the list. Step -1 goes backwards.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q238",
+    "lv": 1,
+    "q": "print(len('hello world')) \u2014 output?",
+    "a": [
+      "11"
+    ],
+    "h": "'hello world' has 5+1+5=? characters including the space.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q239",
+    "lv": 1,
+    "q": "print('hello'.upper()) \u2014 output?",
+    "a": [
+      "HELLO"
+    ],
+    "h": ".upper() converts all characters to uppercase. '?'\u2192'?'.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q240",
+    "lv": 1,
+    "q": "print('HELLO'.lower()) \u2014 output?",
+    "a": [
+      "hello"
+    ],
+    "h": ".lower() converts all characters to lowercase. '?'\u2192'?'.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q241",
+    "lv": 1,
+    "q": "print('hello world'.split()[0]) \u2014 output?",
+    "a": [
+      "hello"
+    ],
+    "h": ".split() splits on whitespace by default. First element [0]='?'.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q242",
+    "lv": 1,
+    "q": "print(','.join(['a','b','c'])) \u2014 output?",
+    "a": [
+      "a,b,c"
+    ],
+    "h": "','.join(['a','b','c']) joins list elements with comma separator \u2192 '?'.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q243",
+    "lv": 1,
+    "q": "print(type([]).__name__) \u2014 output?",
+    "a": [
+      "list"
+    ],
+    "h": "type([]).__name__ returns the string name of the type. ?'s name is '?'.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q244",
+    "lv": 1,
+    "q": "print(type({}).__name__) \u2014 output?",
+    "a": [
+      "dict"
+    ],
+    "h": "type({}).__name__ = '?'. Empty {} is a ?, not a set.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q245",
+    "lv": 1,
+    "q": "print(type(()).__name__) \u2014 output?",
+    "a": [
+      "tuple"
+    ],
+    "h": "type(()).__name__ = 'tuple'. () is an empty ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q246",
+    "lv": 1,
+    "q": "x=(1,2,3); print(x[1]) \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": "Tuples are indexed like lists. (1,2,3)[1]=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q247",
+    "lv": 1,
+    "q": "d={'a':1,'b':2}; print(d['a']) \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "Dictionary access by key. d['a'] returns the value mapped to key 'a'=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q248",
+    "lv": 1,
+    "q": "d={'a':1}; print(d.get('b',0)) \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "dict.get(key, default) returns default if key not found. 'b' not in d \u2192 returns ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q249",
+    "lv": 1,
+    "q": "print(list(range(1,6))) \u2014 output?",
+    "a": [
+      "[1,2,3,4,5]"
+    ],
+    "h": "range(1,6) generates 1,2,3,4,5. list() converts to ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q250",
+    "lv": 1,
+    "q": "print(sum([1,2,3,4,5])) \u2014 output?",
+    "a": [
+      "15"
+    ],
+    "h": "sum() adds all elements. 1+2+3+4+5=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q251",
+    "lv": 1,
+    "q": "print(max([3,1,4,1,5,9])) \u2014 output?",
+    "a": [
+      "9"
+    ],
+    "h": "max() returns the largest element. max([3,1,4,1,5,9])=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q252",
+    "lv": 1,
+    "q": "print(min([3,1,4,1,5,9])) \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "min() returns the smallest element. min([3,1,4,1,5,9])=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q253",
+    "lv": 1,
+    "q": "print(sorted([3,1,2])) \u2014 output?",
+    "a": [
+      "[1,2,3]"
+    ],
+    "h": "sorted() returns a new sorted list. [3,1,2]\u2192?.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q254",
+    "lv": 1,
+    "q": "print(abs(-7)) \u2014 output?",
+    "a": [
+      "7"
+    ],
+    "h": "abs() returns absolute value. abs(-7)=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q255",
+    "lv": 1,
+    "q": "print(round(3.7)) \u2014 output?",
+    "a": [
+      "4"
+    ],
+    "h": "round() rounds to nearest integer. round(3.7)=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q256",
+    "lv": 1,
+    "q": "What keyword is used to define a function in Python?",
+    "a": [
+      "def"
+    ],
+    "h": "def keyword defines a function in Python.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q257",
+    "lv": 1,
+    "q": "What keyword defines a class in Python?",
+    "a": [
+      "class"
+    ],
+    "h": "class keyword defines a ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q258",
+    "lv": 1,
+    "q": "What is the first argument of every instance method in Python?",
+    "a": [
+      "self"
+    ],
+    "h": "Every instance method's first parameter is ? \u2014 refers to the calling object.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q259",
+    "lv": 1,
+    "q": "What method is called when an object is created in Python?",
+    "a": [
+      "__init__"
+    ],
+    "h": "__init__ is the constructor, called automatically when an object is created.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q260",
+    "lv": 1,
+    "q": "What keyword is used to inherit from a parent class?",
+    "a": [
+      "super"
+    ],
+    "h": "super() calls the parent class. Use ?().__init__() to initialize parent.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q261",
+    "lv": 1,
+    "q": "What keyword makes a variable available in outer scope from inner function?",
+    "a": [
+      "nonlocal"
+    ],
+    "h": "nonlocal declares that a variable belongs to the nearest enclosing scope (not global).",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q262",
+    "lv": 1,
+    "q": "What keyword makes a variable global inside a function?",
+    "a": [
+      "global"
+    ],
+    "h": "global keyword declares that a variable inside a function refers to the ? one.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q263",
+    "lv": 1,
+    "q": "What keyword creates an anonymous function in Python?",
+    "a": [
+      "lambda"
+    ],
+    "h": "lambda creates a small anonymous function: ? x: x+1 is equivalent to def f(x): return x+1.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q264",
+    "lv": 1,
+    "q": "What keyword is used for exception handling in Python?",
+    "a": [
+      "try"
+    ],
+    "h": "try block contains code that might raise an exception.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q265",
+    "lv": 1,
+    "q": "What keyword catches an exception in Python?",
+    "a": [
+      "except"
+    ],
+    "h": "except block catches and handles specific exceptions.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q266",
+    "lv": 1,
+    "q": "What keyword always executes after try-except?",
+    "a": [
+      "finally"
+    ],
+    "h": "finally block always executes whether exception occurred or not \u2014 used for cleanup.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q267",
+    "lv": 1,
+    "q": "What keyword raises an exception in Python?",
+    "a": [
+      "raise"
+    ],
+    "h": "raise keyword raises (throws) an exception: ? ValueError('message').",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q268",
+    "lv": 1,
+    "q": "print(0.1+0.2==0.3) \u2014 output?",
+    "a": [
+      "False"
+    ],
+    "h": "IEEE 754 floating point cannot exactly represent 0.1 or 0.2. 0.1+0.2=0.30000000000000004\u22600.3.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q269",
+    "lv": 1,
+    "q": "print(256 is 256) \u2014 output?",
+    "a": [
+      "True"
+    ],
+    "h": "Python caches small integers -5 to 256. Both 256 references point to same object. is=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q270",
+    "lv": 1,
+    "q": "x=[1,2]; y=x; y.append(3); print(len(x)) \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "y=x makes y reference same list object. append on y also modifies x. len(x)=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q271",
+    "lv": 1,
+    "q": "x=[1,2]; y=x.copy(); y.append(3); print(len(x)) \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": ".copy() creates a shallow copy \u2014 new list, independent. append on y doesn't affect x. len(x)=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q272",
+    "lv": 1,
+    "q": "print([x**2 for x in range(4)]) \u2014 output?",
+    "a": [
+      "[0,1,4,9]"
+    ],
+    "h": "[x**2 for x in range(4)] = [0**2,1**2,2**2,3**2] = ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q273",
+    "lv": 1,
+    "q": "print(list(filter(lambda x:x%2==0,[1,2,3,4]))) \u2014 output?",
+    "a": [
+      "[2,4]"
+    ],
+    "h": "filter keeps elements where lambda returns True. Even numbers: 2,4.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q274",
+    "lv": 1,
+    "q": "print(list(map(lambda x:x*2,[1,2,3]))) \u2014 output?",
+    "a": [
+      "[2,4,6]"
+    ],
+    "h": "map applies lambda to each element. x*2: ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q275",
+    "lv": 1,
+    "q": "What does GIL stand for in CPython?",
+    "a": [
+      "lock"
+    ],
+    "h": "GIL=Global Interpreter ?. Prevents multiple threads from executing Python bytecode simultaneously in CPython.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q276",
+    "lv": 1,
+    "q": "Which Python data type is immutable \u2014 list or tuple?",
+    "a": [
+      "tuple"
+    ],
+    "h": "Tuples are immutable \u2014 once created, elements cannot be changed. Lists are mutable.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q277",
+    "lv": 1,
+    "q": "Which built-in type stores unique values in Python?",
+    "a": [
+      "set"
+    ],
+    "h": "set stores unique values. Duplicates are automatically removed.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q278",
+    "lv": 1,
+    "q": "What is the time complexity of dict lookup in Python?",
+    "a": [
+      "O(1)"
+    ],
+    "h": "dict uses a hash table internally. Average key lookup = ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q279",
+    "lv": 1,
+    "q": "What is the method to add a key-value pair to a dict?",
+    "a": [
+      "update"
+    ],
+    "h": "dict.?({key:val}) adds or updates key-value pairs.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q280",
+    "lv": 1,
+    "q": "What does the pop() method return when called on a list?",
+    "a": [
+      "removed"
+    ],
+    "h": "list.pop() removes and returns the last element (or element at given index).",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q281",
+    "lv": 1,
+    "q": "s={1,2,3}; s.add(2); print(len(s)) \u2014 output?",
+    "a": [
+      "3"
+    ],
+    "h": "set.add() adds element only if not already present. {1,2,3}.add(2) \u2192 still {1,2,3}. len=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q282",
+    "lv": 1,
+    "q": "print({1,2,3}&{2,3,4}) \u2014 set intersection?",
+    "a": [
+      "{2,3}"
+    ],
+    "h": "& operator on sets returns intersection \u2014 elements in BOTH sets. ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q283",
+    "lv": 1,
+    "q": "print({1,2}|{3,4}) \u2014 set union length?",
+    "a": [
+      "4"
+    ],
+    "h": "| operator on sets returns union \u2014 elements in EITHER set. {1,2,3,4}. Length=?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q284",
+    "lv": 1,
+    "q": "What operator checks membership in a Python list?",
+    "a": [
+      "in"
+    ],
+    "h": "in operator checks membership: 3 ? [1,2,3] \u2192 True.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q285",
+    "lv": 1,
+    "q": "What keyword pauses a function and returns a value lazily?",
+    "a": [
+      "yield"
+    ],
+    "h": "yield pauses function execution and returns a value. Next call resumes from after ?",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q286",
+    "lv": 1,
+    "q": "A function using yield is called a?",
+    "a": [
+      "generator"
+    ],
+    "h": "A function containing yield is a ? function. Calling it returns a ? object.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q287",
+    "lv": 1,
+    "q": "What is Python's decorator syntax symbol?",
+    "a": [
+      "@"
+    ],
+    "h": "@decorator is syntactic sugar for func = decorator(func).",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q288",
+    "lv": 1,
+    "q": "What does __name__=='__main__' check?",
+    "a": [
+      "main"
+    ],
+    "h": "__name__=='__main__' is True only when the script is run directly, not imported.",
+    "type": "PYTHON",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q289",
+    "lv": 1,
+    "q": "funcs=[lambda:i for i in range(3)]; print(funcs[0]()) \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": "Late binding: lambda captures the variable i, not its value. By the time funcs[0]() is called, i=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q290",
+    "lv": 1,
+    "q": "funcs=[lambda x=i:x for i in range(3)]; print(funcs[0]()) \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "Default argument x=i captures the VALUE of i at lambda creation. funcs[0]() returns ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q291",
+    "lv": 1,
+    "q": "a=[[0]*3]*3; a[0][0]=9; print(a[2][0]) \u2014 output?",
+    "a": [
+      "9"
+    ],
+    "h": "[[0]*3]*3 creates 3 references to the SAME inner list. Changing a[0][0] changes all rows.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q292",
+    "lv": 1,
+    "q": "a=[[0]*3 for _ in range(3)]; a[0][0]=9; print(a[1][0]) \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "List comprehension creates independent inner lists. a[0][0]=9 only affects row ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q293",
+    "lv": 1,
+    "q": "class A: x=[] \u2014 a1=A(); a2=A(); a1.x.append(1); print(a2.x) \u2014 output?",
+    "a": [
+      "[1]"
+    ],
+    "h": "x=[] is a class attribute shared by ALL instances. a1.x.append(1) mutates the shared list.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q294",
+    "lv": 1,
+    "q": "def f(a,b=[]): b.append(a); return b \u2014 print(f(1)) then print(f(2)) second call?",
+    "a": [
+      "[1,2]"
+    ],
+    "h": "Default mutable argument b=[] is created ONCE. Persists between calls. Second call: b=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q295",
+    "lv": 1,
+    "q": "x=5; def f(): print(x); x=10; f() \u2014 raises what error?",
+    "a": [
+      "UnboundLocalError"
+    ],
+    "h": "Assigning x inside f makes it local. Reading it before assignment \u2192 ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q296",
+    "lv": 1,
+    "q": "print(257 is 257) in standard CPython at module level \u2014 output?",
+    "a": [
+      "True"
+    ],
+    "h": "At module level, Python often interns identical integer literals. 257 is 257 \u2192 typically ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q297",
+    "lv": 1,
+    "q": "print(type(type)) \u2014 what is returned?",
+    "a": [
+      "type"
+    ],
+    "h": "type is its own metaclass. ?(type) returns ? itself.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q298",
+    "lv": 1,
+    "q": "from functools import reduce; print(reduce(lambda a,x:a*x,[1,2,3,4],1)) \u2014 output?",
+    "a": [
+      "24"
+    ],
+    "h": "reduce applies lambda cumulatively. 1\u21921\u00d71=1\u21921\u00d72=2\u21922\u00d73=6\u21926\u00d74=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q299",
+    "lv": 1,
+    "q": "g=(x**2 for x in range(4)); print(next(g)) \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "Generator expression creates lazy iterator. next(g) gets first value: 0**2=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q300",
+    "lv": 1,
+    "q": "def gen(): value=yield 1; yield value*2 \u2014 g=gen(); next(g); print(g.send(5)) \u2014 output?",
+    "a": [
+      "10"
+    ],
+    "h": "send(5) resumes generator, value=5. Next yield: value*2=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q301",
+    "lv": 1,
+    "q": "class A: pass; a=A(); a.x=10; print(a.__dict__['x']) \u2014 output?",
+    "a": [
+      "10"
+    ],
+    "h": "__dict__ is the instance attribute dictionary. a.x=? stores {'x':?}.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q302",
+    "lv": 1,
+    "q": "print(1 or 2) \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "or returns first truthy value. ? is truthy \u2192 returns ? immediately.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q303",
+    "lv": 1,
+    "q": "print(0 or 2) \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": "0 is falsy, so or continues. 2 is truthy \u2192 returns ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q304",
+    "lv": 1,
+    "q": "print(1 and 2) \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": "and returns first falsy or last value. 1 is truthy, continues. Returns ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q305",
+    "lv": 1,
+    "q": "print(0 and 2) \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "and short-circuits on first falsy. ? is falsy \u2192 returns ? immediately.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q306",
+    "lv": 1,
+    "q": "a,*b,c=[1,2,3,4,5]; print(b) \u2014 output?",
+    "a": [
+      "[2,3,4]"
+    ],
+    "h": "Extended unpacking: a gets first, c gets last, *b captures everything in between=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q307",
+    "lv": 1,
+    "q": "print(list(zip([1,2],[3,4]))) \u2014 output?",
+    "a": [
+      "[(1,3),(2,4)]"
+    ],
+    "h": "zip pairs elements from both lists by position. ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q308",
+    "lv": 1,
+    "q": "print(list(enumerate(['a','b']))[0]) \u2014 output?",
+    "a": [
+      "(0,'a')"
+    ],
+    "h": "enumerate yields (index, value) pairs. First = ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q309",
+    "lv": 1,
+    "q": "d={1:'a',2:'b'}; print(list(d.values())) \u2014 output?",
+    "a": [
+      "['a','b']"
+    ],
+    "h": "d.values() returns dict values. list() converts to ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q310",
+    "lv": 1,
+    "q": "d={1:'a',2:'b'}; d.pop(1); print(len(d)) \u2014 output?",
+    "a": [
+      "1"
+    ],
+    "h": "pop(1) removes key 1. Dict had 2 keys, now has 1. len=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q311",
+    "lv": 1,
+    "q": "__getattr__ is called when attribute lookup?",
+    "a": [
+      "fails"
+    ],
+    "h": "__getattr__ is ONLY called when the attribute is NOT found through normal means.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q312",
+    "lv": 1,
+    "q": "__getattribute__ is called on every attribute access \u2014 always or only on failure?",
+    "a": [
+      "always"
+    ],
+    "h": "__getattribute__ intercepts EVERY attribute access, even ones that exist. ? called.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q313",
+    "lv": 1,
+    "q": "What Python concept prevents arbitrary instance attributes?",
+    "a": [
+      "__slots__"
+    ],
+    "h": "__slots__ = ['x','y'] restricts instance to only listed attributes. No arbitrary attributes allowed.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q314",
+    "lv": 1,
+    "q": "Which dunder method implements the descriptor protocol for reads?",
+    "a": [
+      "__get__"
+    ],
+    "h": "__get__(self, obj, objtype) is the descriptor read protocol method.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q315",
+    "lv": 1,
+    "q": "What is a shallow copy missing that deepcopy provides?",
+    "a": [
+      "nested"
+    ],
+    "h": "Shallow copy creates new container but still references same ? objects. Deep copy recurses.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q316",
+    "lv": 1,
+    "q": "What does asyncio.run() execute?",
+    "a": [
+      "coroutine"
+    ],
+    "h": "asyncio.run(coro) runs a ? object to completion in the event loop.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q317",
+    "lv": 1,
+    "q": "What keyword is used to call a coroutine in async Python?",
+    "a": [
+      "await"
+    ],
+    "h": "await pauses the coroutine until the awaited task completes. Only valid inside async def.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q318",
+    "lv": 1,
+    "q": "Python garbage collects circular references using what mechanism?",
+    "a": [
+      "cyclic"
+    ],
+    "h": "CPython uses ? garbage collector to detect and collect circular references.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q319",
+    "lv": 1,
+    "q": "Which __dunder__ is called when a new class is defined using a metaclass?",
+    "a": [
+      "__new__"
+    ],
+    "h": "__new__ is called to CREATE the instance. __init__ is called to INITIALIZE it after creation.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q320",
+    "lv": 1,
+    "q": "Which __dunder__ is called on EVERY subclass creation automatically?",
+    "a": [
+      "__init_subclass__"
+    ],
+    "h": "__init_subclass__ is automatically called on the parent class whenever a subclass is created.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q321",
+    "lv": 1,
+    "q": "class A: def __new__(cls): return 42 \u2014 print(A()) \u2014 output?",
+    "a": [
+      "42"
+    ],
+    "h": "__new__ returns 42 instead of an instance. So A() returns ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q322",
+    "lv": 1,
+    "q": "x='hello'; print(x.replace('l','r')) \u2014 output?",
+    "a": [
+      "herro"
+    ],
+    "h": ".replace(old,new) replaces all occurrences. 'l'\u2192'r'. 'hello'\u2192'?'.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q323",
+    "lv": 1,
+    "q": "print('abc'*3) \u2014 output?",
+    "a": [
+      "abcabcabc"
+    ],
+    "h": "String * n repeats the string n times. 'abc'*3='?'.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q324",
+    "lv": 1,
+    "q": "print('{:05d}'.format(42)) \u2014 output?",
+    "a": [
+      "00042"
+    ],
+    "h": "{:05d} pads integer to 5 characters with leading zeros. 42\u2192'?'.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q325",
+    "lv": 1,
+    "q": "import sys; print(sys.getrecursionlimit()==1000) \u2014 typically?",
+    "a": [
+      "True"
+    ],
+    "h": "Default recursion limit in CPython is 1000. sys.getrecursionlimit()==1000 is ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q326",
+    "lv": 1,
+    "q": "x=frozenset([1,2,3]); x.add(4) \u2014 raises what?",
+    "a": [
+      "AttributeError"
+    ],
+    "h": "frozenset is immutable. add() doesn't exist on frozenset \u2192 ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q327",
+    "lv": 1,
+    "q": "print(divmod(10,3)) \u2014 output?",
+    "a": [
+      "(3,1)"
+    ],
+    "h": "divmod(a,b) returns (quotient, remainder) as a tuple. divmod(10,3)=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q328",
+    "lv": 1,
+    "q": "print(all([1,2,0,3])) \u2014 output?",
+    "a": [
+      "False"
+    ],
+    "h": "all() returns True only if every element is truthy. 0 is falsy \u2192 returns ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q329",
+    "lv": 1,
+    "q": "print(any([0,0,1,0])) \u2014 output?",
+    "a": [
+      "True"
+    ],
+    "h": "any() returns True if at least one element is truthy. 1 is truthy \u2192 returns ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q330",
+    "lv": 1,
+    "q": "print(bin(10)) \u2014 output?",
+    "a": [
+      "0b1010"
+    ],
+    "h": "bin() converts to binary string with '0b' prefix. bin(10)='?'.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q331",
+    "lv": 1,
+    "q": "print(hex(255)) \u2014 output?",
+    "a": [
+      "0xff"
+    ],
+    "h": "hex() converts to hex string with '0x' prefix. hex(255)='?'.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q332",
+    "lv": 1,
+    "q": "print(oct(8)) \u2014 output?",
+    "a": [
+      "0o10"
+    ],
+    "h": "oct() converts to octal string with '0o' prefix. oct(8)='?'.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q333",
+    "lv": 1,
+    "q": "print(ord('A')) \u2014 output?",
+    "a": [
+      "65"
+    ],
+    "h": "ord() returns the Unicode/ASCII code point. ord('A')=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q334",
+    "lv": 1,
+    "q": "print(chr(90)) \u2014 output?",
+    "a": [
+      "Z"
+    ],
+    "h": "chr() converts code point to character. chr(90)='?' (?=90 in ASCII).",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q335",
+    "lv": 1,
+    "q": "What is Python's reference counting garbage collection strategy called?",
+    "a": [
+      "refcount"
+    ],
+    "h": "CPython counts references to each object. When count reaches 0, object is freed.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q336",
+    "lv": 1,
+    "q": "What module provides deepcopy in Python?",
+    "a": [
+      "copy"
+    ],
+    "h": "import copy; copy.deepcopy(obj) creates a fully independent recursive ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q337",
+    "lv": 1,
+    "q": "What is the name of Python's built-in profiler module?",
+    "a": [
+      "cProfile"
+    ],
+    "h": "import ?; ?.run('function()') profiles execution time per function.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q338",
+    "lv": 1,
+    "q": "What does *args capture in a function?",
+    "a": [
+      "positional"
+    ],
+    "h": "*args captures any number of ? arguments as a tuple.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q339",
+    "lv": 1,
+    "q": "What does **kwargs capture in a function?",
+    "a": [
+      "keyword"
+    ],
+    "h": "**kwargs captures any number of ? arguments as a dictionary.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q340",
+    "lv": 1,
+    "q": "What is the name for a function defined inside another function?",
+    "a": [
+      "closure"
+    ],
+    "h": "A ? is an inner function that captures variables from its enclosing scope.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q341",
+    "lv": 1,
+    "q": "print(type(lambda:None).__name__) \u2014 output?",
+    "a": [
+      "function"
+    ],
+    "h": "lambda creates a ? object. Its type name is '?'.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q342",
+    "lv": 1,
+    "q": "print(isinstance(True,int)) \u2014 output?",
+    "a": [
+      "True"
+    ],
+    "h": "bool is a subclass of int in Python. isinstance(True, int) = ?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q343",
+    "lv": 1,
+    "q": "print(True+True) \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": "True=1 in Python's int hierarchy. True+True=1+1=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q344",
+    "lv": 1,
+    "q": "print(True*5) \u2014 output?",
+    "a": [
+      "5"
+    ],
+    "h": "True=1. True*5=1*5=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q345",
+    "lv": 1,
+    "q": "Which Python keyword skips rest of loop body?",
+    "a": [
+      "continue"
+    ],
+    "h": "continue skips the current iteration and moves to the next. Opposite of break.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q346",
+    "lv": 1,
+    "q": "Python's else on a for loop executes when loop completes without?",
+    "a": [
+      "break"
+    ],
+    "h": "For-else: else block runs if loop completes normally (without hitting ?).",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q347",
+    "lv": 1,
+    "q": "d={}; d.setdefault('x',[]); d['x'].append(1); print(d) \u2014 output key count?",
+    "a": [
+      "1"
+    ],
+    "h": "setdefault('x',[]) sets 'x':[] if not present. d has one key 'x'. len=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q348",
+    "lv": 1,
+    "q": "from collections import Counter; c=Counter('aabbc'); print(c['a']) \u2014 output?",
+    "a": [
+      "2"
+    ],
+    "h": "Counter counts occurrences. 'aabbc' \u2192 a:2, b:2, c:1. c['a']=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q349",
+    "lv": 1,
+    "q": "from collections import deque; d=deque([1,2,3]); d.appendleft(0); print(d[0]) \u2014 output?",
+    "a": [
+      "0"
+    ],
+    "h": "appendleft() adds to the LEFT (front) of deque. [1,2,3]\u2192[0,1,2,3]. d[0]=?",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q350",
+    "lv": 1,
+    "q": "What is the name of Python's abstract base class module?",
+    "a": [
+      "abc"
+    ],
+    "h": "abc module provides Abstract Base Classes. Use ABCMeta and @abstractmethod.",
+    "type": "PYTHON",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q351",
+    "lv": 1,
+    "q": "What is the time complexity of binary search?",
+    "a": [
+      "O(logN)"
+    ],
+    "h": "Binary search halves the search space each step. log\u2082(n) steps worst case \u2192 O(log N).",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q352",
+    "lv": 1,
+    "q": "What data structure uses LIFO order?",
+    "a": [
+      "stack"
+    ],
+    "h": "Stack = Last In First Out. Push adds to top, Pop removes from top.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q353",
+    "lv": 1,
+    "q": "What data structure uses FIFO order?",
+    "a": [
+      "queue"
+    ],
+    "h": "Queue = First In First Out. Enqueue adds to rear, Dequeue removes from front.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q354",
+    "lv": 1,
+    "q": "What is the time complexity of linear search in worst case?",
+    "a": [
+      "O(N)"
+    ],
+    "h": "Linear search checks each element one by one. Worst case = last element \u2192 ?",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q355",
+    "lv": 1,
+    "q": "Which sorting algorithm has guaranteed O(N log N) in all cases?",
+    "a": [
+      "mergesort"
+    ],
+    "h": "Merge sort always divides into halves and merges. T(n)=2T(n/2)+O(n) \u2192 O(N log N) always.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q356",
+    "lv": 1,
+    "q": "What is the worst case time complexity of quicksort?",
+    "a": [
+      "O(N2)"
+    ],
+    "h": "QuickSort worst case: pivot always smallest/largest (sorted array). O(N\u00b2) comparisons.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q357",
+    "lv": 1,
+    "q": "What sorting algorithm is best for nearly sorted data?",
+    "a": [
+      "insertion"
+    ],
+    "h": "Insertion sort is efficient for nearly sorted data. Shifts elements instead of full swaps.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q358",
+    "lv": 1,
+    "q": "What data structure is used to implement a recursive function?",
+    "a": [
+      "stack"
+    ],
+    "h": "Recursive calls are managed via the call ?. Each call pushes a new frame.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q359",
+    "lv": 1,
+    "q": "What is the space complexity of merge sort?",
+    "a": [
+      "O(N)"
+    ],
+    "h": "Merge sort needs ? auxiliary space for the merge step.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q360",
+    "lv": 1,
+    "q": "In a binary tree, what is the maximum nodes at level L?",
+    "a": [
+      "2L"
+    ],
+    "h": "Level 0=root=1 node. Level L has at most 2^L nodes. Maximum = 2^L.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q361",
+    "lv": 1,
+    "q": "What traversal visits left, root, right in a BST?",
+    "a": [
+      "inorder"
+    ],
+    "h": "Inorder: Left\u2192Root\u2192Right. For BST, this visits nodes in sorted ascending order.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q362",
+    "lv": 1,
+    "q": "What traversal visits root, left, right?",
+    "a": [
+      "preorder"
+    ],
+    "h": "Preorder: Root\u2192Left\u2192Right. Used to copy or serialize a tree.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q363",
+    "lv": 1,
+    "q": "What traversal visits left, right, root?",
+    "a": [
+      "postorder"
+    ],
+    "h": "Postorder: Left\u2192Right\u2192Root. Used to delete a tree or evaluate expression trees.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q364",
+    "lv": 1,
+    "q": "Which data structure is used in BFS traversal?",
+    "a": [
+      "queue"
+    ],
+    "h": "BFS explores level by level. Use a ? to process nodes FIFO.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q365",
+    "lv": 1,
+    "q": "Which data structure is used in DFS traversal?",
+    "a": [
+      "stack"
+    ],
+    "h": "DFS explores depth-first. Use a ? (or recursion) to backtrack.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q366",
+    "lv": 1,
+    "q": "What is a hash collision resolution technique that uses linked lists?",
+    "a": [
+      "chaining"
+    ],
+    "h": "Chaining: each hash table slot holds a linked list of colliding elements.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q367",
+    "lv": 1,
+    "q": "What is the average time complexity for hash table lookup?",
+    "a": [
+      "O(1)"
+    ],
+    "h": "Hash function maps key to index in ?. Lookup = compute hash + access = ? average.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q368",
+    "lv": 1,
+    "q": "A priority queue is best implemented using which data structure?",
+    "a": [
+      "heap"
+    ],
+    "h": "Heap provides O(log N) insert and O(1) peek at max/min. Perfect for priority queue.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q369",
+    "lv": 1,
+    "q": "In a max-heap, the root is always the?",
+    "a": [
+      "maximum"
+    ],
+    "h": "Max-heap property: every parent \u2265 its children. Root is always the ?",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q370",
+    "lv": 1,
+    "q": "What is the height of a balanced BST with n nodes?",
+    "a": [
+      "O(logN)"
+    ],
+    "h": "Balanced BST keeps height = O(log N). Unbalanced can degrade to O(N).",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q371",
+    "lv": 1,
+    "q": "What does CPU scheduling algorithm FCFS stand for?",
+    "a": [
+      "FCFS"
+    ],
+    "h": "FCFS = First Come First Served. Processes served in arrival order.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q372",
+    "lv": 1,
+    "q": "What scheduling gives CPU to the process with shortest burst time?",
+    "a": [
+      "SJF"
+    ],
+    "h": "SJF = Shortest Job First. Selects process with minimum CPU burst time.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q373",
+    "lv": 1,
+    "q": "What OS scheduling algorithm uses a time quantum?",
+    "a": [
+      "roundrobin"
+    ],
+    "h": "Round Robin gives each process a fixed time quantum. After quantum, next process gets CPU.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q374",
+    "lv": 1,
+    "q": "What is a deadlock?",
+    "a": [
+      "circular"
+    ],
+    "h": "Deadlock = ? wait. P1 waits for P2, P2 waits for P1. Neither can proceed.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q375",
+    "lv": 1,
+    "q": "Which OS concept prevents a process from running too long?",
+    "a": [
+      "preemption"
+    ],
+    "h": "Preemption forcibly takes CPU from running process. Prevents monopolization.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q376",
+    "lv": 1,
+    "q": "What is the name for the table mapping virtual to physical addresses?",
+    "a": [
+      "pagetable"
+    ],
+    "h": "Page table maps virtual page numbers to physical frame numbers.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q377",
+    "lv": 1,
+    "q": "What is swapping unused memory pages to disk called?",
+    "a": [
+      "paging"
+    ],
+    "h": "Paging divides memory into fixed-size pages. Virtual pages mapped to physical frames.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q378",
+    "lv": 1,
+    "q": "What is the term for a process waiting indefinitely for a resource?",
+    "a": [
+      "starvation"
+    ],
+    "h": "Starvation = process waits indefinitely because higher priority processes always get CPU.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q379",
+    "lv": 1,
+    "q": "What synchronization primitive allows only one thread in critical section?",
+    "a": [
+      "mutex"
+    ],
+    "h": "Mutex = Mutual Exclusion. Only one thread can lock it at a time. Others block.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q380",
+    "lv": 1,
+    "q": "What is a semaphore with count > 1 called?",
+    "a": [
+      "counting"
+    ],
+    "h": "Counting semaphore allows up to N threads in critical section simultaneously.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q381",
+    "lv": 1,
+    "q": "What does IP stand for?",
+    "a": [
+      "Internet"
+    ],
+    "h": "IP = ? Protocol. Provides addressing and routing for packets.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q382",
+    "lv": 1,
+    "q": "Which protocol guarantees reliable ordered delivery?",
+    "a": [
+      "TCP"
+    ],
+    "h": "TCP (Transmission Control Protocol) guarantees ordered, reliable, error-checked delivery.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q383",
+    "lv": 1,
+    "q": "Which protocol does NOT guarantee delivery?",
+    "a": [
+      "UDP"
+    ],
+    "h": "UDP (User Datagram Protocol) is connectionless. No handshake, no delivery guarantee.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q384",
+    "lv": 1,
+    "q": "What port does HTTP use by default?",
+    "a": [
+      "80"
+    ],
+    "h": "HTTP (Hypertext Transfer Protocol) default port is ?",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q385",
+    "lv": 1,
+    "q": "What port does HTTPS use by default?",
+    "a": [
+      "443"
+    ],
+    "h": "HTTPS = HTTP Secure (with TLS). Default port is ?",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q386",
+    "lv": 1,
+    "q": "What is the loopback IP address?",
+    "a": [
+      "127.0.0.1"
+    ],
+    "h": "127.0.0.1 is the loopback address. Traffic goes to the machine itself. Also called localhost.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q387",
+    "lv": 1,
+    "q": "What translates domain names to IP addresses?",
+    "a": [
+      "DNS"
+    ],
+    "h": "DNS = Domain Name System. Resolves 'google.com' \u2192 '142.250.x.x'.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q388",
+    "lv": 1,
+    "q": "What layer of OSI model handles routing?",
+    "a": [
+      "network"
+    ],
+    "h": "Network layer (Layer 3) handles routing using IP addresses.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q389",
+    "lv": 1,
+    "q": "How many layers does the OSI model have?",
+    "a": [
+      "7"
+    ],
+    "h": "OSI model has ? layers: Physical, Data Link, Network, Transport, Session, Presentation, Application.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q390",
+    "lv": 1,
+    "q": "What does MAC address stand for?",
+    "a": [
+      "Media"
+    ],
+    "h": "MAC = ? Access Control. Hardware address burned into network interface card.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q391",
+    "lv": 1,
+    "q": "What does SQL stand for?",
+    "a": [
+      "Structured"
+    ],
+    "h": "SQL = ? Query Language. Used to communicate with relational databases.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q392",
+    "lv": 1,
+    "q": "Which SQL command retrieves data?",
+    "a": [
+      "SELECT"
+    ],
+    "h": "SELECT retrieves data. ? * FROM table returns all columns and rows.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q393",
+    "lv": 1,
+    "q": "Which SQL command adds new records?",
+    "a": [
+      "INSERT"
+    ],
+    "h": "INSERT INTO table VALUES (...) adds a new row.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q394",
+    "lv": 1,
+    "q": "Which SQL command modifies existing data?",
+    "a": [
+      "UPDATE"
+    ],
+    "h": "UPDATE table SET col=val WHERE condition modifies existing rows.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q395",
+    "lv": 1,
+    "q": "Which SQL command removes records?",
+    "a": [
+      "DELETE"
+    ],
+    "h": "DELETE FROM table WHERE condition removes rows. Without WHERE, deletes all rows.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q396",
+    "lv": 1,
+    "q": "What constraint ensures uniqueness of a column?",
+    "a": [
+      "UNIQUE"
+    ],
+    "h": "UNIQUE constraint ensures no two rows have the same value in that column.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q397",
+    "lv": 1,
+    "q": "What is a foreign key?",
+    "a": [
+      "reference"
+    ],
+    "h": "Foreign key references primary key of another table. Enforces referential integrity.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q398",
+    "lv": 1,
+    "q": "What SQL keyword filters groups?",
+    "a": [
+      "HAVING"
+    ],
+    "h": "HAVING filters after GROUP BY. WHERE filters before grouping.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q399",
+    "lv": 1,
+    "q": "What is the normal form that eliminates partial dependencies?",
+    "a": [
+      "2NF"
+    ],
+    "h": "2NF: must be in 1NF, and no partial dependency on composite primary key.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q400",
+    "lv": 1,
+    "q": "What type of join returns all records from both tables?",
+    "a": [
+      "FULL"
+    ],
+    "h": "FULL JOIN returns all rows from both tables, with NULLs where no match exists.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q401",
+    "lv": 1,
+    "q": "What OOP principle hides internal details from outside?",
+    "a": [
+      "encapsulation"
+    ],
+    "h": "Encapsulation: bundle data + methods together, restrict direct access to internal state.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q402",
+    "lv": 1,
+    "q": "What OOP principle allows a class to inherit from another?",
+    "a": [
+      "inheritance"
+    ],
+    "h": "Inheritance: child class inherits properties and methods from parent class.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q403",
+    "lv": 1,
+    "q": "What OOP principle allows same method name to behave differently?",
+    "a": [
+      "polymorphism"
+    ],
+    "h": "Polymorphism: same interface, different behavior. Method overriding enables runtime ?",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q404",
+    "lv": 1,
+    "q": "What OOP principle represents real-world entities as objects?",
+    "a": [
+      "abstraction"
+    ],
+    "h": "Abstraction: hide complex implementation, expose only essential interface to user.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q405",
+    "lv": 1,
+    "q": "What is a class that cannot be instantiated called?",
+    "a": [
+      "abstract"
+    ],
+    "h": "Abstract class cannot be instantiated directly. Must be subclassed and methods implemented.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q406",
+    "lv": 1,
+    "q": "What is overriding a method in a subclass called?",
+    "a": [
+      "overriding"
+    ],
+    "h": "Method ?: subclass provides its own implementation of parent's method.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q407",
+    "lv": 1,
+    "q": "What is having multiple methods with same name but different params called?",
+    "a": [
+      "overloading"
+    ],
+    "h": "Method ?: multiple methods with same name but different parameter lists.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q408",
+    "lv": 1,
+    "q": "What keyword refers to the current instance in Java and C++?",
+    "a": [
+      "this"
+    ],
+    "h": "this refers to current object instance. Used to disambiguate between instance and local variables.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q409",
+    "lv": 1,
+    "q": "What design pattern ensures only one instance of a class exists?",
+    "a": [
+      "singleton"
+    ],
+    "h": "Singleton: private constructor + static instance variable + static getInstance() method.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q410",
+    "lv": 1,
+    "q": "What design pattern separates object construction from representation?",
+    "a": [
+      "builder"
+    ],
+    "h": "Builder: separate construction logic from the object itself. Supports step-by-step construction.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q411",
+    "lv": 1,
+    "q": "What git command stages changes for commit?",
+    "a": [
+      "add"
+    ],
+    "h": "git ? <file> or git ? . stages changes for the next commit.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q412",
+    "lv": 1,
+    "q": "What git command saves staged changes permanently?",
+    "a": [
+      "commit"
+    ],
+    "h": "git ? -m 'message' creates a permanent snapshot of staged changes.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q413",
+    "lv": 1,
+    "q": "What git command uploads local commits to remote?",
+    "a": [
+      "push"
+    ],
+    "h": "git ? uploads local commits to remote repository (e.g., GitHub).",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q414",
+    "lv": 1,
+    "q": "What git command downloads and merges remote changes?",
+    "a": [
+      "pull"
+    ],
+    "h": "git ? = git fetch + git merge. Downloads remote changes and merges into local branch.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q415",
+    "lv": 1,
+    "q": "What git command creates a new branch?",
+    "a": [
+      "branch"
+    ],
+    "h": "git ? <name> creates a new ?. ? is a pointer to a commit.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q416",
+    "lv": 1,
+    "q": "What git command switches between branches?",
+    "a": [
+      "checkout"
+    ],
+    "h": "git ? <branch> switches to that branch. git switch <branch> is the modern alternative.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q417",
+    "lv": 1,
+    "q": "What git command merges another branch into current?",
+    "a": [
+      "merge"
+    ],
+    "h": "git ? <branch> merges the specified branch into the current branch.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q418",
+    "lv": 1,
+    "q": "What git command shows commit history?",
+    "a": [
+      "log"
+    ],
+    "h": "git ? shows commit history: hash, author, date, message.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q419",
+    "lv": 1,
+    "q": "What git command shows uncommitted changes?",
+    "a": [
+      "status"
+    ],
+    "h": "git ? shows which files are modified, staged, or untracked.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q420",
+    "lv": 1,
+    "q": "What git command clones a remote repository locally?",
+    "a": [
+      "clone"
+    ],
+    "h": "git ? <url> downloads a remote repository to your local machine.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q421",
+    "lv": 1,
+    "q": "What type of attack injects malicious SQL into a query?",
+    "a": [
+      "injection"
+    ],
+    "h": "SQL ?: attacker inserts SQL code into user input field. Use parameterized queries to prevent.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q422",
+    "lv": 1,
+    "q": "What does XSS stand for in web security?",
+    "a": [
+      "crosssite"
+    ],
+    "h": "XSS = Cross-Site Scripting. Attacker injects malicious scripts into web pages viewed by others.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q423",
+    "lv": 1,
+    "q": "What hashing algorithm produces a 256-bit digest?",
+    "a": [
+      "SHA256"
+    ],
+    "h": "SHA256 = Secure Hash Algorithm producing 256-bit = 32-byte = 64 hex character digest.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q424",
+    "lv": 1,
+    "q": "What type of encryption uses same key for encrypt and decrypt?",
+    "a": [
+      "symmetric"
+    ],
+    "h": "Symmetric encryption: AES, DES. Same key encrypts and decrypts. Fast but key distribution is hard.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q425",
+    "lv": 1,
+    "q": "In RSA, which key is used to encrypt a message?",
+    "a": [
+      "public"
+    ],
+    "h": "RSA: ? key encrypts, private key decrypts. Anyone can encrypt, only owner can decrypt.",
+    "type": "TECH_CSE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-Q426",
+    "lv": 1,
+    "q": "What is the time complexity of building a heap from an array?",
+    "a": [
+      "O(N)"
+    ],
+    "h": "Build heap using Floyd's algorithm: heapify from last non-leaf upward. ? total.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q427",
+    "lv": 1,
+    "q": "What is Dijkstra's algorithm used for?",
+    "a": [
+      "shortest"
+    ],
+    "h": "Dijkstra finds ? path from source to all vertices in weighted non-negative graph.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q428",
+    "lv": 1,
+    "q": "What algorithm detects negative weight cycles in a graph?",
+    "a": [
+      "Bellman"
+    ],
+    "h": "Bellman-Ford relaxes all edges N-1 times. If still relaxing, negative cycle detected.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q429",
+    "lv": 1,
+    "q": "What graph algorithm finds minimum spanning tree greedily?",
+    "a": [
+      "Kruskal"
+    ],
+    "h": "Kruskal's: sort edges by weight, add edge if it doesn't form cycle (use Union-Find).",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q430",
+    "lv": 1,
+    "q": "What is the time complexity of Floyd-Warshall algorithm?",
+    "a": [
+      "O(N3)"
+    ],
+    "h": "Floyd-Warshall: 3 nested loops over all pairs. O(V\u00b3)=O(N\u00b3).",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q431",
+    "lv": 1,
+    "q": "What data structure does Prim's algorithm use to pick minimum edge?",
+    "a": [
+      "heap"
+    ],
+    "h": "Prim's uses a min-? to always pick the minimum weight edge crossing the cut.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q432",
+    "lv": 1,
+    "q": "What property does a balanced BST maintain?",
+    "a": [
+      "height"
+    ],
+    "h": "Balanced BST maintains ? O(log N) by rotating nodes after insertion/deletion.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q433",
+    "lv": 1,
+    "q": "AVL trees maintain balance by tracking what value per node?",
+    "a": [
+      "balance"
+    ],
+    "h": "AVL ? factor = height(left) - height(right). Must be -1, 0, or +1 at every node.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q434",
+    "lv": 1,
+    "q": "Red-Black trees color nodes with which two colors?",
+    "a": [
+      "red"
+    ],
+    "h": "Red-Black tree nodes are colored ? or black. Root is always black. No two adjacent reds.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q435",
+    "lv": 1,
+    "q": "What DP technique solves longest common subsequence?",
+    "a": [
+      "memoization"
+    ],
+    "h": "LCS uses 2D DP table. dp[i][j]=LCS length of first i chars of A and first j chars of B.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q436",
+    "lv": 1,
+    "q": "What is the space complexity of DFS on a graph with V vertices?",
+    "a": [
+      "O(V)"
+    ],
+    "h": "DFS call stack depth = V in worst case (linear graph). Space = ?",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q437",
+    "lv": 1,
+    "q": "What is amortized time complexity of push on a dynamic array?",
+    "a": [
+      "O(1)"
+    ],
+    "h": "Dynamic array doubles when full. Amortized cost per push = ? over many pushes.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q438",
+    "lv": 1,
+    "q": "What does topological sort require about a graph?",
+    "a": [
+      "DAG"
+    ],
+    "h": "Topological sort only works on Directed Acyclic Graph (?). Detects cycles too.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q439",
+    "lv": 1,
+    "q": "What data structure supports O(log N) insert and O(1) max?",
+    "a": [
+      "heap"
+    ],
+    "h": "Max-?: O(log N) insert (bubble up), O(1) peek at max, O(log N) extract max.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q440",
+    "lv": 1,
+    "q": "What is the time complexity of inserting into a hash table in worst case?",
+    "a": [
+      "O(N)"
+    ],
+    "h": "All keys hash to same slot (worst case). Each insertion must traverse the chain. ?",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q441",
+    "lv": 1,
+    "q": "What is the name for a process that has finished but whose parent hasn't collected its status?",
+    "a": [
+      "zombie"
+    ],
+    "h": "Zombie: process finished but parent hasn't called wait(). Entry remains in process table.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q442",
+    "lv": 1,
+    "q": "What is false sharing in CPU caches?",
+    "a": [
+      "cacheline"
+    ],
+    "h": "False sharing: two cores modify different variables on same cache line \u2192 constant cache invalidation.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q443",
+    "lv": 1,
+    "q": "What is the ABA problem in lock-free programming?",
+    "a": [
+      "ABA"
+    ],
+    "h": "ABA: thread reads A, another changes A\u2192B\u2192A. CAS sees A and succeeds incorrectly \u2014 state changed.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q444",
+    "lv": 1,
+    "q": "What CPU instruction atomically compares and swaps a value?",
+    "a": [
+      "CAS"
+    ],
+    "h": "CAS (Compare-And-Swap): atomically checks if value equals expected, replaces if so. Used in lock-free code.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q445",
+    "lv": 1,
+    "q": "What does mmap system call do?",
+    "a": [
+      "maps"
+    ],
+    "h": "mmap: ? file or anonymous memory into process virtual address space. Used for IPC and file I/O.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q446",
+    "lv": 1,
+    "q": "What is the name for memory pages moved to disk?",
+    "a": [
+      "swapped"
+    ],
+    "h": "Swapping: OS moves inactive pages from RAM to disk (swap space) to free physical memory.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q447",
+    "lv": 1,
+    "q": "What is thrashing in virtual memory systems?",
+    "a": [
+      "thrashing"
+    ],
+    "h": "Thrashing: working set exceeds physical memory \u2192 constant page faults \u2192 CPU mostly doing I/O.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q448",
+    "lv": 1,
+    "q": "What POSIX function creates a new process?",
+    "a": [
+      "fork"
+    ],
+    "h": "fork() creates a child process that is an exact copy of parent. Returns 0 to child, PID to parent.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q449",
+    "lv": 1,
+    "q": "What POSIX function replaces process image with a new program?",
+    "a": [
+      "exec"
+    ],
+    "h": "exec() replaces current process image with a new program. Used after fork() to run new programs.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q450",
+    "lv": 1,
+    "q": "Which page replacement algorithm causes Belady's anomaly?",
+    "a": [
+      "FIFO"
+    ],
+    "h": "FIFO page replacement: Belady's anomaly \u2014 adding more frames can cause MORE page faults.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q451",
+    "lv": 1,
+    "q": "Which page replacement algorithm is theoretically optimal?",
+    "a": [
+      "optimal"
+    ],
+    "h": "Optimal (OPT/Belady's): replace page not needed for longest time. Only theoretical \u2014 needs future knowledge.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q452",
+    "lv": 1,
+    "q": "What OS structure maps process virtual addresses to physical frames?",
+    "a": [
+      "pagetable"
+    ],
+    "h": "Page table: OS data structure mapping virtual page numbers to physical frame numbers.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q453",
+    "lv": 1,
+    "q": "What is a TLB used for in virtual memory?",
+    "a": [
+      "translation"
+    ],
+    "h": "TLB = ? Lookaside Buffer. Cache for recent virtual-to-physical address translations. Avoids page table walk.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q454",
+    "lv": 1,
+    "q": "What synchronization issue causes two threads to block each other indefinitely?",
+    "a": [
+      "deadlock"
+    ],
+    "h": "Deadlock: circular wait where each process holds resource needed by next process in cycle.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q455",
+    "lv": 1,
+    "q": "What condition must be broken to prevent deadlock \u2014 mutual exclusion, hold and wait, no preemption, or circular wait?",
+    "a": [
+      "circular"
+    ],
+    "h": "Breaking ? wait (impose resource ordering) is the most practical deadlock prevention technique.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q456",
+    "lv": 1,
+    "q": "What is the purpose of TCP's TIME_WAIT state?",
+    "a": [
+      "expiry"
+    ],
+    "h": "TIME_WAIT (2\u00d7MSL): ensures final ACK reached server and all old packets have expired from network.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q457",
+    "lv": 1,
+    "q": "What TCP mechanism controls how much data sender can transmit before ACK?",
+    "a": [
+      "window"
+    ],
+    "h": "TCP sliding ?: receiver advertises ? size. Sender can transmit that many bytes before needing ACK.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q458",
+    "lv": 1,
+    "q": "What TCP algorithm reduces congestion window on packet loss?",
+    "a": [
+      "slowstart"
+    ],
+    "h": "Slow start: TCP begins with cwnd=1 MSS, doubles each RTT until threshold, then linear increase.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q459",
+    "lv": 1,
+    "q": "What does CIDR stand for in networking?",
+    "a": [
+      "classless"
+    ],
+    "h": "CIDR = ? Inter-Domain Routing. Allows flexible subnet masks instead of fixed class A/B/C.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q460",
+    "lv": 1,
+    "q": "How many bits in an IPv4 address?",
+    "a": [
+      "32"
+    ],
+    "h": "IPv4 address = ? bits = 4 octets (e.g., 192.168.1.1).",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q461",
+    "lv": 1,
+    "q": "How many bits in an IPv6 address?",
+    "a": [
+      "128"
+    ],
+    "h": "IPv6 address = ? bits = 8 groups of 4 hex digits.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q462",
+    "lv": 1,
+    "q": "What protocol does ping use?",
+    "a": [
+      "ICMP"
+    ],
+    "h": "ping sends ? Echo Request and waits for ? Echo Reply.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q463",
+    "lv": 1,
+    "q": "What is the maximum segment size in TCP called?",
+    "a": [
+      "MSS"
+    ],
+    "h": "MSS = Maximum Segment Size. Maximum TCP payload per segment (excludes TCP/IP headers).",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q464",
+    "lv": 1,
+    "q": "What OSI layer does TLS operate at?",
+    "a": [
+      "session"
+    ],
+    "h": "TLS operates at ? layer (Layer 5) of OSI. It provides encryption between transport and application.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q465",
+    "lv": 1,
+    "q": "What is the name for splitting a large network into smaller ones?",
+    "a": [
+      "subnetting"
+    ],
+    "h": "Subnetting divides a network into smaller sub-networks using subnet mask.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q466",
+    "lv": 1,
+    "q": "What does ACID stand for \u2014 first word?",
+    "a": [
+      "Atomicity"
+    ],
+    "h": "ACID = ? (all or nothing), Consistency, Isolation, Durability.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q467",
+    "lv": 1,
+    "q": "What is a phantom read in database transactions?",
+    "a": [
+      "phantom"
+    ],
+    "h": "Phantom read: transaction reads a set of rows, another transaction inserts/deletes, first re-reads and sees different rows.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q468",
+    "lv": 1,
+    "q": "What isolation level prevents dirty reads but allows non-repeatable reads?",
+    "a": [
+      "committed"
+    ],
+    "h": "Read ? isolation: each read sees only ? data. Prevents dirty reads but not non-repeatable reads.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q469",
+    "lv": 1,
+    "q": "What does MVCC stand for?",
+    "a": [
+      "multiversion"
+    ],
+    "h": "MVCC = Multi-Version Concurrency Control. Keeps multiple versions so readers don't block writers.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q470",
+    "lv": 1,
+    "q": "What index structure does most RDBMS use for primary keys?",
+    "a": [
+      "Btree"
+    ],
+    "h": "B-tree (balanced tree) provides O(log N) search. Used as default index structure in most RDBMS.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q471",
+    "lv": 1,
+    "q": "What is a B+ tree's advantage over B-tree for range queries?",
+    "a": [
+      "linked"
+    ],
+    "h": "B+ tree stores all data in leaf nodes ? as a list. Enables fast range scans without tree traversal.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q472",
+    "lv": 1,
+    "q": "What database property ensures changes survive crashes?",
+    "a": [
+      "Durability"
+    ],
+    "h": "Durability: committed transactions survive crashes via write-ahead logging (WAL) to disk.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q473",
+    "lv": 1,
+    "q": "In 3NF, every non-prime attribute must depend on what?",
+    "a": [
+      "key"
+    ],
+    "h": "3NF: every non-prime attribute depends on the whole key and nothing but the ?",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q474",
+    "lv": 1,
+    "q": "What is a lossless join decomposition requirement in normalization?",
+    "a": [
+      "lossless"
+    ],
+    "h": "Lossless join: decomposed tables can be rejoined to exactly reconstruct the original without spurious tuples.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q475",
+    "lv": 1,
+    "q": "What technique does database WAL use for crash recovery?",
+    "a": [
+      "logging"
+    ],
+    "h": "WAL (Write-Ahead ?): changes written to log BEFORE applying to database. Enables crash recovery.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q476",
+    "lv": 1,
+    "q": "What does CPU cache L1 store that makes it faster than L2?",
+    "a": [
+      "smaller"
+    ],
+    "h": "L1 is ? (32-64KB), faster (1-4 cycle latency). L2 is larger (256KB-1MB), slower.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q477",
+    "lv": 1,
+    "q": "What is the name for out-of-order CPU instruction execution?",
+    "a": [
+      "speculative"
+    ],
+    "h": "Speculative execution: CPU executes instructions before knowing if they're needed. Speeds up pipelines.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q478",
+    "lv": 1,
+    "q": "What CPU vulnerability exploited speculative execution in 2018?",
+    "a": [
+      "Spectre"
+    ],
+    "h": "Spectre (2018): exploits speculative execution + branch prediction to leak memory across privilege boundaries.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q479",
+    "lv": 1,
+    "q": "What memory ordering fence prevents all reordering?",
+    "a": [
+      "full"
+    ],
+    "h": "Full memory fence: mfence instruction. Ensures all reads AND writes before fence complete before those after.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q480",
+    "lv": 1,
+    "q": "What is the name for CPU pipeline stall caused by data dependency?",
+    "a": [
+      "hazard"
+    ],
+    "h": "Data ?: instruction needs result of previous instruction not yet written back. Causes pipeline stall.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q481",
+    "lv": 1,
+    "q": "What attack exploits same-origin policy via forged requests?",
+    "a": [
+      "CSRF"
+    ],
+    "h": "CSRF: attacker tricks user's browser into making requests to site where user is authenticated.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q482",
+    "lv": 1,
+    "q": "What cryptographic protocol provides forward secrecy?",
+    "a": [
+      "DHE"
+    ],
+    "h": "DHE (Diffie-Hellman Ephemeral): generates fresh keys per session. Even if server key leaked, past sessions safe.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q483",
+    "lv": 1,
+    "q": "What type of attack is dictionary attack targeting?",
+    "a": [
+      "password"
+    ],
+    "h": "Dictionary attack tries common passwords/words. Target is weak/common passwords.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q484",
+    "lv": 1,
+    "q": "What function combines password with random data before hashing?",
+    "a": [
+      "salt"
+    ],
+    "h": "Salt: random bytes added to password before hashing. Prevents rainbow table attacks. Each user gets unique ?",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q485",
+    "lv": 1,
+    "q": "What does PKI stand for?",
+    "a": [
+      "infrastructure"
+    ],
+    "h": "PKI = Public Key ?. System of CAs, certificates, keys for managing digital identities.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q486",
+    "lv": 1,
+    "q": "What is consistent hashing used for in distributed systems?",
+    "a": [
+      "remapping"
+    ],
+    "h": "Consistent hashing: nodes and keys mapped to a ring. Only neighboring keys remapped when node added/removed.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q487",
+    "lv": 1,
+    "q": "What does the CAP theorem say cannot all be guaranteed simultaneously?",
+    "a": [
+      "three"
+    ],
+    "h": "CAP = Consistency, Availability, Partition tolerance. Can only guarantee 2 of 3 in distributed system.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q488",
+    "lv": 1,
+    "q": "What consistency model do most NoSQL databases provide?",
+    "a": [
+      "eventual"
+    ],
+    "h": "Eventual consistency: nodes may be temporarily inconsistent but will converge to same state over time.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q489",
+    "lv": 1,
+    "q": "What pattern distributes reads across multiple database replicas?",
+    "a": [
+      "replication"
+    ],
+    "h": "Replication: copies of data on multiple nodes. Reads distributed across replicas for scalability.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q490",
+    "lv": 1,
+    "q": "What algorithm achieves consensus in distributed systems?",
+    "a": [
+      "Raft"
+    ],
+    "h": "Raft: leader election + log replication achieves consensus. Simpler than Paxos.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q491",
+    "lv": 1,
+    "q": "What complexity class contains problems solvable in polynomial time?",
+    "a": [
+      "P"
+    ],
+    "h": "P (Polynomial time): problems solvable by deterministic algorithm in O(n^k) time.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q492",
+    "lv": 1,
+    "q": "What complexity class contains problems verifiable in polynomial time?",
+    "a": [
+      "NP"
+    ],
+    "h": "NP (Non-deterministic Polynomial): problems where a given solution can be VERIFIED in polynomial time.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q493",
+    "lv": 1,
+    "q": "What is the most difficult problem in NP called?",
+    "a": [
+      "NP-hard"
+    ],
+    "h": "NP-hard: at least as hard as every problem in NP. May not be in NP itself.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q494",
+    "lv": 1,
+    "q": "Is the travelling salesman problem NP-complete?",
+    "a": [
+      "yes"
+    ],
+    "h": "TSP (Travelling Salesman): find shortest route visiting all cities exactly once. NP-complete.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q495",
+    "lv": 1,
+    "q": "What technique reduces one problem to another to prove NP-hardness?",
+    "a": [
+      "reduction"
+    ],
+    "h": "Reduction: transform problem A into problem B in polynomial time. If B is easy, A is easy.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q496",
+    "lv": 1,
+    "q": "What is the name for the process of converting object to byte stream?",
+    "a": [
+      "serialization"
+    ],
+    "h": "Serialization converts object to byte stream (JSON, binary) for storage or transmission.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q497",
+    "lv": 1,
+    "q": "What architectural pattern separates read and write operations?",
+    "a": [
+      "CQRS"
+    ],
+    "h": "CQRS = Command Query Responsibility Segregation. Commands write, Queries read \u2014 separate models.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q498",
+    "lv": 1,
+    "q": "What is the name for building software as small independent services?",
+    "a": [
+      "microservices"
+    ],
+    "h": "Microservices: application as small independent services, each with own process and database.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q499",
+    "lv": 1,
+    "q": "What type of queue allows publisher and subscriber to be decoupled?",
+    "a": [
+      "message"
+    ],
+    "h": "Message queue (RabbitMQ, Kafka): decouples producer and consumer. Enables async communication.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-Q500",
+    "lv": 1,
+    "q": "What does CDN stand for?",
+    "a": [
+      "network"
+    ],
+    "h": "CDN = Content Delivery ?. Distributes content from edge servers close to users for low latency.",
+    "type": "TECH_CSE",
+    "difficulty": "HARD"
   }
 ]
