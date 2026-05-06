@@ -116,11 +116,11 @@ export const PZ=[
 {
   "id": "PZ-APT-002",
   "lv": 1,
-  "q": "Calculate: (17² - 13²) × (number of prime factors of 60).",
+  "q": "Calculate: (17^2 - 13^2) * (number of prime factors of 60).",
   "a": [
     "480"
   ],
-  "h": "17²-13²=120. Prime factors of 60: 2,2,3,5 (count with multiplicity=4).",
+  "h": "17^2-13^2=120. Prime factors of 60: 2,2,3,5 (count with multiplicity=4).",
   "type": "APTITUDE",
   "difficulty": "HARD"
 },
@@ -175,7 +175,7 @@ export const PZ=[
   "a": [
     "7.5"
   ],
-  "h": "Sum of first 15 odd = 15² = 225. Sum of first 5 even = 5*6 = 30.",
+  "h": "Sum of first 15 odd = 15^2 = 225. Sum of first 5 even = 5*6 = 30.",
   "type": "APTITUDE",
   "difficulty": "HARD"
 },
@@ -226,11 +226,11 @@ export const PZ=[
 {
   "id": "PZ-APT-012",
   "lv": 3,
-  "q": "A rectangle has a perimeter of 56 cm and area of 192 cm². What is the difference between its length and width?",
+  "q": "A rectangle has a perimeter of 56 cm and area of 192 cm^2. What is the difference between its length and width?",
   "a": [
     "4"
   ],
-  "h": "l+w=28, lw=192. (l-w)² = (l+w)² - 4lw.",
+  "h": "l+w=28, lw=192. (l-w)^2 = (l+w)^2 - 4lw.",
   "type": "APTITUDE",
   "difficulty": "HARD"
 },
@@ -259,7 +259,7 @@ export const PZ=[
 {
   "id": "PZ-APT-015",
   "lv": 3,
-  "q": "Find the compound interest on ₹8000 at 10% per annum for 2 years, compounded annually.",
+  "q": "Find the compound interest on Rs.8000 at 10% per annum for 2 years, compounded annually.",
   "a": [
     "1680"
   ],
@@ -336,7 +336,7 @@ export const PZ=[
 {
   "id": "PZ-APT-022",
   "lv": 5,
-  "q": "Find the sum: 1² + 2² + 3² + ... + 12².",
+  "q": "Find the sum: 1^2 + 2^2 + 3^2 + ... + 12^2.",
   "a": [
     "650"
   ],
@@ -380,7 +380,7 @@ export const PZ=[
 {
   "id": "PZ-APT-026",
   "lv": 6,
-  "q": "What is 37 × 43 computed mentally using algebraic identity?",
+  "q": "What is 37 * 43 computed mentally using algebraic identity?",
   "a": [
     "1591"
   ],
@@ -424,11 +424,11 @@ export const PZ=[
 {
   "id": "PZ-APT-030",
   "lv": 6,
-  "q": "A sphere has a radius of 7 cm. Find its surface area (sq cm) (use π = 22/7).",
+  "q": "A sphere has a radius of 7 cm. Find its surface area (sq cm) (use pi = 22/7).",
   "a": [
     "616"
   ],
-  "h": "4 * (22/7) * 7².",
+  "h": "4 * (22/7) * 7^2.",
   "type": "APTITUDE",
   "difficulty": "HARD"
 },
@@ -545,7 +545,7 @@ export const PZ=[
 {
   "id": "PZ-APT-041",
   "lv": 9,
-  "q": "Find the value of: 999 × 999.",
+  "q": "Find the value of: 999 * 999.",
   "a": [
     "998001"
   ],
@@ -556,7 +556,7 @@ export const PZ=[
 {
   "id": "PZ-APT-042",
   "lv": 9,
-  "q": "A cone has radius 6 cm and height 8 cm. Find volume to nearest integer (π = 22/7).",
+  "q": "A cone has radius 6 cm and height 8 cm. Find volume to nearest integer (pi = 22/7).",
   "a": [
     "302"
   ],
@@ -600,7 +600,7 @@ export const PZ=[
 {
   "id": "PZ-APT-046",
   "lv": 10,
-  "q": "Find the sum: 1/1×2 + 1/2×3 + 1/3×4 + ... + 1/19×20.",
+  "q": "Find the sum: 1/1*2 + 1/2*3 + 1/3*4 + ... + 1/19*20.",
   "a": [
     "19/20"
   ],
@@ -611,7 +611,7 @@ export const PZ=[
 {
   "id": "PZ-APT-047",
   "lv": 10,
-  "q": "A person buys 25 articles for ₹125 and sells 20 articles for ₹120. Profit percentage?",
+  "q": "A person buys 25 articles for Rs.125 and sells 20 articles for Rs.120. Profit percentage?",
   "a": [
     "20"
   ],
@@ -652,10 +652,7 @@ export const PZ=[
   "type": "APTITUDE",
   "difficulty": "HARD"
 },
-
-
-
-  {
+{
     "id": "PZ-Q370",
     "lv": 11,
     "q": "What is the height of a balanced BST with n nodes?",
@@ -666,10 +663,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q252",
     "lv": 11,
     "q": "print(min([3,1,4,1,5,9])) — output?",
@@ -680,10 +674,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q094",
     "lv": 11,
     "q": "How many subsets does a set of 5 elements have?",
@@ -694,10 +685,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q369",
     "lv": 11,
     "q": "In a max-heap, the root is always the?",
@@ -708,10 +696,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q258",
     "lv": 11,
     "q": "What is the first argument of every instance method in Python?",
@@ -722,10 +707,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q166",
     "lv": 11,
     "q": "unsigned char x=250; x+=10; — what is x?",
@@ -736,10 +718,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q263",
     "lv": 11,
     "q": "What keyword creates an anonymous function in Python?",
@@ -750,10 +729,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q105",
     "lv": 11,
     "q": "int x=0; while(x<3) x++; printf('%d',x); — output?",
@@ -764,10 +740,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q476",
     "lv": 12,
     "q": "What does CPU cache L1 store that makes it faster than L2?",
@@ -778,10 +751,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q257",
     "lv": 12,
     "q": "What keyword defines a class in Python?",
@@ -792,10 +762,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q335",
     "lv": 12,
     "q": "What is Python's reference counting garbage collection strategy called?",
@@ -806,10 +773,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q399",
     "lv": 12,
     "q": "What is the normal form that eliminates partial dependencies?",
@@ -820,24 +784,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q048",
     "lv": 12,
     "q": "What is the sum of first 5 odd numbers?",
     "a": [
       "25"
     ],
-    "h": "First n odd numbers sum = n². First 5 odd numbers: 1+3+5+7+9=?=5².",
+    "h": "First n odd numbers sum = n^2. First 5 odd numbers: 1+3+5+7+9=?=5^2.",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q250",
     "lv": 12,
     "q": "print(sum([1,2,3,4,5])) — output?",
@@ -848,10 +806,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q489",
     "lv": 12,
     "q": "What pattern distributes reads across multiple database replicas?",
@@ -862,10 +817,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q192",
     "lv": 12,
     "q": "What is the two's complement of 8-bit 00000111 (decimal 7)?",
@@ -876,24 +828,18 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q210",
     "lv": 12,
     "q": "int x=3; printf('%d',x<<3); — output?",
     "a": [
       "24"
     ],
-    "h": "3<<3=3×8=?. Left shift n = multiply by 2^n.",
+    "h": "3<<3=3*8=?. Left shift n = multiply by 2^n.",
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q391",
     "lv": 13,
     "q": "What does SQL stand for?",
@@ -904,10 +850,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q473",
     "lv": 13,
     "q": "In 3NF, every non-prime attribute must depend on what?",
@@ -918,10 +861,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q341",
     "lv": 13,
     "q": "print(type(lambda:None).__name__) — output?",
@@ -932,10 +872,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q292",
     "lv": 13,
     "q": "a=[[0]*3 for _ in range(3)]; a[0][0]=9; print(a[1][0]) — output?",
@@ -946,10 +883,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q101",
     "lv": 13,
     "q": "int x=5; printf('%d',x++); — what is printed?",
@@ -960,10 +894,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q182",
     "lv": 13,
     "q": "What is a dangling pointer?",
@@ -974,10 +905,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q207",
     "lv": 13,
     "q": "Which storage class stores variable between function calls on stack?",
@@ -988,10 +916,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q288",
     "lv": 13,
     "q": "What does __name__=='__main__' check?",
@@ -1002,10 +927,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q439",
     "lv": 14,
     "q": "What data structure supports O(log N) insert and O(1) max?",
@@ -1016,24 +938,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q079",
     "lv": 14,
     "q": "What is the length of a diagonal of a rectangle with sides 5 and 12?",
     "a": [
       "13"
     ],
-    "h": "Use Pythagoras on diagonal: √(5²+12²)=√(25+144)=√169=?",
+    "h": "Use Pythagoras on diagonal: √(5^2+12^2)=√(25+144)=√169=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q007",
     "lv": 14,
     "q": "A pipe fills a tank in 6 hours. What fraction of the tank is filled in 1 hour?",
@@ -1044,24 +960,18 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q049",
     "lv": 14,
     "q": "What is the 10th term of arithmetic sequence 3, 7, 11, 15...?",
     "a": [
       "39"
     ],
-    "h": "Arithmetic sequence: a=3, d=4. T₁₀=a+(10-1)d=3+9×4=3+36=?",
+    "h": "Arithmetic sequence: a=3, d=4. T₁₀=a+(10-1)d=3+9*4=3+36=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q379",
     "lv": 14,
     "q": "What synchronization primitive allows only one thread in critical section?",
@@ -1072,10 +982,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q496",
     "lv": 14,
     "q": "What is the name for the process of converting object to byte stream?",
@@ -1086,10 +993,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q236",
     "lv": 14,
     "q": "x=[1,2,3,4,5]; print(x[2]) - output?",
@@ -1100,10 +1004,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q404",
     "lv": 14,
     "q": "What OOP principle represents real-world entities as objects?",
@@ -1114,38 +1015,29 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q015",
     "lv": 15,
     "q": "What is 2 raised to the power of 10?",
     "a": [
       "1024"
     ],
-    "h": "2^10 = 2×2×2×2×2×2×2×2×2×2 = ?",
+    "h": "2^10 = 2*2*2*2*2*2*2*2*2*2 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q069",
     "lv": 15,
     "q": "How many 4-letter codes from letters A,B,C,D,E with no repetition?",
     "a": [
       "120"
     ],
-    "h": "P(5,4) = 5×4×3×2 = ?",
+    "h": "P(5,4) = 5*4*3*2 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q256",
     "lv": 15,
     "q": "What keyword is used to define a function in Python?",
@@ -1156,24 +1048,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q085",
     "lv": 15,
     "q": "Ratio of speed of A to B is 2:3. If B runs 300m, how far does A run in same time?",
     "a": [
       "200"
     ],
-    "h": "Speed ratio A:B = 2:3. In same time, distance ratio = speed ratio. B runs 300m → A runs (2/3)×300=200m.",
+    "h": "Speed ratio A:B = 2:3. In same time, distance ratio = speed ratio. B runs 300m → A runs (2/3)*300=200m.",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q323",
     "lv": 15,
     "q": "print('abc'*3) — output?",
@@ -1184,10 +1070,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q398",
     "lv": 15,
     "q": "What SQL keyword filters groups?",
@@ -1198,10 +1081,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q269",
     "lv": 15,
     "q": "print(256 is 256) — output?",
@@ -1212,10 +1092,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q171",
     "lv": 15,
     "q": "static int c=0; c++; called 3 times — final c value?",
@@ -1226,10 +1103,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q294",
     "lv": 15,
     "q": "def f(a,b=[]): b.append(a); return b; f(1); print(len(f(2))) - output?",
@@ -1240,10 +1114,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q234",
     "lv": 16,
     "q": "x=[1,2,3]; x.append(4); print(len(x)); — output?",
@@ -1254,10 +1125,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q428",
     "lv": 16,
     "q": "What algorithm detects negative weight cycles in a graph?",
@@ -1268,24 +1136,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q356",
     "lv": 16,
     "q": "What is the worst case time complexity of quicksort?",
     "a": [
       "O(N2)"
     ],
-    "h": "QuickSort worst case: pivot always smallest/largest (sorted array). O(N²) comparisons.",
+    "h": "QuickSort worst case: pivot always smallest/largest (sorted array). O(N^2) comparisons.",
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q023",
     "lv": 16,
     "q": "A clock shows 3:15. What is the angle between the hour and minute hands?",
@@ -1296,10 +1158,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q444",
     "lv": 16,
     "q": "What CPU instruction atomically compares and swaps a value?",
@@ -1310,10 +1169,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q353",
     "lv": 16,
     "q": "What data structure uses FIFO order?",
@@ -1324,10 +1180,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q034",
     "lv": 16,
     "q": "If a + b = 10 and a - b = 4, what is a?",
@@ -1338,10 +1191,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q352",
     "lv": 16,
     "q": "What data structure uses LIFO order?",
@@ -1352,10 +1202,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q045",
     "lv": 17,
     "q": "A person covers 500m in 100 seconds. Speed in m/s?",
@@ -1366,10 +1213,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q290",
     "lv": 17,
     "q": "funcs=[lambda x=i:x for i in range(3)]; print(funcs[0]()) — output?",
@@ -1380,10 +1224,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q386",
     "lv": 17,
     "q": "What is the loopback IP address?",
@@ -1394,10 +1235,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q010",
     "lv": 17,
     "q": "A shopkeeper sells an item for Rs.120 at a 20% profit. What was the cost price?",
@@ -1408,10 +1246,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q200",
     "lv": 17,
     "q": "printf('%d', 0x0F & 0xFF); — output?",
@@ -1422,10 +1257,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q394",
     "lv": 17,
     "q": "Which SQL command modifies existing data?",
@@ -1436,10 +1268,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q220",
     "lv": 17,
     "q": "printf('%d',0||0||1); — output?",
@@ -1450,24 +1279,18 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q065",
     "lv": 17,
     "q": "A father is 3 times as old as his son. In 12 years, he'll be twice as old. Son's current age?",
     "a": [
       "12"
     ],
-    "h": "Father=3×son. In 12 years: 3s+12=2(s+12). 3s+12=2s+24. s=?",
+    "h": "Father=3*son. In 12 years: 3s+12=2(s+12). 3s+12=2s+24. s=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q284",
     "lv": 18,
     "q": "What operator checks membership in a Python list?",
@@ -1478,19 +1301,10 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q175",
     "lv": 18,
-    "q": "int arr[3][3]={{1,2,3},
-
-
-{4,5,6},
-
-
-{7,8,9}}; int *p=&arr[0][0]; printf('%d',*(p+5)); — output?",
+    "q": "int arr[3][3]={{1,2,3}, {4,5,6}, {7,8,9}}; int *p=&arr[0][0]; printf('%d',*(p+5)); — output?",
     "a": [
       "6"
     ],
@@ -1498,10 +1312,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q111",
     "lv": 18,
     "q": "int x=4; printf('%d',x<<2); — output?",
@@ -1512,10 +1323,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q226",
     "lv": 18,
     "q": "print(type(1/2)) — what class is printed?",
@@ -1526,10 +1334,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q361",
     "lv": 18,
     "q": "What traversal visits left, root, right in a BST?",
@@ -1540,10 +1345,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q435",
     "lv": 18,
     "q": "What DP technique solves longest common subsequence?",
@@ -1554,10 +1356,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q465",
     "lv": 18,
     "q": "What is the name for splitting a large network into smaller ones?",
@@ -1568,10 +1367,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q233",
     "lv": 18,
     "q": "print(bool([])) — output?",
@@ -1582,38 +1378,29 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q050",
     "lv": 18,
     "q": "What is 1 + 2 + 3 + ... + 100?",
     "a": [
       "5050"
     ],
-    "h": "Sum = n(n+1)/2 = 100×101/2 = ?",
+    "h": "Sum = n(n+1)/2 = 100*101/2 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q097",
     "lv": 19,
     "q": "A 3x4 matrix multiplied by a 4x2 matrix gives a matrix of what order? (rows)",
     "a": [
       "3"
     ],
-    "h": "(3×4)×(4×2) = 3×2 matrix. Rows=?",
+    "h": "(3*4)*(4*2) = 3*2 matrix. Rows=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q173",
     "lv": 19,
     "q": "int x=7; x|=(1<<3); printf('%d',x); — output?",
@@ -1624,10 +1411,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q273",
     "lv": 19,
     "q": "print(list(filter(lambda x:x%2==0,[1,2,3,4]))) — output?",
@@ -1638,10 +1422,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q452",
     "lv": 19,
     "q": "What OS structure maps process virtual addresses to physical frames?",
@@ -1652,10 +1433,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q402",
     "lv": 19,
     "q": "What OOP principle allows a class to inherit from another?",
@@ -1666,24 +1444,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q058",
     "lv": 19,
     "q": "What is the sum of all even numbers from 2 to 100?",
     "a": [
       "2550"
     ],
-    "h": "Sum of even numbers 2+4+...+100 = 2(1+2+...+50) = 2×(50×51/2) = ?",
+    "h": "Sum of even numbers 2+4+...+100 = 2(1+2+...+50) = 2*(50*51/2) = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q229",
     "lv": 19,
     "q": "print(2**10) — output?",
@@ -1694,10 +1466,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q165",
     "lv": 19,
     "q": "int x=5; int y=x++ + x++; — is this behavior defined or undefined?",
@@ -1708,10 +1477,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q238",
     "lv": 20,
     "q": "print(len('hello world')) — output?",
@@ -1722,10 +1488,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q347",
     "lv": 20,
     "q": "d={}; d.setdefault('x',[]); d['x'].append(1); print(d) — output key count?",
@@ -1736,10 +1499,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q119",
     "lv": 20,
     "q": "Which function frees dynamically allocated memory?",
@@ -1750,10 +1510,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q189",
     "lv": 20,
     "q": "NOR(0,0) gate output?",
@@ -1764,10 +1521,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q110",
     "lv": 20,
     "q": "int x=8; printf('%d',x>>1); — output?",
@@ -1778,10 +1532,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q371",
     "lv": 20,
     "q": "What does CPU scheduling algorithm FCFS stand for?",
@@ -1792,10 +1543,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q365",
     "lv": 20,
     "q": "Which data structure is used in DFS traversal?",
@@ -1806,24 +1554,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q298",
     "lv": 20,
     "q": "from functools import reduce; print(reduce(lambda a,x:a*x,[1,2,3,4],1)) — output?",
     "a": [
       "24"
     ],
-    "h": "reduce applies lambda cumulatively. 1→1×1=1→1×2=2→2×3=6→6×4=?",
+    "h": "reduce applies lambda cumulatively. 1→1*1=1→1*2=2→2*3=6→6*4=?",
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q217",
     "lv": 21,
     "q": "Which function finds the first occurrence of substring in a string?",
@@ -1834,10 +1576,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q108",
     "lv": 21,
     "q": "int a=5,b=3; printf('%d',a|b); — output?",
@@ -1848,10 +1587,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q313",
     "lv": 21,
     "q": "What Python concept prevents arbitrary instance attributes?",
@@ -1862,38 +1598,29 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q035",
     "lv": 21,
-    "q": "What is the discriminant of x² - 5x + 6 = 0?",
+    "q": "What is the discriminant of x^2 - 5x + 6 = 0?",
     "a": [
       "1"
     ],
-    "h": "Discriminant = b²-4ac. a=1,b=-5,c=6. D=25-24=?",
+    "h": "Discriminant = b^2-4ac. a=1,b=-5,c=6. D=25-24=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q044",
     "lv": 21,
     "q": "If speed is doubled, time taken for same distance becomes what fraction of original?",
     "a": [
       "half"
     ],
-    "h": "Speed = Distance÷Time. If speed doubles, time = Distance÷(2×Speed) = ? original time.",
+    "h": "Speed = Distance÷Time. If speed doubles, time = Distance÷(2*Speed) = ? original time.",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q164",
     "lv": 21,
     "q": "#define SQUARE(x) x*x — SQUARE(3+1) evaluates to?",
@@ -1904,10 +1631,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q423",
     "lv": 21,
     "q": "What hashing algorithm produces a 256-bit digest?",
@@ -1918,38 +1642,29 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q021",
     "lv": 21,
     "q": "What comes next in the series: 1, 4, 9, 16, 25, ?",
     "a": [
       "36"
     ],
-    "h": "These are n². 1²=1, 2²=4, 3²=9, 4²=16, 5²=25, 6²=?",
+    "h": "These are n^2. 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25, 6^2=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q013",
     "lv": 21,
     "q": "A person walks 4 km north, then 3 km east. What is the straight line distance from start?",
     "a": [
       "5"
     ],
-    "h": "This forms a right triangle. Use Pythagoras: √(4²+3²)=√(16+9)=√25=?",
+    "h": "This forms a right triangle. Use Pythagoras: √(4^2+3^2)=√(16+9)=√25=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q338",
     "lv": 22,
     "q": "What does *args capture in a function?",
@@ -1960,10 +1675,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q262",
     "lv": 22,
     "q": "What keyword makes a variable global inside a function?",
@@ -1974,10 +1686,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q285",
     "lv": 22,
     "q": "What keyword pauses a function and returns a value lazily?",
@@ -1988,10 +1697,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q310",
     "lv": 22,
     "q": "d={1:'a',2:'b'}; d.pop(1); print(len(d)) — output?",
@@ -2002,24 +1708,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q067",
     "lv": 22,
     "q": "In how many ways can the letters of LEVEL be arranged?",
     "a": [
       "30"
     ],
-    "h": "LEVEL has 5 letters: L(2),E(2),V(1). Arrangements = 5!/(2!×2!) = 120/4 = ?",
+    "h": "LEVEL has 5 letters: L(2),E(2),V(1). Arrangements = 5!/(2!*2!) = 120/4 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q170",
     "lv": 22,
     "q": "int a=0; int b=(a=5,a+3); printf('%d',b); — output?",
@@ -2030,10 +1730,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q102",
     "lv": 22,
     "q": "int x=5; printf('%d',++x); — what is printed?",
@@ -2044,10 +1741,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q363",
     "lv": 22,
     "q": "What traversal visits left, right, root?",
@@ -2058,10 +1752,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q241",
     "lv": 23,
     "q": "print('hello world'.split()[0]) — output?",
@@ -2072,24 +1763,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q012",
     "lv": 23,
     "q": "What is the cube root of 512?",
     "a": [
       "8"
     ],
-    "h": "8×8×8=512. So cube root of 512 = ?",
+    "h": "8*8*8=512. So cube root of 512 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q380",
     "lv": 23,
     "q": "What is a semaphore with count > 1 called?",
@@ -2100,10 +1785,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q355",
     "lv": 23,
     "q": "Which sorting algorithm has guaranteed O(N log N) in all cases?",
@@ -2114,10 +1796,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q367",
     "lv": 23,
     "q": "What is the average time complexity for hash table lookup?",
@@ -2128,10 +1807,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q448",
     "lv": 23,
     "q": "What POSIX function creates a new process?",
@@ -2142,10 +1818,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q393",
     "lv": 23,
     "q": "Which SQL command adds new records?",
@@ -2156,10 +1829,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q334",
     "lv": 23,
     "q": "print(chr(90)) — output?",
@@ -2170,10 +1840,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q017",
     "lv": 24,
     "q": "If ALL cats are animals and SOME animals are dogs, can we say ALL cats are dogs?",
@@ -2184,10 +1851,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q184",
     "lv": 24,
     "q": "Accessing float memory via int pointer violates which C rule?",
@@ -2198,10 +1862,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q231",
     "lv": 24,
     "q": "print(bool('0')) — output?",
@@ -2212,24 +1873,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q051",
     "lv": 24,
     "q": "The compound interest on Rs.10000 at 10% per annum for 2 years compounded annually?",
     "a": [
       "2100"
     ],
-    "h": "CI = P×[(1+R/100)^T - 1] = 10000×[(1.1)²-1] = 10000×0.21 = ?",
+    "h": "CI = P*[(1+R/100)^T - 1] = 10000*[(1.1)^2-1] = 10000*0.21 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q383",
     "lv": 24,
     "q": "Which protocol does NOT guarantee delivery?",
@@ -2240,24 +1895,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q100",
     "lv": 24,
     "q": "det([[2,3],[1,4]]) = ?",
     "a": [
       "5"
     ],
-    "h": "det([[a,b],[c,d]])=ad-bc=2×4-3×1=8-3=?",
+    "h": "det([[a,b],[c,d]])=ad-bc=2*4-3*1=8-3=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q339",
     "lv": 24,
     "q": "What does **kwargs capture in a function?",
@@ -2268,10 +1917,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q181",
     "lv": 24,
     "q": "On a little-endian machine, 0x01020304 stored at address — what byte is at lowest address?",
@@ -2282,10 +1928,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q281",
     "lv": 24,
     "q": "s={1,2,3}; s.add(2); print(len(s)) — output?",
@@ -2296,10 +1939,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q442",
     "lv": 25,
     "q": "What is false sharing in CPU caches?",
@@ -2310,10 +1950,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q441",
     "lv": 25,
     "q": "What is the name for a process that has finished but whose parent hasn't collected its status?",
@@ -2324,10 +1961,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q268",
     "lv": 25,
     "q": "print(0.1+0.2==0.3) — output?",
@@ -2338,10 +1972,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q134",
     "lv": 25,
     "q": "int x=5; printf('%d',x!=5); — output?",
@@ -2352,10 +1983,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q138",
     "lv": 25,
     "q": "What keyword returns control from a function in C?",
@@ -2366,10 +1994,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q490",
     "lv": 25,
     "q": "What algorithm achieves consensus in distributed systems?",
@@ -2380,24 +2005,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q078",
     "lv": 25,
-    "q": "A cone has radius 6 and slant height 10. What is its curved surface area? (use π=22/7)",
+    "q": "A cone has radius 6 and slant height 10. What is its curved surface area? (use pi=22/7)",
     "a": [
       "1886"
     ],
-    "h": "CSA=πrl=(22/7)×6×10=(22×60)/7≈188.57. Exact: 1885.7≈?.",
+    "h": "CSA=pirl=(22/7)*6*10=(22*60)/7≈188.57. Exact: 1885.7≈?.",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q457",
     "lv": 25,
     "q": "What TCP mechanism controls how much data sender can transmit before ACK?",
@@ -2408,10 +2027,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q148",
     "lv": 26,
     "q": "printf('%d',5*2+3); — output?",
@@ -2422,24 +2038,18 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q228",
     "lv": 26,
     "q": "print(10%3) — output?",
     "a": [
       "1"
     ],
-    "h": "% is modulo. 10=3×3+1. Remainder=?",
+    "h": "% is modulo. 10=3*3+1. Remainder=?",
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q340",
     "lv": 26,
     "q": "What is the name for a function defined inside another function?",
@@ -2450,10 +2060,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q376",
     "lv": 26,
     "q": "What is the name for the table mapping virtual to physical addresses?",
@@ -2464,10 +2071,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q446",
     "lv": 26,
     "q": "What is the name for memory pages moved to disk?",
@@ -2478,24 +2082,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q047",
     "lv": 26,
     "q": "What is the sum of first 10 natural numbers?",
     "a": [
       "55"
     ],
-    "h": "Formula: n(n+1)/2 = 10×11/2 = ?",
+    "h": "Formula: n(n+1)/2 = 10*11/2 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q342",
     "lv": 26,
     "q": "print(isinstance(True,int)) — output?",
@@ -2506,10 +2104,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q433",
     "lv": 26,
     "q": "AVL trees maintain balance by tracking what value per node?",
@@ -2520,24 +2115,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q076",
     "lv": 27,
-    "q": "What is the surface area of a sphere with radius 7? (use π=22/7)",
+    "q": "What is the surface area of a sphere with radius 7? (use pi=22/7)",
     "a": [
       "616"
     ],
-    "h": "SA=4πr²=4×(22/7)×49=4×22×7=?",
+    "h": "SA=4pir^2=4*(22/7)*49=4*22*7=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q320",
     "lv": 27,
     "q": "Which __dunder__ is called on EVERY subclass creation automatically?",
@@ -2548,38 +2137,29 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q071",
     "lv": 27,
-    "q": "If α and β are roots of x²-5x+6=0, what is α+β?",
+    "q": "If α and β are roots of x^2-5x+6=0, what is α+β?",
     "a": [
       "5"
     ],
-    "h": "For ax²+bx+c=0, sum of roots = -b/a = 5/1 = ?",
+    "h": "For ax^2+bx+c=0, sum of roots = -b/a = 5/1 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q088",
     "lv": 27,
     "q": "Find n if nC2 = 15?",
     "a": [
       "6"
     ],
-    "h": "nC2=n(n-1)/2=15. n(n-1)=30. n=? (?×5=30).",
+    "h": "nC2=n(n-1)/2=15. n(n-1)=30. n=? (?*5=30).",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q099",
     "lv": 27,
     "q": "What is the trace of matrix [[1,2],[3,4]]?",
@@ -2590,10 +2170,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q042",
     "lv": 27,
     "q": "Two trains approach each other at 40 km/h and 60 km/h. Combined relative speed?",
@@ -2604,10 +2181,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q230",
     "lv": 27,
     "q": "print(bool('')) — output?",
@@ -2618,10 +2192,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q440",
     "lv": 27,
     "q": "What is the time complexity of inserting into a hash table in worst case?",
@@ -2632,10 +2203,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q031",
     "lv": 27,
     "q": "If x + 5 = 12, what is x?",
@@ -2646,10 +2214,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q322",
     "lv": 28,
     "q": "x='hello'; print(x.replace('l','r')) — output?",
@@ -2660,10 +2225,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q206",
     "lv": 28,
     "q": "What is the size of a union with int(4) and double(8)? (in bytes)",
@@ -2674,10 +2236,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q299",
     "lv": 28,
     "q": "g=(x**2 for x in range(4)); print(next(g)) — output?",
@@ -2688,10 +2247,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q305",
     "lv": 28,
     "q": "print(0 and 2) — output?",
@@ -2702,10 +2258,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q248",
     "lv": 28,
     "q": "d={'a':1}; print(d.get('b',0)) — output?",
@@ -2716,10 +2269,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q283",
     "lv": 28,
     "q": "print({1,2}|{3,4}) — set union length?",
@@ -2730,10 +2280,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q129",
     "lv": 28,
     "q": "char s[]='hello'; printf('%c',s[4]); — output?",
@@ -2744,10 +2291,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q312",
     "lv": 28,
     "q": "__getattribute__ is called on every attribute access — always or only on failure?",
@@ -2758,10 +2302,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q337",
     "lv": 29,
     "q": "What is the name of Python's built-in profiler module?",
@@ -2772,10 +2313,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q178",
     "lv": 29,
     "q": "int a=5; printf('%d %d',a++,++a); — well defined output first arg?",
@@ -2786,10 +2324,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q027",
     "lv": 29,
     "q": "What is the probability of getting a head in a single fair coin toss? (fraction)",
@@ -2800,10 +2335,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q150",
     "lv": 29,
     "q": "Which function copies one string to another in C?",
@@ -2814,10 +2346,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q253",
     "lv": 29,
     "q": "print(sorted([3,1,2])) — output?",
@@ -2828,10 +2357,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q139",
     "lv": 29,
     "q": "Arrays in C are passed to functions by?",
@@ -2842,10 +2368,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q014",
     "lv": 29,
     "q": "How many prime numbers exist between 10 and 30?",
@@ -2856,10 +2379,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q350",
     "lv": 29,
     "q": "What is the name of Python's abstract base class module?",
@@ -2870,10 +2390,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q157",
     "lv": 30,
     "q": "What is the maximum value of unsigned 8-bit integer?",
@@ -2884,10 +2401,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q208",
     "lv": 30,
     "q": "Function pointers store what kind of address?",
@@ -2898,10 +2412,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q412",
     "lv": 30,
     "q": "What git command saves staged changes permanently?",
@@ -2912,10 +2423,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q304",
     "lv": 30,
     "q": "print(1 and 2) — output?",
@@ -2926,10 +2434,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q378",
     "lv": 30,
     "q": "What is the term for a process waiting indefinitely for a resource?",
@@ -2940,10 +2445,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q316",
     "lv": 30,
     "q": "What does asyncio.run() execute?",
@@ -2954,10 +2456,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q120",
     "lv": 30,
     "q": "Which header file contains printf and scanf?",
@@ -2968,10 +2467,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q032",
     "lv": 30,
     "q": "If 3x - 6 = 9, what is x?",
@@ -2982,10 +2478,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q308",
     "lv": 30,
     "q": "print(list(enumerate(['a','b']))[0]) — output?",
@@ -2996,24 +2489,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q146",
     "lv": 31,
     "q": "printf('%d',2<<3); — output?",
     "a": [
       "16"
     ],
-    "h": "2<<3 = 2×2³ = 2×8 = ?. Left shift n = multiply by 2^n.",
+    "h": "2<<3 = 2*2³ = 2*8 = ?. Left shift n = multiply by 2^n.",
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q301",
     "lv": 31,
     "q": "class A: pass; a=A(); a.x=10; print(a.__dict__['x']) — output?",
@@ -3024,10 +2511,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q486",
     "lv": 31,
     "q": "What is consistent hashing used for in distributed systems?",
@@ -3038,10 +2522,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q199",
     "lv": 31,
     "q": "int x=8; printf('%o',x); — output in octal?",
@@ -3052,10 +2533,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q046",
     "lv": 31,
     "q": "What is the 8th Fibonacci number (starting 1,1,2,3,5...)?",
@@ -3066,10 +2544,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q291",
     "lv": 31,
     "q": "a=[[0]*3]*3; a[0][0]=9; print(a[2][0]) — output?",
@@ -3080,10 +2555,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q480",
     "lv": 31,
     "q": "What is the name for CPU pipeline stall caused by data dependency?",
@@ -3094,10 +2566,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q174",
     "lv": 31,
     "q": "int a=5,b=3; a^=b; b^=a; a^=b; printf('%d',a); — a after XOR swap?",
@@ -3108,10 +2577,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q319",
     "lv": 32,
     "q": "Which __dunder__ is called when a new class is defined using a metaclass?",
@@ -3122,10 +2588,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q062",
     "lv": 32,
     "q": "If 5 cats catch 5 mice in 5 minutes, how many cats to catch 100 mice in 100 minutes?",
@@ -3136,10 +2599,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q293",
     "lv": 32,
     "q": "class A: x=[] — a1=A(); a2=A(); a1.x.append(1); print(a2.x) — output?",
@@ -3150,10 +2610,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q242",
     "lv": 32,
     "q": "print(','.join(['a','b','c'])) — output?",
@@ -3164,10 +2621,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q264",
     "lv": 32,
     "q": "What keyword is used for exception handling in Python?",
@@ -3178,10 +2632,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q375",
     "lv": 32,
     "q": "Which OS concept prevents a process from running too long?",
@@ -3192,24 +2643,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q060",
     "lv": 32,
     "q": "What is the number of diagonals in a decagon (10-sided polygon)?",
     "a": [
       "35"
     ],
-    "h": "Diagonals in n-gon = n(n-3)/2. n=10: 10×7/2 = ?",
+    "h": "Diagonals in n-gon = n(n-3)/2. n=10: 10*7/2 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q022",
     "lv": 32,
     "q": "If MANGO is coded as OCPIQ, what cipher is being used?",
@@ -3220,10 +2665,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q155",
     "lv": 33,
     "q": "What does the extern keyword signify for a variable?",
@@ -3234,10 +2676,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q420",
     "lv": 33,
     "q": "What git command clones a remote repository locally?",
@@ -3248,24 +2687,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q086",
     "lv": 33,
     "q": "What is the geometric mean of 4 and 16?",
     "a": [
       "8"
     ],
-    "h": "GM of a and b = √(ab) = √(4×16) = √64 = ?",
+    "h": "GM of a and b = √(ab) = √(4*16) = √64 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q362",
     "lv": 33,
     "q": "What traversal visits root, left, right?",
@@ -3276,10 +2709,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q127",
     "lv": 33,
     "q": "int arr[]={5,10,15}; printf('%d',*arr); — output?",
@@ -3290,10 +2720,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q115",
     "lv": 33,
     "q": "What keyword is used to define a constant in C?",
@@ -3304,10 +2731,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q137",
     "lv": 33,
     "q": "What keyword exits a loop immediately in C?",
@@ -3318,10 +2742,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q162",
     "lv": 33,
     "q": "Which function reallocates memory in C?",
@@ -3332,10 +2753,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q211",
     "lv": 33,
     "q": "A buffer overflow overwrites what critical stack element to gain control?",
@@ -3346,10 +2764,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q153",
     "lv": 34,
     "q": "Which function finds the length of a string in C?",
@@ -3360,38 +2775,29 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q066",
     "lv": 34,
     "q": "How many 3-digit numbers can be formed using digits 1–5 without repetition?",
     "a": [
       "60"
     ],
-    "h": "5 digits, choose 3, arrange them = P(5,3) = 5×4×3 = ?",
+    "h": "5 digits, choose 3, arrange them = P(5,3) = 5*4*3 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q104",
     "lv": 34,
     "q": "printf('%d', 10%3); — what is printed?",
     "a": [
       "1"
     ],
-    "h": "Modulo gives remainder. 10=3×3+1. Remainder=?",
+    "h": "Modulo gives remainder. 10=3*3+1. Remainder=?",
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q385",
     "lv": 34,
     "q": "What port does HTTPS use by default?",
@@ -3402,10 +2808,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q142",
     "lv": 34,
     "q": "Which segment stores global variables in C?",
@@ -3416,10 +2819,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q055",
     "lv": 34,
     "q": "A can do a work in 15 days. B in 20 days. Together in how many days? (whole number part)",
@@ -3430,24 +2830,18 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q030",
     "lv": 34,
     "q": "How many combinations can be chosen from 5 items taking 2 at a time?",
     "a": [
       "10"
     ],
-    "h": "C(5,2) = 5!/(2!×3!) = (5×4)/(2×1) = ?",
+    "h": "C(5,2) = 5!/(2!*3!) = (5*4)/(2*1) = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q154",
     "lv": 34,
     "q": "What keyword defines a type alias in C?",
@@ -3458,10 +2852,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q387",
     "lv": 35,
     "q": "What translates domain names to IP addresses?",
@@ -3472,10 +2863,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q413",
     "lv": 35,
     "q": "What git command uploads local commits to remote?",
@@ -3486,10 +2874,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q237",
     "lv": 35,
     "q": "x=[1,2,3]; print(x[::-1]) — output?",
@@ -3500,10 +2885,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q075",
     "lv": 35,
     "q": "What is the value of log₁₀(1000)?",
@@ -3514,10 +2896,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q484",
     "lv": 35,
     "q": "What function combines password with random data before hashing?",
@@ -3528,10 +2907,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q116",
     "lv": 35,
     "q": "What keyword prevents a variable from being optimized by the compiler?",
@@ -3542,10 +2918,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q096",
     "lv": 35,
     "q": "What is the determinant of the identity matrix of order 2?",
@@ -3556,10 +2929,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q327",
     "lv": 35,
     "q": "print(divmod(10,3)) — output?",
@@ -3570,10 +2940,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q122",
     "lv": 36,
     "q": "What does scanf return on successful read of one variable?",
@@ -3584,10 +2951,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q057",
     "lv": 36,
     "q": "How many zeros are at the end of 100 factorial?",
@@ -3598,10 +2962,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q464",
     "lv": 36,
     "q": "What OSI layer does TLS operate at?",
@@ -3612,10 +2973,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q300",
     "lv": 36,
     "q": "def gen(): value=yield 1; yield value*2 — g=gen(); next(g); print(g.send(5)) — output?",
@@ -3626,10 +2984,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q357",
     "lv": 36,
     "q": "What sorting algorithm is best for nearly sorted data?",
@@ -3640,10 +2995,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q289",
     "lv": 36,
     "q": "funcs=[lambda:i for i in range(3)]; print(funcs[0]()) — output?",
@@ -3654,10 +3006,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q056",
     "lv": 36,
     "q": "What is the remainder when 2^100 is divided by 3?",
@@ -3668,10 +3017,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q204",
     "lv": 36,
     "q": "What is the union keyword used for?",
@@ -3682,10 +3028,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q309",
     "lv": 36,
     "q": "d={1:'a',2:'b'}; print(list(d.values())) — output?",
@@ -3696,10 +3039,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q209",
     "lv": 37,
     "q": "int x=100; printf('%d',x>>2); — output?",
@@ -3710,10 +3050,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q485",
     "lv": 37,
     "q": "What does PKI stand for?",
@@ -3724,10 +3061,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q106",
     "lv": 37,
     "q": "char c='A'; printf('%d',c); — output?",
@@ -3738,10 +3072,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q158",
     "lv": 37,
     "q": "What is the name for a function that calls itself?",
@@ -3752,24 +3083,18 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q041",
     "lv": 37,
     "q": "If a car travels at 60 km/h for 2.5 hours, how many km does it cover?",
     "a": [
       "150"
     ],
-    "h": "Distance = Speed × Time = 60 × 2.5 = 150km.",
+    "h": "Distance = Speed * Time = 60 * 2.5 = 150km.",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q377",
     "lv": 37,
     "q": "What is swapping unused memory pages to disk called?",
@@ -3780,10 +3105,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q364",
     "lv": 37,
     "q": "Which data structure is used in BFS traversal?",
@@ -3794,10 +3116,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q315",
     "lv": 37,
     "q": "What is a shallow copy missing that deepcopy provides?",
@@ -3808,10 +3127,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q332",
     "lv": 38,
     "q": "print(oct(8)) — output?",
@@ -3822,10 +3138,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q112",
     "lv": 38,
     "q": "sizeof(int) on a 32-bit system returns?",
@@ -3836,10 +3149,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q161",
     "lv": 38,
     "q": "calloc initializes allocated memory to what value?",
@@ -3850,10 +3160,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q167",
     "lv": 38,
     "q": "int arr[3]={1,2,3}; printf('%d',2[arr]); — output?",
@@ -3864,10 +3171,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q223",
     "lv": 38,
     "q": "What is the name for writing beyond an array's boundary in C?",
@@ -3878,10 +3182,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q282",
     "lv": 38,
     "q": "print({1,2,3}&{2,3,4}) — set intersection?",
@@ -3892,10 +3193,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q432",
     "lv": 38,
     "q": "What property does a balanced BST maintain?",
@@ -3906,10 +3204,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q445",
     "lv": 38,
     "q": "What does mmap system call do?",
@@ -3920,10 +3215,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q438",
     "lv": 39,
     "q": "What does topological sort require about a graph?",
@@ -3934,10 +3226,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q109",
     "lv": 39,
     "q": "int a=5,b=3; printf('%d',a^b); — output?",
@@ -3948,10 +3237,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q333",
     "lv": 39,
     "q": "print(ord('A')) — output?",
@@ -3962,38 +3248,29 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q073",
     "lv": 39,
     "q": "What is the sum of a geometric series 1+2+4+8+...+128?",
     "a": [
       "255"
     ],
-    "h": "GP sum = a(r^n-1)/(r-1) = 1×(2^8-1)/(2-1) = ?. (Series: 1,2,4,...,128 = 8 terms.)",
+    "h": "GP sum = a(r^n-1)/(r-1) = 1*(2^8-1)/(2-1) = ?. (Series: 1,2,4,...,128 = 8 terms.)",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q053",
     "lv": 39,
     "q": "A shopkeeper marks goods 25% above cost and gives 10% discount. Profit percentage?",
     "a": [
       "12.5"
     ],
-    "h": "Let CP=100. Mark=125. After 10% discount: SP=125×0.9=112.5. Profit%=(112.5-100)/100×100=?%.",
+    "h": "Let CP=100. Mark=125. After 10% discount: SP=125*0.9=112.5. Profit%=(112.5-100)/100*100=?%.",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q267",
     "lv": 39,
     "q": "What keyword raises an exception in Python?",
@@ -4004,24 +3281,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q038",
     "lv": 39,
     "q": "What is the area of a triangle with base 10 and height 6?",
     "a": [
       "30"
     ],
-    "h": "Area=(1/2)×base×height=(1/2)×10×6=?",
+    "h": "Area=(1/2)*base*height=(1/2)*10*6=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q424",
     "lv": 39,
     "q": "What type of encryption uses same key for encrypt and decrypt?",
@@ -4032,10 +3303,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q366",
     "lv": 39,
     "q": "What is a hash collision resolution technique that uses linked lists?",
@@ -4046,10 +3314,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q152",
     "lv": 40,
     "q": "Which function concatenates two strings in C?",
@@ -4060,10 +3325,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q349",
     "lv": 40,
     "q": "from collections import deque; d=deque([1,2,3]); d.appendleft(0); print(d[0]) — output?",
@@ -4074,38 +3336,29 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q039",
     "lv": 40,
     "q": "How many degrees are in the sum of interior angles of a hexagon?",
     "a": [
       "720"
     ],
-    "h": "Sum of interior angles = (n-2)×180. n=6. (6-2)×180=4×180=?",
+    "h": "Sum of interior angles = (n-2)*180. n=6. (6-2)*180=4*180=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q016",
     "lv": 40,
     "q": "In a sequence 2, 6, 18, 54 — what is the next term?",
     "a": [
       "162"
     ],
-    "h": "Each term is multiplied by 3. 54×3=?",
+    "h": "Each term is multiplied by 3. 54*3=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q494",
     "lv": 40,
     "q": "Is the travelling salesman problem NP-complete?",
@@ -4116,10 +3369,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q198",
     "lv": 40,
     "q": "int x=255; printf('%x',x); — output?",
@@ -4130,10 +3380,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q437",
     "lv": 40,
     "q": "What is amortized time complexity of push on a dynamic array?",
@@ -4144,10 +3391,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q344",
     "lv": 40,
     "q": "print(True*5) — output?",
@@ -4158,10 +3402,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q359",
     "lv": 41,
     "q": "What is the space complexity of merge sort?",
@@ -4172,10 +3413,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q245",
     "lv": 41,
     "q": "print(type(()).__name__) — output?",
@@ -4186,10 +3424,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q462",
     "lv": 41,
     "q": "What protocol does ping use?",
@@ -4200,10 +3435,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q492",
     "lv": 41,
     "q": "What complexity class contains problems verifiable in polynomial time?",
@@ -4214,10 +3446,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q260",
     "lv": 41,
     "q": "What keyword is used to inherit from a parent class?",
@@ -4228,10 +3457,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q382",
     "lv": 41,
     "q": "Which protocol guarantees reliable ordered delivery?",
@@ -4242,10 +3468,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q381",
     "lv": 41,
     "q": "What does IP stand for?",
@@ -4256,10 +3479,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q222",
     "lv": 41,
     "q": "What is the correct way to swap two numbers without a temp in C? (technique name)",
@@ -4270,10 +3490,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q331",
     "lv": 42,
     "q": "print(hex(255)) — output?",
@@ -4284,38 +3501,29 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q008",
     "lv": 42,
     "q": "What is 15% of 400?",
     "a": [
       "60"
     ],
-    "h": "15% of 400 = (15/100)×400 = ?",
+    "h": "15% of 400 = (15/100)*400 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q001",
     "lv": 42,
     "q": "What is the LCM of 12 and 18?",
     "a": [
       "36"
     ],
-    "h": "Find prime factors of both numbers. LCM = product of highest powers of all prime factors. 12=2²×3, 18=2×3². LCM=2²×3²=?",
+    "h": "Find prime factors of both numbers. LCM = product of highest powers of all prime factors. 12=2^2*3, 18=2*3^2. LCM=2^2*3^2=?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q081",
     "lv": 42,
     "q": "A train 200m long passes a pole in 10 seconds. Speed in m/s?",
@@ -4326,10 +3534,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q118",
     "lv": 42,
     "q": "What is the return type of malloc in C?",
@@ -4340,10 +3545,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q493",
     "lv": 42,
     "q": "What is the most difficult problem in NP called?",
@@ -4354,10 +3556,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q224",
     "lv": 42,
     "q": "int a=10; int b=a; b=20; printf('%d',a); — output?",
@@ -4368,10 +3567,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q345",
     "lv": 42,
     "q": "Which Python keyword skips rest of loop body?",
@@ -4382,10 +3578,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q328",
     "lv": 42,
     "q": "print(all([1,2,0,3])) — output?",
@@ -4396,10 +3589,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q286",
     "lv": 43,
     "q": "A function using yield is called a?",
@@ -4410,10 +3600,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q434",
     "lv": 43,
     "q": "Red-Black trees color nodes with which two colors?",
@@ -4424,10 +3611,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q197",
     "lv": 43,
     "q": "printf('%d',sizeof(int)*2+1); on 32-bit system — output?",
@@ -4438,10 +3622,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q052",
     "lv": 43,
     "q": "Two pipes fill a tank in 12 and 15 hours. Together, in how many hours will they fill the tank?",
@@ -4452,10 +3633,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q468",
     "lv": 43,
     "q": "What isolation level prevents dirty reads but allows non-repeatable reads?",
@@ -4466,10 +3644,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q276",
     "lv": 43,
     "q": "Which Python data type is immutable — list or tuple?",
@@ -4480,10 +3655,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q495",
     "lv": 43,
     "q": "What technique reduces one problem to another to prove NP-hardness?",
@@ -4494,10 +3666,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q416",
     "lv": 43,
     "q": "What git command switches between branches?",
@@ -4508,10 +3677,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q297",
     "lv": 44,
     "q": "print(type(type)) — what is returned?",
@@ -4522,10 +3688,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q133",
     "lv": 44,
     "q": "int x=5; printf('%d',x==5); — output?",
@@ -4536,10 +3699,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q314",
     "lv": 44,
     "q": "Which dunder method implements the descriptor protocol for reads?",
@@ -4550,24 +3710,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q196",
     "lv": 44,
     "q": "Octal 017 in decimal is?",
     "a": [
       "15"
     ],
-    "h": "Octal: each digit × 8^position. 017 = 0×8²+1×8+7 = 0+8+7 = ?",
+    "h": "Octal: each digit * 8^position. 017 = 0*8^2+1*8+7 = 0+8+7 = ?",
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q277",
     "lv": 44,
     "q": "Which built-in type stores unique values in Python?",
@@ -4578,10 +3732,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q411",
     "lv": 44,
     "q": "What git command stages changes for commit?",
@@ -4592,10 +3743,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q003",
     "lv": 44,
     "q": "A train travels 360 km in 4 hours. What is its speed in km/h?",
@@ -4606,10 +3754,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q336",
     "lv": 44,
     "q": "What module provides deepcopy in Python?",
@@ -4620,16 +3765,10 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q091",
     "lv": 45,
-    "q": "If A={1,2,3} and B={2,3,4},
-
-
- what is |A union B|?",
+    "q": "If A={1,2,3} and B={2,3,4}, what is |A union B|?",
     "a": [
       "4"
     ],
@@ -4637,10 +3776,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q114",
     "lv": 45,
     "q": "sizeof(double) typically returns?",
@@ -4651,10 +3787,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q093",
     "lv": 45,
     "q": "Power set of a set with 4 elements has how many elements?",
@@ -4665,10 +3798,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q227",
     "lv": 45,
     "q": "print(type(1//2)) — what class is printed?",
@@ -4679,10 +3809,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q358",
     "lv": 45,
     "q": "What data structure is used to implement a recursive function?",
@@ -4693,10 +3820,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q141",
     "lv": 45,
     "q": "Which memory segment stores malloc allocated memory?",
@@ -4707,10 +3831,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q408",
     "lv": 45,
     "q": "What keyword refers to the current instance in Java and C++?",
@@ -4721,10 +3842,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q326",
     "lv": 45,
     "q": "x=frozenset([1,2,3]); x.add(4) — raises what?",
@@ -4735,52 +3853,40 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q456",
     "lv": 45,
     "q": "What is the purpose of TCP's TIME_WAIT state?",
     "a": [
       "expiry"
     ],
-    "h": "TIME_WAIT (2×MSL): ensures final ACK reached server and all old packets have expired from network.",
+    "h": "TIME_WAIT (2*MSL): ensures final ACK reached server and all old packets have expired from network.",
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q090",
     "lv": 46,
     "q": "Sum of first n natural numbers formula — value when n=15?",
     "a": [
       "120"
     ],
-    "h": "n(n+1)/2 = 15×16/2 = ?",
+    "h": "n(n+1)/2 = 15*16/2 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q009",
     "lv": 46,
     "q": "The ratio of two numbers is 3:5 and their sum is 80. What is the smaller number?",
     "a": [
       "30"
     ],
-    "h": "Smaller number = (3/8)×80. Total parts = 3+5=8. Smaller = (3/8)×80 = ?",
+    "h": "Smaller number = (3/8)*80. Total parts = 3+5=8. Smaller = (3/8)*80 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q191",
     "lv": 46,
     "q": "XOR applied twice to same value gives?",
@@ -4791,24 +3897,18 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q068",
     "lv": 46,
     "q": "A bag has 3 red and 5 blue balls. Probability of drawing 2 red in a row without replacement? Numerator of 3/28?",
     "a": [
       "3"
     ],
-    "h": "P(2 red) = (3/8)×(2/7) = 6/56 = 3/28. Numerator = ?",
+    "h": "P(2 red) = (3/8)*(2/7) = 6/56 = 3/28. Numerator = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q070",
     "lv": 46,
     "q": "In how many ways can 4 people be seated in a circular table?",
@@ -4819,24 +3919,18 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q004",
     "lv": 46,
     "q": "What percentage of 200 is 50?",
     "a": [
       "25"
     ],
-    "h": "Use formula: (Part÷Whole)×100. (50÷200)×100 = ?",
+    "h": "Use formula: (Part÷Whole)*100. (50÷200)*100 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q214",
     "lv": 46,
     "q": "int x=5; printf('%d',x*=2); — output?",
@@ -4847,10 +3941,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q218",
     "lv": 46,
     "q": "printf('%d',1&&0||1); — output?",
@@ -4861,10 +3952,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q396",
     "lv": 47,
     "q": "What constraint ensures uniqueness of a column?",
@@ -4875,10 +3963,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q125",
     "lv": 47,
     "q": "What is NULL equivalent to numerically in C?",
@@ -4889,10 +3974,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q360",
     "lv": 47,
     "q": "In a binary tree, what is the maximum nodes at level L?",
@@ -4903,10 +3985,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q040",
     "lv": 47,
     "q": "What is the volume of a cube with side 4?",
@@ -4917,10 +3996,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q443",
     "lv": 47,
     "q": "What is the ABA problem in lock-free programming?",
@@ -4931,10 +4007,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q221",
     "lv": 47,
     "q": "In C, macro arguments are expanded how (literally/evaluated)?",
@@ -4945,10 +4018,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q028",
     "lv": 47,
     "q": "A die is rolled. What is the probability of getting an even number? (fraction)",
@@ -4959,24 +4029,18 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q087",
     "lv": 47,
     "q": "What is the harmonic mean of 2 and 6?",
     "a": [
       "3"
     ],
-    "h": "HM of a and b = 2ab/(a+b) = 2×2×6/(2+6) = 24/8 = ?",
+    "h": "HM of a and b = 2ab/(a+b) = 2*2*6/(2+6) = 24/8 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q410",
     "lv": 48,
     "q": "What design pattern separates object construction from representation?",
@@ -4987,10 +4051,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q419",
     "lv": 48,
     "q": "What git command shows uncommitted changes?",
@@ -5001,24 +4062,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q059",
     "lv": 48,
-    "q": "If x² + y² = 25 and xy = 12, what is (x+y)²?",
+    "q": "If x^2 + y^2 = 25 and xy = 12, what is (x+y)^2?",
     "a": [
       "49"
     ],
-    "h": "(x+y)² = x²+y²+2xy = 25+2×12 = 25+24 = ?",
+    "h": "(x+y)^2 = x^2+y^2+2xy = 25+2*12 = 25+24 = ?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q159",
     "lv": 48,
     "q": "int i=0; for(i=0;i<3;i++); printf('%d',i); — output?",
@@ -5029,24 +4084,18 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q029",
     "lv": 48,
     "q": "How many ways can 3 people be arranged in a row?",
     "a": [
       "6"
     ],
-    "h": "3 people in a row = 3! = 3×2×1 = ? arrangements.",
+    "h": "3 people in a row = 3! = 3*2*1 = ? arrangements.",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q317",
     "lv": 48,
     "q": "What keyword is used to call a coroutine in async Python?",
@@ -5057,10 +4106,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q460",
     "lv": 48,
     "q": "How many bits in an IPv4 address?",
@@ -5071,10 +4117,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q325",
     "lv": 48,
     "q": "import sys; print(sys.getrecursionlimit()==1000) — typically?",
@@ -5085,10 +4128,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q215",
     "lv": 48,
     "q": "int x=10; printf('%d',x/=3); — output?",
@@ -5099,10 +4139,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q187",
     "lv": 49,
     "q": "What does the restrict keyword tell the compiler about a pointer?",
@@ -5113,10 +4150,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q418",
     "lv": 49,
     "q": "What git command shows commit history?",
@@ -5127,10 +4161,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q417",
     "lv": 49,
     "q": "What git command merges another branch into current?",
@@ -5141,10 +4172,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q151",
     "lv": 49,
     "q": "Which function compares two strings in C?",
@@ -5155,10 +4183,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q384",
     "lv": 49,
     "q": "What port does HTTP use by default?",
@@ -5169,10 +4194,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q168",
     "lv": 49,
     "q": "int x=0x41; printf('%c',x); — output?",
@@ -5183,10 +4205,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q271",
     "lv": 49,
     "q": "x=[1,2]; y=x.copy(); y.append(3); print(len(x)) — output?",
@@ -5197,24 +4216,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q025",
     "lv": 49,
     "q": "If 6 workers complete a job in 12 days, how many days for 9 workers?",
     "a": [
       "8"
     ],
-    "h": "Workers × Days = constant (same work). 6×12 = 9×D. D = 72÷9 = ?",
+    "h": "Workers * Days = constant (same work). 6*12 = 9*D. D = 72÷9 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q348",
     "lv": 50,
     "q": "from collections import Counter; c=Counter('aabbc'); print(c['a']) — output?",
@@ -5225,10 +4238,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q169",
     "lv": 50,
     "q": "int x=-1; printf('%u',x); on 32-bit system — output?",
@@ -5239,10 +4249,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q251",
     "lv": 50,
     "q": "print(max([3,1,4,1,5,9])) — output?",
@@ -5253,10 +4260,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q179",
     "lv": 50,
     "q": "What is the size in bytes of struct{char a; int b; char c;} on 64-bit (with padding)?",
@@ -5267,10 +4271,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q232",
     "lv": 50,
     "q": "print(bool(0)) — output?",
@@ -5281,24 +4282,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q077",
     "lv": 50,
-    "q": "What is the volume of a cylinder with radius 7 and height 10? (use π=22/7)",
+    "q": "What is the volume of a cylinder with radius 7 and height 10? (use pi=22/7)",
     "a": [
       "1540"
     ],
-    "h": "V=πr²h=(22/7)×49×10=22×7×10=?",
+    "h": "V=pir^2h=(22/7)*49*10=22*7*10=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q190",
     "lv": 50,
     "q": "XOR(1,1) output?",
@@ -5309,10 +4304,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q406",
     "lv": 50,
     "q": "What is overriding a method in a subclass called?",
@@ -5323,10 +4315,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q491",
     "lv": 51,
     "q": "What complexity class contains problems solvable in polynomial time?",
@@ -5337,10 +4326,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q254",
     "lv": 51,
     "q": "print(abs(-7)) — output?",
@@ -5351,10 +4337,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q392",
     "lv": 51,
     "q": "Which SQL command retrieves data?",
@@ -5365,10 +4348,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q177",
     "lv": 51,
     "q": "int x=5,y=10; printf('%d',x>y?x:y); — output?",
@@ -5379,10 +4359,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q279",
     "lv": 51,
     "q": "What is the method to add a key-value pair to a dict?",
@@ -5393,24 +4370,18 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q026",
     "lv": 51,
     "q": "A coin is tossed twice. How many possible outcomes are there?",
     "a": [
       "4"
     ],
-    "h": "Each toss has 2 outcomes: H or T. Two tosses: 2×2=? total outcomes (HH,HT,TH,TT).",
+    "h": "Each toss has 2 outcomes: H or T. Two tosses: 2*2=? total outcomes (HH,HT,TH,TT).",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q372",
     "lv": 51,
     "q": "What scheduling gives CPU to the process with shortest burst time?",
@@ -5421,10 +4392,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q002",
     "lv": 51,
     "q": "What is the HCF of 36 and 48?",
@@ -5435,10 +4403,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q219",
     "lv": 51,
     "q": "printf('%d',1&&0&&1); — output?",
@@ -5449,10 +4414,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q113",
     "lv": 52,
     "q": "sizeof(char) always returns?",
@@ -5463,10 +4425,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q414",
     "lv": 52,
     "q": "What git command downloads and merges remote changes?",
@@ -5477,10 +4436,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q061",
     "lv": 52,
     "q": "In a group of 100 students, 60 like math, 50 like science, 30 like both. How many like neither?",
@@ -5491,10 +4447,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q397",
     "lv": 52,
     "q": "What is a foreign key?",
@@ -5505,10 +4458,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q373",
     "lv": 52,
     "q": "What OS scheduling algorithm uses a time quantum?",
@@ -5519,10 +4469,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q321",
     "lv": 52,
     "q": "class A: def __new__(cls): return 42 — print(A()) — output?",
@@ -5533,10 +4480,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q144",
     "lv": 52,
     "q": "What is the default return type of main in C?",
@@ -5547,10 +4491,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q136",
     "lv": 52,
     "q": "What keyword skips the current iteration of a loop?",
@@ -5561,10 +4502,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q351",
     "lv": 53,
     "q": "What is the time complexity of binary search?",
@@ -5575,10 +4513,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q478",
     "lv": 53,
     "q": "What CPU vulnerability exploited speculative execution in 2018?",
@@ -5589,10 +4524,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q074",
     "lv": 53,
     "q": "If 2^x = 32, what is x?",
@@ -5603,10 +4535,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q324",
     "lv": 53,
     "q": "print('{:05d}'.format(42)) — output?",
@@ -5617,10 +4546,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q255",
     "lv": 53,
     "q": "print(round(3.7)) — output?",
@@ -5631,10 +4557,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q343",
     "lv": 53,
     "q": "print(True+True) — output?",
@@ -5645,10 +4568,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q429",
     "lv": 53,
     "q": "What graph algorithm finds minimum spanning tree greedily?",
@@ -5659,24 +4579,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q082",
     "lv": 53,
     "q": "Two people start from the same point in opposite directions at 4 km/h and 6 km/h. Distance apart after 2 hours?",
     "a": [
       "20"
     ],
-    "h": "Combined distance = (4+6)×2 = 20km apart.",
+    "h": "Combined distance = (4+6)*2 = 20km apart.",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q201",
     "lv": 54,
     "q": "printf('%d', ~0); on 32-bit signed — output?",
@@ -5687,10 +4601,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q188",
     "lv": 54,
     "q": "NAND(1,1) gate output?",
@@ -5701,10 +4612,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q499",
     "lv": 54,
     "q": "What type of queue allows publisher and subscriber to be decoupled?",
@@ -5715,10 +4623,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q487",
     "lv": 54,
     "q": "What does the CAP theorem say cannot all be guaranteed simultaneously?",
@@ -5729,24 +4634,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q080",
     "lv": 54,
     "q": "Sum of interior angles of a polygon is 1440°. How many sides does it have?",
     "a": [
       "10"
     ],
-    "h": "(n-2)×180=1440. n-2=8. n=?",
+    "h": "(n-2)*180=1440. n-2=8. n=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q132",
     "lv": 54,
     "q": "printf('%d',!1); — output?",
@@ -5757,10 +4656,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q172",
     "lv": 54,
     "q": "int x=10; x&=~(1<<1); printf('%d',x); — output?",
@@ -5771,10 +4667,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q469",
     "lv": 54,
     "q": "What does MVCC stand for?",
@@ -5785,10 +4678,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q193",
     "lv": 54,
     "q": "What decimal does 8-bit two's complement 11111111 represent?",
@@ -5799,10 +4689,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q471",
     "lv": 55,
     "q": "What is a B+ tree's advantage over B-tree for range queries?",
@@ -5813,10 +4700,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q430",
     "lv": 55,
     "q": "What is the time complexity of Floyd-Warshall algorithm?",
@@ -5827,10 +4711,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q186",
     "lv": 55,
     "q": "Returning address of a local variable causes what kind of pointer?",
@@ -5841,10 +4722,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q302",
     "lv": 55,
     "q": "print(1 or 2) — output?",
@@ -5855,10 +4733,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q409",
     "lv": 55,
     "q": "What design pattern ensures only one instance of a class exists?",
@@ -5869,10 +4744,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q329",
     "lv": 55,
     "q": "print(any([0,0,1,0])) — output?",
@@ -5883,10 +4755,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q466",
     "lv": 55,
     "q": "What does ACID stand for — first word?",
@@ -5897,10 +4766,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q128",
     "lv": 55,
     "q": "int arr[]={5,10,15}; printf('%d',*(arr+2)); — output?",
@@ -5911,10 +4777,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q246",
     "lv": 56,
     "q": "x=(1,2,3); print(x[1]) — output?",
@@ -5925,10 +4788,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q203",
     "lv": 56,
     "q": "int *p=NULL; if(p) printf('yes'); else printf('no'); — output?",
@@ -5939,24 +4799,18 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q063",
     "lv": 56,
     "q": "A clock gains 5 minutes every hour. How many minutes fast after 12 hours?",
     "a": [
       "60"
     ],
-    "h": "Gains 5 min per hour. In 12 hours: 5×12 = ? minutes fast.",
+    "h": "Gains 5 min per hour. In 12 hours: 5*12 = ? minutes fast.",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q135",
     "lv": 56,
     "q": "What does do-while guarantee over while loop?",
@@ -5967,10 +4821,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q265",
     "lv": 56,
     "q": "What keyword catches an exception in Python?",
@@ -5981,10 +4832,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q124",
     "lv": 56,
     "q": "What operator dereferences a pointer in C?",
@@ -5995,10 +4843,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q261",
     "lv": 56,
     "q": "What keyword makes a variable available in outer scope from inner function?",
@@ -6009,10 +4854,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q463",
     "lv": 56,
     "q": "What is the maximum segment size in TCP called?",
@@ -6023,10 +4865,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q311",
     "lv": 57,
     "q": "__getattr__ is called when attribute lookup?",
@@ -6037,10 +4876,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q459",
     "lv": 57,
     "q": "What does CIDR stand for in networking?",
@@ -6051,10 +4887,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q455",
     "lv": 57,
     "q": "What condition must be broken to prevent deadlock — mutual exclusion, hold and wait, no preemption, or circular wait?",
@@ -6065,10 +4898,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q280",
     "lv": 57,
     "q": "What does the pop() method return when called on a list?",
@@ -6079,10 +4909,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q123",
     "lv": 57,
     "q": "What operator is used to get the address of a variable in C?",
@@ -6093,10 +4920,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q126",
     "lv": 57,
     "q": "int arr[]={1,2,3}; printf('%d',arr[1]); — output?",
@@ -6107,10 +4931,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q427",
     "lv": 57,
     "q": "What is Dijkstra's algorithm used for?",
@@ -6121,10 +4942,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q054",
     "lv": 57,
     "q": "If log₂(x) = 8, what is x?",
@@ -6135,10 +4953,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q488",
     "lv": 57,
     "q": "What consistency model do most NoSQL databases provide?",
@@ -6149,10 +4964,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q183",
     "lv": 58,
     "q": "What does free(NULL) do in C?",
@@ -6163,10 +4975,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q240",
     "lv": 58,
     "q": "print('HELLO'.lower()) — output?",
@@ -6177,10 +4986,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q354",
     "lv": 58,
     "q": "What is the time complexity of linear search in worst case?",
@@ -6191,10 +4997,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q477",
     "lv": 58,
     "q": "What is the name for out-of-order CPU instruction execution?",
@@ -6205,10 +5008,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q202",
     "lv": 58,
     "q": "int x=12,y=10; printf('%d',x^y); — output?",
@@ -6219,10 +5019,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q160",
     "lv": 58,
     "q": "int x=15; printf('%d',x&~(1<<0)); — output? (clears bit 0)",
@@ -6233,10 +5030,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q092",
     "lv": 58,
     "q": "If |A|=5, |B|=6, |A∩B|=2, what is |A∪B|?",
@@ -6247,10 +5041,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q020",
     "lv": 58,
     "q": "How many sides does a heptagon have?",
@@ -6261,10 +5052,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q318",
     "lv": 59,
     "q": "Python garbage collects circular references using what mechanism?",
@@ -6275,10 +5063,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q107",
     "lv": 59,
     "q": "int a=5,b=3; printf('%d',a&b); — output?",
@@ -6289,10 +5074,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q272",
     "lv": 59,
     "q": "print([x**2 for x in range(4)]) — output?",
@@ -6303,10 +5085,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q461",
     "lv": 59,
     "q": "How many bits in an IPv6 address?",
@@ -6317,24 +5096,18 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q084",
     "lv": 59,
     "q": "A train 300m long crosses another 200m long train coming opposite at 60 and 40 km/h. Time in seconds?",
     "a": [
       "18"
     ],
-    "h": "Total length=300+200=500m. Relative speed=60+40=100km/h=100×(5/?)=250/9 m/s. Time=500÷(250/9)=500×9/250=18s.",
+    "h": "Total length=300+200=500m. Relative speed=60+40=100km/h=100*(5/?)=250/9 m/s. Time=500÷(250/9)=500*9/250=18s.",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q458",
     "lv": 59,
     "q": "What TCP algorithm reduces congestion window on packet loss?",
@@ -6345,10 +5118,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q235",
     "lv": 59,
     "q": "x=[1,2,3]; print(x[-1]) — output?",
@@ -6359,38 +5129,29 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q006",
     "lv": 59,
     "q": "What is the simple interest on Rs.1000 at 10% per annum for 2 years?",
     "a": [
       "200"
     ],
-    "h": "SI = (P×R×T)/100. P=1000, R=10, T=2. (1000×10×2)/100 = ?",
+    "h": "SI = (P*R*T)/100. P=1000, R=10, T=2. (1000*10*2)/100 = ?",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q194",
     "lv": 60,
     "q": "0xFF in decimal is?",
     "a": [
       "255"
     ],
-    "h": "0xFF = 15×16+15 = 240+15 = ?",
+    "h": "0xFF = 15*16+15 = 240+15 = ?",
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q145",
     "lv": 60,
     "q": "int x=3,y=4; printf('%d',x>y?x:y); — output?",
@@ -6401,10 +5162,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q330",
     "lv": 60,
     "q": "print(bin(10)) — output?",
@@ -6415,10 +5173,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q212",
     "lv": 60,
     "q": "What is the printf format specifier for long int?",
@@ -6429,10 +5184,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q426",
     "lv": 60,
     "q": "What is the time complexity of building a heap from an array?",
@@ -6443,38 +5195,29 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q098",
     "lv": 60,
     "q": "Transpose of a 3x2 matrix has how many columns?",
     "a": [
       "3"
     ],
-    "h": "Transpose swaps rows and columns. (3×2)^T = (2×3). Columns of transpose=?",
+    "h": "Transpose swaps rows and columns. (3*2)^T = (2*3). Columns of transpose=?",
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q195",
     "lv": 60,
     "q": "0x1F in decimal is?",
     "a": [
       "31"
     ],
-    "h": "0x1F = 1×16+15 = 16+15 = ?. ? is prime.",
+    "h": "0x1F = 1*16+15 = 16+15 = ?. ? is prime.",
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-Q388",
     "lv": 60,
     "q": "What layer of OSI model handles routing?",
@@ -6485,10 +5228,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-Q213",
     "lv": 60,
     "q": "What does getchar() return when EOF is reached?",
@@ -6499,10 +5239,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-001",
     "lv": 20,
     "q": "If 5 men can build a wall in 12 days, how many days will 10 men take?",
@@ -6511,10 +5248,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-002",
     "lv": 25,
     "q": "What is the angle between hour and minute hand at 3:00?",
@@ -6523,10 +5257,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-003",
     "lv": 30,
     "q": "A shopkeeper gives 10% discount and still makes 20% profit. If CP is 900, what is MP?",
@@ -6535,10 +5266,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-004",
     "lv": 35,
     "q": "Next number in series: 1, 4, 9, 16, 25, ?",
@@ -6547,10 +5275,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-005",
     "lv": 40,
     "q": "A train 150m long crosses a pole in 15 seconds. What is its speed in km/hr?",
@@ -6559,10 +5284,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-006",
     "lv": 45,
     "q": "Probability of picking a King from a deck of 52 cards?",
@@ -6571,10 +5293,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-007",
     "lv": 50,
     "q": "The sum of ages of 5 children born at intervals of 3 years is 50. Age of youngest?",
@@ -6583,10 +5302,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-008",
     "lv": 55,
     "q": "What is 25% of 25% of 400?",
@@ -6595,10 +5311,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-009",
     "lv": 60,
     "q": "Find the simple interest on 5000 at 10% for 2 years.",
@@ -6607,10 +5320,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-10",
     "lv": 60,
     "q": "A cube has surface area 150. What is its volume?",
@@ -6619,10 +5329,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-011",
     "lv": 11,
     "q": "If a car travels at 60 km/hr, how far does it go in 2.5 hours?",
@@ -6631,10 +5338,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-012",
     "lv": 12,
     "q": "The product of two numbers is 120 and their sum is 23. Find the numbers.",
@@ -6643,10 +5347,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-013",
     "lv": 13,
     "q": "What is the next number in the prime sequence: 2, 3, 5, 7, 11, ?",
@@ -6655,10 +5356,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-014",
     "lv": 17,
     "q": "A sum of money doubles itself in 8 years at simple interest. What is the rate?",
@@ -6667,10 +5365,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-015",
     "lv": 18,
     "q": "A can do work in 10 days, B in 15 days. How many days if they work together?",
@@ -6679,10 +5374,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-016",
     "lv": 19,
     "q": "Find the average of first 10 even numbers.",
@@ -6691,10 +5383,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-017",
     "lv": 21,
     "q": "A person crosses a 600m long street in 5 minutes. What is his speed in km/hr?",
@@ -6703,10 +5392,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-018",
     "lv": 22,
     "q": "What is the decimal equivalent of binary 11011?",
@@ -6715,10 +5401,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-019",
     "lv": 23,
     "q": "The ratio of two numbers is 3:4 and their LCM is 120. Find the numbers.",
@@ -6727,10 +5410,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
-
-
-
-  {
+{
     "id": "PZ-A-NEW-020",
     "lv": 27,
     "q": "If 1st January 2007 was Monday, what day was 1st January 2008?",
@@ -6738,10 +5418,7 @@ export const PZ=[
     "h": "2007 is a non-leap year (365 days = 52 weeks + 1 day). So day shifts by 1.",
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
-  }
-},
-
-
+  },
 {
   "id": "PZ-H-001",
   "lv": 11,
@@ -6753,8 +5430,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
-
 {
   "id": "PZ-H-002",
   "lv": 12,
@@ -6766,8 +5441,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
-
 {
   "id": "PZ-H-003",
   "lv": 13,
@@ -6779,8 +5452,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
 },
-
-
 {
   "id": "PZ-H-004",
   "lv": 14,
@@ -6792,8 +5463,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "EASY"
 },
-
-
 {
   "id": "PZ-H-005",
   "lv": 15,
@@ -6805,8 +5474,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
-
 {
   "id": "PZ-DS-001",
   "lv": 21,
@@ -6818,8 +5485,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
 },
-
-
 {
   "id": "PZ-DS-002",
   "lv": 22,
@@ -6831,8 +5496,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
-
 {
   "id": "PZ-DS-003",
   "lv": 23,
@@ -6844,8 +5507,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
-
 {
   "id": "PZ-FC-001",
   "lv": 31,
@@ -6857,8 +5518,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
 },
-
-
 {
   "id": "PZ-FC-002",
   "lv": 32,
@@ -6870,8 +5529,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
 },
-
-
 {
   "id": "PZ-FC-003",
   "lv": 33,
@@ -6883,7 +5540,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
 },
-
 {
   "id": "PZ-H-001",
   "lv": 11,
@@ -6895,7 +5551,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-H-002",
   "lv": 12,
@@ -6907,7 +5562,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-H-003",
   "lv": 13,
@@ -6919,7 +5573,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
 },
-
 {
   "id": "PZ-H-004",
   "lv": 14,
@@ -6931,7 +5584,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "EASY"
 },
-
 {
   "id": "PZ-H-005",
   "lv": 15,
@@ -6943,7 +5595,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-H-006",
   "lv": 16,
@@ -6955,7 +5606,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
 },
-
 {
   "id": "PZ-H-007",
   "lv": 17,
@@ -6967,7 +5617,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-H-008",
   "lv": 18,
@@ -6979,7 +5628,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-H-009",
   "lv": 19,
@@ -6991,7 +5639,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-H-010",
   "lv": 20,
@@ -7003,7 +5650,6 @@ export const PZ=[
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
 },
-
 {
   "id": "PZ-DS-001",
   "lv": 21,
@@ -7015,7 +5661,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
 },
-
 {
   "id": "PZ-DS-002",
   "lv": 22,
@@ -7027,7 +5672,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-DS-003",
   "lv": 23,
@@ -7039,7 +5683,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-DS-004",
   "lv": 24,
@@ -7051,7 +5694,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-DS-005",
   "lv": 25,
@@ -7063,7 +5705,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-DS-006",
   "lv": 26,
@@ -7075,7 +5716,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
 },
-
 {
   "id": "PZ-DS-007",
   "lv": 27,
@@ -7087,7 +5727,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-DS-008",
   "lv": 28,
@@ -7099,7 +5738,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-DS-009",
   "lv": 29,
@@ -7111,7 +5749,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-DS-010",
   "lv": 30,
@@ -7123,7 +5760,6 @@ export const PZ=[
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
 },
-
 {
   "id": "PZ-FC-001",
   "lv": 31,
@@ -7135,7 +5771,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
 },
-
 {
   "id": "PZ-FC-002",
   "lv": 32,
@@ -7147,7 +5782,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-FC-003",
   "lv": 33,
@@ -7159,7 +5793,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
 },
-
 {
   "id": "PZ-FC-004",
   "lv": 34,
@@ -7171,7 +5804,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-FC-005",
   "lv": 35,
@@ -7183,7 +5815,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-FC-006",
   "lv": 36,
@@ -7195,7 +5826,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
 },
-
 {
   "id": "PZ-FC-007",
   "lv": 37,
@@ -7207,7 +5837,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
 },
-
 {
   "id": "PZ-FC-008",
   "lv": 38,
@@ -7219,7 +5848,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
 },
-
 {
   "id": "PZ-FC-009",
   "lv": 39,
@@ -7231,7 +5859,6 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
 },
-
 {
   "id": "PZ-FC-010",
   "lv": 40,
