@@ -9,10 +9,10 @@ PZ.forEach(p => { PM[p.id] = p; });
 const socket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001');
 
 const getSessionId = () => {
-  let id = localStorage.getItem('ouro_session_id');
+  let id = sessionStorage.getItem('ouro_session_id');
   if (!id) {
     id = crypto.randomUUID();
-    localStorage.setItem('ouro_session_id', id);
+    sessionStorage.setItem('ouro_session_id', id);
   }
   return id;
 };
@@ -44,11 +44,11 @@ const App = () => {
   const [failAnswerOverlay, setFailAnswerOverlay] = useState(null);
   const [roomChoices, setRoomChoices] = useState([]);
 
-  // Persistence: Load initial state from localStorage if available
+  // Persistence: Load initial state from sessionStorage if available
   useEffect(() => {
-    const savedName = localStorage.getItem('ouro_name');
-    const savedS = localStorage.getItem('ouro_state');
-    const savedScreen = localStorage.getItem('ouro_current_screen');
+    const savedName = sessionStorage.getItem('ouro_name');
+    const savedS = sessionStorage.getItem('ouro_state');
+    const savedScreen = sessionStorage.getItem('ouro_current_screen');
     const defaultS = {
       id: 'PZ-INTRO-001', solved: 0, streak: 0, cps: 0, cpData: null,
       maxLv: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['PZ-INTRO-001'],
@@ -76,17 +76,17 @@ const App = () => {
 
   // Persistence: Save state whenever S or name changes
   useEffect(() => {
-    if (name) localStorage.setItem('ouro_name', name);
+    if (name) sessionStorage.setItem('ouro_name', name);
     if (S.solved > 0 || S.id !== 'PZ-INTRO-001') {
-      localStorage.setItem('ouro_state', JSON.stringify(S));
+      sessionStorage.setItem('ouro_state', JSON.stringify(S));
     }
-    localStorage.setItem('ouro_current_screen', screen);
+    sessionStorage.setItem('ouro_current_screen', screen);
   }, [S, name, screen]);
 
   // Socket
   useEffect(() => {
     socket.on('connect', () => {
-      const savedName = localStorage.getItem('ouro_name');
+      const savedName = sessionStorage.getItem('ouro_name');
       if (savedName) {
         socket.emit('join', { name: savedName, sessionId: getSessionId() });
       }
