@@ -5893,6 +5893,186 @@ export const PZ=[
     "h": "getchar() returns int. EOF is ? (0xFFFFFFFF). It returns int so it can hold all char values plus EOF.",
     "type": "C",
     "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-A-NEW-001",
+    "lv": 20,
+    "q": "If 5 men can build a wall in 12 days, how many days will 10 men take?",
+    "a": ["6"],
+    "h": "Men * Days = Work. 5 * 12 = 60. 10 * ? = 60.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-002",
+    "lv": 25,
+    "q": "What is the angle between hour and minute hand at 3:00?",
+    "a": ["90"],
+    "h": "3 o'clock is a quarter of a circle. 360 / 4 = ?",
+    "type": "APTITUDE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-A-NEW-003",
+    "lv": 30,
+    "q": "A shopkeeper gives 10% discount and still makes 20% profit. If CP is 900, what is MP?",
+    "a": ["1200"],
+    "h": "SP = CP * 1.2 = 1080. MP * 0.9 = SP. MP = 1080 / 0.9.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-A-NEW-004",
+    "lv": 35,
+    "q": "Next number in series: 1, 4, 9, 16, 25, ?",
+    "a": ["36"],
+    "h": "These are squares: 1^2, 2^2, 3^2, 4^2, 5^2, ?",
+    "type": "APTITUDE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-A-NEW-005",
+    "lv": 40,
+    "q": "A train 150m long crosses a pole in 15 seconds. What is its speed in km/hr?",
+    "a": ["36"],
+    "h": "Speed = 150/15 = 10 m/s. 10 * 18/5 = ? km/hr.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-006",
+    "lv": 45,
+    "q": "Probability of picking a King from a deck of 52 cards?",
+    "a": ["1/13"],
+    "h": "4 Kings in 52 cards. 4/52 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-007",
+    "lv": 50,
+    "q": "The sum of ages of 5 children born at intervals of 3 years is 50. Age of youngest?",
+    "a": ["4"],
+    "h": "x + (x+3) + (x+6) + (x+9) + (x+12) = 50. 5x + 30 = 50.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-008",
+    "lv": 55,
+    "q": "What is 25% of 25% of 400?",
+    "a": ["25"],
+    "h": "0.25 * (0.25 * 400) = 0.25 * 100 = ?",
+    "type": "APTITUDE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-A-NEW-009",
+    "lv": 60,
+    "q": "Find the simple interest on 5000 at 10% for 2 years.",
+    "a": ["1000"],
+    "h": "SI = P * R * T / 100. 5000 * 10 * 2 / 100 = ?",
+    "type": "APTITUDE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-A-NEW-10",
+    "lv": 60,
+    "q": "A cube has surface area 150. What is its volume?",
+    "a": ["125"],
+    "h": "6 * a^2 = 150. a^2 = 25. a = 5. Volume = a^3 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-011",
+    "lv": 11,
+    "q": "If a car travels at 60 km/hr, how far does it go in 2.5 hours?",
+    "a": ["150"],
+    "h": "Distance = Speed * Time. 60 * 2.5 = ?",
+    "type": "APTITUDE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-A-NEW-012",
+    "lv": 12,
+    "q": "The product of two numbers is 120 and their sum is 23. Find the numbers.",
+    "a": ["8,15", "8 and 15", "15,8", "15 and 8"],
+    "h": "Factors of 120: (1,120), (2,60), (3,40), (4,30), (5,24), (6,20), (8,15). Which pair adds to 23?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-013",
+    "lv": 13,
+    "q": "What is the next number in the prime sequence: 2, 3, 5, 7, 11, ?",
+    "a": ["13"],
+    "h": "The next prime number after 11.",
+    "type": "APTITUDE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-A-NEW-014",
+    "lv": 17,
+    "q": "A sum of money doubles itself in 8 years at simple interest. What is the rate?",
+    "a": ["12.5", "12.5%"],
+    "h": "SI = P. Rate = (SI * 100) / (P * T) = (P * 100) / (P * 8) = 100/8 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-015",
+    "lv": 18,
+    "q": "A can do work in 10 days, B in 15 days. How many days if they work together?",
+    "a": ["6"],
+    "h": "Together rate = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6. Days = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-016",
+    "lv": 19,
+    "q": "Find the average of first 10 even numbers.",
+    "a": ["11"],
+    "h": "Sum of first n even numbers = n(n+1). Average = (n+1). Here n=10.",
+    "type": "APTITUDE",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-A-NEW-017",
+    "lv": 21,
+    "q": "A person crosses a 600m long street in 5 minutes. What is his speed in km/hr?",
+    "a": ["7.2"],
+    "h": "Speed = 600m / 300s = 2 m/s. 2 * 18/5 = ? km/hr.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-018",
+    "lv": 22,
+    "q": "What is the decimal equivalent of binary 11011?",
+    "a": ["27"],
+    "h": "16 + 8 + 0 + 2 + 1 = ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-019",
+    "lv": 23,
+    "q": "The ratio of two numbers is 3:4 and their LCM is 120. Find the numbers.",
+    "a": ["30,40", "30 and 40"],
+    "h": "Let numbers be 3x and 4x. LCM = 12x. 12x = 120. x = 10. Numbers are ?",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-A-NEW-020",
+    "lv": 27,
+    "q": "If 1st January 2007 was Monday, what day was 1st January 2008?",
+    "a": ["Tuesday"],
+    "h": "2007 is a non-leap year (365 days = 52 weeks + 1 day). So day shifts by 1.",
+    "type": "APTITUDE",
+    "difficulty": "MEDIUM"
   }
 ];
 

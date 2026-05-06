@@ -192,8 +192,30 @@ const App = () => {
             const nextPuzzles = PZ.filter(pz => pz.lv === nextLv);
             setS(prev => ({ ...prev, waiting: true }));
             
-            // Randomly pick ONE puzzle from the pool for this level
-            const randomPuzzle = nextPuzzles[Math.floor(Math.random() * nextPuzzles.length)];
+            // Aptitude selection logic: First 30 levels are 100% Aptitude
+            const aptitudePool = nextPuzzles.filter(p => p.type === 'APTITUDE');
+            const othersPool = nextPuzzles.filter(p => p.type !== 'APTITUDE');
+            
+            let randomPuzzle;
+            if (nextLv <= 30) {
+              // Enforce 100% Aptitude for the first 30 levels
+              if (aptitudePool.length > 0) {
+                randomPuzzle = aptitudePool[Math.floor(Math.random() * aptitudePool.length)];
+              } else {
+                // Fallback to any puzzle if no Aptitude is available for this level
+                randomPuzzle = nextPuzzles[Math.floor(Math.random() * nextPuzzles.length)];
+              }
+            } else {
+              // Apply 60% Aptitude ratio for levels 31-60
+              if (aptitudePool.length > 0 && (othersPool.length === 0 || Math.random() < 0.6)) {
+                randomPuzzle = aptitudePool[Math.floor(Math.random() * aptitudePool.length)];
+              } else if (othersPool.length > 0) {
+                randomPuzzle = othersPool[Math.floor(Math.random() * othersPool.length)];
+              } else {
+                randomPuzzle = aptitudePool[Math.floor(Math.random() * aptitudePool.length)];
+              }
+            }
+
             const roomIdx = Math.floor(nextLv) % ROOMS.length;
             const pool = [ROOMS[roomIdx]];
             const choices = [randomPuzzle];
@@ -229,7 +251,26 @@ const App = () => {
       setFailAnswerOverlay(null);
       const getRandId = (lv) => {
         const pool = PZ.filter(p => p.lv === lv);
-        return pool[Math.floor(Math.random() * pool.length)].id;
+        const aptitudePool = pool.filter(p => p.type === 'APTITUDE');
+        const othersPool = pool.filter(p => p.type !== 'APTITUDE');
+        
+        if (lv <= 30) {
+          // 100% Aptitude for first 30 levels
+          if (aptitudePool.length > 0) {
+            return aptitudePool[Math.floor(Math.random() * aptitudePool.length)].id;
+          } else {
+            return pool[Math.floor(Math.random() * pool.length)].id;
+          }
+        } else {
+          // 60% Aptitude for subsequent levels
+          if (aptitudePool.length > 0 && (othersPool.length === 0 || Math.random() < 0.6)) {
+            return aptitudePool[Math.floor(Math.random() * aptitudePool.length)].id;
+          } else if (othersPool.length > 0) {
+            return othersPool[Math.floor(Math.random() * othersPool.length)].id;
+          } else {
+            return pool[Math.floor(Math.random() * pool.length)].id;
+          }
+        }
       };
 
       if (nextFailCount >= 2) {
