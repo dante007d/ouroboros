@@ -167,8 +167,8 @@ const App = () => {
   };
 
   const startGame = () => {
-    const code = accessCode.trim().toUpperCase();
-    if (code === 'FUCK IEEE') {
+    const code = accessCode.trim().toLowerCase();
+    if (code === 'hitler') {
       setScreen('admin');
       return;
     }
@@ -178,7 +178,7 @@ const App = () => {
       return;
     }
     
-    if (code === 'PLAYER') {
+    if (code === 'wire') {
       socket.emit('join', { name, sessionId: getSessionId() });
       setS(INITIAL_STATE);
       setScreen('game');
@@ -770,18 +770,24 @@ const App = () => {
       )}
 
       {screen === 'admin' && (
-        <div className="screen" id="adminScreen" style={{ padding: '20px' }}>
-          <div className="gtitle" style={{ textAlign: 'center', marginBottom: '20px' }}>ADMINISTRATOR DASHBOARD</div>
-          <div className="dl bright">==================================================================================</div>
-          <div style={{ textAlign: 'center', marginBottom: '20px', color: 'var(--c1)' }}>
+        <div className="screen" id="adminScreen" style={{ padding: '10px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '10px', fontSize: '1.4rem', color: 'var(--c1)', letterSpacing: '4px', fontWeight: 'bold' }}>ADMINISTRATOR DASHBOARD</div>
+          <div className="dl bright">====================================================================================================================</div>
+          <div style={{ textAlign: 'center', marginBottom: '10px', color: 'var(--c4)', fontSize: '0.9rem' }}>
             OVERSEE THE SOULS CAUGHT IN THE CYCLE
           </div>
           <div style={{ 
-            backgroundColor: 'var(--sur)', 
-            padding: '20px', 
-            border: '1px solid var(--c4)', 
+            backgroundColor: 'rgba(4,0,4,0.95)', 
+            padding: '15px', 
+            border: '1px solid var(--d1)', 
             borderRadius: '4px',
-            marginBottom: '20px'
+            marginBottom: '10px',
+            width: '98%',
+            maxWidth: '1400px',
+            margin: '0 auto',
+            flex: 1,
+            overflowY: 'auto',
+            boxShadow: '0 0 30px rgba(184,255,0,0.05)'
           }}>
             <LeaderboardDashboard 
               players={leaderboard.players} 
