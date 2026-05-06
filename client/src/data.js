@@ -103,6 +103,30 @@ export const ROOMS=[
 
 export const PZ=[
 {
+  "id": "PZ-INTRO-001",
+  "lv": 0,
+  "q": "What is the name of the serpent which tries to devour itself?",
+  "a": [
+    "ouroboros",
+    "ourobor"
+  ],
+  "h": "The name of this game.",
+  "type": "LORE",
+  "difficulty": "EASY"
+},
+{
+  "id": "PZ-INTRO-002",
+  "lv": 0.1,
+  "q": "What comes after the alphabet 'A'?",
+  "a": [
+    "B"
+  ],
+  "h": "The second letter.",
+  "type": "BASIC",
+  "difficulty": "EASY"
+},
+
+{
   "id": "PZ-APT-001",
   "lv": 1,
   "q": "Find the sum of all prime numbers between 10 and 30, then multiply that sum by the number of divisors of 12.",
@@ -5870,6 +5894,7 @@ export const PZ=[
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
 }
+
 ];
 
 export const WIN_ART='  +++++++++++++++++++++\n  +                   +\n  +   CYCLE BROKEN    +\n  +   YOU ENDURED     +\n  +   THE OUROBOROS   +\n  +   -----------     +\n  +   FOR NOW.        +\n  +                   +\n  +++++++++++++++++++++';

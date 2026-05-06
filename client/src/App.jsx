@@ -18,10 +18,10 @@ const getSessionId = () => {
 };
 
 const INITIAL_STATE = {
-  id: 'PZ-APT-001', solved: 0, streak: 0, cps: 0, cpData: null, 
-  maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
-  path: ['PZ-APT-001'], waiting: false, hintUsed: false, savageMsg: '',
-  seenIds: ['PZ-APT-001']
+  id: 'PZ-INTRO-001', solved: 0, streak: 0, cps: 0, cpData: null, 
+  maxLv: 0, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
+  path: ['PZ-INTRO-001'], waiting: false, hintUsed: false, savageMsg: '',
+  seenIds: ['PZ-INTRO-001']
 };
 
 const App = () => {
@@ -50,10 +50,10 @@ const App = () => {
     const savedS = localStorage.getItem('ouro_state');
     const savedScreen = localStorage.getItem('ouro_current_screen');
     const defaultS = {
-      id: 'PZ-APT-001', solved: 0, streak: 0, cps: 0, cpData: null,
-      maxLv: 1, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['PZ-APT-001'],
+      id: 'PZ-INTRO-001', solved: 0, streak: 0, cps: 0, cpData: null,
+      maxLv: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['PZ-INTRO-001'],
       waiting: false, hintUsed: false, savageMsg: '',
-      seenIds: ['PZ-APT-001']
+      seenIds: ['PZ-INTRO-001']
     };
 
     if (savedName) setName(savedName);
@@ -74,7 +74,7 @@ const App = () => {
   // Persistence: Save state whenever S or name changes
   useEffect(() => {
     if (name) localStorage.setItem('ouro_name', name);
-    if (S.solved > 0 || S.id !== 'PZ-APT-001') {
+    if (S.solved > 0 || S.id !== 'PZ-INTRO-001') {
       localStorage.setItem('ouro_state', JSON.stringify(S));
     }
     localStorage.setItem('ouro_current_screen', screen);
@@ -354,7 +354,7 @@ const App = () => {
         showToast('| CHECKPOINT RESTORED', 'cp');
       } else {
         // PUNISHMENT: NO CHECKPOINT RESET
-        setS(prev => ({ ...prev, id: 'PZ-APT-001', path: ['PZ-APT-001'], streak: 0, waiting: false, savageMsg: insult, seenIds: ['PZ-APT-001'] }));
+        setS(prev => ({ ...prev, id: 'PZ-INTRO-001', path: ['PZ-INTRO-001'], streak: 0, waiting: false, savageMsg: insult, seenIds: ['PZ-INTRO-001'] }));
         showToast('X RETURNED TO THE BEGINNING', 'err');
       }
       setFeedback({ msg: '', status: '' });
