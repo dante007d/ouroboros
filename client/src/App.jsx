@@ -791,8 +791,13 @@ const App = () => {
             />
           </div>
           <div className="dl bright">==================================================================================</div>
-          <div style={{ textAlign: 'center', marginTop: '20px' }}>
-            <button className="btn btn-r" onClick={() => { setScreen('start'); setAccessCode(''); }}>&lt; RETURN TO GATEWAY &lt;</button>
+          <div style={{ textAlign: 'center', marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
+            <button className="btn btn-r" onClick={() => { 
+              if(window.confirm("ARE YOU ABSOLUTELY SURE? THIS WILL PURGE EVERY SOUL IN THE CYCLE.")) {
+                socket.emit('reset_leaderboard');
+              }
+            }}>X PURGE ALL SOULS</button>
+            <button className="btn btn-p" onClick={() => { setScreen('start'); setAccessCode(''); }}>&lt; RETURN TO GATEWAY &lt;</button>
           </div>
         </div>
       )}

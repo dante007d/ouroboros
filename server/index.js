@@ -121,6 +121,14 @@ io.on('connection', (socket) => {
     broadcastLeaderboard();
   });
   
+  // Admin clears everything
+  socket.on('reset_leaderboard', () => {
+    console.log(`[!] Admin action: Clearing all players`);
+    players.clear();
+    socketToSession.clear();
+    broadcastLeaderboard();
+  });
+  
   // Player dies or severs
   socket.on('die', () => {
     const sessionId = socketToSession.get(socket.id);

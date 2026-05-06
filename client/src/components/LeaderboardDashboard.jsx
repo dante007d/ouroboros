@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LeaderboardDashboard = ({ players, totalSouls, isFullScreen, onDisqualify }) => {
-  if (!players || players.length === 0) return null;
+  const hasPlayers = players && players.length > 0;
 
   return (
     <div className={isFullScreen ? "leaderboard-full" : "leaderboard-overlay"}>
@@ -10,7 +10,13 @@ const LeaderboardDashboard = ({ players, totalSouls, isFullScreen, onDisqualify 
         TOTAL CONSUMED: {totalSouls}
       </div>
       
-      {isFullScreen && (
+      {!hasPlayers && (
+        <div style={{ textAlign: 'center', padding: '20px', color: 'var(--c2)', fontSize: '12px' }}>
+          -- NO SOULS DETECTED IN THE CURRENT CYCLE --
+        </div>
+      )}
+      
+      {hasPlayers && isFullScreen && (
         <div className="leaderboard-header" style={{ display: 'flex', color: 'var(--c2)', fontSize: '11px', borderBottom: '1px solid var(--c4)', paddingBottom: '5px', marginBottom: '10px', textTransform: 'uppercase' }}>
           <span style={{ flex: '0 0 35px' }}>RNK</span>
           <span style={{ flex: 1 }}>AGENT ID</span>
@@ -25,7 +31,7 @@ const LeaderboardDashboard = ({ players, totalSouls, isFullScreen, onDisqualify 
         </div>
       )}
 
-      {players.slice(0, 100).map((p, idx) => {
+      {hasPlayers && players.slice(0, 100).map((p, idx) => {
         let cls = "leaderboard-item";
         if (idx === 0 && p.status === 'active') cls += " top";
         if (p.status === 'dead' || p.status === 'disqualified') cls += " dead";
