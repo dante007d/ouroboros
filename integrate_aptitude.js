@@ -88,7 +88,12 @@ const filteredPZ = pzLines.filter(block => {
 });
 
 const newPzBlocks = transformed.map(p => JSON.stringify(p, null, 2));
-const finalPZ = [...newPzBlocks, ...filteredPZ].join('},\n');
+
+// Normalize filteredPZ to NOT include the closing brace if we're joining with '},'
+// or better yet, make newPzBlocks NOT include the closing brace.
+// But it's easier to just join with ',\n' if everything has a closing brace.
+
+const finalPZ = [...newPzBlocks, ...filteredPZ.map(line => line.trim().endsWith('}') ? line : line + '}')].join(',\n');
 
 fs.writeFileSync(dataFile, beforePZ + '\n' + finalPZ + '\n' + afterPZ);
 console.log('Integrated 50 new aptitude puzzles into levels 1-10.');

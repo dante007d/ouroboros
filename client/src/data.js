@@ -112,7 +112,7 @@ export const PZ=[
   "h": "Primes between 10-30: 11,13,17,19,23,29. Divisors of 12: 1,2,3,4,6,12.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-002",
   "lv": 1,
@@ -123,7 +123,7 @@ export const PZ=[
   "h": "17²-13²=120. Prime factors of 60: 2,2,3,5 (count with multiplicity=4).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-003",
   "lv": 1,
@@ -134,7 +134,7 @@ export const PZ=[
   "h": "Perfect squares div by 9: 9, 36, 81, 144. (225 is > 200? Wait, 225 is not < 200. Let's use user steps: 9+36+81+144=270).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-004",
   "lv": 1,
@@ -145,7 +145,7 @@ export const PZ=[
   "h": "LCM(12,18,24)=72. GCD(48,36)=12.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-005",
   "lv": 1,
@@ -156,7 +156,7 @@ export const PZ=[
   "h": "Divisible by LCM(7,11)=77. 154 to 924.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-006",
   "lv": 2,
@@ -167,7 +167,7 @@ export const PZ=[
   "h": "Divisible by 5 (ends in 0,5) and 3 (sum of digits div by 3).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-007",
   "lv": 2,
@@ -178,7 +178,7 @@ export const PZ=[
   "h": "Sum of first 15 odd = 15² = 225. Sum of first 5 even = 5*6 = 30.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-008",
   "lv": 2,
@@ -189,7 +189,7 @@ export const PZ=[
   "h": "Average speed = Total distance / Total time.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-009",
   "lv": 2,
@@ -200,7 +200,7 @@ export const PZ=[
   "h": "2^3 ≡ 1 mod 7. 2^20 = (2^3)^6 * 2^2 ≡ 1^6 * 4 ≡ 4.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-010",
   "lv": 2,
@@ -211,7 +211,7 @@ export const PZ=[
   "h": "Neither = Total - (A + B - Both).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-011",
   "lv": 3,
@@ -222,7 +222,7 @@ export const PZ=[
   "h": "13³ = 2197, 7³ = 343.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-012",
   "lv": 3,
@@ -233,7 +233,7 @@ export const PZ=[
   "h": "l+w=28, lw=192. (l-w)² = (l+w)² - 4lw.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-013",
   "lv": 3,
@@ -244,7 +244,7 @@ export const PZ=[
   "h": "Sum(div by 3) - Sum(div by 9). 1683 - 594.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-014",
   "lv": 3,
@@ -255,7 +255,7 @@ export const PZ=[
   "h": "6! / (3! * 2!). P=3, E=2.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-015",
   "lv": 3,
@@ -266,7 +266,7 @@ export const PZ=[
   "h": "Amount = 8000 * (1.1)^2 = 9680.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-016",
   "lv": 4,
@@ -277,7 +277,7 @@ export const PZ=[
   "h": "HCF * LCM = A * B.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-017",
   "lv": 4,
@@ -288,7 +288,7 @@ export const PZ=[
   "h": "CP=100 -> MP=140 -> SP = 140 * 0.85 = 119.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-018",
   "lv": 4,
@@ -299,7 +299,7 @@ export const PZ=[
   "h": "n(n-3)/2.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-019",
   "lv": 4,
@@ -310,7 +310,7 @@ export const PZ=[
   "h": "Add equations: 8x + 8y = 72.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-020",
   "lv": 4,
@@ -321,7 +321,7 @@ export const PZ=[
   "h": "Squares: 16, 25, 36, 49, 64, 81 (Total 6). Range: 10-99 (Total 90).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-021",
   "lv": 5,
@@ -332,7 +332,7 @@ export const PZ=[
   "h": "Combined rate = 1/6 + 1/8 + 1/12 = 9/24 = 3/8 per hr.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-022",
   "lv": 5,
@@ -343,7 +343,7 @@ export const PZ=[
   "h": "n(n+1)(2n+1)/6.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-023",
   "lv": 5,
@@ -354,7 +354,7 @@ export const PZ=[
   "h": "2(A+B+C) = 1/10+1/12+1/15 = 1/4. A+B+C = 1/8. A = 1/8 - 1/12.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-024",
   "lv": 5,
@@ -365,7 +365,7 @@ export const PZ=[
   "h": "105 to 294. (42 - 15 + 1).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-025",
   "lv": 5,
@@ -376,7 +376,7 @@ export const PZ=[
   "h": "Telescoping: 3/2 * 4/3 * ... * 11/10 = 11/2.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-026",
   "lv": 6,
@@ -387,7 +387,7 @@ export const PZ=[
   "h": "(40-3)(40+3) = 1600 - 9.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-027",
   "lv": 6,
@@ -398,7 +398,7 @@ export const PZ=[
   "h": "9999 / 88 = 113.6... 113 * 88 = 9944.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-028",
   "lv": 6,
@@ -409,7 +409,7 @@ export const PZ=[
   "h": "SI=P, T=8. R = 100/8.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-029",
   "lv": 6,
@@ -420,7 +420,7 @@ export const PZ=[
   "h": "n(n+1) sequence.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-030",
   "lv": 6,
@@ -431,7 +431,7 @@ export const PZ=[
   "h": "4 * (22/7) * 7².",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-031",
   "lv": 7,
@@ -442,7 +442,7 @@ export const PZ=[
   "h": "7, 9, 3, 1 cycle. 75 mod 4 = 3.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-032",
   "lv": 7,
@@ -453,7 +453,7 @@ export const PZ=[
   "h": "Choose 2 from remaining 7: C(7,2).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-033",
   "lv": 7,
@@ -464,7 +464,7 @@ export const PZ=[
   "h": "(3x+6)/(5x+6) = 3/4.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-034",
   "lv": 7,
@@ -475,7 +475,7 @@ export const PZ=[
   "h": "Heron's: s=21. Area = sqrt(21*8*7*6).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-035",
   "lv": 7,
@@ -486,7 +486,7 @@ export const PZ=[
   "h": "12 to 96. (15/2)*(12+96).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-036",
   "lv": 8,
@@ -497,7 +497,7 @@ export const PZ=[
   "h": "Passed at least one = 80%. 60+70-X = 80.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-037",
   "lv": 8,
@@ -508,7 +508,7 @@ export const PZ=[
   "h": "V=80 (5V/8 - 10 = 3V/8 + 10).",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-038",
   "lv": 8,
@@ -519,7 +519,7 @@ export const PZ=[
   "h": "7 + 14 * 6.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-039",
   "lv": 8,
@@ -530,7 +530,7 @@ export const PZ=[
   "h": "15 * 14.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-040",
   "lv": 8,
@@ -541,7 +541,7 @@ export const PZ=[
   "h": "80km and 60km sides. Pythagoras.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-041",
   "lv": 9,
@@ -552,7 +552,7 @@ export const PZ=[
   "h": "1,000,000 - 2,000 + 1.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-042",
   "lv": 9,
@@ -563,7 +563,7 @@ export const PZ=[
   "h": "(1/3) * (22/7) * 36 * 8.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-043",
   "lv": 9,
@@ -574,7 +574,7 @@ export const PZ=[
   "h": "LCM(5,6,7,8) + 3.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-044",
   "lv": 9,
@@ -585,7 +585,7 @@ export const PZ=[
   "h": "r³ = 486/18 = 27.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-045",
   "lv": 9,
@@ -596,7 +596,7 @@ export const PZ=[
   "h": "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-046",
   "lv": 10,
@@ -607,7 +607,7 @@ export const PZ=[
   "h": "1 - 1/20.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-047",
   "lv": 10,
@@ -618,7 +618,7 @@ export const PZ=[
   "h": "CP=5, SP=6.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-048",
   "lv": 10,
@@ -629,7 +629,7 @@ export const PZ=[
   "h": "50/5 + 50/25.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-049",
   "lv": 10,
@@ -640,7 +640,7 @@ export const PZ=[
   "h": "24, 26, 28.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 {
   "id": "PZ-APT-050",
   "lv": 10,
@@ -651,7 +651,7 @@ export const PZ=[
   "h": "(12 - 9) / 2.",
   "type": "APTITUDE",
   "difficulty": "HARD"
-}},
+},
 
 
 
@@ -6752,7 +6752,7 @@ export const PZ=[
   "h": "Tim ?-Lee proposed the system at CERN.",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 
 {
@@ -6765,7 +6765,7 @@ export const PZ=[
   "h": "Gordon ?'s Law (Intel co-founder).",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 
 {
@@ -6778,7 +6778,7 @@ export const PZ=[
   "h": "Electronic Numerical Integrator and Computer.",
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
-}},
+},
 
 
 {
@@ -6791,7 +6791,7 @@ export const PZ=[
   "h": "Jobs introduced it in January, released in June.",
   "type": "TECH_HISTORY",
   "difficulty": "EASY"
-}},
+},
 
 
 {
@@ -6804,7 +6804,7 @@ export const PZ=[
   "h": "Linus ?.",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 
 {
@@ -6817,7 +6817,7 @@ export const PZ=[
   "h": "Multiplication-like logic.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
-}},
+},
 
 
 {
@@ -6830,7 +6830,7 @@ export const PZ=[
   "h": "8 + 0 + 2 + 0.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 
 {
@@ -6843,7 +6843,7 @@ export const PZ=[
   "h": "J=K=1 causes the state to flip on every clock pulse.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 
 {
@@ -6856,7 +6856,7 @@ export const PZ=[
   "h": "Edward A. ?'s Law.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
-}},
+},
 
 
 {
@@ -6869,7 +6869,7 @@ export const PZ=[
   "h": "Game of ?.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
-}},
+},
 
 
 {
@@ -6882,7 +6882,7 @@ export const PZ=[
   "h": "Melvin ?'s Law.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
-}},
+},
 
 {
   "id": "PZ-H-001",
@@ -6894,7 +6894,7 @@ export const PZ=[
   "h": "Tim ?-Lee proposed the system at CERN.",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-H-002",
@@ -6906,7 +6906,7 @@ export const PZ=[
   "h": "Gordon ?'s Law (Intel co-founder).",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-H-003",
@@ -6918,7 +6918,7 @@ export const PZ=[
   "h": "Electronic Numerical Integrator and Computer.",
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
-}},
+},
 
 {
   "id": "PZ-H-004",
@@ -6930,7 +6930,7 @@ export const PZ=[
   "h": "Jobs introduced it in January, released in June.",
   "type": "TECH_HISTORY",
   "difficulty": "EASY"
-}},
+},
 
 {
   "id": "PZ-H-005",
@@ -6942,7 +6942,7 @@ export const PZ=[
   "h": "Linus ?.",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-H-006",
@@ -6954,7 +6954,7 @@ export const PZ=[
   "h": "FORmula TRANslation.",
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
-}},
+},
 
 {
   "id": "PZ-H-007",
@@ -6966,7 +6966,7 @@ export const PZ=[
   "h": "Sun Microsystems (later acquired by Oracle).",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-H-008",
@@ -6978,7 +6978,7 @@ export const PZ=[
   "h": "Charles ?.",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-H-009",
@@ -6990,7 +6990,7 @@ export const PZ=[
   "h": "An actual ? was found in a relay of the Harvard Mark II.",
   "type": "TECH_HISTORY",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-H-010",
@@ -7002,7 +7002,7 @@ export const PZ=[
   "h": "Advanced Research Projects Agency Network.",
   "type": "TECH_HISTORY",
   "difficulty": "HARD"
-}},
+},
 
 {
   "id": "PZ-DS-001",
@@ -7014,7 +7014,7 @@ export const PZ=[
   "h": "Multiplication-like logic.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
-}},
+},
 
 {
   "id": "PZ-DS-002",
@@ -7026,7 +7026,7 @@ export const PZ=[
   "h": "8 + 0 + 2 + 0.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-DS-003",
@@ -7038,7 +7038,7 @@ export const PZ=[
   "h": "J=K=1 causes the state to flip on every clock pulse.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-DS-004",
@@ -7050,7 +7050,7 @@ export const PZ=[
   "h": "K-map.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-DS-005",
@@ -7062,7 +7062,7 @@ export const PZ=[
   "h": "Also NOR. Can build any other gate using only these.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-DS-006",
@@ -7074,7 +7074,7 @@ export const PZ=[
   "h": "Half a byte.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
-}},
+},
 
 {
   "id": "PZ-DS-007",
@@ -7086,7 +7086,7 @@ export const PZ=[
   "h": "Decimal 15 = Hex ?.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-DS-008",
@@ -7098,7 +7098,7 @@ export const PZ=[
   "h": "Arithmetic Logic Unit.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-DS-009",
@@ -7110,7 +7110,7 @@ export const PZ=[
   "h": "2^n = 4 inputs.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-DS-010",
@@ -7122,7 +7122,7 @@ export const PZ=[
   "h": "Flip all bits.",
   "type": "DIGITAL_SYSTEMS",
   "difficulty": "EASY"
-}},
+},
 
 {
   "id": "PZ-FC-001",
@@ -7134,7 +7134,7 @@ export const PZ=[
   "h": "Edward A. ?'s Law.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
-}},
+},
 
 {
   "id": "PZ-FC-002",
@@ -7146,7 +7146,7 @@ export const PZ=[
   "h": "Game of ?.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-FC-003",
@@ -7158,7 +7158,7 @@ export const PZ=[
   "h": "Melvin ?'s Law.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
-}},
+},
 
 {
   "id": "PZ-FC-004",
@@ -7170,7 +7170,7 @@ export const PZ=[
   "h": "The ? and the Bazaar (Eric S. Raymond).",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-FC-005",
@@ -7182,7 +7182,7 @@ export const PZ=[
   "h": "The ? Test.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-FC-006",
@@ -7194,7 +7194,7 @@ export const PZ=[
   "h": "Explaining code to an object to find errors.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
-}},
+},
 
 {
   "id": "PZ-FC-007",
@@ -7206,7 +7206,7 @@ export const PZ=[
   "h": "Acronym for avoiding code duplication.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "EASY"
-}},
+},
 
 {
   "id": "PZ-FC-008",
@@ -7218,7 +7218,7 @@ export const PZ=[
   "h": "Input quality determines output quality.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "MEDIUM"
-}},
+},
 
 {
   "id": "PZ-FC-009",
@@ -7230,7 +7230,7 @@ export const PZ=[
   "h": "Cyril Northcote ?'s Law.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
-}},
+},
 
 {
   "id": "PZ-FC-010",
