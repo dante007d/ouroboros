@@ -8,13 +8,17 @@ PZ.forEach(p => { PM[p.id] = p; });
 
 const socket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001');
 
+const INITIAL_STATE = {
+  id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
+  maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
+  path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: ''
+};
+
 const App = () => {
   const [screen, setScreen] = useState('boot'); // boot, start, game, end
   const [bootLines, setBootLines] = useState([]);
   const [name, setName] = useState('');
-  const [S, setS] = useState({
-    id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: ''
-  });
+  const [S, setS] = useState(INITIAL_STATE);
   
   const [leaderboard, setLeaderboard] = useState({ players: [], totalSouls: 0 });
   const [toast, setToast] = useState(null);
@@ -135,11 +139,7 @@ const App = () => {
     
     if (code === 'PLAYER') {
       socket.emit('join', { name });
-      setS({ 
-        id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
-        maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
-        path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' 
-      });
+      setS(INITIAL_STATE);
       setScreen('game');
       setFeedback({ msg: '', status: '' });
       setHintVisible(false);
@@ -196,28 +196,20 @@ const App = () => {
             const nextPuzzles = PZ.filter(pz => pz.lv === nextLv);
             setS(prev => ({ ...prev, waiting: true }));
             
-            // Aptitude selection logic: First 30 levels are 100% Aptitude
+            // Level-based selection logic
             const aptitudePool = nextPuzzles.filter(p => p.type === 'APTITUDE');
-            const othersPool = nextPuzzles.filter(p => p.type !== 'APTITUDE');
             
             let randomPuzzle;
-            if (nextLv <= 30) {
-              // Enforce 100% Aptitude for the first 30 levels
+            if (nextLv <= 10) {
+              // Enforce 100% Aptitude for the first 10 levels
               if (aptitudePool.length > 0) {
                 randomPuzzle = aptitudePool[Math.floor(Math.random() * aptitudePool.length)];
               } else {
-                // Fallback to any puzzle if no Aptitude is available for this level
                 randomPuzzle = nextPuzzles[Math.floor(Math.random() * nextPuzzles.length)];
               }
             } else {
-              // Apply 60% Aptitude ratio for levels 31-60
-              if (aptitudePool.length > 0 && (othersPool.length === 0 || Math.random() < 0.6)) {
-                randomPuzzle = aptitudePool[Math.floor(Math.random() * aptitudePool.length)];
-              } else if (othersPool.length > 0) {
-                randomPuzzle = othersPool[Math.floor(Math.random() * othersPool.length)];
-              } else {
-                randomPuzzle = aptitudePool[Math.floor(Math.random() * aptitudePool.length)];
-              }
+              // After level 10, pick completely randomly from all available puzzles
+              randomPuzzle = nextPuzzles[Math.floor(Math.random() * nextPuzzles.length)];
             }
 
             const roomIdx = Math.floor(nextLv) % ROOMS.length;
@@ -253,46 +245,53 @@ const App = () => {
     
     setTimeout(() => {
       setFailAnswerOverlay(null);
-      const getRandId = (lv) => {
-        const pool = PZ.filter(p => p.lv === lv);
-        const aptitudePool = pool.filter(p => p.type === 'APTITUDE');
-        const othersPool = pool.filter(p => p.type !== 'APTITUDE');
+      const getRandId = (lv, excludeId) => {
+        let pool = PZ.filter(p => p.lv === lv);
         
-        if (lv <= 30) {
-          // 100% Aptitude for first 30 levels
+        // Requirement: Ensure a different question if returning to checkpoint
+        if (excludeId && pool.length > 1) {
+          pool = pool.filter(p => p.id !== excludeId);
+        }
+
+        const aptitudePool = pool.filter(p => p.type === 'APTITUDE');
+        
+        if (lv <= 10) {
+          // 100% Aptitude for first 10 levels
           if (aptitudePool.length > 0) {
             return aptitudePool[Math.floor(Math.random() * aptitudePool.length)].id;
           } else {
             return pool[Math.floor(Math.random() * pool.length)].id;
           }
         } else {
-          // 60% Aptitude for subsequent levels
-          if (aptitudePool.length > 0 && (othersPool.length === 0 || Math.random() < 0.6)) {
-            return aptitudePool[Math.floor(Math.random() * aptitudePool.length)].id;
-          } else if (othersPool.length > 0) {
-            return othersPool[Math.floor(Math.random() * othersPool.length)].id;
-          } else {
-            return pool[Math.floor(Math.random() * pool.length)].id;
-          }
+          // Pure random for subsequent levels
+          return pool[Math.floor(Math.random() * pool.length)].id;
         }
       };
 
       if (nextFailCount >= 2) {
         // PUNISHMENT: RESET TO BEGINNING
-        const resetS = { id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, hintsLeft: 15, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' };
-        setS(resetS);
+        setS({ ...INITIAL_STATE, totalFails: S.totalFails + 1 });
         setFailCount(0);
         showToast('X CONSECUTIVE FAILURE: FULL RESET', 'err');
       } else if (S.cpData) {
         // PUNISHMENT: RETURN TO LAST CHECKPOINT
         const cpPuz = PM[S.cpData.id];
-        const newId = getRandId(cpPuz.lv);
-        setS(prev => ({ ...prev, id: newId, solved: prev.cpData.solved, hintsLeft: prev.cpData.hintsLeft, path: [...prev.cpData.path], streak: 0, waiting: false, hintUsed: false, savageMsg: '' }));
+        const newId = getRandId(cpPuz.lv, S.id); // Pass S.id to exclude it
+        setS(prev => ({ 
+          ...prev, 
+          id: newId, 
+          solved: prev.cpData.solved, 
+          hintsLeft: prev.cpData.hintsLeft, 
+          path: [...prev.cpData.path], 
+          streak: 0, 
+          waiting: false, 
+          hintUsed: false, 
+          savageMsg: '' 
+        }));
         showToast('| CHECKPOINT RESTORED', 'cp');
       } else {
         // PUNISHMENT: NO CHECKPOINT RESET
-        // No checkpoint found. Back to the start.
-        setS(prev => ({ ...prev, id: 'L0-0', path: ['L0-0'], streak: 0, waiting: false }));
+        setS(prev => ({ ...prev, id: 'L0-0', path: ['L0-0'], streak: 0, waiting: false, savageMsg: insult }));
         showToast('X RETURNED TO THE BEGINNING', 'err');
       }
       setFeedback({ msg: '', status: '' });
@@ -681,11 +680,7 @@ const App = () => {
           <button className="btn btn-p" onClick={() => { 
             socket.emit('join', { name }); 
             setScreen('game'); 
-            setS({ 
-              id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
-              maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
-              path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' 
-            }); 
+            setS(INITIAL_STATE); 
           }}>&gt; RE-ENTER THE CYCLE &lt;</button>
         </div>
       )}
