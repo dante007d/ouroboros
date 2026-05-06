@@ -45,6 +45,7 @@ const App = () => {
   const [roomChoices, setRoomChoices] = useState([]);
   const [globalTimeLeft, setGlobalTimeLeft] = useState(null);
   const [gameOverData, setGameOverData] = useState(null);
+  const [customMinutes, setCustomMinutes] = useState(60);
 
   // Persistence: Load initial state from sessionStorage if available
   useEffect(() => {
@@ -447,9 +448,10 @@ const App = () => {
     }
   };
 
-  const startGlobalTimer = (hours) => {
-    const seconds = hours * 3600;
-    if (window.confirm(`START GLOBAL COUNTDOWN FOR ${hours} HOUR(S)?`)) {
+  const startGlobalTimer = (hoursOrMinutes, isMinutes = false) => {
+    const seconds = isMinutes ? hoursOrMinutes * 60 : hoursOrMinutes * 3600;
+    const label = isMinutes ? `${hoursOrMinutes} MINUTE(S)` : `${hoursOrMinutes} HOUR(S)`;
+    if (window.confirm(`START GLOBAL COUNTDOWN FOR ${label}?`)) {
       socket.emit('start_timer', seconds);
     }
   };
@@ -840,10 +842,20 @@ const App = () => {
             />
           </div>
           <div className="dl bright">==================================================================================</div>
-          <div style={{ textAlign: 'center', marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-            <button className="btn btn-p" onClick={() => startGlobalTimer(1)}>START 1H TIMER</button>
-            <button className="btn btn-p" onClick={() => startGlobalTimer(2)}>START 2H TIMER</button>
-            <button className="btn btn-r" onClick={endGameManually}>END GAME NOW</button>
+          <div style={{ textAlign: 'center', marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--c1)', padding: '5px 15px', background: 'rgba(184,255,0,0.05)' }}>
+              <span style={{ fontSize: '0.8rem', color: 'var(--c1)' }}>CUSTOM (MIN):</span>
+              <input 
+                type="number" 
+                value={customMinutes} 
+                onChange={e => setCustomMinutes(parseInt(e.target.value) || 0)}
+                style={{ width: '60px', background: 'transparent', border: 'none', borderBottom: '1px solid var(--c1)', color: 'var(--c1)', fontFamily: 'VT323', fontSize: '1.2rem', textAlign: 'center', outline: 'none' }}
+              />
+              <button className="btn-g" style={{ fontSize: '0.9rem', border: '1px solid var(--c1)', padding: '2px 8px' }} onClick={() => startGlobalTimer(customMinutes, true)}>START</button>
+            </div>
+            <button className="btn btn-p" onClick={() => startGlobalTimer(1)}>1H</button>
+            <button className="btn btn-p" onClick={() => startGlobalTimer(2)}>2H</button>
+            <button className="btn btn-r" onClick={endGameManually}>TERMINATE CYCLE</button>
             <button className="btn btn-v" onClick={() => { 
               if(window.confirm("ARE YOU ABSOLUTELY SURE? THIS WILL PURGE EVERY SOUL IN THE CYCLE.")) {
                 socket.emit('reset_leaderboard');

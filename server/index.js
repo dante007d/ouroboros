@@ -71,6 +71,9 @@ io.on('connection', (socket) => {
         cps: 0,
         fails: 0,
         hintsUsed: 0,
+        startTime: Date.now(),
+        finishTime: null,
+        levelUpdateTime: Date.now(),
         status: 'active' // 'active', 'dead', 'won', 'disqualified'
       });
       totalSoulsConsumed++;
@@ -85,6 +88,9 @@ io.on('connection', (socket) => {
     const sessionId = socketToSession.get(socket.id);
     const player = players.get(sessionId);
     if (player) {
+      if (data.maxLv > player.maxLv) {
+        player.levelUpdateTime = Date.now();
+      }
       player.maxLv = data.maxLv;
       player.score = data.score;
       player.solved = data.solved;
@@ -164,6 +170,7 @@ io.on('connection', (socket) => {
     const player = players.get(sessionId);
     if (player) {
       player.status = 'won';
+      player.finishTime = Date.now();
       broadcastLeaderboard();
     }
   });
@@ -189,8 +196,30 @@ io.on('connection', (socket) => {
 
 function broadcastLeaderboard() {
   const activePlayers = Array.from(players.values());
-  // Sort by solved count (primary) and score (secondary)
-  activePlayers.sort((a, b) => (b.solved - a.solved) || (b.score - a.score));
+  
+  // New Priority Ranking: 
+  // 1. Highest Level (maxLv) - DESC
+  // 2. Finish Time (if won, time taken; if not, null) - ASC
+  // 3. Lesser Hints Used - ASC
+  // 4. Lesser Fails - ASC
+  activePlayers.sort((a, b) => {
+    // 1. Max Level
+    if (b.maxLv !== a.maxLv) return b.maxLv - a.maxLv;
+    
+    // 2. Time (if finished, use finishTime; if not, use levelUpdateTime)
+    const aTime = a.status === 'won' ? a.finishTime : a.levelUpdateTime;
+    const bTime = b.status === 'won' ? b.finishTime : b.levelUpdateTime;
+    const aDuration = aTime - a.startTime;
+    const bDuration = bTime - b.startTime;
+    
+    if (aDuration !== bDuration) return aDuration - bDuration;
+
+    // 3. Hints Used
+    if (a.hintsUsed !== b.hintsUsed) return a.hintsUsed - b.hintsUsed;
+
+    // 4. Fails
+    return a.fails - b.fails;
+  });
   
   io.emit('leaderboard', {
     players: activePlayers,
@@ -217,7 +246,19 @@ function finishGame() {
   globalTimer = null;
 
   const activePlayers = Array.from(players.values());
-  activePlayers.sort((a, b) => (b.solved - a.solved) || (b.score - a.score));
+  // Use same sort logic as broadcastLeaderboard
+  activePlayers.sort((a, b) => {
+    if (b.maxLv !== a.maxLv) return b.maxLv - a.maxLv;
+    
+    const aTime = a.status === 'won' ? a.finishTime : a.levelUpdateTime;
+    const bTime = b.status === 'won' ? b.finishTime : b.levelUpdateTime;
+    const aDuration = aTime - a.startTime;
+    const bDuration = bTime - b.startTime;
+    
+    if (aDuration !== bDuration) return aDuration - bDuration;
+    if (a.hintsUsed !== b.hintsUsed) return a.hintsUsed - b.hintsUsed;
+    return a.fails - b.fails;
+  });
   
   const winner = activePlayers.length > 0 ? activePlayers[0] : null;
   console.log(`[!] Game Over. Winner: ${winner ? winner.name : 'NONE'}`);

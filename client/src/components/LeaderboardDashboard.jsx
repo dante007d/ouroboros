@@ -31,19 +31,22 @@ const LeaderboardDashboard = ({ players, totalSouls, isFullScreen, onDisqualify 
       )}
       
       {hasPlayers && (
-        <div className="leaderboard-header" style={{ display: 'flex', color: 'var(--c4)', fontSize: '12px', paddingBottom: '10px', marginBottom: '10px', textTransform: 'uppercase', fontWeight: 'bold', letterSpacing: '2px', opacity: 0.8 }}>
-          <span style={{ flex: '0 0 60px' }}>RANK</span>
+        <div className="leaderboard-header" style={{ display: 'flex', color: 'var(--c4)', fontSize: '11px', paddingBottom: '10px', marginBottom: '10px', textTransform: 'uppercase', fontWeight: 'bold', letterSpacing: '2px', opacity: 0.8 }}>
+          <span style={{ flex: '0 0 45px' }}>RANK</span>
           <span style={{ flex: 1 }}>AGENT IDENTITY</span>
           {isFullScreen && (
             <>
-              <span style={{ flex: '0 0 80px' }}>LVL</span>
-              <span style={{ flex: '0 0 80px' }}>FAILS</span>
-              <span style={{ flex: '0 0 80px' }}>HINTS</span>
-              <span style={{ flex: '0 0 120px' }}>STATUS</span>
+              <span style={{ flex: '0 0 50px', textAlign: 'center' }}>LVL</span>
+              <span style={{ flex: '0 0 50px', textAlign: 'center' }}>SOLV</span>
+              <span style={{ flex: '0 0 100px', textAlign: 'center' }}>TIME (S)</span>
+              <span style={{ flex: '0 0 50px', textAlign: 'center' }}>FAIL</span>
+              <span style={{ flex: '0 0 50px', textAlign: 'center' }}>HINT</span>
+              <span style={{ flex: '0 0 50px', textAlign: 'center' }}>CPS</span>
+              <span style={{ flex: '0 0 90px' }}>STATUS</span>
             </>
           )}
-          {!isFullScreen && <span style={{ flex: '0 0 80px', textAlign: 'right' }}>LVL</span>}
-          {onDisqualify && <span style={{ flex: '0 0 80px', textAlign: 'center' }}>ACTION</span>}
+          {!isFullScreen && <span style={{ flex: '0 0 60px', textAlign: 'right' }}>LVL</span>}
+          {onDisqualify && <span style={{ flex: '0 0 60px', textAlign: 'center' }}>ACTION</span>}
         </div>
       )}
 
@@ -54,16 +57,23 @@ const LeaderboardDashboard = ({ players, totalSouls, isFullScreen, onDisqualify 
           if (p.status === 'dead' || p.status === 'disqualified') cls += " dead";
           if (p.status === 'won') cls += " won";
 
+          const currentRefTime = p.status === 'won' ? p.finishTime : p.levelUpdateTime;
+          const duration = ((currentRefTime - p.startTime) / 1000).toFixed(4);
+
           return (
             <div key={p.id} className={cls}>
-              <span style={{ flex: '0 0 60px', color: 'var(--d1)', fontSize: '16px' }}>#{idx + 1}</span>
+              <span style={{ flex: '0 0 45px', color: 'var(--d1)', fontSize: '14px' }}>#{idx + 1}</span>
               
-              <span style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+              <span style={{ flex: 1, display: 'flex', alignItems: 'center', minWidth: 0 }}>
                 {getStatusLED(p.status)}
                 <span style={{ 
                   color: (p.status === 'dead' || p.status === 'disqualified') ? 'var(--c2)' : 'var(--c1)', 
                   fontWeight: 'bold',
-                  letterSpacing: '1px'
+                  letterSpacing: '1px',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  fontSize: '14px'
                 }}>
                   {p.name.toUpperCase()}
                 </span>
@@ -71,12 +81,17 @@ const LeaderboardDashboard = ({ players, totalSouls, isFullScreen, onDisqualify 
 
               {isFullScreen ? (
                 <>
-                  <span style={{ flex: '0 0 80px', color: 'var(--c5)' }}>LV {p.maxLv}</span>
-                  <span style={{ flex: '0 0 80px', color: 'var(--c2)' }}>{p.fails || 0}</span>
-                  <span style={{ flex: '0 0 80px', color: 'var(--c3)' }}>{p.hintsUsed || 0}</span>
+                  <span style={{ flex: '0 0 50px', color: 'var(--c5)', textAlign: 'center' }}>{p.maxLv}</span>
+                  <span style={{ flex: '0 0 50px', color: 'var(--c1)', textAlign: 'center' }}>{p.solved || 0}</span>
+                  <span style={{ flex: '0 0 100px', color: 'var(--c4)', textAlign: 'center', fontSize: '12px' }}>
+                    {duration}
+                  </span>
+                  <span style={{ flex: '0 0 50px', color: 'var(--c2)', textAlign: 'center' }}>{p.fails || 0}</span>
+                  <span style={{ flex: '0 0 50px', color: 'var(--c3)', textAlign: 'center' }}>{p.hintsUsed || 0}</span>
+                  <span style={{ flex: '0 0 50px', color: 'var(--c5)', textAlign: 'center' }}>{p.cps || 0}</span>
                   <span style={{ 
-                    flex: '0 0 120px', 
-                    fontSize: '12px', 
+                    flex: '0 0 90px', 
+                    fontSize: '10px', 
                     fontWeight: 'bold',
                     color: p.status === 'active' ? 'var(--c1)' : (p.status === 'dead' || p.status === 'disqualified' ? 'var(--c2)' : 'var(--c6)')
                   }}>
@@ -84,17 +99,17 @@ const LeaderboardDashboard = ({ players, totalSouls, isFullScreen, onDisqualify 
                   </span>
                 </>
               ) : (
-                <span style={{ flex: '0 0 80px', textAlign: 'right', color: 'var(--c5)' }}>LV {p.maxLv}</span>
+                <span style={{ flex: '0 0 60px', textAlign: 'right', color: 'var(--c5)' }}>{p.maxLv}</span>
               )}
 
               {onDisqualify && (
-                <div style={{ flex: '0 0 80px', textAlign: 'center' }}>
+                <div style={{ flex: '0 0 60px', textAlign: 'center' }}>
                   <button 
                     onClick={() => onDisqualify(p.id)}
                     className="btn-r"
                     style={{ 
                       fontSize: '10px', 
-                      padding: '2px 8px', 
+                      padding: '2px 4px', 
                       background: 'transparent',
                       border: '1px solid var(--c2)',
                       cursor: 'pointer'
