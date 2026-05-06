@@ -578,6 +578,17 @@ const App = () => {
               </div>
             </div>
 
+            <div className="namebox">
+              <div className="nlabel">!! ENTER AGENT NAME !!</div>
+              <div className="nwrap">
+                <div className="nprompt">A:\&gt;</div>
+                <input className="ninput" type="text" maxLength="20" placeholder="AGENT NAME_" 
+                  value={name} onChange={e => setName(e.target.value)} 
+                  onKeyDown={e => { if (e.key === 'Enter') startGame(); }} />
+                <div className="ncursor"></div>
+              </div>
+            </div>
+
             <div className="namebox" style={{ marginTop: '10px' }}>
               <div className="nlabel">!! ENTER ACCESS CODE !!</div>
               <div className="nwrap">
