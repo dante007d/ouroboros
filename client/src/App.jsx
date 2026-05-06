@@ -69,6 +69,9 @@ const App = () => {
     if (savedScreen && (savedScreen === 'game' || savedScreen === 'admin' || savedScreen === 'end')) {
       setScreen(savedScreen);
     }
+    if (savedName) {
+      socket.emit('join', { name: savedName, sessionId: getSessionId() });
+    }
   }, []);
 
   // Persistence: Save state whenever S or name changes
@@ -82,6 +85,13 @@ const App = () => {
 
   // Socket
   useEffect(() => {
+    socket.on('connect', () => {
+      const savedName = localStorage.getItem('ouro_name');
+      if (savedName) {
+        socket.emit('join', { name: savedName, sessionId: getSessionId() });
+      }
+    });
+
     socket.on('leaderboard', (data) => {
       setLeaderboard(data);
     });

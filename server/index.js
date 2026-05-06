@@ -24,7 +24,11 @@ let totalSoulsConsumed = 4194303;
 io.on('connection', (socket) => {
   console.log(`[+] Client connected: ${socket.id}`);
   
-  // New player joins or reconnects
+  // Send initial leaderboard data to the newly connected client
+  socket.emit('leaderboard', {
+    players: Array.from(players.values()).sort((a, b) => (b.solved - a.solved) || (b.score - a.score)),
+    totalSouls: totalSoulsConsumed
+  });
   socket.on('join', (data) => {
     const { name, sessionId } = data;
     if (!sessionId) return;
