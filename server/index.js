@@ -96,23 +96,24 @@ io.on('connection', (socket) => {
 
 function broadcastLeaderboard() {
   const activePlayers = Array.from(players.values());
-  // Sort by score descending
-  activePlayers.sort((a, b) => b.score - a.score);
+  // Sort by solved count (primary) and score (secondary)
+  activePlayers.sort((a, b) => (b.solved - a.solved) || (b.score - a.score));
   
   io.emit('leaderboard', {
     players: activePlayers,
     totalSouls: totalSoulsConsumed
   });
+  lastBroadcast = Date.now();
 }
 
-// Throttle leaderboard broadcasts
+// Throttle leaderboard broadcasts for background consistency
 let lastBroadcast = 0;
 setInterval(() => {
-  if (Date.now() - lastBroadcast > 2000) {
+  // If no broadcast has happened in the last 5 seconds, force one
+  if (Date.now() - lastBroadcast > 5000) {
     broadcastLeaderboard();
-    lastBroadcast = Date.now();
   }
-}, 2000);
+}, 5000);
 
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {

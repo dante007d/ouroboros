@@ -13,7 +13,7 @@ const App = () => {
   const [bootLines, setBootLines] = useState([]);
   const [name, setName] = useState('');
   const [S, setS] = useState({
-    id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: ''
+    id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: ''
   });
   
   const [leaderboard, setLeaderboard] = useState({ players: [], totalSouls: 0 });
@@ -135,7 +135,11 @@ const App = () => {
     
     if (code === 'PLAYER') {
       socket.emit('join', { name });
-      setS({ id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, score: 0, path: ['L0-0'], waiting: false });
+      setS({ 
+        id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
+        maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
+        path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' 
+      });
       setScreen('game');
       setFeedback({ msg: '', status: '' });
       setHintVisible(false);
@@ -674,7 +678,15 @@ const App = () => {
             <div className="erow"><label>- CHECKPOINTS</label><value>{S.cps}</value></div>
           </div>
           <pre className="eart">{socket.connected ? WIN_SNAKE : LOSE_SNAKE}</pre>
-          <button className="btn btn-p" onClick={() => { socket.emit('join', { name }); setScreen('game'); setS({ id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, maxLv: 1, hintsLeft: 15, path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' }); }}>&gt; RE-ENTER THE CYCLE &lt;</button>
+          <button className="btn btn-p" onClick={() => { 
+            socket.emit('join', { name }); 
+            setScreen('game'); 
+            setS({ 
+              id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
+              maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
+              path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: '' 
+            }); 
+          }}>&gt; RE-ENTER THE CYCLE &lt;</button>
         </div>
       )}
 
