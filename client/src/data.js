@@ -103,6 +103,7 @@ export const ROOMS=[
 
 export const PZ=[
 
+
   {
     "id": "PZ-Q370",
     "lv": 11,
@@ -114,6 +115,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q252",
@@ -127,6 +129,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q094",
     "lv": 11,
@@ -138,6 +141,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q369",
@@ -151,6 +155,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q258",
     "lv": 11,
@@ -162,6 +167,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q166",
@@ -175,6 +181,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q263",
     "lv": 11,
@@ -186,6 +193,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q105",
@@ -199,6 +207,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q476",
     "lv": 12,
@@ -210,6 +219,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q257",
@@ -223,6 +233,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q335",
     "lv": 12,
@@ -234,6 +245,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q399",
@@ -247,6 +259,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q048",
     "lv": 12,
@@ -258,6 +271,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q250",
@@ -271,6 +285,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q489",
     "lv": 12,
@@ -282,6 +297,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q192",
@@ -295,6 +311,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q210",
     "lv": 12,
@@ -306,6 +323,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q391",
@@ -319,6 +337,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q473",
     "lv": 13,
@@ -330,6 +349,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q341",
@@ -343,6 +363,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q292",
     "lv": 13,
@@ -354,6 +375,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q101",
@@ -367,6 +389,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q182",
     "lv": 13,
@@ -378,6 +401,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q207",
@@ -391,6 +415,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q288",
     "lv": 13,
@@ -402,6 +427,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q439",
@@ -415,6 +441,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q079",
     "lv": 14,
@@ -426,6 +453,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q007",
@@ -439,6 +467,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q049",
     "lv": 14,
@@ -450,6 +479,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q379",
@@ -463,6 +493,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q496",
     "lv": 14,
@@ -474,6 +505,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q236",
@@ -487,6 +519,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q404",
     "lv": 14,
@@ -498,6 +531,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q015",
@@ -511,6 +545,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q069",
     "lv": 15,
@@ -522,6 +557,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q256",
@@ -535,6 +571,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q085",
     "lv": 15,
@@ -546,6 +583,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q323",
@@ -559,6 +597,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q398",
     "lv": 15,
@@ -570,6 +609,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q269",
@@ -583,6 +623,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q171",
     "lv": 15,
@@ -594,6 +635,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q294",
@@ -607,6 +649,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q234",
     "lv": 16,
@@ -618,6 +661,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q428",
@@ -631,6 +675,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q356",
     "lv": 16,
@@ -642,6 +687,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q023",
@@ -655,6 +701,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q444",
     "lv": 16,
@@ -666,6 +713,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q353",
@@ -679,6 +727,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q034",
     "lv": 16,
@@ -690,6 +739,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q352",
@@ -703,6 +753,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q045",
     "lv": 17,
@@ -714,6 +765,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q290",
@@ -727,6 +779,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q386",
     "lv": 17,
@@ -738,6 +791,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q010",
@@ -751,6 +805,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q200",
     "lv": 17,
@@ -762,6 +817,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q394",
@@ -775,6 +831,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q220",
     "lv": 17,
@@ -786,6 +843,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q065",
@@ -799,6 +857,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q284",
     "lv": 18,
@@ -811,11 +870,14 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q175",
     "lv": 18,
     "q": "int arr[3][3]={{1,2,3},
+
 {4,5,6},
+
 {7,8,9}}; int *p=&arr[0][0]; printf('%d',*(p+5)); — output?",
     "a": [
       "6"
@@ -824,6 +886,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q111",
@@ -837,6 +900,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q226",
     "lv": 18,
@@ -848,6 +912,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q361",
@@ -861,6 +926,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q435",
     "lv": 18,
@@ -872,6 +938,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q465",
@@ -885,6 +952,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q233",
     "lv": 18,
@@ -896,6 +964,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q050",
@@ -909,6 +978,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q097",
     "lv": 19,
@@ -920,6 +990,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q173",
@@ -933,6 +1004,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q273",
     "lv": 19,
@@ -944,6 +1016,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q452",
@@ -957,6 +1030,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q402",
     "lv": 19,
@@ -968,6 +1042,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q058",
@@ -981,6 +1056,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q229",
     "lv": 19,
@@ -992,6 +1068,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q165",
@@ -1005,6 +1082,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q238",
     "lv": 20,
@@ -1016,6 +1094,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q347",
@@ -1029,6 +1108,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q119",
     "lv": 20,
@@ -1040,6 +1120,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q189",
@@ -1053,6 +1134,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q110",
     "lv": 20,
@@ -1064,6 +1146,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q371",
@@ -1077,6 +1160,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q365",
     "lv": 20,
@@ -1088,6 +1172,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q298",
@@ -1101,6 +1186,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q217",
     "lv": 21,
@@ -1112,6 +1198,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q108",
@@ -1125,6 +1212,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q313",
     "lv": 21,
@@ -1136,6 +1224,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q035",
@@ -1149,6 +1238,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q044",
     "lv": 21,
@@ -1160,6 +1250,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q164",
@@ -1173,6 +1264,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q423",
     "lv": 21,
@@ -1184,6 +1276,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q021",
@@ -1197,6 +1290,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q013",
     "lv": 21,
@@ -1208,6 +1302,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q338",
@@ -1221,6 +1316,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q262",
     "lv": 22,
@@ -1232,6 +1328,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q285",
@@ -1245,6 +1342,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q310",
     "lv": 22,
@@ -1256,6 +1354,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q067",
@@ -1269,6 +1368,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q170",
     "lv": 22,
@@ -1280,6 +1380,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q102",
@@ -1293,6 +1394,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q363",
     "lv": 22,
@@ -1304,6 +1406,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q241",
@@ -1317,6 +1420,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q012",
     "lv": 23,
@@ -1328,6 +1432,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q380",
@@ -1341,6 +1446,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q355",
     "lv": 23,
@@ -1352,6 +1458,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q367",
@@ -1365,6 +1472,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q448",
     "lv": 23,
@@ -1376,6 +1484,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q393",
@@ -1389,6 +1498,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q334",
     "lv": 23,
@@ -1400,6 +1510,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q017",
@@ -1413,6 +1524,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q184",
     "lv": 24,
@@ -1424,6 +1536,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q231",
@@ -1437,6 +1550,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q051",
     "lv": 24,
@@ -1448,6 +1562,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q383",
@@ -1461,6 +1576,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q100",
     "lv": 24,
@@ -1472,6 +1588,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q339",
@@ -1485,6 +1602,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q181",
     "lv": 24,
@@ -1496,6 +1614,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q281",
@@ -1509,6 +1628,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q442",
     "lv": 25,
@@ -1520,6 +1640,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q441",
@@ -1533,6 +1654,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q268",
     "lv": 25,
@@ -1544,6 +1666,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q134",
@@ -1557,6 +1680,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q138",
     "lv": 25,
@@ -1568,6 +1692,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q490",
@@ -1581,6 +1706,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q078",
     "lv": 25,
@@ -1592,6 +1718,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q457",
@@ -1605,6 +1732,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q148",
     "lv": 26,
@@ -1616,6 +1744,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q228",
@@ -1629,6 +1758,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q340",
     "lv": 26,
@@ -1640,6 +1770,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q376",
@@ -1653,6 +1784,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q446",
     "lv": 26,
@@ -1664,6 +1796,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q047",
@@ -1677,6 +1810,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q342",
     "lv": 26,
@@ -1688,6 +1822,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q433",
@@ -1701,6 +1836,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q076",
     "lv": 27,
@@ -1712,6 +1848,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q320",
@@ -1725,6 +1862,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q071",
     "lv": 27,
@@ -1736,6 +1874,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q088",
@@ -1749,6 +1888,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q099",
     "lv": 27,
@@ -1760,6 +1900,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q042",
@@ -1773,6 +1914,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q230",
     "lv": 27,
@@ -1784,6 +1926,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q440",
@@ -1797,6 +1940,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q031",
     "lv": 27,
@@ -1808,6 +1952,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q322",
@@ -1821,6 +1966,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q206",
     "lv": 28,
@@ -1832,6 +1978,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q299",
@@ -1845,6 +1992,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q305",
     "lv": 28,
@@ -1856,6 +2004,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q248",
@@ -1869,6 +2018,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q283",
     "lv": 28,
@@ -1880,6 +2030,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q129",
@@ -1893,6 +2044,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q312",
     "lv": 28,
@@ -1904,6 +2056,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q337",
@@ -1917,6 +2070,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q178",
     "lv": 29,
@@ -1928,6 +2082,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q027",
@@ -1941,6 +2096,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q150",
     "lv": 29,
@@ -1952,6 +2108,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q253",
@@ -1965,6 +2122,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q139",
     "lv": 29,
@@ -1976,6 +2134,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q014",
@@ -1989,6 +2148,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q350",
     "lv": 29,
@@ -2000,6 +2160,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q157",
@@ -2013,6 +2174,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q208",
     "lv": 30,
@@ -2024,6 +2186,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q412",
@@ -2037,6 +2200,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q304",
     "lv": 30,
@@ -2048,6 +2212,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q378",
@@ -2061,6 +2226,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q316",
     "lv": 30,
@@ -2072,6 +2238,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q120",
@@ -2085,6 +2252,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q032",
     "lv": 30,
@@ -2096,6 +2264,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q308",
@@ -2109,6 +2278,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q146",
     "lv": 31,
@@ -2120,6 +2290,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q301",
@@ -2133,6 +2304,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q486",
     "lv": 31,
@@ -2144,6 +2316,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q199",
@@ -2157,6 +2330,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q046",
     "lv": 31,
@@ -2168,6 +2342,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q291",
@@ -2181,6 +2356,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q480",
     "lv": 31,
@@ -2192,6 +2368,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q174",
@@ -2205,6 +2382,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q319",
     "lv": 32,
@@ -2216,6 +2394,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q062",
@@ -2229,6 +2408,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q293",
     "lv": 32,
@@ -2240,6 +2420,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q242",
@@ -2253,6 +2434,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q264",
     "lv": 32,
@@ -2264,6 +2446,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q375",
@@ -2277,6 +2460,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q060",
     "lv": 32,
@@ -2288,6 +2472,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q022",
@@ -2301,6 +2486,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q155",
     "lv": 33,
@@ -2312,6 +2498,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q420",
@@ -2325,6 +2512,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q086",
     "lv": 33,
@@ -2336,6 +2524,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q362",
@@ -2349,6 +2538,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q127",
     "lv": 33,
@@ -2360,6 +2550,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q115",
@@ -2373,6 +2564,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q137",
     "lv": 33,
@@ -2384,6 +2576,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q162",
@@ -2397,6 +2590,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q211",
     "lv": 33,
@@ -2408,6 +2602,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q153",
@@ -2421,6 +2616,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q066",
     "lv": 34,
@@ -2432,6 +2628,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q104",
@@ -2445,6 +2642,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q385",
     "lv": 34,
@@ -2456,6 +2654,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q142",
@@ -2469,6 +2668,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q055",
     "lv": 34,
@@ -2480,6 +2680,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q030",
@@ -2493,6 +2694,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q154",
     "lv": 34,
@@ -2504,6 +2706,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q387",
@@ -2517,6 +2720,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q413",
     "lv": 35,
@@ -2528,6 +2732,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q237",
@@ -2541,6 +2746,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q075",
     "lv": 35,
@@ -2552,6 +2758,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q484",
@@ -2565,6 +2772,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q116",
     "lv": 35,
@@ -2576,6 +2784,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q096",
@@ -2589,6 +2798,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q327",
     "lv": 35,
@@ -2600,6 +2810,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q122",
@@ -2613,6 +2824,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q057",
     "lv": 36,
@@ -2624,6 +2836,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q464",
@@ -2637,6 +2850,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q300",
     "lv": 36,
@@ -2648,6 +2862,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q357",
@@ -2661,6 +2876,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q289",
     "lv": 36,
@@ -2672,6 +2888,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q056",
@@ -2685,6 +2902,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q204",
     "lv": 36,
@@ -2696,6 +2914,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q309",
@@ -2709,6 +2928,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q209",
     "lv": 37,
@@ -2720,6 +2940,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q485",
@@ -2733,6 +2954,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q106",
     "lv": 37,
@@ -2744,6 +2966,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q158",
@@ -2757,6 +2980,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q041",
     "lv": 37,
@@ -2768,6 +2992,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q377",
@@ -2781,6 +3006,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q364",
     "lv": 37,
@@ -2792,6 +3018,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q315",
@@ -2805,6 +3032,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q332",
     "lv": 38,
@@ -2816,6 +3044,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q112",
@@ -2829,6 +3058,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q161",
     "lv": 38,
@@ -2840,6 +3070,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q167",
@@ -2853,6 +3084,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q223",
     "lv": 38,
@@ -2864,6 +3096,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q282",
@@ -2877,6 +3110,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q432",
     "lv": 38,
@@ -2888,6 +3122,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q445",
@@ -2901,6 +3136,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q438",
     "lv": 39,
@@ -2912,6 +3148,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q109",
@@ -2925,6 +3162,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q333",
     "lv": 39,
@@ -2936,6 +3174,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q073",
@@ -2949,6 +3188,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q053",
     "lv": 39,
@@ -2960,6 +3200,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q267",
@@ -2973,6 +3214,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q038",
     "lv": 39,
@@ -2984,6 +3226,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q424",
@@ -2997,6 +3240,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q366",
     "lv": 39,
@@ -3008,6 +3252,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q152",
@@ -3021,6 +3266,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q349",
     "lv": 40,
@@ -3032,6 +3278,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q039",
@@ -3045,6 +3292,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q016",
     "lv": 40,
@@ -3056,6 +3304,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q494",
@@ -3069,6 +3318,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q198",
     "lv": 40,
@@ -3080,6 +3330,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q437",
@@ -3093,6 +3344,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q344",
     "lv": 40,
@@ -3104,6 +3356,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q359",
@@ -3117,6 +3370,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q245",
     "lv": 41,
@@ -3128,6 +3382,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q462",
@@ -3141,6 +3396,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q492",
     "lv": 41,
@@ -3152,6 +3408,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q260",
@@ -3165,6 +3422,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q382",
     "lv": 41,
@@ -3176,6 +3434,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q381",
@@ -3189,6 +3448,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q222",
     "lv": 41,
@@ -3200,6 +3460,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q331",
@@ -3213,6 +3474,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q008",
     "lv": 42,
@@ -3224,6 +3486,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q001",
@@ -3237,6 +3500,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q081",
     "lv": 42,
@@ -3248,6 +3512,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q118",
@@ -3261,6 +3526,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q493",
     "lv": 42,
@@ -3272,6 +3538,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q224",
@@ -3285,6 +3552,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q345",
     "lv": 42,
@@ -3296,6 +3564,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q328",
@@ -3309,6 +3578,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q286",
     "lv": 43,
@@ -3320,6 +3590,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q434",
@@ -3333,6 +3604,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q197",
     "lv": 43,
@@ -3344,6 +3616,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q052",
@@ -3357,6 +3630,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q468",
     "lv": 43,
@@ -3368,6 +3642,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q276",
@@ -3381,6 +3656,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q495",
     "lv": 43,
@@ -3392,6 +3668,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q416",
@@ -3405,6 +3682,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q297",
     "lv": 44,
@@ -3416,6 +3694,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q133",
@@ -3429,6 +3708,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q314",
     "lv": 44,
@@ -3440,6 +3720,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q196",
@@ -3453,6 +3734,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q277",
     "lv": 44,
@@ -3464,6 +3746,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q411",
@@ -3477,6 +3760,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q003",
     "lv": 44,
@@ -3488,6 +3772,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q336",
@@ -3501,10 +3786,12 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q091",
     "lv": 45,
     "q": "If A={1,2,3} and B={2,3,4},
+
  what is |A union B|?",
     "a": [
       "4"
@@ -3513,6 +3800,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q114",
@@ -3526,6 +3814,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q093",
     "lv": 45,
@@ -3537,6 +3826,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q227",
@@ -3550,6 +3840,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q358",
     "lv": 45,
@@ -3561,6 +3852,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q141",
@@ -3574,6 +3866,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q408",
     "lv": 45,
@@ -3585,6 +3878,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q326",
@@ -3598,6 +3892,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q456",
     "lv": 45,
@@ -3609,6 +3904,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q090",
@@ -3622,6 +3918,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q009",
     "lv": 46,
@@ -3633,6 +3930,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q191",
@@ -3646,6 +3944,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q068",
     "lv": 46,
@@ -3657,6 +3956,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q070",
@@ -3670,6 +3970,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q004",
     "lv": 46,
@@ -3681,6 +3982,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q214",
@@ -3694,6 +3996,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q218",
     "lv": 46,
@@ -3705,6 +4008,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q396",
@@ -3718,6 +4022,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q125",
     "lv": 47,
@@ -3729,6 +4034,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q360",
@@ -3742,6 +4048,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q040",
     "lv": 47,
@@ -3753,6 +4060,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q443",
@@ -3766,6 +4074,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q221",
     "lv": 47,
@@ -3777,6 +4086,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q028",
@@ -3790,6 +4100,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q087",
     "lv": 47,
@@ -3801,6 +4112,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q410",
@@ -3814,6 +4126,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q419",
     "lv": 48,
@@ -3825,6 +4138,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q059",
@@ -3838,6 +4152,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q159",
     "lv": 48,
@@ -3849,6 +4164,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q029",
@@ -3862,6 +4178,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q317",
     "lv": 48,
@@ -3873,6 +4190,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q460",
@@ -3886,6 +4204,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q325",
     "lv": 48,
@@ -3897,6 +4216,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q215",
@@ -3910,6 +4230,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q187",
     "lv": 49,
@@ -3921,6 +4242,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q418",
@@ -3934,6 +4256,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q417",
     "lv": 49,
@@ -3945,6 +4268,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q151",
@@ -3958,6 +4282,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q384",
     "lv": 49,
@@ -3969,6 +4294,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q168",
@@ -3982,6 +4308,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q271",
     "lv": 49,
@@ -3993,6 +4320,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q025",
@@ -4006,6 +4334,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q348",
     "lv": 50,
@@ -4017,6 +4346,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q169",
@@ -4030,6 +4360,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q251",
     "lv": 50,
@@ -4041,6 +4372,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q179",
@@ -4054,6 +4386,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q232",
     "lv": 50,
@@ -4065,6 +4398,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q077",
@@ -4078,6 +4412,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q190",
     "lv": 50,
@@ -4089,6 +4424,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q406",
@@ -4102,6 +4438,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q491",
     "lv": 51,
@@ -4113,6 +4450,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q254",
@@ -4126,6 +4464,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q392",
     "lv": 51,
@@ -4137,6 +4476,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q177",
@@ -4150,6 +4490,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q279",
     "lv": 51,
@@ -4161,6 +4502,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q026",
@@ -4174,6 +4516,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q372",
     "lv": 51,
@@ -4185,6 +4528,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q002",
@@ -4198,6 +4542,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q219",
     "lv": 51,
@@ -4209,6 +4554,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q113",
@@ -4222,6 +4568,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q414",
     "lv": 52,
@@ -4233,6 +4580,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q061",
@@ -4246,6 +4594,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q397",
     "lv": 52,
@@ -4257,6 +4606,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q373",
@@ -4270,6 +4620,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q321",
     "lv": 52,
@@ -4281,6 +4632,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q144",
@@ -4294,6 +4646,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q136",
     "lv": 52,
@@ -4305,6 +4658,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q351",
@@ -4318,6 +4672,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q478",
     "lv": 53,
@@ -4329,6 +4684,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q074",
@@ -4342,6 +4698,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q324",
     "lv": 53,
@@ -4353,6 +4710,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q255",
@@ -4366,6 +4724,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q343",
     "lv": 53,
@@ -4377,6 +4736,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q429",
@@ -4390,6 +4750,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q082",
     "lv": 53,
@@ -4401,6 +4762,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q201",
@@ -4414,6 +4776,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q188",
     "lv": 54,
@@ -4425,6 +4788,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q499",
@@ -4438,6 +4802,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q487",
     "lv": 54,
@@ -4449,6 +4814,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q080",
@@ -4462,6 +4828,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q132",
     "lv": 54,
@@ -4473,6 +4840,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q172",
@@ -4486,6 +4854,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q469",
     "lv": 54,
@@ -4497,6 +4866,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q193",
@@ -4510,6 +4880,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q471",
     "lv": 55,
@@ -4521,6 +4892,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q430",
@@ -4534,6 +4906,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q186",
     "lv": 55,
@@ -4545,6 +4918,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q302",
@@ -4558,6 +4932,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q409",
     "lv": 55,
@@ -4569,6 +4944,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q329",
@@ -4582,6 +4958,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q466",
     "lv": 55,
@@ -4593,6 +4970,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q128",
@@ -4606,6 +4984,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q246",
     "lv": 56,
@@ -4617,6 +4996,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q203",
@@ -4630,6 +5010,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q063",
     "lv": 56,
@@ -4641,6 +5022,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q135",
@@ -4654,6 +5036,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q265",
     "lv": 56,
@@ -4665,6 +5048,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q124",
@@ -4678,6 +5062,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q261",
     "lv": 56,
@@ -4689,6 +5074,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q463",
@@ -4702,6 +5088,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q311",
     "lv": 57,
@@ -4713,6 +5100,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q459",
@@ -4726,6 +5114,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q455",
     "lv": 57,
@@ -4737,6 +5126,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q280",
@@ -4750,6 +5140,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q123",
     "lv": 57,
@@ -4761,6 +5152,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q126",
@@ -4774,6 +5166,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q427",
     "lv": 57,
@@ -4785,6 +5178,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q054",
@@ -4798,6 +5192,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q488",
     "lv": 57,
@@ -4809,6 +5204,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q183",
@@ -4822,6 +5218,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q240",
     "lv": 58,
@@ -4833,6 +5230,7 @@ export const PZ=[
     "type": "PYTHON",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q354",
@@ -4846,6 +5244,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q477",
     "lv": 58,
@@ -4857,6 +5256,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q202",
@@ -4870,6 +5270,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q160",
     "lv": 58,
@@ -4881,6 +5282,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q092",
@@ -4894,6 +5296,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q020",
     "lv": 58,
@@ -4905,6 +5308,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q318",
@@ -4918,6 +5322,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q107",
     "lv": 59,
@@ -4929,6 +5334,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q272",
@@ -4942,6 +5348,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q461",
     "lv": 59,
@@ -4953,6 +5360,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q084",
@@ -4966,6 +5374,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q458",
     "lv": 59,
@@ -4977,6 +5386,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q235",
@@ -4990,6 +5400,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-Q006",
     "lv": 59,
@@ -5001,6 +5412,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q194",
@@ -5014,6 +5426,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q145",
     "lv": 60,
@@ -5025,6 +5438,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q330",
@@ -5038,6 +5452,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q212",
     "lv": 60,
@@ -5049,6 +5464,7 @@ export const PZ=[
     "type": "C",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q426",
@@ -5062,6 +5478,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q098",
     "lv": 60,
@@ -5073,6 +5490,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-Q195",
@@ -5086,6 +5504,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-Q388",
     "lv": 60,
@@ -5097,6 +5516,7 @@ export const PZ=[
     "type": "TECH_CSE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-Q213",
@@ -5110,6 +5530,7 @@ export const PZ=[
     "difficulty": "HARD"
   },
 
+
   {
     "id": "PZ-A-NEW-001",
     "lv": 20,
@@ -5119,6 +5540,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-A-NEW-002",
@@ -5130,6 +5552,7 @@ export const PZ=[
     "difficulty": "EASY"
   },
 
+
   {
     "id": "PZ-A-NEW-003",
     "lv": 30,
@@ -5139,6 +5562,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "HARD"
   },
+
 
   {
     "id": "PZ-A-NEW-004",
@@ -5150,6 +5574,7 @@ export const PZ=[
     "difficulty": "EASY"
   },
 
+
   {
     "id": "PZ-A-NEW-005",
     "lv": 40,
@@ -5159,6 +5584,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-A-NEW-006",
@@ -5170,6 +5596,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-A-NEW-007",
     "lv": 50,
@@ -5179,6 +5606,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-A-NEW-008",
@@ -5190,6 +5618,7 @@ export const PZ=[
     "difficulty": "EASY"
   },
 
+
   {
     "id": "PZ-A-NEW-009",
     "lv": 60,
@@ -5199,6 +5628,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
+
 
   {
     "id": "PZ-A-NEW-10",
@@ -5210,6 +5640,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-A-NEW-011",
     "lv": 11,
@@ -5219,6 +5650,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
+
 
   {
     "id": "PZ-A-NEW-012",
@@ -5230,6 +5662,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-A-NEW-013",
     "lv": 13,
@@ -5239,6 +5672,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "EASY"
   },
+
 
   {
     "id": "PZ-A-NEW-014",
@@ -5250,6 +5684,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-A-NEW-015",
     "lv": 18,
@@ -5259,6 +5694,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-A-NEW-016",
@@ -5270,6 +5706,7 @@ export const PZ=[
     "difficulty": "EASY"
   },
 
+
   {
     "id": "PZ-A-NEW-017",
     "lv": 21,
@@ -5279,6 +5716,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-A-NEW-018",
@@ -5290,6 +5728,7 @@ export const PZ=[
     "difficulty": "MEDIUM"
   },
 
+
   {
     "id": "PZ-A-NEW-019",
     "lv": 23,
@@ -5299,6 +5738,7 @@ export const PZ=[
     "type": "APTITUDE",
     "difficulty": "MEDIUM"
   },
+
 
   {
     "id": "PZ-A-NEW-020",
@@ -5310,279 +5750,136 @@ export const PZ=[
     "difficulty": "MEDIUM"
   }
 },
+
 {
-  "id": "PZ-HARD-H001",
+  "id": "PZ-H-001",
   "lv": 11,
-  "q": "What is the time complexity of binary search on a sorted array of n elements?",
+  "q": "Who is known as the father of the World Wide Web?",
   "a": [
-    "OLOGN"
+    "Berners"
   ],
-  "h": "Binary search halves the remaining elements every step. If you half n repeatedly until 1, you take log₂(n) steps. Express as O(log n).",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
+  "h": "Tim ?-Lee proposed the system at CERN.",
+  "type": "TECH_HISTORY",
+  "difficulty": "MEDIUM"
 }},
+
 {
-  "id": "PZ-HARD-H002",
+  "id": "PZ-H-002",
   "lv": 12,
-  "q": "What is the worst-case time complexity of quicksort?",
+  "q": "Which law states that the number of transistors on a chip doubles every two years?",
   "a": [
-    "ON2"
+    "Moore"
   ],
-  "h": "Worst case: pivot is always smallest or largest element (like already sorted input). Each partition does O(n) work for n levels. Result: O(n²).",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
+  "h": "Gordon ?'s Law (Intel co-founder).",
+  "type": "TECH_HISTORY",
+  "difficulty": "MEDIUM"
 }},
+
 {
-  "id": "PZ-HARD-H003",
+  "id": "PZ-H-003",
   "lv": 13,
-  "q": "What sorting algorithm has guaranteed O(n log n) in all cases with O(n) space?",
+  "q": "What was the name of the first programmable general-purpose electronic computer?",
   "a": [
-    "MERGESORT"
+    "ENIAC"
   ],
-  "h": "It divides array in half repeatedly and merges sorted halves. Never degrades to O(n²). Requires extra space equal to input size.",
-  "type": "CS_FUNDAMENTALS",
+  "h": "Electronic Numerical Integrator and Computer.",
+  "type": "TECH_HISTORY",
   "difficulty": "HARD"
 }},
+
 {
-  "id": "PZ-HARD-H004",
+  "id": "PZ-H-004",
   "lv": 14,
-  "q": "Which data structure does a recursive function internally use to track calls?",
+  "q": "In what year was the first iPhone released?",
   "a": [
-    "STACK"
+    "2007"
   ],
-  "h": "Every function call pushes a frame, every return pops one. LIFO behavior. Stack overflow happens when recursion is too deep.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
+  "h": "Jobs introduced it in January, released in June.",
+  "type": "TECH_HISTORY",
+  "difficulty": "EASY"
 }},
+
 {
-  "id": "PZ-HARD-H005",
+  "id": "PZ-H-005",
   "lv": 15,
-  "q": "What is the amortized time complexity of push on a dynamic array?",
+  "q": "Who created the Linux kernel?",
   "a": [
-    "O1"
+    "Torvalds"
   ],
-  "h": "Dynamic array doubles when full. Costly resizing happens rarely. Average the total work across n pushes: n operations / n pushes = O(1) each.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
+  "h": "Linus ?.",
+  "type": "TECH_HISTORY",
+  "difficulty": "MEDIUM"
 }},
+
 {
-  "id": "PZ-HARD-H006",
-  "lv": 16,
-  "q": "In a BST, which traversal visits nodes in ascending sorted order?",
-  "a": [
-    "INORDER"
-  ],
-  "h": "BST inorder traversal: Left → Root → Right. For a BST, left subtree has smaller values and right has larger, so this visits in sorted ascending order.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H007",
-  "lv": 17,
-  "q": "What is the maximum number of nodes at level L in a binary tree?",
-  "a": [
-    "2L"
-  ],
-  "h": "Level 0 (root) = 1 = 2⁰. Level 1 = 2 = 2¹. Level 2 = 4 = 2². Pattern: maximum nodes at level L = 2^L.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H008",
-  "lv": 18,
-  "q": "Which algorithm finds the shortest path in a weighted graph with no negative edges?",
-  "a": [
-    "DIJKSTRA"
-  ],
-  "h": "Named after Edsger Dijkstra. Uses a greedy approach with a priority queue. Doesn't work with negative weight edges.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H009",
-  "lv": 19,
-  "q": "What does NP-complete mean in computational complexity?",
-  "a": [
-    "HARDEST"
-  ],
-  "h": "NP-complete: hardest problems in NP. Every NP problem can be reduced to it in polynomial time. If you solve one fast, you solve all NP problems.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H010",
-  "lv": 20,
-  "q": "What data structure gives O(1) average lookup time?",
-  "a": [
-    "HASHTABLE"
-  ],
-  "h": "Uses a hash function to compute an index directly. Average case O(1). Worst case O(n) when all keys collide. Used in Python dicts.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H011",
+  "id": "PZ-DS-001",
   "lv": 21,
-  "q": "What is a deadlock in computing?",
+  "q": "Which logic gate gives output 1 only when both inputs are 1?",
   "a": [
-    "CIRCULAR"
+    "AND"
   ],
-  "h": "Two or more processes each waiting for a resource held by the other. Neither can proceed. Circular dependency is the key characteristic.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
+  "h": "Multiplication-like logic.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "EASY"
 }},
+
 {
-  "id": "PZ-HARD-H012",
+  "id": "PZ-DS-002",
   "lv": 22,
-  "q": "What is the space complexity of merge sort?",
+  "q": "What is the binary equivalent of decimal 10?",
   "a": [
-    "ON"
+    "1010"
   ],
-  "h": "Merge sort needs an auxiliary array of size n to merge halves. Unlike quicksort which sorts in-place. Extra space = O(n).",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
+  "h": "8 + 0 + 2 + 0.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "MEDIUM"
 }},
+
 {
-  "id": "PZ-HARD-H013",
+  "id": "PZ-DS-003",
   "lv": 23,
-  "q": "What is the name for memory that retains data without power?",
+  "q": "A JK flip-flop in toggle mode has J and K equal to?",
   "a": [
-    "NONVOLATILE"
+    "1"
   ],
-  "h": "ROM, SSD, HDD retain data when powered off. RAM loses data — that's volatile. Phones and drives use non-volatile storage.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
+  "h": "J=K=1 causes the state to flip on every clock pulse.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "MEDIUM"
 }},
+
 {
-  "id": "PZ-HARD-H014",
-  "lv": 24,
-  "q": "What is a graph with no cycles called?",
-  "a": [
-    "ACYCLIC"
-  ],
-  "h": "A → B → C, no way back to A = acyclic. A DAG (Directed Acyclic Graph) is an acyclic directed graph. Used in dependency resolution.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H015",
-  "lv": 25,
-  "q": "What is memoization used for in programming?",
-  "a": [
-    "CACHING"
-  ],
-  "h": "Storing results of expensive function calls so you don't recompute them. If same input appears again, return cached result. Optimizes recursion.",
-  "type": "CS_FUNDAMENTALS",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H141",
-  "lv": 26,
-  "q": "What does GPU stand for and why is it used for AI training?",
-  "a": [
-    "PARALLEL"
-  ],
-  "h": "Graphics Processing Unit. Originally for rendering pixels in parallel. AI training involves millions of matrix operations — same parallelism applies.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H142",
-  "lv": 27,
-  "q": "What is overfitting in machine learning?",
-  "a": [
-    "MEMORIZE"
-  ],
-  "h": "Model memorizes training data including noise. Performs excellent on training data but fails on new data. Like memorizing answers vs understanding concepts.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H143",
-  "lv": 28,
-  "q": "What is a neural network layer called that has no direct connection to input or output?",
-  "a": [
-    "HIDDEN"
-  ],
-  "h": "Neural networks: input layer → hidden layers → output layer. Intermediate layers are called hidden layers. Deep learning = many hidden layers.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H144",
-  "lv": 29,
-  "q": "What is the name for the AI technique where a model learns from human feedback?",
-  "a": [
-    "RLHF"
-  ],
-  "h": "Reinforcement Learning from Human Feedback. Used to train ChatGPT. Humans rate outputs, model learns to produce preferred responses.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H145",
-  "lv": 30,
-  "q": "What does LLM stand for?",
-  "a": [
-    "LARGELANGUAGE"
-  ],
-  "h": "Large Language Model. Trained on massive text datasets. GPT-4, Claude, Gemini are LLMs. Two words — Large Language (Model).",
-  "type": "AI_ML",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H146",
+  "id": "PZ-FC-001",
   "lv": 31,
-  "q": "What is the transformer architecture used for?",
+  "q": "What law states: 'Anything that can go wrong will go wrong'?",
   "a": [
-    "ATTENTION"
+    "Murphy"
   ],
-  "h": "Transformers use attention mechanisms to weigh importance of different parts of input. Foundation of all modern LLMs. Introduced in 'Attention is All You Need' paper.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
+  "h": "Edward A. ?'s Law.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "EASY"
 }},
+
 {
-  "id": "PZ-HARD-H147",
+  "id": "PZ-FC-002",
   "lv": 32,
-  "q": "What is gradient descent used for in ML?",
+  "q": "What is the cellular automaton developed by John Conway?",
   "a": [
-    "OPTIMIZE"
+    "Life"
   ],
-  "h": "Optimization algorithm that minimizes loss by iteratively adjusting weights in direction of steepest descent. Like rolling downhill to find the valley.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
+  "h": "Game of ?.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "MEDIUM"
 }},
+
 {
-  "id": "PZ-HARD-H148",
+  "id": "PZ-FC-003",
   "lv": 33,
-  "q": "What is the difference between supervised and unsupervised learning?",
+  "q": "What law states that an organization's systems reflect its communication structure?",
   "a": [
-    "LABELS"
+    "Conway"
   ],
-  "h": "Supervised: training data has labels (correct answers). Model learns to predict labels. Unsupervised: no labels, model finds patterns itself. Clustering is unsupervised.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H149",
-  "lv": 34,
-  "q": "What is a convolutional neural network primarily used for?",
-  "a": [
-    "IMAGE"
-  ],
-  "h": "CNN: specialized for processing grid data like images. Convolutional layers detect features (edges, shapes). Used in image classification, facial recognition.",
-  "type": "AI_ML",
-  "difficulty": "HARD"
-}},
-{
-  "id": "PZ-HARD-H150",
-  "lv": 35,
-  "q": "What is the term for AI that can generate new content?",
-  "a": [
-    "GENERATIVE"
-  ],
-  "h": "Generative AI creates new content — text (ChatGPT), images (DALL-E, Midjourney), music, code. Learns the distribution of training data.",
-  "type": "AI_ML",
+  "h": "Melvin ?'s Law.",
+  "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
 }},
 {
@@ -5641,6 +5938,61 @@ export const PZ=[
   "difficulty": "MEDIUM"
 }},
 {
+  "id": "PZ-H-006",
+  "lv": 16,
+  "q": "What was the first high-level programming language (1954)?",
+  "a": [
+    "FORTRAN"
+  ],
+  "h": "FORmula TRANslation.",
+  "type": "TECH_HISTORY",
+  "difficulty": "HARD"
+}},
+{
+  "id": "PZ-H-007",
+  "lv": 17,
+  "q": "Which company developed the Java programming language?",
+  "a": [
+    "Sun"
+  ],
+  "h": "Sun Microsystems (later acquired by Oracle).",
+  "type": "TECH_HISTORY",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-H-008",
+  "lv": 18,
+  "q": "Who is credited with inventing the first mechanical computer (Difference Engine)?",
+  "a": [
+    "Babbage"
+  ],
+  "h": "Charles ?.",
+  "type": "TECH_HISTORY",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-H-009",
+  "lv": 19,
+  "q": "What does the term 'bug' come from (legend involving Grace Hopper)?",
+  "a": [
+    "moth"
+  ],
+  "h": "An actual ? was found in a relay of the Harvard Mark II.",
+  "type": "TECH_HISTORY",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-H-010",
+  "lv": 20,
+  "q": "Which protocol was the predecessor to the modern internet?",
+  "a": [
+    "ARPANET"
+  ],
+  "h": "Advanced Research Projects Agency Network.",
+  "type": "TECH_HISTORY",
+  "difficulty": "HARD"
+}},
+{
   "id": "PZ-DS-001",
   "lv": 21,
   "q": "Which logic gate gives output 1 only when both inputs are 1?",
@@ -5674,6 +6026,83 @@ export const PZ=[
   "difficulty": "MEDIUM"
 }},
 {
+  "id": "PZ-DS-004",
+  "lv": 24,
+  "q": "What map is used to simplify boolean expressions?",
+  "a": [
+    "Karnaugh"
+  ],
+  "h": "K-map.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-DS-005",
+  "lv": 25,
+  "q": "Which gate is known as the 'Universal Gate'?",
+  "a": [
+    "NAND"
+  ],
+  "h": "Also NOR. Can build any other gate using only these.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-DS-006",
+  "lv": 26,
+  "q": "How many bits are in a nibble?",
+  "a": [
+    "4"
+  ],
+  "h": "Half a byte.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "EASY"
+}},
+{
+  "id": "PZ-DS-007",
+  "lv": 27,
+  "q": "What is the hex value of binary 1111?",
+  "a": [
+    "F"
+  ],
+  "h": "Decimal 15 = Hex ?.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-DS-008",
+  "lv": 28,
+  "q": "What component is the 'brain' of a computer's CPU?",
+  "a": [
+    "ALU"
+  ],
+  "h": "Arithmetic Logic Unit.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-DS-009",
+  "lv": 29,
+  "q": "A multiplexer with 4 inputs needs how many select lines?",
+  "a": [
+    "2"
+  ],
+  "h": "2^n = 4 inputs.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-DS-010",
+  "lv": 30,
+  "q": "What is 1's complement of 1010?",
+  "a": [
+    "0101"
+  ],
+  "h": "Flip all bits.",
+  "type": "DIGITAL_SYSTEMS",
+  "difficulty": "EASY"
+}},
+{
   "id": "PZ-FC-001",
   "lv": 31,
   "q": "What law states: 'Anything that can go wrong will go wrong'?",
@@ -5703,6 +6132,83 @@ export const PZ=[
     "Conway"
   ],
   "h": "Melvin ?'s Law.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "HARD"
+}},
+{
+  "id": "PZ-FC-004",
+  "lv": 34,
+  "q": "What book/concept contrasts top-down vs community-based development?",
+  "a": [
+    "Cathedral"
+  ],
+  "h": "The ? and the Bazaar (Eric S. Raymond).",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-FC-005",
+  "lv": 35,
+  "q": "What test determines if a machine can exhibit intelligent behavior like a human?",
+  "a": [
+    "Turing"
+  ],
+  "h": "The ? Test.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-FC-006",
+  "lv": 36,
+  "q": "What is the 'rubber duck' method used for?",
+  "a": [
+    "debugging"
+  ],
+  "h": "Explaining code to an object to find errors.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "EASY"
+}},
+{
+  "id": "PZ-FC-007",
+  "lv": 37,
+  "q": "What is the principle: 'Don't Repeat Yourself'?",
+  "a": [
+    "DRY"
+  ],
+  "h": "Acronym for avoiding code duplication.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "EASY"
+}},
+{
+  "id": "PZ-FC-008",
+  "lv": 38,
+  "q": "What is the 'Garbage In, Garbage Out' acronym?",
+  "a": [
+    "GIGO"
+  ],
+  "h": "Input quality determines output quality.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "MEDIUM"
+}},
+{
+  "id": "PZ-FC-009",
+  "lv": 39,
+  "q": "What law states that work expands to fill the time available for its completion?",
+  "a": [
+    "Parkinson"
+  ],
+  "h": "Cyril Northcote ?'s Law.",
+  "type": "FAMOUS_CONCEPTS",
+  "difficulty": "HARD"
+}},
+{
+  "id": "PZ-FC-010",
+  "lv": 40,
+  "q": "What is the 'Brooks's Law' regarding late software projects?",
+  "a": [
+    "adding"
+  ],
+  "h": "? manpower to a late software project makes it later.",
   "type": "FAMOUS_CONCEPTS",
   "difficulty": "HARD"
 }},

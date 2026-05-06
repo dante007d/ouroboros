@@ -1,280 +1,5 @@
 [
   {
-    "id": "PZ-HARD-H001",
-    "lv": 11,
-    "q": "What is the time complexity of binary search on a sorted array of n elements?",
-    "a": [
-      "OLOGN"
-    ],
-    "h": "Binary search halves the remaining elements every step. If you half n repeatedly until 1, you take log₂(n) steps. Express as O(log n).",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H002",
-    "lv": 12,
-    "q": "What is the worst-case time complexity of quicksort?",
-    "a": [
-      "ON2"
-    ],
-    "h": "Worst case: pivot is always smallest or largest element (like already sorted input). Each partition does O(n) work for n levels. Result: O(n²).",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H003",
-    "lv": 13,
-    "q": "What sorting algorithm has guaranteed O(n log n) in all cases with O(n) space?",
-    "a": [
-      "MERGESORT"
-    ],
-    "h": "It divides array in half repeatedly and merges sorted halves. Never degrades to O(n²). Requires extra space equal to input size.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H004",
-    "lv": 14,
-    "q": "Which data structure does a recursive function internally use to track calls?",
-    "a": [
-      "STACK"
-    ],
-    "h": "Every function call pushes a frame, every return pops one. LIFO behavior. Stack overflow happens when recursion is too deep.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H005",
-    "lv": 15,
-    "q": "What is the amortized time complexity of push on a dynamic array?",
-    "a": [
-      "O1"
-    ],
-    "h": "Dynamic array doubles when full. Costly resizing happens rarely. Average the total work across n pushes: n operations / n pushes = O(1) each.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H006",
-    "lv": 16,
-    "q": "In a BST, which traversal visits nodes in ascending sorted order?",
-    "a": [
-      "INORDER"
-    ],
-    "h": "BST inorder traversal: Left → Root → Right. For a BST, left subtree has smaller values and right has larger, so this visits in sorted ascending order.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H007",
-    "lv": 17,
-    "q": "What is the maximum number of nodes at level L in a binary tree?",
-    "a": [
-      "2L"
-    ],
-    "h": "Level 0 (root) = 1 = 2⁰. Level 1 = 2 = 2¹. Level 2 = 4 = 2². Pattern: maximum nodes at level L = 2^L.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H008",
-    "lv": 18,
-    "q": "Which algorithm finds the shortest path in a weighted graph with no negative edges?",
-    "a": [
-      "DIJKSTRA"
-    ],
-    "h": "Named after Edsger Dijkstra. Uses a greedy approach with a priority queue. Doesn't work with negative weight edges.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H009",
-    "lv": 19,
-    "q": "What does NP-complete mean in computational complexity?",
-    "a": [
-      "HARDEST"
-    ],
-    "h": "NP-complete: hardest problems in NP. Every NP problem can be reduced to it in polynomial time. If you solve one fast, you solve all NP problems.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H010",
-    "lv": 20,
-    "q": "What data structure gives O(1) average lookup time?",
-    "a": [
-      "HASHTABLE"
-    ],
-    "h": "Uses a hash function to compute an index directly. Average case O(1). Worst case O(n) when all keys collide. Used in Python dicts.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H011",
-    "lv": 21,
-    "q": "What is a deadlock in computing?",
-    "a": [
-      "CIRCULAR"
-    ],
-    "h": "Two or more processes each waiting for a resource held by the other. Neither can proceed. Circular dependency is the key characteristic.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H012",
-    "lv": 22,
-    "q": "What is the space complexity of merge sort?",
-    "a": [
-      "ON"
-    ],
-    "h": "Merge sort needs an auxiliary array of size n to merge halves. Unlike quicksort which sorts in-place. Extra space = O(n).",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H013",
-    "lv": 23,
-    "q": "What is the name for memory that retains data without power?",
-    "a": [
-      "NONVOLATILE"
-    ],
-    "h": "ROM, SSD, HDD retain data when powered off. RAM loses data — that's volatile. Phones and drives use non-volatile storage.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H014",
-    "lv": 24,
-    "q": "What is a graph with no cycles called?",
-    "a": [
-      "ACYCLIC"
-    ],
-    "h": "A → B → C, no way back to A = acyclic. A DAG (Directed Acyclic Graph) is an acyclic directed graph. Used in dependency resolution.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H015",
-    "lv": 25,
-    "q": "What is memoization used for in programming?",
-    "a": [
-      "CACHING"
-    ],
-    "h": "Storing results of expensive function calls so you don't recompute them. If same input appears again, return cached result. Optimizes recursion.",
-    "type": "CS_FUNDAMENTALS",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H141",
-    "lv": 26,
-    "q": "What does GPU stand for and why is it used for AI training?",
-    "a": [
-      "PARALLEL"
-    ],
-    "h": "Graphics Processing Unit. Originally for rendering pixels in parallel. AI training involves millions of matrix operations — same parallelism applies.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H142",
-    "lv": 27,
-    "q": "What is overfitting in machine learning?",
-    "a": [
-      "MEMORIZE"
-    ],
-    "h": "Model memorizes training data including noise. Performs excellent on training data but fails on new data. Like memorizing answers vs understanding concepts.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H143",
-    "lv": 28,
-    "q": "What is a neural network layer called that has no direct connection to input or output?",
-    "a": [
-      "HIDDEN"
-    ],
-    "h": "Neural networks: input layer → hidden layers → output layer. Intermediate layers are called hidden layers. Deep learning = many hidden layers.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H144",
-    "lv": 29,
-    "q": "What is the name for the AI technique where a model learns from human feedback?",
-    "a": [
-      "RLHF"
-    ],
-    "h": "Reinforcement Learning from Human Feedback. Used to train ChatGPT. Humans rate outputs, model learns to produce preferred responses.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H145",
-    "lv": 30,
-    "q": "What does LLM stand for?",
-    "a": [
-      "LARGELANGUAGE"
-    ],
-    "h": "Large Language Model. Trained on massive text datasets. GPT-4, Claude, Gemini are LLMs. Two words — Large Language (Model).",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H146",
-    "lv": 31,
-    "q": "What is the transformer architecture used for?",
-    "a": [
-      "ATTENTION"
-    ],
-    "h": "Transformers use attention mechanisms to weigh importance of different parts of input. Foundation of all modern LLMs. Introduced in 'Attention is All You Need' paper.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H147",
-    "lv": 32,
-    "q": "What is gradient descent used for in ML?",
-    "a": [
-      "OPTIMIZE"
-    ],
-    "h": "Optimization algorithm that minimizes loss by iteratively adjusting weights in direction of steepest descent. Like rolling downhill to find the valley.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H148",
-    "lv": 33,
-    "q": "What is the difference between supervised and unsupervised learning?",
-    "a": [
-      "LABELS"
-    ],
-    "h": "Supervised: training data has labels (correct answers). Model learns to predict labels. Unsupervised: no labels, model finds patterns itself. Clustering is unsupervised.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H149",
-    "lv": 34,
-    "q": "What is a convolutional neural network primarily used for?",
-    "a": [
-      "IMAGE"
-    ],
-    "h": "CNN: specialized for processing grid data like images. Convolutional layers detect features (edges, shapes). Used in image classification, facial recognition.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
-    "id": "PZ-HARD-H150",
-    "lv": 35,
-    "q": "What is the term for AI that can generate new content?",
-    "a": [
-      "GENERATIVE"
-    ],
-    "h": "Generative AI creates new content — text (ChatGPT), images (DALL-E, Midjourney), music, code. Learns the distribution of training data.",
-    "type": "AI_ML",
-    "difficulty": "HARD"
-  },
-  {
     "id": "PZ-H-001",
     "lv": 11,
     "q": "Who is known as the father of the World Wide Web?",
@@ -330,6 +55,61 @@
     "difficulty": "MEDIUM"
   },
   {
+    "id": "PZ-H-006",
+    "lv": 16,
+    "q": "What was the first high-level programming language (1954)?",
+    "a": [
+      "FORTRAN"
+    ],
+    "h": "FORmula TRANslation.",
+    "type": "TECH_HISTORY",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-H-007",
+    "lv": 17,
+    "q": "Which company developed the Java programming language?",
+    "a": [
+      "Sun"
+    ],
+    "h": "Sun Microsystems (later acquired by Oracle).",
+    "type": "TECH_HISTORY",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-H-008",
+    "lv": 18,
+    "q": "Who is credited with inventing the first mechanical computer (Difference Engine)?",
+    "a": [
+      "Babbage"
+    ],
+    "h": "Charles ?.",
+    "type": "TECH_HISTORY",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-H-009",
+    "lv": 19,
+    "q": "What does the term 'bug' come from (legend involving Grace Hopper)?",
+    "a": [
+      "moth"
+    ],
+    "h": "An actual ? was found in a relay of the Harvard Mark II.",
+    "type": "TECH_HISTORY",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-H-010",
+    "lv": 20,
+    "q": "Which protocol was the predecessor to the modern internet?",
+    "a": [
+      "ARPANET"
+    ],
+    "h": "Advanced Research Projects Agency Network.",
+    "type": "TECH_HISTORY",
+    "difficulty": "HARD"
+  },
+  {
     "id": "PZ-DS-001",
     "lv": 21,
     "q": "Which logic gate gives output 1 only when both inputs are 1?",
@@ -363,6 +143,83 @@
     "difficulty": "MEDIUM"
   },
   {
+    "id": "PZ-DS-004",
+    "lv": 24,
+    "q": "What map is used to simplify boolean expressions?",
+    "a": [
+      "Karnaugh"
+    ],
+    "h": "K-map.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-DS-005",
+    "lv": 25,
+    "q": "Which gate is known as the 'Universal Gate'?",
+    "a": [
+      "NAND"
+    ],
+    "h": "Also NOR. Can build any other gate using only these.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-DS-006",
+    "lv": 26,
+    "q": "How many bits are in a nibble?",
+    "a": [
+      "4"
+    ],
+    "h": "Half a byte.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-DS-007",
+    "lv": 27,
+    "q": "What is the hex value of binary 1111?",
+    "a": [
+      "F"
+    ],
+    "h": "Decimal 15 = Hex ?.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-DS-008",
+    "lv": 28,
+    "q": "What component is the 'brain' of a computer's CPU?",
+    "a": [
+      "ALU"
+    ],
+    "h": "Arithmetic Logic Unit.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-DS-009",
+    "lv": 29,
+    "q": "A multiplexer with 4 inputs needs how many select lines?",
+    "a": [
+      "2"
+    ],
+    "h": "2^n = 4 inputs.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-DS-010",
+    "lv": 30,
+    "q": "What is 1's complement of 1010?",
+    "a": [
+      "0101"
+    ],
+    "h": "Flip all bits.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "EASY"
+  },
+  {
     "id": "PZ-FC-001",
     "lv": 31,
     "q": "What law states: 'Anything that can go wrong will go wrong'?",
@@ -392,6 +249,83 @@
       "Conway"
     ],
     "h": "Melvin ?'s Law.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-FC-004",
+    "lv": 34,
+    "q": "What book/concept contrasts top-down vs community-based development?",
+    "a": [
+      "Cathedral"
+    ],
+    "h": "The ? and the Bazaar (Eric S. Raymond).",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-FC-005",
+    "lv": 35,
+    "q": "What test determines if a machine can exhibit intelligent behavior like a human?",
+    "a": [
+      "Turing"
+    ],
+    "h": "The ? Test.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-FC-006",
+    "lv": 36,
+    "q": "What is the 'rubber duck' method used for?",
+    "a": [
+      "debugging"
+    ],
+    "h": "Explaining code to an object to find errors.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-FC-007",
+    "lv": 37,
+    "q": "What is the principle: 'Don't Repeat Yourself'?",
+    "a": [
+      "DRY"
+    ],
+    "h": "Acronym for avoiding code duplication.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-FC-008",
+    "lv": 38,
+    "q": "What is the 'Garbage In, Garbage Out' acronym?",
+    "a": [
+      "GIGO"
+    ],
+    "h": "Input quality determines output quality.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-FC-009",
+    "lv": 39,
+    "q": "What law states that work expands to fill the time available for its completion?",
+    "a": [
+      "Parkinson"
+    ],
+    "h": "Cyril Northcote ?'s Law.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-FC-010",
+    "lv": 40,
+    "q": "What is the 'Brooks's Law' regarding late software projects?",
+    "a": [
+      "adding"
+    ],
+    "h": "? manpower to a late software project makes it later.",
     "type": "FAMOUS_CONCEPTS",
     "difficulty": "HARD"
   },
