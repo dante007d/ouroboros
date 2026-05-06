@@ -1651,9 +1651,9 @@ export const PZ=[
   {
     "id": "PZ-Q236",
     "lv": 14,
-    "q": "x=[1,2,3,4,5]; print(x[1:3]) — output?",
+    "q": "x=[1,2,3,4,5]; print(x[2]) - output?",
     "a": [
-      "[2,3]"
+      "3"
     ],
     "h": "Slice [1:3] returns elements at indices 1 and 2 (stop is exclusive). ?",
     "type": "PYTHON",
@@ -1761,9 +1761,9 @@ export const PZ=[
   {
     "id": "PZ-Q294",
     "lv": 15,
-    "q": "def f(a,b=[]): b.append(a); return b — print(f(1)) then print(f(2)) second call?",
+    "q": "def f(a,b=[]): b.append(a); return b; f(1); print(len(f(2))) - output?",
     "a": [
-      "[1,2]"
+      "2"
     ],
     "h": "Default mutable argument b=[] is created ONCE. Persists between calls. Second call: b=?",
     "type": "PYTHON",

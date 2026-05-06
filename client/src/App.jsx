@@ -155,15 +155,40 @@ const App = () => {
     const p = PM[S.id];
     if (!p || !p.a) return;
 
-    const raw = answerInput.trim().toLowerCase().replace(/[.,!?;:]+$/, "");
-    if (!raw) return;
-
-    const ok = p.a.some(a => {
-      const normalizedA = a.toString().toLowerCase().trim().replace(/[.,!?;:]+$/, "");
-      return raw === normalizedA;
-    });
+    const raw = answerInput.trim().toLowerCase();
     
-    if (ok) {
+    const normalize = (str) => {
+      if (!str) return "";
+      // Aggressive normalization: remove all non-alphanumeric characters
+      return str.toString().toLowerCase().replace(/[^a-z0-9]/g, '');
+    };
+
+    const isMatch = (userInput, targetAnswer) => {
+      const u = userInput.trim().toLowerCase();
+      const t = targetAnswer.trim().toLowerCase();
+
+      // 1. Exact match (case insensitive)
+      if (u === t) return true;
+
+      // 2. Standard punctuation-free match
+      const cleanU = u.replace(/[.,!?;:]+$/, "");
+      const cleanT = t.replace(/[.,!?;:]+$/, "");
+      if (cleanU === cleanT) return true;
+
+      // 3. Aggressive alphanumeric-only match (handles [1,2] vs 1,2 vs 1 2)
+      const aggU = normalize(u);
+      const aggT = normalize(t);
+      if (aggU === aggT && aggU.length > 0) return true;
+
+      // 4. Basic word-to-number mapping (e.g. "three" vs "3")
+      const wordMap = { "zero": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9", "ten": "10" };
+      if (wordMap[aggU] === aggT || wordMap[aggT] === aggU) return true;
+
+      return false;
+    };
+
+    if (p.a.some(ans => isMatch(raw, ans))) {
+
       setTimerActive(false);
       setFeedback({ msg: '>> TRANSMISSION ACCEPTED. THE CYCLE DEEPENS...', status: 'ok' });
       setFailCount(0);
