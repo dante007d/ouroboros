@@ -20,7 +20,8 @@ const getSessionId = () => {
 const INITIAL_STATE = {
   id: 'PZ-ENG-001', solved: 0, streak: 0, cps: 0, cpData: null, 
   maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
-  path: ['PZ-ENG-001'], waiting: false, hintUsed: false, savageMsg: ''
+  path: ['PZ-ENG-001'], waiting: false, hintUsed: false, savageMsg: '',
+  seenIds: ['PZ-ENG-001']
 };
 
 const App = () => {
@@ -51,7 +52,8 @@ const App = () => {
     const defaultS = {
       id: 'PZ-ENG-001', solved: 0, streak: 0, cps: 0, cpData: null,
       maxLv: 1, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['PZ-ENG-001'],
-      waiting: false, hintUsed: false, savageMsg: ''
+      waiting: false, hintUsed: false, savageMsg: '',
+      seenIds: ['PZ-ENG-001']
     };
 
     if (savedName) setName(savedName);
@@ -270,6 +272,7 @@ const App = () => {
             const pool = [ROOMS[roomIdx]];
             const choices = [randomPuzzle];
             setRoomChoices(choices.map((c, i) => ({ cid: c.id, room: pool[i] || ROOMS[0] })));
+            setS(prev => ({ ...prev, seenIds: [...prev.seenIds, randomPuzzle.id] }));
           } else {
             endGame(true);
           }
@@ -302,23 +305,28 @@ const App = () => {
       const getRandId = (lv, excludeId) => {
         let pool = PZ.filter(p => p.lv === lv);
         
-        // Requirement: Ensure a different question if returning to checkpoint
-        if (excludeId && pool.length > 1) {
-          pool = pool.filter(p => p.id !== excludeId);
+        // Stricter filtering based on global seen history
+        let uniquePool = pool.filter(p => !S.seenIds.includes(p.id));
+        
+        // If we ran out of unique questions for this level, reset just for this level
+        if (uniquePool.length === 0) {
+          uniquePool = pool;
         }
 
-        const aptitudePool = pool.filter(p => p.type === 'APTITUDE');
+        if (excludeId && uniquePool.length > 1) {
+          uniquePool = uniquePool.filter(p => p.id !== excludeId);
+        }
+
+        const aptitudePool = uniquePool.filter(p => p.type === 'APTITUDE');
         
         if (lv <= 10) {
-          // 100% Aptitude for first 10 levels
           if (aptitudePool.length > 0) {
             return aptitudePool[Math.floor(Math.random() * aptitudePool.length)].id;
           } else {
-            return pool[Math.floor(Math.random() * pool.length)].id;
+            return uniquePool[Math.floor(Math.random() * uniquePool.length)].id;
           }
         } else {
-          // Pure random for subsequent levels
-          return pool[Math.floor(Math.random() * pool.length)].id;
+          return uniquePool[Math.floor(Math.random() * uniquePool.length)].id;
         }
       };
 
@@ -340,7 +348,8 @@ const App = () => {
           streak: 0, 
           waiting: false, 
           hintUsed: false, 
-          savageMsg: '' 
+          savageMsg: '',
+          seenIds: [...prev.seenIds, newId]
         }));
         showToast('| CHECKPOINT RESTORED', 'cp');
       } else {
