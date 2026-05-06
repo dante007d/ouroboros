@@ -8,10 +8,19 @@ PZ.forEach(p => { PM[p.id] = p; });
 
 const socket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001');
 
+const getSessionId = () => {
+  let id = localStorage.getItem('ouro_session_id');
+  if (!id) {
+    id = crypto.randomUUID();
+    localStorage.setItem('ouro_session_id', id);
+  }
+  return id;
+};
+
 const INITIAL_STATE = {
-  id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
+  id: 'PZ-ENG-001', solved: 0, streak: 0, cps: 0, cpData: null, 
   maxLv: 1, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
-  path: ['L0-0'], waiting: false, hintUsed: false, savageMsg: ''
+  path: ['PZ-ENG-001'], waiting: false, hintUsed: false, savageMsg: ''
 };
 
 const App = () => {
@@ -38,22 +47,25 @@ const App = () => {
   useEffect(() => {
     const savedName = localStorage.getItem('ouro_name');
     const savedS = localStorage.getItem('ouro_state');
-    const defaultS = { 
-      id: 'L0-0', solved: 0, streak: 0, cps: 0, cpData: null, 
-      maxLv: 1, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['L0-0'], 
-      waiting: false, hintUsed: false, savageMsg: '' 
+    const savedScreen = localStorage.getItem('ouro_current_screen');
+    const defaultS = {
+      id: 'PZ-ENG-001', solved: 0, streak: 0, cps: 0, cpData: null,
+      maxLv: 1, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['PZ-ENG-001'],
+      waiting: false, hintUsed: false, savageMsg: ''
     };
 
     if (savedName) setName(savedName);
     if (savedS) {
       try {
         const parsed = JSON.parse(savedS);
-        // Merge parsed state with default state to handle new fields (like hintsLeft)
         setS({ ...defaultS, ...parsed, waiting: false, streak: 0 });
-      } catch (e) { 
-        console.error("Failed to load state", e); 
+      } catch (e) {
+        console.error("Failed to load state", e);
         setS(defaultS);
       }
+    }
+    if (savedScreen && (savedScreen === 'game' || savedScreen === 'admin' || savedScreen === 'end')) {
+      setScreen(savedScreen);
     }
   }, []);
 
@@ -63,14 +75,31 @@ const App = () => {
     if (S.solved > 0 || S.id !== 'L0-0') {
       localStorage.setItem('ouro_state', JSON.stringify(S));
     }
-  }, [S, name]);
+    localStorage.setItem('ouro_current_screen', screen);
+  }, [S, name, screen]);
 
   // Socket
   useEffect(() => {
     socket.on('leaderboard', (data) => {
       setLeaderboard(data);
     });
-    return () => socket.off('leaderboard');
+
+    socket.on('sync_state', (state) => {
+      setS(prev => ({
+        ...prev,
+        maxLv: state.maxLv,
+        score: state.score,
+        solved: state.solved,
+        cps: state.cps,
+        totalFails: state.totalFails,
+        hintsUsed: state.hintsUsed
+      }));
+    });
+
+    return () => {
+      socket.off('leaderboard');
+      socket.off('sync_state');
+    };
   }, []);
 
   // Boot Sequence
@@ -107,9 +136,9 @@ const App = () => {
 
   // Socket listeners for Admin actions
   useEffect(() => {
-    socket.on('force_dq', (targetId) => {
+    socket.on('force_dq', (targetSessionId) => {
       // Check if THIS client is the one being DQ'd
-      if (socket.id === targetId) {
+      if (getSessionId() === targetSessionId) {
         console.log("!! DISQUALIFIED BY ADMINISTRATOR !!");
         setScreen('end');
         setS(prev => ({ ...prev, status: 'disqualified' }));
@@ -138,7 +167,7 @@ const App = () => {
     }
     
     if (code === 'PLAYER') {
-      socket.emit('join', { name });
+      socket.emit('join', { name, sessionId: getSessionId() });
       setS(INITIAL_STATE);
       setScreen('game');
       setFeedback({ msg: '', status: '' });

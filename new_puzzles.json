@@ -1,0 +1,508 @@
+[
+  {
+    "id": "PZ-HARD-H001",
+    "lv": 11,
+    "q": "What is the time complexity of binary search on a sorted array of n elements?",
+    "a": [
+      "OLOGN"
+    ],
+    "h": "Binary search halves the remaining elements every step. If you half n repeatedly until 1, you take log₂(n) steps. Express as O(log n).",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H002",
+    "lv": 12,
+    "q": "What is the worst-case time complexity of quicksort?",
+    "a": [
+      "ON2"
+    ],
+    "h": "Worst case: pivot is always smallest or largest element (like already sorted input). Each partition does O(n) work for n levels. Result: O(n²).",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H003",
+    "lv": 13,
+    "q": "What sorting algorithm has guaranteed O(n log n) in all cases with O(n) space?",
+    "a": [
+      "MERGESORT"
+    ],
+    "h": "It divides array in half repeatedly and merges sorted halves. Never degrades to O(n²). Requires extra space equal to input size.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H004",
+    "lv": 14,
+    "q": "Which data structure does a recursive function internally use to track calls?",
+    "a": [
+      "STACK"
+    ],
+    "h": "Every function call pushes a frame, every return pops one. LIFO behavior. Stack overflow happens when recursion is too deep.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H005",
+    "lv": 15,
+    "q": "What is the amortized time complexity of push on a dynamic array?",
+    "a": [
+      "O1"
+    ],
+    "h": "Dynamic array doubles when full. Costly resizing happens rarely. Average the total work across n pushes: n operations / n pushes = O(1) each.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H006",
+    "lv": 16,
+    "q": "In a BST, which traversal visits nodes in ascending sorted order?",
+    "a": [
+      "INORDER"
+    ],
+    "h": "BST inorder traversal: Left → Root → Right. For a BST, left subtree has smaller values and right has larger, so this visits in sorted ascending order.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H007",
+    "lv": 17,
+    "q": "What is the maximum number of nodes at level L in a binary tree?",
+    "a": [
+      "2L"
+    ],
+    "h": "Level 0 (root) = 1 = 2⁰. Level 1 = 2 = 2¹. Level 2 = 4 = 2². Pattern: maximum nodes at level L = 2^L.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H008",
+    "lv": 18,
+    "q": "Which algorithm finds the shortest path in a weighted graph with no negative edges?",
+    "a": [
+      "DIJKSTRA"
+    ],
+    "h": "Named after Edsger Dijkstra. Uses a greedy approach with a priority queue. Doesn't work with negative weight edges.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H009",
+    "lv": 19,
+    "q": "What does NP-complete mean in computational complexity?",
+    "a": [
+      "HARDEST"
+    ],
+    "h": "NP-complete: hardest problems in NP. Every NP problem can be reduced to it in polynomial time. If you solve one fast, you solve all NP problems.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H010",
+    "lv": 20,
+    "q": "What data structure gives O(1) average lookup time?",
+    "a": [
+      "HASHTABLE"
+    ],
+    "h": "Uses a hash function to compute an index directly. Average case O(1). Worst case O(n) when all keys collide. Used in Python dicts.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H011",
+    "lv": 21,
+    "q": "What is a deadlock in computing?",
+    "a": [
+      "CIRCULAR"
+    ],
+    "h": "Two or more processes each waiting for a resource held by the other. Neither can proceed. Circular dependency is the key characteristic.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H012",
+    "lv": 22,
+    "q": "What is the space complexity of merge sort?",
+    "a": [
+      "ON"
+    ],
+    "h": "Merge sort needs an auxiliary array of size n to merge halves. Unlike quicksort which sorts in-place. Extra space = O(n).",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H013",
+    "lv": 23,
+    "q": "What is the name for memory that retains data without power?",
+    "a": [
+      "NONVOLATILE"
+    ],
+    "h": "ROM, SSD, HDD retain data when powered off. RAM loses data — that's volatile. Phones and drives use non-volatile storage.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H014",
+    "lv": 24,
+    "q": "What is a graph with no cycles called?",
+    "a": [
+      "ACYCLIC"
+    ],
+    "h": "A → B → C, no way back to A = acyclic. A DAG (Directed Acyclic Graph) is an acyclic directed graph. Used in dependency resolution.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H015",
+    "lv": 25,
+    "q": "What is memoization used for in programming?",
+    "a": [
+      "CACHING"
+    ],
+    "h": "Storing results of expensive function calls so you don't recompute them. If same input appears again, return cached result. Optimizes recursion.",
+    "type": "CS_FUNDAMENTALS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H141",
+    "lv": 26,
+    "q": "What does GPU stand for and why is it used for AI training?",
+    "a": [
+      "PARALLEL"
+    ],
+    "h": "Graphics Processing Unit. Originally for rendering pixels in parallel. AI training involves millions of matrix operations — same parallelism applies.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H142",
+    "lv": 27,
+    "q": "What is overfitting in machine learning?",
+    "a": [
+      "MEMORIZE"
+    ],
+    "h": "Model memorizes training data including noise. Performs excellent on training data but fails on new data. Like memorizing answers vs understanding concepts.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H143",
+    "lv": 28,
+    "q": "What is a neural network layer called that has no direct connection to input or output?",
+    "a": [
+      "HIDDEN"
+    ],
+    "h": "Neural networks: input layer → hidden layers → output layer. Intermediate layers are called hidden layers. Deep learning = many hidden layers.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H144",
+    "lv": 29,
+    "q": "What is the name for the AI technique where a model learns from human feedback?",
+    "a": [
+      "RLHF"
+    ],
+    "h": "Reinforcement Learning from Human Feedback. Used to train ChatGPT. Humans rate outputs, model learns to produce preferred responses.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H145",
+    "lv": 30,
+    "q": "What does LLM stand for?",
+    "a": [
+      "LARGELANGUAGE"
+    ],
+    "h": "Large Language Model. Trained on massive text datasets. GPT-4, Claude, Gemini are LLMs. Two words — Large Language (Model).",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H146",
+    "lv": 31,
+    "q": "What is the transformer architecture used for?",
+    "a": [
+      "ATTENTION"
+    ],
+    "h": "Transformers use attention mechanisms to weigh importance of different parts of input. Foundation of all modern LLMs. Introduced in 'Attention is All You Need' paper.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H147",
+    "lv": 32,
+    "q": "What is gradient descent used for in ML?",
+    "a": [
+      "OPTIMIZE"
+    ],
+    "h": "Optimization algorithm that minimizes loss by iteratively adjusting weights in direction of steepest descent. Like rolling downhill to find the valley.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H148",
+    "lv": 33,
+    "q": "What is the difference between supervised and unsupervised learning?",
+    "a": [
+      "LABELS"
+    ],
+    "h": "Supervised: training data has labels (correct answers). Model learns to predict labels. Unsupervised: no labels, model finds patterns itself. Clustering is unsupervised.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H149",
+    "lv": 34,
+    "q": "What is a convolutional neural network primarily used for?",
+    "a": [
+      "IMAGE"
+    ],
+    "h": "CNN: specialized for processing grid data like images. Convolutional layers detect features (edges, shapes). Used in image classification, facial recognition.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-HARD-H150",
+    "lv": 35,
+    "q": "What is the term for AI that can generate new content?",
+    "a": [
+      "GENERATIVE"
+    ],
+    "h": "Generative AI creates new content — text (ChatGPT), images (DALL-E, Midjourney), music, code. Learns the distribution of training data.",
+    "type": "AI_ML",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-H-001",
+    "lv": 11,
+    "q": "Who is known as the father of the World Wide Web?",
+    "a": [
+      "Berners"
+    ],
+    "h": "Tim ?-Lee proposed the system at CERN.",
+    "type": "TECH_HISTORY",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-H-002",
+    "lv": 12,
+    "q": "Which law states that the number of transistors on a chip doubles every two years?",
+    "a": [
+      "Moore"
+    ],
+    "h": "Gordon ?'s Law (Intel co-founder).",
+    "type": "TECH_HISTORY",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-H-003",
+    "lv": 13,
+    "q": "What was the name of the first programmable general-purpose electronic computer?",
+    "a": [
+      "ENIAC"
+    ],
+    "h": "Electronic Numerical Integrator and Computer.",
+    "type": "TECH_HISTORY",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-H-004",
+    "lv": 14,
+    "q": "In what year was the first iPhone released?",
+    "a": [
+      "2007"
+    ],
+    "h": "Jobs introduced it in January, released in June.",
+    "type": "TECH_HISTORY",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-H-005",
+    "lv": 15,
+    "q": "Who created the Linux kernel?",
+    "a": [
+      "Torvalds"
+    ],
+    "h": "Linus ?.",
+    "type": "TECH_HISTORY",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-DS-001",
+    "lv": 21,
+    "q": "Which logic gate gives output 1 only when both inputs are 1?",
+    "a": [
+      "AND"
+    ],
+    "h": "Multiplication-like logic.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-DS-002",
+    "lv": 22,
+    "q": "What is the binary equivalent of decimal 10?",
+    "a": [
+      "1010"
+    ],
+    "h": "8 + 0 + 2 + 0.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-DS-003",
+    "lv": 23,
+    "q": "A JK flip-flop in toggle mode has J and K equal to?",
+    "a": [
+      "1"
+    ],
+    "h": "J=K=1 causes the state to flip on every clock pulse.",
+    "type": "DIGITAL_SYSTEMS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-FC-001",
+    "lv": 31,
+    "q": "What law states: 'Anything that can go wrong will go wrong'?",
+    "a": [
+      "Murphy"
+    ],
+    "h": "Edward A. ?'s Law.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "EASY"
+  },
+  {
+    "id": "PZ-FC-002",
+    "lv": 32,
+    "q": "What is the cellular automaton developed by John Conway?",
+    "a": [
+      "Life"
+    ],
+    "h": "Game of ?.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "PZ-FC-003",
+    "lv": 33,
+    "q": "What law states that an organization's systems reflect its communication structure?",
+    "a": [
+      "Conway"
+    ],
+    "h": "Melvin ?'s Law.",
+    "type": "FAMOUS_CONCEPTS",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-001",
+    "lv": 1,
+    "q": "In a group of 60 people, 40 like Cricket, 30 like Football, and 20 like both. How many like neither?",
+    "a": [
+      "10"
+    ],
+    "h": "Neither = Total - (A + B - Both).",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-002",
+    "lv": 2,
+    "q": "If 2^x = 8^(y+1) and 9^y = 3^(x-9), what is the value of x?",
+    "a": [
+      "21"
+    ],
+    "h": "Solve for y in 2y = x-9 and x = 3y+3.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-003",
+    "lv": 3,
+    "q": "A clock's hour and minute hands overlap how many times in a 24-hour period?",
+    "a": [
+      "22"
+    ],
+    "h": "Hands overlap every 1h 5m 27s approx. 11 times per 12 hours.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-004",
+    "lv": 4,
+    "q": "In a Bernoulli trial with p=0.4, what is the variance of 10 independent trials?",
+    "a": [
+      "2.4"
+    ],
+    "h": "Variance = npq = 10 * 0.4 * 0.6.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-005",
+    "lv": 5,
+    "q": "What is the reflex angle between the hour and minute hands at 3:40?",
+    "a": [
+      "230"
+    ],
+    "h": "Angle = |30H - 5.5M|. Reflex = 360 - Angle.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-006",
+    "lv": 6,
+    "q": "If f(x) = x^2 + 2x, find the value of f(f(1)).",
+    "a": [
+      "15"
+    ],
+    "h": "f(1)=3, then find f(3).",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-007",
+    "lv": 7,
+    "q": "A sum of money triples in 15 years at simple interest. What is the annual rate (%)?",
+    "a": [
+      "13.33"
+    ],
+    "h": "SI = 2P = P*R*15/100.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-008",
+    "lv": 8,
+    "q": "How many ways to arrange the letters of the word 'SOCIETY'?",
+    "a": [
+      "5040"
+    ],
+    "h": "7 unique letters. Factorial of 7.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-009",
+    "lv": 9,
+    "q": "What is the sum of interior angles of a regular hexagon (degrees)?",
+    "a": [
+      "720"
+    ],
+    "h": "Sum = (n-2) * 180.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  },
+  {
+    "id": "PZ-ENG-010",
+    "lv": 10,
+    "q": "If a 3x3 matrix is singular, what is the value of its determinant?",
+    "a": [
+      "0"
+    ],
+    "h": "Singular matrices have no inverse.",
+    "type": "APTITUDE",
+    "difficulty": "HARD"
+  }
+]

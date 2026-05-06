@@ -15,35 +15,69 @@ const io = new Server(server, {
 });
 
 // Store player state.
-// Map of socket.id -> { id, name, maxLv, score, solved, cps, status }
+// Map of sessionId -> { sessionId, id, name, maxLv, score, solved, cps, status }
 const players = new Map();
+const socketToSession = new Map();
+const disconnectTimeouts = new Map();
 let totalSoulsConsumed = 4194303;
 
 io.on('connection', (socket) => {
   console.log(`[+] Client connected: ${socket.id}`);
   
-  // New player joins
+  // New player joins or reconnects
   socket.on('join', (data) => {
-    players.set(socket.id, {
-      id: socket.id,
-      name: data.name || 'UNKNOWN',
-      maxLv: 1,
-      score: 0,
-      solved: 0,
-      cps: 0,
-      fails: 0,
-      hintsUsed: 0,
-      status: 'active' // 'active', 'dead', 'won', 'disqualified'
-    });
-    totalSoulsConsumed++;
-    
+    const { name, sessionId } = data;
+    if (!sessionId) return;
+
+    // Link current socket to this session
+    socketToSession.set(socket.id, sessionId);
+
+    // Handle existing session
+    if (players.has(sessionId)) {
+      console.log(`[~] Player reconnecting: ${name} (${sessionId})`);
+      const player = players.get(sessionId);
+
+      // Cancel any pending deletion timeout
+      if (disconnectTimeouts.has(sessionId)) {
+        clearTimeout(disconnectTimeouts.get(sessionId));
+        disconnectTimeouts.delete(sessionId);
+      }
+
+      // Sync state back to client
+      socket.emit('sync_state', {
+        maxLv: player.maxLv,
+        score: player.score,
+        solved: player.solved,
+        cps: player.cps,
+        totalFails: player.fails,
+        hintsUsed: player.hintsUsed
+      });
+    } else {
+      // New player
+      console.log(`[+] New player joining: ${name} (${sessionId})`);
+      players.set(sessionId, {
+        sessionId: sessionId,
+        id: sessionId, // Use sessionId as the stable identifier
+        name: name || 'UNKNOWN',
+        maxLv: 1,
+        score: 0,
+        solved: 0,
+        cps: 0,
+        fails: 0,
+        hintsUsed: 0,
+        status: 'active' // 'active', 'dead', 'won', 'disqualified'
+      });
+      totalSoulsConsumed++;
+    }
+
     // Broadcast updated leaderboard
     broadcastLeaderboard();
   });
   
   // Player updates their progress
   socket.on('progress', (data) => {
-    const player = players.get(socket.id);
+    const sessionId = socketToSession.get(socket.id);
+    const player = players.get(sessionId);
     if (player) {
       player.maxLv = data.maxLv;
       player.score = data.score;
@@ -56,13 +90,27 @@ io.on('connection', (socket) => {
   });
   
   // Admin disqualifies a player
-  socket.on('disqualify', (targetId) => {
-    console.log(`[!] Admin action: Disqualifying ${targetId}`);
-    // Broadcast to everyone. The specific client will catch it.
-    io.emit('force_dq', targetId);
-    
+  socket.on('disqualify', (targetSessionId) => {
+    console.log(`[!] Admin action: Disqualifying ${targetSessionId}`);
+
+    // Find the current socket associated with this session
+    let targetSocketId = null;
+    for (let [sId, sessId] of socketToSession.entries()) {
+      if (sessId === targetSessionId) {
+        targetSocketId = sId;
+        break;
+      }
+    }
+
+    if (targetSocketId) {
+      io.to(targetSocketId).emit('force_dq', targetSessionId);
+    } else {
+      // Even if offline, emit to all so the client can catch it on next join
+      io.emit('force_dq', targetSessionId);
+    }
+
     // Update server state status
-    const target = players.get(targetId);
+    const target = players.get(targetSessionId);
     if (target) {
       target.status = 'disqualified';
     }
@@ -71,7 +119,8 @@ io.on('connection', (socket) => {
   
   // Player dies or severs
   socket.on('die', () => {
-    const player = players.get(socket.id);
+    const sessionId = socketToSession.get(socket.id);
+    const player = players.get(sessionId);
     if (player) {
       player.status = 'dead';
       broadcastLeaderboard();
@@ -80,7 +129,8 @@ io.on('connection', (socket) => {
 
   // Player wins
   socket.on('win', () => {
-    const player = players.get(socket.id);
+    const sessionId = socketToSession.get(socket.id);
+    const player = players.get(sessionId);
     if (player) {
       player.status = 'won';
       broadcastLeaderboard();
@@ -88,9 +138,21 @@ io.on('connection', (socket) => {
   });
   
   socket.on('disconnect', () => {
-    console.log(`[-] Client disconnected: ${socket.id}`);
-    players.delete(socket.id);
-    broadcastLeaderboard();
+    const sessionId = socketToSession.get(socket.id);
+    console.log(`[-] Client disconnected: ${socket.id} (Session: ${sessionId})`);
+
+    if (sessionId) {
+      socketToSession.delete(socket.id);
+
+      // Grace period before deleting player from leaderboard
+      const timeout = setTimeout(() => {
+        console.log(`[x] Session expired: ${sessionId}`);
+        players.delete(sessionId);
+        broadcastLeaderboard();
+      }, 30000);
+
+      disconnectTimeouts.set(sessionId, timeout);
+    }
   });
 });
 
