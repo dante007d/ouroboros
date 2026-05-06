@@ -43,6 +43,8 @@ const App = () => {
   const [hintVisible, setHintVisible] = useState(false);
   const [failAnswerOverlay, setFailAnswerOverlay] = useState(null);
   const [roomChoices, setRoomChoices] = useState([]);
+  const [globalTimeLeft, setGlobalTimeLeft] = useState(null);
+  const [gameOverData, setGameOverData] = useState(null);
 
   // Persistence: Load initial state from sessionStorage if available
   useEffect(() => {
@@ -108,9 +110,20 @@ const App = () => {
       }));
     });
 
+    socket.on('timer_update', (remaining) => {
+      setGlobalTimeLeft(remaining);
+    });
+
+    socket.on('game_over', (data) => {
+      setGameOverData(data);
+      setScreen('end');
+    });
+
     return () => {
       socket.off('leaderboard');
       socket.off('sync_state');
+      socket.off('timer_update');
+      socket.off('game_over');
     };
   }, []);
 
@@ -434,6 +447,19 @@ const App = () => {
     }
   };
 
+  const startGlobalTimer = (hours) => {
+    const seconds = hours * 3600;
+    if (window.confirm(`START GLOBAL COUNTDOWN FOR ${hours} HOUR(S)?`)) {
+      socket.emit('start_timer', seconds);
+    }
+  };
+
+  const endGameManually = () => {
+    if (window.confirm("TERMINATE THE ENTIRE CYCLE IMMEDIATELY?")) {
+      socket.emit('end_game_manually');
+    }
+  };
+
   const handleRoomSelect = (cid) => {
     setS(prev => ({ ...prev, path: [...prev.path, cid], id: cid, waiting: false, hintUsed: false }));
     setRoomChoices([]);
@@ -742,6 +768,17 @@ const App = () => {
         </div>
       )}
 
+      {globalTimeLeft !== null && globalTimeLeft > 0 && screen !== 'boot' && (
+        <div className="global-timer-wrap">
+          <div className="global-timer-label">CYCLE TERMINATION IMMINENT</div>
+          <div className="global-timer">
+            {Math.floor(globalTimeLeft / 3600).toString().padStart(2, '0')}:
+            {Math.floor((globalTimeLeft % 3600) / 60).toString().padStart(2, '0')}:
+            {(globalTimeLeft % 60).toString().padStart(2, '0')}
+          </div>
+        </div>
+      )}
+
       {screen === 'end' && (
         <div className="screen" id="endScreen">
           <pre className={`eart ${S.status === 'disqualified' ? 'lose' : (socket.connected ? 'win' : 'lose')}`}>
@@ -754,11 +791,17 @@ const App = () => {
             <div className="erow" style={{ color: 'var(--c2)', fontWeight: 'bold', textAlign: 'center', display: S.status === 'disqualified' ? 'block' : 'none', marginBottom: '10px' }}>
               !!! THE HIGH COMMAND HAS SEVERED YOUR THREAD !!!
             </div>
-            <div className="erow"><label>- AGENT ID</label><value>{name.toUpperCase()}</value></div>
-            <div className="erow"><label>- DEEPEST LEVEL</label><value>{S.maxLv}/60</value></div>
-            <div className="erow"><label>- RIDDLES SOLVED</label><value>{S.solved}</value></div>
-            <div className="erow"><label>- HINTS REMAINING</label><value>{S.hintsLeft}</value></div>
-            <div className="erow"><label>- CHECKPOINTS</label><value>{S.cps}</value></div>
+            {gameOverData && (
+              <div className="erow" style={{ color: 'var(--c1)', fontWeight: 'bold', textAlign: 'center', marginBottom: '10px' }}>
+                !!! {gameOverData.message} !!!
+              </div>
+            )}
+            <div className="erow"><label>- AGENT ID</label><value>{(gameOverData?.winner?.name || name).toUpperCase()}</value></div>
+            {gameOverData && <div className="erow" style={{borderBottom:'1px solid var(--c1)', marginBottom:'10px'}}><label style={{color:'var(--c1)'}}>- ABSOLUTE VICTOR</label><value style={{color:'var(--c1)'}}>{gameOverData.winner?.name.toUpperCase() || 'NONE'}</value></div>}
+            <div className="erow"><label>- DEEPEST LEVEL</label><value>{gameOverData ? gameOverData.winner?.maxLv : S.maxLv}/60</value></div>
+            <div className="erow"><label>- RIDDLES SOLVED</label><value>{gameOverData ? gameOverData.winner?.solved : S.solved}</value></div>
+            <div className="erow"><label>- HINTS REMAINING</label><value>{gameOverData ? gameOverData.winner?.hintsLeft : S.hintsLeft}</value></div>
+            <div className="erow"><label>- CHECKPOINTS</label><value>{gameOverData ? gameOverData.winner?.cps : S.cps}</value></div>
           </div>
           <pre className="eart">{socket.connected ? WIN_SNAKE : LOSE_SNAKE}</pre>
           <button className="btn btn-p" onClick={() => { 
@@ -797,13 +840,16 @@ const App = () => {
             />
           </div>
           <div className="dl bright">==================================================================================</div>
-          <div style={{ textAlign: 'center', marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
-            <button className="btn btn-r" onClick={() => { 
+          <div style={{ textAlign: 'center', marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+            <button className="btn btn-p" onClick={() => startGlobalTimer(1)}>START 1H TIMER</button>
+            <button className="btn btn-p" onClick={() => startGlobalTimer(2)}>START 2H TIMER</button>
+            <button className="btn btn-r" onClick={endGameManually}>END GAME NOW</button>
+            <button className="btn btn-v" onClick={() => { 
               if(window.confirm("ARE YOU ABSOLUTELY SURE? THIS WILL PURGE EVERY SOUL IN THE CYCLE.")) {
                 socket.emit('reset_leaderboard');
               }
-            }}>X PURGE ALL SOULS</button>
-            <button className="btn btn-p" onClick={() => { setScreen('start'); setAccessCode(''); }}>&lt; RETURN TO GATEWAY &lt;</button>
+            }}>RESET ALL</button>
+            <button className="btn btn-g" onClick={() => { setScreen('start'); setAccessCode(''); }}>EXIT DASHBOARD</button>
           </div>
         </div>
       )}

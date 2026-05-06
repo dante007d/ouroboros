@@ -20,6 +20,8 @@ const players = new Map();
 const socketToSession = new Map();
 const disconnectTimeouts = new Map();
 let totalSoulsConsumed = 4194303;
+let globalTimer = null; // { endTime: Date.now() + ms, duration: ms }
+let gameEnded = false;
 
 io.on('connection', (socket) => {
   console.log(`[+] Client connected: ${socket.id}`);
@@ -128,6 +130,23 @@ io.on('connection', (socket) => {
     socketToSession.clear();
     broadcastLeaderboard();
   });
+
+  // Admin starts global timer
+  socket.on('start_timer', (durationSeconds) => {
+    console.log(`[!] Admin action: Starting global timer for ${durationSeconds}s`);
+    globalTimer = {
+      endTime: Date.now() + (durationSeconds * 1000),
+      duration: durationSeconds
+    };
+    gameEnded = false;
+    io.emit('timer_started', globalTimer);
+  });
+
+  // Admin ends game manually
+  socket.on('end_game_manually', () => {
+    console.log(`[!] Admin action: Ending game manually`);
+    finishGame();
+  });
   
   // Player dies or severs
   socket.on('die', () => {
@@ -178,6 +197,35 @@ function broadcastLeaderboard() {
     totalSouls: totalSoulsConsumed
   });
   lastBroadcast = Date.now();
+}
+
+// Global timer ticker
+setInterval(() => {
+  if (globalTimer && !gameEnded) {
+    const remaining = Math.max(0, Math.floor((globalTimer.endTime - Date.now()) / 1000));
+    io.emit('timer_update', remaining);
+    
+    if (remaining <= 0) {
+      finishGame();
+    }
+  }
+}, 1000);
+
+function finishGame() {
+  if (gameEnded) return;
+  gameEnded = true;
+  globalTimer = null;
+
+  const activePlayers = Array.from(players.values());
+  activePlayers.sort((a, b) => (b.solved - a.solved) || (b.score - a.score));
+  
+  const winner = activePlayers.length > 0 ? activePlayers[0] : null;
+  console.log(`[!] Game Over. Winner: ${winner ? winner.name : 'NONE'}`);
+  
+  io.emit('game_over', { 
+    winner, 
+    message: "THE CYCLE HAS BEEN SEALED. A VICTOR HAS BEEN CHOSEN." 
+  });
 }
 
 // Throttle leaderboard broadcasts for background consistency
