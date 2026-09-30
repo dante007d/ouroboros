@@ -15,22 +15,6 @@ const INITIAL_STATE = {
   seenIds: ['PZ-INTRO-001']
 };
 
-const SNAKE_ART = `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣄⣀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⡶⢿⣟⡛⣿⢉⣿⠛⢿⣯⡈⠙⣿⣦⡀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⣠⡾⠻⣧⣬⣿⣿⣿⣿⣿⡟⠉⣠⣾⣿⠿⠿⠿⢿⣿⣦⠀⠀⠀
-⠀⠀⠀⠀⣠⣾⡋⣻⣾⣿⣿⣿⠿⠟⠛⠛⠛⠀⢻⣿⡇⢀⣴⡶⡄⠈⠛⠀⠀⠀
-⠀⠀⠀⣸⣿⣉⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠈⢿⣇⠈⢿⣤⡿⣦⠀⠀⠀⠀
-⠀⠀⢰⣿⣉⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠀⢻⣦⠾⣆⠀⠀⠀
-⠀⠀⣾⣏⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡶⢾⡀⠀⠀
-⠀⠀⣿⠉⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣧⣼⡇⠀⠀
-⠀⠀⣿⡛⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣧⣼⡇⠀⠀
-⠀⠀⠸⡿⢻⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣥⣽⠁⠀⠀
-⠀⠀⠀⢻⡟⢙⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣧⣸⡏⠀⠀⠀
-⠀⠀⠀⠀⠻⣿⡋⣻⣿⣿⣿⣦⣤⣀⣀⣀⣀⣀⣠⣴⣿⣿⢿⣥⣼⠟⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠈⠻⣯⣤⣿⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⣷⣴⡿⠋⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠾⣧⣼⣟⣉⣿⣉⣻⣧⡿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`;
-
 const SKULL = ` ___
 /o o\\
 | )o(
@@ -922,7 +906,9 @@ const App = () => {
               <div className="screen" id="startScreen">
                 <div className="sw">
                   <div className="dl poison">{rule('#')}</div>
-                  <div className="oart poison snake">{SNAKE_ART}</div>
+                  <div className="ouro-wrap">
+                    <img className="ouro-ring" src="/img/ouroboros-ring.webp" alt="The ouroboros devouring its own tail" width="900" height="900" />
+                  </div>
                   <div className="mouth">!! YOU ARE INSIDE THE MOUTH. YOU HAVE ALWAYS BEEN INSIDE. !!</div>
                   <div className="gtitle">OUROBOROS</div>
                   <div className="gsub">-- IN CAUDA VENENUM -- THE POISON IS IN THE TAIL --</div>
@@ -1199,6 +1185,8 @@ const App = () => {
 
       {failAnswerOverlay && (
         <div id="failOverlay" className="show">
+          <img className="bite-img" src="/img/ouroboros-bite.webp" alt="" aria-hidden="true" />
+          <div className="bite-flash" />
           <div className="fail-content">
             <div className="fail-label">SYSTEM FAILURE:</div>
             <div className="fail-answer">{failAnswerOverlay.toUpperCase()}</div>

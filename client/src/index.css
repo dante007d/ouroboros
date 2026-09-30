@@ -586,3 +586,27 @@ input, button, .ropt { cursor: cell; }
   #gameScreen.unstable .gi,.fail-content{animation:none !important;}
   .p-tense .chamber::after,.p-critical .chamber::after{animation:none !important;opacity:.45;}
 }
+
+/* ── THE OUROBOROS (start page) ── */
+.ouro-wrap{width:min(78vw,340px);aspect-ratio:1;margin:0 auto;position:relative;}
+.ouro-ring{width:100%;height:100%;display:block;mix-blend-mode:screen;border-radius:50%;
+  filter:drop-shadow(0 0 10px rgba(255,255,255,.25));
+  animation:ouroTurn 40s linear infinite, breathe 4s ease-in-out infinite;}
+@keyframes ouroTurn{to{transform:rotate(-360deg)}}
+
+/* ── THE BITE (failure) ── */
+#failOverlay{overflow:hidden;}
+.bite-img{position:absolute;left:50%;top:50%;width:min(160vw,1400px);max-width:none;pointer-events:none;mix-blend-mode:screen;
+  transform:translate(-50%,-50%) scale(.25);opacity:0;animation:lunge 1.1s cubic-bezier(.2,.9,.3,1.2) forwards, biteShake .08s 1s 6 alternate;}
+@keyframes lunge{0%{opacity:0;transform:translate(-50%,-50%) scale(.25) rotate(-8deg)}25%{opacity:1}
+  60%{transform:translate(-50%,-50%) scale(1.05) rotate(2deg)}72%{transform:translate(-50%,-50%) scale(1.45) rotate(0)}
+  100%{opacity:.45;transform:translate(-50%,-50%) scale(1.3)}}
+@keyframes biteShake{from{margin-left:-8px}to{margin-left:8px}}
+.bite-flash{position:absolute;inset:0;background:var(--c2);opacity:0;pointer-events:none;animation:snapFlash 1.4s ease-out forwards;}
+@keyframes snapFlash{0%,62%{opacity:0}70%{opacity:.6}100%{opacity:0}}
+#failOverlay .fail-content{position:relative;opacity:0;animation:roastIn .3s ease-out .95s forwards, shake .1s 1.25s infinite alternate;}
+@keyframes roastIn{from{opacity:0;transform:scale(1.5)}to{opacity:1;transform:scale(1)}}
+@media (prefers-reduced-motion: reduce){
+  .bite-img{opacity:.45 !important;transform:translate(-50%,-50%) scale(1.1) !important;}
+  #failOverlay .fail-content{opacity:1 !important;}
+}
