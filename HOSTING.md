@@ -60,6 +60,23 @@ Netlify is a **Serverless** platform. While it is perfect for the frontend (Clie
 
 ---
 
+## Event Day (≈1000 players)
+
+The server has been load-tested with 1000 and 2000 simulated players (steady ~120-160 MB RAM, sub-5 ms response). To keep it that way on the day:
+
+1. **Use a paid Render instance for the event** (Starter or above). The free tier sleeps after 15 minutes idle and only gets 0.1 CPU; 1000 players use about 0.07 CPU on a fast machine, which leaves no headroom on free. You can drop back to free afterwards.
+2. **Set `ADMIN_CODE`** in the Render environment. The admin code is now checked by the server, not shipped to every browser. If it is not set, the old code still works.
+3. **Wake the server 5 minutes before start**: open `https://<your-server>.onrender.com/health`. It returns player and connection counts, which is also handy to watch during the event.
+4. **Press RESET ALL** on the admin dashboard before letting players in, so test runs don't linger on the board.
+5. **Don't redeploy the server during the event.** Standings live in memory. If it does restart, players' browsers re-register their progress automatically on reconnect, but the time-based tiebreak restarts.
+6. Deploy the client and server from the same commit (they share a new message format), and have anyone who opened the site earlier refresh.
+
+Optional server environment variables: `BOARD_INTERVAL_MS` (leaderboard push interval, default 2000), `MAX_PLAYERS` (default 5000), `CLIENT_ORIGIN` (comma-separated list to restrict CORS to your Netlify domain).
+
+If the admin mistypes the code 5 times, that tab stops accepting admin logins; reload the page to try again.
+
+---
+
 ## 4. Local Testing
 To run both locally for testing:
 1. **Terminal 1 (Server):**

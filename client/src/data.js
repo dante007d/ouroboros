@@ -80,6 +80,18 @@ export const THOUGHTS=[
   'YOU WERE NOT SUPPOSED TO REACH THIS LEVEL.',
 ];
 
+// Shown in the margins of the chamber while a riddle is open.
+export const WHISPERS=[
+  'THE WALLS DO NOT STOP FOR THINKING.',
+  'THERE IS LESS ROOM THAN THERE WAS A MOMENT AGO.',
+  'THE AIR IN HERE IS RUNNING OUT.',
+  'SOMEONE BEHIND YOU JUST SOLVED THIS ONE.',
+  'YOU ARE TAKING TOO LONG.',
+  'EVERY SECOND YOU WASTE, SOMEONE CLIMBS PAST YOU.',
+  'THE CEILING IS LOWER NOW. DO NOT LOOK UP.',
+  'IT CAN HEAR YOU THINKING.',
+];
+
 export const ROOMS=[
   {ico:'X',name:'THE OSSUARY',sub:'Bones arranged as warnings'},
   {ico:'o',name:'THE LOOP CHAMBER',sub:'You have been here before'},
