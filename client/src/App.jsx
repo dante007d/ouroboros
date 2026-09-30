@@ -1,81 +1,163 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { io } from 'socket.io-client';
 import LeaderboardDashboard from './components/LeaderboardDashboard';
-import { BOOT, THOUGHTS, ROOMS, PZ, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE, SAVAGES, TIMER_INSULTS } from './data';
+import PressureLayer from './components/PressureLayer';
+import useVisualViewport from './useVisualViewport';
+import { socket, getSessionId } from './socket';
+import { BOOT, THOUGHTS, WHISPERS, ROOMS, PZ, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE, SAVAGES, TIMER_INSULTS } from './data';
 
 const PM = {};
 PZ.forEach(p => { PM[p.id] = p; });
 
-const socket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001');
-
-const getSessionId = () => {
-  let id = sessionStorage.getItem('ouro_session_id');
-  if (!id) {
-    id = crypto.randomUUID();
-    sessionStorage.setItem('ouro_session_id', id);
-  }
-  return id;
-};
-
 const INITIAL_STATE = {
-  id: 'PZ-INTRO-001', solved: 0, streak: 0, cps: 0, cpData: null, 
-  maxLv: 0, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, 
+  id: 'PZ-INTRO-001', solved: 0, streak: 0, cps: 0, cpData: null,
+  maxLv: 0, score: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0,
   path: ['PZ-INTRO-001'], waiting: false, hintUsed: false, savageMsg: '',
   seenIds: ['PZ-INTRO-001']
 };
 
+const SNAKE_ART = `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣄⣀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⡶⢿⣟⡛⣿⢉⣿⠛⢿⣯⡈⠙⣿⣦⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡾⠻⣧⣬⣿⣿⣿⣿⣿⡟⠉⣠⣾⣿⠿⠿⠿⢿⣿⣦⠀⠀⠀
+⠀⠀⠀⠀⣠⣾⡋⣻⣾⣿⣿⣿⠿⠟⠛⠛⠛⠀⢻⣿⡇⢀⣴⡶⡄⠈⠛⠀⠀⠀
+⠀⠀⠀⣸⣿⣉⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠈⢿⣇⠈⢿⣤⡿⣦⠀⠀⠀⠀
+⠀⠀⢰⣿⣉⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠀⢻⣦⠾⣆⠀⠀⠀
+⠀⠀⣾⣏⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡶⢾⡀⠀⠀
+⠀⠀⣿⠉⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣧⣼⡇⠀⠀
+⠀⠀⣿⡛⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣧⣼⡇⠀⠀
+⠀⠀⠸⡿⢻⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣥⣽⠁⠀⠀
+⠀⠀⠀⢻⡟⢙⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣧⣸⡏⠀⠀⠀
+⠀⠀⠀⠀⠻⣿⡋⣻⣿⣿⣿⣦⣤⣀⣀⣀⣀⣀⣠⣴⣿⣿⢿⣥⣼⠟⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠻⣯⣤⣿⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⣷⣴⡿⠋⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠾⣧⣼⣟⣉⣿⣉⣻⣧⡿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`;
+
+const SKULL = ` ___
+/o o\\
+| )o(
+\\___/
+ | |
+ +-+`;
+
+// Decorative rules are drawn long and clipped to whatever width the screen has.
+const rule = (ch) => ch.repeat(160);
+
+const IS_TOUCH = typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;
+
+const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+// Haptics are a bonus: Android only, and silently ignored everywhere else.
+const buzz = (pattern) => {
+  try { navigator.vibrate?.(pattern); } catch { /* unsupported */ }
+};
+
+const fmtClock = (s) =>
+  [Math.floor(s / 3600), Math.floor((s % 3600) / 60), s % 60].map(n => String(n).padStart(2, '0')).join(':');
+
+const durationFor = (p) => (p && p.difficulty === 'MEDIUM' ? 45 : 60);
+const deadlineIn = (seconds) => Date.now() + seconds * 1000;
+
+const progressOf = (s) => ({
+  maxLv: s.maxLv, score: s.score, solved: s.solved, cps: s.cps, fails: s.totalFails, hintsUsed: s.hintsUsed
+});
+
+const feedText = (f) => {
+  switch (f.t) {
+    case 'lv': return `${f.n} DESCENDED TO LV ${f.lv}`;
+    case 'fall': return `${f.n} WAS DEVOURED AT LV ${f.lv}`;
+    case 'dead': return `${f.n} SEVERED THE CYCLE`;
+    case 'won': return `${f.n} ESCAPED THE CYCLE`;
+    case 'dq': return `${f.n} WAS PURGED`;
+    default: return '';
+  }
+};
+
+// The riddle's deadline survives a refresh, so reloading can't buy more time.
+const saveDeadline = (id, at) => sessionStorage.setItem('ouro_deadline', JSON.stringify({ id, at }));
+const clearDeadline = () => sessionStorage.removeItem('ouro_deadline');
+const loadDeadline = (id) => {
+  try {
+    const d = JSON.parse(sessionStorage.getItem('ouro_deadline'));
+    return d && d.id === id ? d.at : null;
+  } catch {
+    return null;
+  }
+};
+
+// Persistence: Load initial state from sessionStorage if available
+const loadState = () => {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem('ouro_state'));
+    if (saved) return { ...INITIAL_STATE, ...saved, waiting: false, streak: 0 };
+  } catch (e) {
+    console.error('Failed to load state', e);
+  }
+  return INITIAL_STATE;
+};
+
+const loadScreen = () => {
+  const saved = sessionStorage.getItem('ouro_current_screen');
+  return ['game', 'admin', 'end'].includes(saved) ? saved : 'boot';
+};
+
 const App = () => {
-  const [screen, setScreen] = useState('boot'); // boot, start, game, end
+  useVisualViewport();
+
+  const [screen, setScreen] = useState(loadScreen); // boot, start, game, end, admin
   const [bootLines, setBootLines] = useState([]);
-  const [name, setName] = useState('');
-  const [S, setS] = useState(INITIAL_STATE);
-  
-  const [leaderboard, setLeaderboard] = useState({ players: [], totalSouls: 0 });
+  const [name, setName] = useState(() => sessionStorage.getItem('ouro_name') || '');
+  const [S, setS] = useState(loadState);
+
+  const [leaderboard, setLeaderboard] = useState({ players: [], totalSouls: 0, total: 0, online: 0 });
   const [toast, setToast] = useState(null);
   const [modal, setModal] = useState(null);
   const [cpBanner, setCpBanner] = useState(false);
   const [answerInput, setAnswerInput] = useState('');
   const [accessCode, setAccessCode] = useState('');
   const [failCount, setFailCount] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(60);
-  const [timerActive, setTimerActive] = useState(false);
   const [feedback, setFeedback] = useState({ msg: '', status: '' });
   const [hintVisible, setHintVisible] = useState(false);
   const [failAnswerOverlay, setFailAnswerOverlay] = useState(null);
   const [roomChoices, setRoomChoices] = useState([]);
-  const [globalTimeLeft, setGlobalTimeLeft] = useState(null);
   const [gameOverData, setGameOverData] = useState(null);
   const [customMinutes, setCustomMinutes] = useState(60);
 
-  // Persistence: Load initial state from sessionStorage if available
-  useEffect(() => {
-    const savedName = sessionStorage.getItem('ouro_name');
-    const savedS = sessionStorage.getItem('ouro_state');
-    const savedScreen = sessionStorage.getItem('ouro_current_screen');
-    const defaultS = {
-      id: 'PZ-INTRO-001', solved: 0, streak: 0, cps: 0, cpData: null,
-      maxLv: 0, hintsLeft: 15, hintsUsed: 0, totalFails: 0, path: ['PZ-INTRO-001'],
-      waiting: false, hintUsed: false, savageMsg: '',
-      seenIds: ['PZ-INTRO-001']
-    };
+  // Riddle timer
+  const [duration, setDuration] = useState(60);
+  const [deadline, setDeadline] = useState(null);
+  const [timeLeft, setTimeLeft] = useState(60);
+  const [timerActive, setTimerActive] = useState(false);
 
-    if (savedName) setName(savedName);
-    if (savedS) {
-      try {
-        const parsed = JSON.parse(savedS);
-        setS({ ...defaultS, ...parsed, waiting: false, streak: 0 });
-      } catch (e) {
-        console.error("Failed to load state", e);
-        setS(defaultS);
-      }
-    }
-    if (savedScreen && (savedScreen === 'game' || savedScreen === 'admin' || savedScreen === 'end')) {
-      setScreen(savedScreen);
-    }
-    if (savedName) {
-      socket.emit('join', { name: savedName, sessionId: getSessionId() });
-    }
-  }, []);
+  // Event-wide timer
+  const [globalDeadline, setGlobalDeadline] = useState(null);
+  const [globalTimeLeft, setGlobalTimeLeft] = useState(null);
+
+  // Other souls
+  const [connected, setConnected] = useState(socket.connected);
+  const [myId, setMyId] = useState(null);
+  const [rank, setRank] = useState(null);
+  const [rankFlash, setRankFlash] = useState(null);
+  const [pulse, setPulse] = useState({ total: 0, online: 0, leader: null });
+  const [feedItem, setFeedItem] = useState(null);
+  const [whisper, setWhisper] = useState(null);
+
+  const stateRef = useRef(S);
+  const screenRef = useRef(screen);
+  const nameRef = useRef(name);
+  const rankRef = useRef(null);
+  const pulseRef = useRef(pulse);
+  const lockRef = useRef(false);        // no double submits while a verdict is on screen
+  const insultedRef = useRef(false);
+  const lastLeftRef = useRef(null);
+  const tickRef = useRef(() => {});
+  const toastTimer = useRef(null);
+  const flashTimer = useRef(null);
+
+  useEffect(() => {
+    stateRef.current = S;
+    screenRef.current = screen;
+    nameRef.current = name;
+    pulseRef.current = pulse;
+  });
 
   // Persistence: Save state whenever S or name changes
   useEffect(() => {
@@ -86,47 +168,138 @@ const App = () => {
     sessionStorage.setItem('ouro_current_screen', screen);
   }, [S, name, screen]);
 
+  const showToast = (msg, type) => {
+    clearTimeout(toastTimer.current);
+    setToast({ msg, type, id: Date.now() });
+    toastTimer.current = setTimeout(() => setToast(null), 2800);
+  };
+
+  const armTimer = (id) => {
+    const d = durationFor(PM[id]);
+    const at = deadlineIn(d);
+    saveDeadline(id, at);
+    lockRef.current = false;
+    insultedRef.current = false;
+    lastLeftRef.current = null;
+    setDuration(d);
+    setDeadline(at);
+    setTimeLeft(d);
+    setTimerActive(true);
+  };
+
+  const stopTimer = () => {
+    lockRef.current = true;
+    clearDeadline();
+    setTimerActive(false);
+  };
+
+  // Resume the running riddle after a reload, on its original deadline.
+  const [restoredTimer] = useState(() => {
+    if (loadScreen() !== 'game') return null;
+    const s = loadState();
+    const at = loadDeadline(s.id) || deadlineIn(durationFor(PM[s.id]));
+    saveDeadline(s.id, at);
+    return { id: s.id, at, d: durationFor(PM[s.id]) };
+  });
+  useEffect(() => {
+    if (!restoredTimer) return;
+    // Deferred so the restore happens as a normal state update, not during mount.
+    const t = setTimeout(() => {
+      setDuration(restoredTimer.d);
+      setDeadline(restoredTimer.at);
+      setTimerActive(true);
+    }, 0);
+    return () => clearTimeout(t);
+  }, [restoredTimer]);
+
   // Socket
   useEffect(() => {
-    socket.on('connect', () => {
+    const onConnect = () => {
+      setConnected(true);
       const savedName = sessionStorage.getItem('ouro_name');
-      if (savedName) {
-        socket.emit('join', { name: savedName, sessionId: getSessionId() });
+      if (savedName && ['game', 'end'].includes(screenRef.current)) {
+        socket.emit('join', { name: savedName, sessionId: getSessionId(), progress: progressOf(stateRef.current) });
+      }
+      socket.emit('lobby', screenRef.current === 'start');
+      const adminCode = sessionStorage.getItem('ouro_admin');
+      if (adminCode && screenRef.current === 'admin') {
+        socket.emit('admin_auth', adminCode, (res) => {
+          if (!res?.ok) {
+            sessionStorage.removeItem('ouro_admin');
+            setScreen('start');
+          }
+        });
+      }
+    };
+    const onDisconnect = () => setConnected(false);
+
+    const onRank = (r) => {
+      const prev = rankRef.current;
+      rankRef.current = r;
+      setRank(r);
+      if (!prev || prev === r || screenRef.current !== 'game') return;
+      clearTimeout(flashTimer.current);
+      setRankFlash({ dir: r > prev ? 'down' : 'up', n: Math.abs(r - prev), id: Date.now() });
+      if (r > prev) buzz([30, 40, 30]);
+      flashTimer.current = setTimeout(() => setRankFlash(null), 2600);
+    };
+
+    const onPulse = (p) => {
+      setPulse({ total: p.total, online: p.online, leader: p.leader });
+      const me = nameRef.current.trim();
+      const items = (p.feed || []).filter(f => f.n !== me);
+      if (items.length) setFeedItem({ ...items[items.length - 1], id: Date.now() });
+    };
+
+    const disqualified = () => {
+      console.log("!! DISQUALIFIED BY ADMINISTRATOR !!");
+      setTimerActive(false);
+      setScreen('end');
+      setS(prev => ({ ...prev, status: 'disqualified' }));
+    };
+
+    socket.on('connect', onConnect);
+    socket.on('disconnect', onDisconnect);
+    socket.on('leaderboard', setLeaderboard);
+    socket.on('rank', onRank);
+    socket.on('pulse', onPulse);
+    socket.on('joined', ({ id, status }) => {
+      setMyId(id);
+      if (status === 'disqualified') disqualified();
+    });
+    socket.on('force_dq', disqualified);
+    socket.on('timer_sync', ({ remainingMs }) => {
+      if (remainingMs == null) {
+        setGlobalDeadline(null);
+        setGlobalTimeLeft(null);
+      } else {
+        setGlobalDeadline(Date.now() + remainingMs);
+        setGlobalTimeLeft(Math.ceil(remainingMs / 1000));
       }
     });
-
-    socket.on('leaderboard', (data) => {
-      setLeaderboard(data);
-    });
-
-    socket.on('sync_state', (state) => {
-      setS(prev => ({
-        ...prev,
-        maxLv: state.maxLv,
-        score: state.score,
-        solved: state.solved,
-        cps: state.cps,
-        totalFails: state.totalFails,
-        hintsUsed: state.hintsUsed
-      }));
-    });
-
-    socket.on('timer_update', (remaining) => {
-      setGlobalTimeLeft(remaining);
-    });
-
     socket.on('game_over', (data) => {
       setGameOverData(data);
+      if (screenRef.current === 'admin') {
+        showToast(`CYCLE SEALED. VICTOR: ${data.winner?.name || 'NONE'}`, 'cp');
+        return;
+      }
+      setTimerActive(false);
       setScreen('end');
     });
+    socket.on('server_full', () => showToast('X THE CYCLE IS FULL. TRY AGAIN SHORTLY.', 'err'));
+
+    if (socket.connected) onConnect();
 
     return () => {
-      socket.off('leaderboard');
-      socket.off('sync_state');
-      socket.off('timer_update');
-      socket.off('game_over');
+      ['connect', 'disconnect', 'leaderboard', 'rank', 'pulse', 'joined', 'force_dq', 'timer_sync', 'game_over', 'server_full']
+        .forEach(ev => socket.off(ev));
     };
   }, []);
+
+  // Only the start screen shows the public leaderboard; everyone else is spared the traffic.
+  useEffect(() => {
+    if (socket.connected) socket.emit('lobby', screen === 'start');
+  }, [screen]);
 
   // Boot Sequence
   useEffect(() => {
@@ -147,71 +320,58 @@ const App = () => {
   }, [screen]);
 
   // Sync to Server
+  const { maxLv, score, solved, cps, totalFails, hintsUsed } = S;
   useEffect(() => {
-    if (screen === 'game') {
-      socket.emit('progress', {
-        maxLv: S.maxLv,
-        score: S.score,
-        solved: S.solved,
-        cps: S.cps,
-        fails: S.totalFails,
-        hintsUsed: S.hintsUsed
-      });
+    // While offline this is skipped; the full snapshot goes out with 'join' on reconnect.
+    if (screen === 'game' && socket.connected) {
+      socket.emit('progress', { maxLv, score, solved, cps, fails: totalFails, hintsUsed });
     }
-  }, [S.maxLv, S.score, S.solved, S.cps, S.totalFails, S.hintsUsed, screen]);
-
-  // Socket listeners for Admin actions
-  useEffect(() => {
-    socket.on('force_dq', (targetSessionId) => {
-      // Check if THIS client is the one being DQ'd
-      if (getSessionId() === targetSessionId) {
-        console.log("!! DISQUALIFIED BY ADMINISTRATOR !!");
-        setScreen('end');
-        setS(prev => ({ ...prev, status: 'disqualified' }));
-      }
-    });
-    return () => {
-      socket.off('force_dq');
-    };
-  }, []);
-
-  const showToast = (msg, type) => {
-    setToast({ msg, type });
-    setTimeout(() => setToast(null), 2800);
-  };
+  }, [maxLv, score, solved, cps, totalFails, hintsUsed, screen]);
 
   const startGame = () => {
     const code = accessCode.trim().toLowerCase();
-    if (code === 'hitler') {
-      setScreen('admin');
-      return;
-    }
 
-    if (!name.trim()) {
-      showToast('X NAME REQUIRED', 'err');
-      return;
-    }
-    
     if (code === 'wire') {
-      socket.emit('join', { name, sessionId: getSessionId() });
+      if (!name.trim()) {
+        showToast('X NAME REQUIRED', 'err');
+        return;
+      }
+      socket.emit('join', { name: name.trim(), sessionId: getSessionId(), progress: progressOf(INITIAL_STATE) });
       setS(INITIAL_STATE);
+      setGameOverData(null);
       setScreen('game');
       setFeedback({ msg: '', status: '' });
       setHintVisible(false);
       setRoomChoices([]);
       setAnswerInput('');
-    } else {
-      showToast('X INVALID ACCESS CODE', 'err');
+      setFailCount(0);
+      armTimer(INITIAL_STATE.id);
+      return;
     }
+
+    if (!code) {
+      showToast('X ACCESS CODE REQUIRED', 'err');
+      return;
+    }
+
+    // Anything else may be the administrator's code; only the server knows it.
+    socket.timeout(8000).emit('admin_auth', code, (err, res) => {
+      if (!err && res?.ok) {
+        sessionStorage.setItem('ouro_admin', code);
+        setScreen('admin');
+      } else {
+        showToast(err ? 'X NO SIGNAL FROM THE CYCLE' : 'X INVALID ACCESS CODE', 'err');
+      }
+    });
   };
 
   const doSubmit = () => {
-    if (S.waiting) return;
+    if (S.waiting || lockRef.current) return;
     const p = PM[S.id];
     if (!p || !p.a) return;
 
     const raw = answerInput.trim().toLowerCase();
-    
+
     const normalize = (str) => {
       if (!str) return "";
       // Aggressive normalization: remove all non-alphanumeric characters
@@ -244,26 +404,26 @@ const App = () => {
 
     if (p.a.some(ans => isMatch(raw, ans))) {
 
-      setTimerActive(false);
+      stopTimer();
       setFeedback({ msg: '>> TRANSMISSION ACCEPTED. THE CYCLE DEEPENS...', status: 'ok' });
       setFailCount(0);
 
-      let newS = { 
-        ...S, 
-        solved: S.solved + 1, 
-        streak: S.hintUsed ? 0 : S.streak + 1, 
-        hintUsed: false 
+      let newS = {
+        ...S,
+        solved: S.solved + 1,
+        streak: S.hintUsed ? 0 : S.streak + 1,
+        hintUsed: false
       };
 
       if (p.lv > newS.maxLv) newS.maxLv = p.lv;
-      
+
       if (p.lv > 0 && p.lv % 3 === 0) {
         newS.cps += 1;
         newS.cpData = { id: S.id, solved: newS.solved, hintsLeft: newS.hintsLeft, path: [...S.path] };
         setCpBanner(true);
         setTimeout(() => setCpBanner(false), 3500);
       }
-      
+
       setS(newS);
 
       if (p.lv === 60) {
@@ -275,10 +435,10 @@ const App = () => {
             const nextLv = Math.min(...availableLevels);
             const nextPuzzles = PZ.filter(pz => pz.lv === nextLv);
             setS(prev => ({ ...prev, waiting: true }));
-            
+
             // Level-based selection logic
             const aptitudePool = nextPuzzles.filter(p => p.type === 'APTITUDE');
-            
+
             let randomPuzzle;
             if (nextLv <= 10) {
               // Enforce 100% Aptitude for the first 10 levels
@@ -308,30 +468,31 @@ const App = () => {
   };
 
   const triggerFail = (reason = 'incorrect') => {
-    setTimerActive(false);
-    const insult = SAVAGES[Math.floor(Math.random() * SAVAGES.length)];
-    
+    stopTimer();
+    buzz([120, 60, 220]);
+    const insult = pick(SAVAGES);
+
     if (reason === 'timeout') {
       setFeedback({ msg: `X TIME EXPIRED. ${insult}`, status: 'bad' });
     } else {
       setFeedback({ msg: `X INCORRECT. ${insult}`, status: 'bad' });
     }
-    
+
     setS(prev => ({ ...prev, streak: 0, savageMsg: insult, totalFails: prev.totalFails + 1 }));
     setFailAnswerOverlay(insult);
     showToast(`!! ${insult}`, 'err');
-    
+
     const nextFailCount = failCount + 1;
     setFailCount(nextFailCount);
-    
+
     setTimeout(() => {
       setFailAnswerOverlay(null);
       const getRandId = (lv, excludeId) => {
         let pool = PZ.filter(p => p.lv === lv);
-        
+
         // Stricter filtering based on global seen history
         let uniquePool = pool.filter(p => !S.seenIds.includes(p.id));
-        
+
         // If we ran out of unique questions for this level, reset just for this level
         if (uniquePool.length === 0) {
           uniquePool = pool;
@@ -342,7 +503,7 @@ const App = () => {
         }
 
         const aptitudePool = uniquePool.filter(p => p.type === 'APTITUDE');
-        
+
         if (lv <= 10) {
           if (aptitudePool.length > 0) {
             return aptitudePool[Math.floor(Math.random() * aptitudePool.length)].id;
@@ -359,27 +520,30 @@ const App = () => {
         setS({ ...INITIAL_STATE, totalFails: S.totalFails + 1 });
         setFailCount(0);
         showToast('X CONSECUTIVE FAILURE: FULL RESET', 'err');
+        armTimer(INITIAL_STATE.id);
       } else if (S.cpData) {
         // PUNISHMENT: RETURN TO LAST CHECKPOINT
         const cpPuz = PM[S.cpData.id];
         const newId = getRandId(cpPuz.lv, S.id); // Pass S.id to exclude it
-        setS(prev => ({ 
-          ...prev, 
-          id: newId, 
-          solved: prev.cpData.solved, 
-          hintsLeft: prev.cpData.hintsLeft, 
-          path: [...prev.cpData.path], 
-          streak: 0, 
-          waiting: false, 
-          hintUsed: false, 
+        setS(prev => ({
+          ...prev,
+          id: newId,
+          solved: prev.cpData.solved,
+          hintsLeft: prev.cpData.hintsLeft,
+          path: [...prev.cpData.path],
+          streak: 0,
+          waiting: false,
+          hintUsed: false,
           savageMsg: '',
           seenIds: [...prev.seenIds, newId]
         }));
         showToast('| CHECKPOINT RESTORED', 'cp');
+        armTimer(newId);
       } else {
         // PUNISHMENT: NO CHECKPOINT RESET
         setS(prev => ({ ...prev, id: 'PZ-INTRO-001', path: ['PZ-INTRO-001'], streak: 0, waiting: false, savageMsg: insult, seenIds: ['PZ-INTRO-001'] }));
         showToast('X RETURNED TO THE BEGINNING', 'err');
+        armTimer('PZ-INTRO-001');
       }
       setFeedback({ msg: '', status: '' });
       setAnswerInput('');
@@ -387,47 +551,73 @@ const App = () => {
     }, 3000);
   };
 
-  // Timer countdown
+  // One clock for both timers. The riddle timer counts down to a fixed deadline,
+  // so a locked phone or a backgrounded tab does not pause it.
   useEffect(() => {
-    let interval = null;
-    if (timerActive && timeLeft > 0) {
-      interval = setInterval(() => {
-        setTimeLeft(prev => {
-          const next = prev - 1;
-          if (next === 20) {
+    tickRef.current = () => {
+      const now = Date.now();
+      if (timerActive && deadline) {
+        const left = Math.max(0, Math.ceil((deadline - now) / 1000));
+        setTimeLeft(left);
+        if (left !== lastLeftRef.current) {
+          lastLeftRef.current = left;
+          if (left > 0 && left <= 10) buzz(left <= 5 ? [40, 90, 40] : 35);
+          if (left <= 20 && left > 0 && !insultedRef.current) {
+            insultedRef.current = true;
             const insult = TIMER_INSULTS[Math.floor(Math.random() * TIMER_INSULTS.length)];
             setS(s => ({ ...s, savageMsg: insult }));
             showToast(`!! ${insult}`, 'warn');
           }
-          return next;
-        });
-      }, 1000);
-    } else if (timeLeft === 0 && timerActive) {
-      triggerFail('timeout');
-    }
-    return () => clearInterval(interval);
-  }, [timerActive, timeLeft]);
+        }
+        if (left === 0 && !lockRef.current) triggerFail('timeout');
+      }
+      if (globalDeadline) setGlobalTimeLeft(Math.max(0, Math.ceil((globalDeadline - now) / 1000)));
+    };
+  });
 
-  // Restart timer on puzzle change
   useEffect(() => {
-    if (screen === 'game' && S.id) {
-      const p = PM[S.id];
-      // Updated Timer Logic: Medium = 45s, Hard = 60s
-      let duration = 60;
-      if (p.difficulty === 'MEDIUM') duration = 45;
-      else if (p.difficulty === 'HARD') duration = 60;
-      else duration = 60; // Default for Lore/Easy
-      
-      setTimeLeft(duration);
-      setTimerActive(true);
-    } else {
-      setTimerActive(false);
-    }
-  }, [S.id, screen]);
+    if (!(timerActive && deadline) && !globalDeadline) return;
+    const interval = setInterval(() => tickRef.current(), 250);
+    return () => clearInterval(interval);
+  }, [timerActive, deadline, globalDeadline]);
+
+  // Whispers from the walls while a riddle is open
+  useEffect(() => {
+    if (screen !== 'game') return;
+    let t;
+    const next = () => {
+      t = setTimeout(() => {
+        const { total } = pulseRef.current;
+        const r = rankRef.current;
+        const lines = [...WHISPERS, ...THOUGHTS];
+        if (total > 1) lines.push(`${total - 1} OTHER SOULS ARE BREATHING YOUR AIR.`);
+        if (r > 1) lines.push(`${r - 1} OF THEM ARE DEEPER THAN YOU.`);
+        setWhisper({ id: Date.now(), text: pick(lines), side: Math.random() < 0.5 ? 'l' : 'r', y: 10 + Math.random() * 70 });
+        next();
+      }, 7000 + Math.random() * 7000);
+    };
+    next();
+    return () => clearTimeout(t);
+  }, [screen]);
 
   const endGame = (won) => {
-    socket.emit(won ? 'win' : 'die');
+    stopTimer();
+    socket.emit(won ? 'win' : 'die', progressOf(stateRef.current));
+    setS(prev => ({ ...prev, status: won ? 'won' : 'dead' }));
     setScreen('end');
+  };
+
+  const reenter = () => {
+    socket.emit('join', { name: name.trim(), sessionId: getSessionId(), progress: progressOf(INITIAL_STATE) });
+    setS(INITIAL_STATE);
+    setGameOverData(null);
+    setScreen('game');
+    setFeedback({ msg: '', status: '' });
+    setHintVisible(false);
+    setRoomChoices([]);
+    setAnswerInput('');
+    setFailCount(0);
+    armTimer(INITIAL_STATE.id);
   };
 
   const confirmKill = () => {
@@ -462,16 +652,24 @@ const App = () => {
     }
   };
 
+  const exitAdmin = () => {
+    socket.emit('admin_leave');
+    sessionStorage.removeItem('ouro_admin');
+    setScreen('start');
+    setAccessCode('');
+  };
+
   const handleRoomSelect = (cid) => {
     setS(prev => ({ ...prev, path: [...prev.path, cid], id: cid, waiting: false, hintUsed: false }));
     setRoomChoices([]);
     setFeedback({ msg: '', status: '' });
     setAnswerInput('');
     setHintVisible(false);
+    armTimer(cid);
   };
 
   const showHint = () => {
-    if (S.hintUsed) return;
+    if (S.hintUsed || lockRef.current) return;
     if (S.hintsLeft <= 0) {
       showToast('X THE WELL OF WISDOM IS DRY. YOU ARE ON YOUR OWN.', 'err');
       return;
@@ -480,8 +678,8 @@ const App = () => {
     const insult = SAVAGES[Math.floor(Math.random() * SAVAGES.length)];
 
     setHintVisible(true);
-    setS(prev => ({ 
-      ...prev, 
+    setS(prev => ({
+      ...prev,
       hintsLeft: prev.hintsLeft - 1,
       hintsUsed: prev.hintsUsed + 1,
       streak: 0,
@@ -492,23 +690,338 @@ const App = () => {
   };
 
   const currPZ = PM[S.id];
+  const currLv = currPZ ? currPZ.lv : S.maxLv;
+  const inRiddle = screen === 'game' && roomChoices.length === 0;
+
+  // How far the walls have closed: 0 = open, 1 = shut.
+  let squeeze = 0;
+  let phase = 'calm';
+  if (screen === 'game') {
+    if (failAnswerOverlay) {
+      squeeze = 1;
+      phase = 'critical';
+    } else if (inRiddle && timerActive) {
+      const ratio = timeLeft / duration;
+      squeeze = 0.12 + 0.88 * (1 - ratio);
+      phase = timeLeft <= 10 ? 'critical' : ratio <= 0.5 ? 'tense' : 'calm';
+    } else {
+      squeeze = 0.12;
+    }
+  } else if (screen === 'start') {
+    squeeze = 0.3;
+  } else if (screen === 'end') {
+    squeeze = 0.65;
+    phase = 'tense';
+  }
+
+  // End screen verdict
+  const isDQ = S.status === 'disqualified';
+  const iAmVictor = !!(gameOverData?.winner && myId && gameOverData.winner.id === myId);
+  const won = !isDQ && (gameOverData ? iAmVictor : S.status === 'won');
+  const endTitle = isDQ ? 'X DISQUALIFIED X'
+    : gameOverData ? (iAmVictor ? 'o YOU ARE THE VICTOR o' : 'X THE CYCLE IS SEALED X')
+    : won ? 'o CYCLE BROKEN o' : 'X CONSUMED X';
+
+  const showGlobal = globalTimeLeft !== null && globalTimeLeft > 0 && screen !== 'boot';
 
   return (
     <>
       <div id="sfx"></div>
       <div id="drip"></div>
 
-      <div className="ticker top">
-        <div className="ttag poison">SYS</div>
-        <div className="tscroll">--- THE CYCLE IS FEEDING --- SIGNAL INTEGRITY: COLLAPSING --- YOU HAVE BEEN HERE BEFORE AND YOU WILL COME HERE AGAIN ---</div>
-      </div>
-      <div className="ticker bot">
-        <div className="ttag violet">oo</div>
-        <div className="tscroll">### IN CAUDA VENENUM ### THE SNAKE BITES ITSELF SO IT CANNOT FEEL THE HUNGER ###</div>
+      <div className={`shell s-${screen} p-${phase}`} style={{ '--squeeze': squeeze }}>
+        <div className="ticker top">
+          {showGlobal ? (
+            <div className={`ttag blood ${globalTimeLeft <= 300 ? 'final' : ''}`}>CYCLE ENDS {fmtClock(globalTimeLeft)}</div>
+          ) : (
+            <div className="ttag poison">SYS</div>
+          )}
+          <div className="tscroll">--- THE CYCLE IS FEEDING --- SIGNAL INTEGRITY: COLLAPSING --- YOU HAVE BEEN HERE BEFORE AND YOU WILL COME HERE AGAIN ---</div>
+        </div>
+
+        {screen === 'game' && (
+          <header className="hud">
+            <div className="hud-row">
+              <span className="h-agent">{name.toUpperCase() || 'UNKNOWN'}</span>
+              <span className="h-stat">LV <b>{currLv}</b><small>/60</small></span>
+              <span className={`h-stat h-rank ${rankFlash ? rankFlash.dir : ''}`}>#<b>{rank ?? '--'}</b><small>/{pulse.total || '--'}</small></span>
+              <span className="h-stat">HINT <b className={S.hintsLeft < 5 ? 'low' : ''}>{S.hintsLeft ?? 15}</b></span>
+              <span className="cpr" title="STREAK">
+                {[0, 1, 2].map(i => <i key={i} className={`cpd ${S.streak > i ? 'on' : ''}`} />)}
+              </span>
+            </div>
+            <div className={`clock ${timerActive ? '' : 'idle'}`}>
+              <div className="clock-bar">
+                <div className="clock-fill" style={{ transform: `scaleX(${Math.min(1, timeLeft / duration)})` }} />
+              </div>
+              <div className="clock-num" key={timeLeft}>{timeLeft}<small>s</small></div>
+            </div>
+            <div className="hud-feed">
+              {!connected ? (
+                <span className="lost">!! SIGNAL LOST -- RECONNECTING. YOUR PROGRESS IS SAFE.</span>
+              ) : rankFlash ? (
+                <span key={rankFlash.id} className={`rankmsg ${rankFlash.dir}`}>
+                  {rankFlash.dir === 'down'
+                    ? `vv ${rankFlash.n} SOUL${rankFlash.n > 1 ? 'S' : ''} JUST OVERTOOK YOU`
+                    : `^^ YOU CLAWED PAST ${rankFlash.n} SOUL${rankFlash.n > 1 ? 'S' : ''}`}
+                </span>
+              ) : feedItem ? (
+                <span key={feedItem.id} className={`feed ${feedItem.t} ${feedItem.t === 'lv' && feedItem.lv > currLv ? 'ahead' : ''}`}>
+                  &gt; {feedText(feedItem)}
+                </span>
+              ) : (
+                <span className="feed">&gt; {pulse.online > 1 ? `${pulse.online - 1} OTHER SOULS ARE IN HERE WITH YOU` : 'LISTENING FOR OTHER SOULS...'}</span>
+              )}
+              {pulse.leader && <span className="leader"><span className="lbl">DEEPEST: </span>{pulse.leader.n} LV{pulse.leader.lv}</span>}
+            </div>
+          </header>
+        )}
+
+        <div className="chamber">
+          <main className="stage">
+            {screen === 'start' && (
+              <div className="screen" id="startScreen">
+                <div className="sw">
+                  <div className="dl poison">{rule('#')}</div>
+                  <div className="oart poison snake">{SNAKE_ART}</div>
+                  <div className="mouth">!! YOU ARE INSIDE THE MOUTH. YOU HAVE ALWAYS BEEN INSIDE. !!</div>
+                  <div className="gtitle">OUROBOROS</div>
+                  <div className="gsub">-- IN CAUDA VENENUM -- THE POISON IS IN THE TAIL --</div>
+                  <div className="dl bright">{rule('=')}</div>
+
+                  <form className="entry" onSubmit={e => { e.preventDefault(); startGame(); }}>
+                    <div className="namebox">
+                      <label className="nlabel" htmlFor="agentName">!! IDENTIFY YOURSELF BEFORE YOU ARE CONSUMED !!</label>
+                      <div className="nwrap">
+                        <div className="nprompt">C:\&gt;</div>
+                        <input id="agentName" className="ninput" type="text" maxLength="20" placeholder="AGENT NAME_"
+                          autoComplete="off" autoCorrect="off" autoCapitalize="characters" spellCheck={false} enterKeyHint="next"
+                          value={name} onChange={e => setName(e.target.value)} />
+                        <div className="ncursor"></div>
+                      </div>
+                    </div>
+
+                    <div className="namebox">
+                      <label className="nlabel" htmlFor="accessCode">!! ENTER ACCESS CODE !!</label>
+                      <div className="nwrap">
+                        <div className="nprompt">A:\&gt;</div>
+                        <input id="accessCode" className="ninput" type="password" maxLength="20" placeholder="ACCESS CODE_"
+                          autoComplete="off" enterKeyHint="go"
+                          value={accessCode} onChange={e => setAccessCode(e.target.value)} />
+                        <div className="ncursor"></div>
+                      </div>
+                    </div>
+
+                    <button type="submit" className="btn btn-p enter">|-- ENTER THE CYCLE --|</button>
+                  </form>
+
+                  <div className="statusrow">
+                    <div className="oart vio skull">{SKULL}</div>
+                    <div className="sysbox vio" data-l="[ SYSTEM STATUS ]">
+                      <div className="sr">
+                        <div className="si"><div className="sd c1"></div><span style={{color:'var(--c1)'}}> CYCLE: ACTIVE</span></div>
+                        <div className="si"><div className="sd c2"></div><span style={{color:'var(--c2)'}}> FEEDING: TRUE</span></div>
+                        <div className="si"><div className="sd c3"></div><span style={{color:'var(--c3)'}}> LOOP: INFINITE</span></div>
+                        <div className="si"><div className="sd c4"></div><span style={{color:'var(--c4)'}}> EXIT: NULL</span></div>
+                        <div className="si"><div className="sd c1"></div><span style={{color:'var(--d1)'}}> SIG: </span><span id="sigV" style={{color:'var(--c1)'}}>====.. 64%</span></div>
+                      </div>
+                    </div>
+                    <div className="oart vio skull">{SKULL}</div>
+                  </div>
+
+                  <div className="banner vio">THE SNAKE DOES NOT DIE. IT DIGESTS ITSELF AND IS REBORN FROM ITS OWN HUNGER</div>
+
+                  <div className="sysbox" data-l="[ LAWS OF THE ETERNAL CYCLE ]">
+                    <div className="rp">
+                      <span className="rh">*</span><span>SOLVE A RIDDLE</span><span>-&gt; THE NEXT CHAMBER OPENS</span>
+                      <span className="rh">*</span><span>FIRST FAILURE</span><span>-&gt; RETRACE TO LAST CHECKPOINT</span>
+                      <span className="rh">*</span><span>SECOND FAILURE</span><span>-&gt; TOTAL COLLAPSE &amp; FULL RESET</span>
+                      <span className="rh">*</span><span>EVERY 3 SOLVED</span><span>-&gt; CHECKPOINT INSCRIBED IN FLESH</span>
+                      <span className="rv">*</span><span>HINT POOL</span><span>-&gt; 15 USES TOTAL. ONCE GONE, VOID.</span>
+                      <span className="rv">*</span><span>THE WALLS</span><span>-&gt; CLOSE IN WHILE YOU THINK</span>
+                      <span className="rv">*</span><span>PERSISTENCE</span><span>-&gt; THE CYCLE IS REMEMBERED ON LOAD</span>
+                    </div>
+                    <div className="rd">* THE SNAKE ALWAYS FINDS ITS WAY BACK TO ITS OWN MOUTH *</div>
+                  </div>
+
+                  <div className="dl dim">{' [oo]'.repeat(40)}</div>
+                  <div className="oart vio watching">IT HAS BEEN WATCHING SINCE YOU OPENED THIS PAGE.</div>
+                  <div className="dl bright">{rule('=')}</div>
+                </div>
+                <LeaderboardDashboard
+                  players={leaderboard.players}
+                  totalSouls={leaderboard.totalSouls}
+                  total={leaderboard.total}
+                  online={leaderboard.online}
+                  meId={myId}
+                />
+              </div>
+            )}
+
+            {screen === 'game' && (
+              <div className={`screen ${phase === 'critical' ? 'unstable' : ''}`} id="gameScreen">
+                <div className="gi">
+                  <div className="bc" id="bc">
+                    <span className="bc">ROOT</span>
+                    {S.path.length > 7 && <span className="bc">&gt; ...</span>}
+                    {S.path.slice(1).slice(-6).map((p, i, arr) => (
+                      <React.Fragment key={`${p}-${i}`}>
+                        <span className="bcsep"> &gt; </span>
+                        <span className={`bc ${i === arr.length - 1 ? 'cur' : ''}`}>LV{PM[p]?.lv}</span>
+                      </React.Fragment>
+                    ))}
+                  </div>
+
+                  {roomChoices.length === 0 ? (
+                    <div className="acard" id="pcard" key={S.id}>
+                      <div className="acard-top">+{rule('=')}</div>
+                      <div className="acard-body">
+                        <div className="chdr">
+                          <div className="clv">
+                            <span className="gtag purple">{currPZ?.difficulty || 'CORE'}</span>
+                            <span className="gtag cyan">{currPZ?.type}</span>
+                            <span className="depth">* CHAMBER DEPTH {currPZ?.lv}/60 *</span>
+                          </div>
+                          <div className="cid">SIG:{currPZ?.id}</div>
+                        </div>
+                        <div className="dl blood">{rule('-')}</div>
+                        <div className="pq">{currPZ?.q}</div>
+                        <div className={`phint ${hintVisible ? 'vis' : ''}`}>
+                          <div className="savage">SYSTEM LOG: {S.savageMsg}</div>
+                          HINT: {currPZ?.h}
+                        </div>
+                        <div className="cftr">
+                          <span className="solved">SOLVED: {S.solved} / STREAK: {S.streak}</span>
+                          <button type="button" className="hbtn" onClick={showHint}>!! REVEAL HINT [-50]</button>
+                        </div>
+                      </div>
+                      <div className="acard-bot">+{rule('=')}</div>
+                    </div>
+                  ) : (
+                    <div className="rsec" id="rsec">
+                      <div className="dl bright">{rule('=')}</div>
+                      <div className="rhdr">!! ONE NEW CHAMBER OPEN -- [PROCEED WITH CAUTION]</div>
+                      <div className="rgrid">
+                        {roomChoices.map((choice, i) => (
+                          <button type="button" key={i} className="ropt" onClick={() => handleRoomSelect(choice.cid)}>
+                            <div className="rnum">{i + 1}</div>
+                            <div style={{ flex: 1 }}>
+                              <div className="rname">{choice.room.name}</div>
+                              <div className="rsub">{choice.room.sub}</div>
+                            </div>
+                            <div className="rico">{choice.room.ico}</div>
+                          </button>
+                        ))}
+                      </div>
+                      <div className="rbreath">THE WALLS HAVE PAUSED. THEY WILL NOT WAIT LONG.</div>
+                    </div>
+                  )}
+
+                  <div className="dz">
+                    <div className="dlabel">!! SEVERING THE CYCLE WILL NOT FREE YOU !!</div>
+                    <button type="button" className="btn btn-r sever" onClick={confirmKill}>X SEVER THE CYCLE</button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {screen === 'end' && (
+              <div className="screen" id="endScreen">
+                <pre className={`eart ${won ? 'win' : 'lose'}`}>{won ? WIN_ART : LOSE_ART}</pre>
+                <div className={`etitle ${won ? 'win' : 'lose'}`}>{endTitle}</div>
+                <div className="ebox">
+                  {isDQ && (
+                    <div className="erow banner-row blood">!!! THE HIGH COMMAND HAS SEVERED YOUR THREAD !!!</div>
+                  )}
+                  {gameOverData && (
+                    <div className="erow banner-row poison">!!! {gameOverData.message} !!!</div>
+                  )}
+                  {gameOverData && (
+                    <div className="erow victor"><label>- ABSOLUTE VICTOR</label><value>{gameOverData.winner?.name?.toUpperCase() || 'NONE'}</value></div>
+                  )}
+                  {gameOverData?.winner && (
+                    <div className="erow"><label>- VICTOR'S DEPTH</label><value>{gameOverData.winner.maxLv}/60</value></div>
+                  )}
+                  <div className="erow"><label>- AGENT ID</label><value>{name.toUpperCase() || 'UNKNOWN'}</value></div>
+                  {rank && <div className="erow"><label>- FINAL STANDING</label><value>#{rank} OF {pulse.total || leaderboard.total || '?'}</value></div>}
+                  <div className="erow"><label>- DEEPEST LEVEL</label><value>{S.maxLv}/60</value></div>
+                  <div className="erow"><label>- RIDDLES SOLVED</label><value>{S.solved}</value></div>
+                  <div className="erow"><label>- HINTS REMAINING</label><value>{S.hintsLeft}</value></div>
+                  <div className="erow"><label>- CHECKPOINTS</label><value>{S.cps}</value></div>
+                </div>
+                <pre className="eart">{won ? WIN_SNAKE : LOSE_SNAKE}</pre>
+                <button type="button" className="btn btn-p" onClick={reenter}>&gt; RE-ENTER THE CYCLE &lt;</button>
+              </div>
+            )}
+
+            {screen === 'admin' && (
+              <div className="screen" id="adminScreen">
+                <div className="admin-title">ADMINISTRATOR DASHBOARD</div>
+                <div className="admin-sub">OVERSEE THE SOULS CAUGHT IN THE CYCLE</div>
+                <div className="admin-board">
+                  <LeaderboardDashboard
+                    players={leaderboard.players}
+                    totalSouls={leaderboard.totalSouls}
+                    total={leaderboard.total}
+                    online={leaderboard.online}
+                    isFullScreen={true}
+                    onDisqualify={disqualifyPlayer}
+                  />
+                </div>
+                <div className="admin-ctl">
+                  <div className="custom-timer">
+                    <span>CUSTOM (MIN):</span>
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      value={customMinutes}
+                      onChange={e => setCustomMinutes(parseInt(e.target.value) || 0)}
+                    />
+                    <button type="button" className="btn-g" onClick={() => startGlobalTimer(customMinutes, true)}>START</button>
+                  </div>
+                  <button type="button" className="btn btn-p" onClick={() => startGlobalTimer(1)}>1H</button>
+                  <button type="button" className="btn btn-p" onClick={() => startGlobalTimer(2)}>2H</button>
+                  <button type="button" className="btn btn-r" onClick={endGameManually}>TERMINATE CYCLE</button>
+                  <button type="button" className="btn btn-v" onClick={() => {
+                    if(window.confirm("ARE YOU ABSOLUTELY SURE? THIS WILL PURGE EVERY SOUL IN THE CYCLE.")) {
+                      socket.emit('reset_leaderboard');
+                    }
+                  }}>RESET ALL</button>
+                  <button type="button" className="btn btn-g" onClick={exitAdmin}>EXIT DASHBOARD</button>
+                </div>
+              </div>
+            )}
+          </main>
+
+          {screen !== 'admin' && screen !== 'boot' && <PressureLayer whisper={screen === 'game' ? whisper : null} />}
+
+          {toast && <div id="toast" key={toast.id} className={`show ${toast.type}`}>{toast.msg}</div>}
+          <div id="cpbanner" className={cpBanner ? 'show' : ''}>| CHECKPOINT {S.cps} INSCRIBED [+500] |</div>
+        </div>
+
+        {inRiddle && (
+          <form className="dock" onSubmit={e => { e.preventDefault(); doSubmit(); }}>
+            {feedback.msg && <div className={`fb ${feedback.status}`}>{feedback.msg}</div>}
+            <div className="aa">
+              <div className="ap">&gt;&gt;&gt;</div>
+              <input className={`ai ${feedback.status}`} type="text" placeholder="TRANSMIT ANSWER"
+                aria-label="Your answer"
+                autoFocus={!IS_TOUCH}
+                autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false} enterKeyHint="send"
+                value={answerInput} onChange={e => setAnswerInput(e.target.value)} />
+              <button type="submit" className="btn btn-p send" disabled={S.waiting}>SEND&gt;</button>
+            </div>
+          </form>
+        )}
+
+        <div className="ticker bot">
+          <div className="ttag violet">oo</div>
+          <div className="tscroll">### IN CAUDA VENENUM ### THE SNAKE BITES ITSELF SO IT CANNOT FEEL THE HUNGER ###</div>
+        </div>
       </div>
 
       {screen === 'boot' && (
-        <div id="boot" className={screen === 'boot' ? '' : 'fade'}>
+        <div id="boot">
           <div id="bootlines">
             {bootLines.map((b, i) => (
               b ? <div key={i} className={`bl ${b.c || 'dim'}`}>{b.t || '\u00a0'}</div> : null
@@ -517,357 +1030,6 @@ const App = () => {
           <div><span className="bcursor"></span></div>
         </div>
       )}
-
-      {(screen === 'game' || screen === 'end') && (
-        <div id="hud" style={{ display: 'block' }}>
-            <div className="hi">
-              <div className="hl" style={{ fontSize: '1.2rem' }}>
-                | AGENT: <span style={{ color: 'var(--c1)' }}>{name.toUpperCase() || 'UNKNOWN'}</span> 
-                &nbsp;&nbsp;&nbsp;
-                | DEPTH: <span style={{ color: 'var(--c5)', fontWeight: 'bold' }}>LV {currPZ ? currPZ.lv : S.maxLv}</span>/60
-              </div>
-              <div className="hr">
-                <div className={`hs ${timeLeft < 10 ? 'blood' : ''}`} style={{ border: '2px solid var(--c4)', padding: '4px 12px', fontSize: '1.3rem' }}>
-                  TIME: <b style={{ color: timeLeft < 10 ? 'var(--c2)' : 'var(--c5)', textShadow: timeLeft < 10 ? '0 0 10px var(--c2)' : 'none' }}>{timeLeft}s</b>
-                </div>
-                <div className="hs" style={{ fontSize: '1.1rem' }}>HINTS: <b style={{ color: (S.hintsLeft || 0) < 5 ? 'var(--c2)' : 'var(--c1)' }}>{S.hintsLeft ?? 15}</b></div>
-                <div className="cpr">
-                  [<div className={`cpd ${S.streak > 0 ? 'on' : ''}`}></div>
-                   <div className={`cpd ${S.streak > 1 ? 'on' : ''}`}></div>
-                   <div className={`cpd ${S.streak > 2 ? 'on' : ''}`}></div>]
-                </div>
-              </div>
-            </div>
-        </div>
-      )}
-
-      {screen === 'start' && (
-        <div className="screen" id="startScreen">
-          <div className="sw">
-            <div className="dl poison">################################################################################################</div>
-            <div className="oart poison" style={{fontSize:'13px',letterSpacing:'0.05em'}}>
-{`⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣄⣀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⡶⢿⣟⡛⣿⢉⣿⠛⢿⣯⡈⠙⣿⣦⡀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⣠⡾⠻⣧⣬⣿⣿⣿⣿⣿⡟⠉⣠⣾⣿⠿⠿⠿⢿⣿⣦⠀⠀⠀
-⠀⠀⠀⠀⣠⣾⡋⣻⣾⣿⣿⣿⠿⠟⠛⠛⠛⠀⢻⣿⡇⢀⣴⡶⡄⠈⠛⠀⠀⠀
-⠀⠀⠀⣸⣿⣉⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠈⢿⣇⠈⢿⣤⡿⣦⠀⠀⠀⠀
-⠀⠀⢰⣿⣉⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠀⢻⣦⠾⣆⠀⠀⠀
-⠀⠀⣾⣏⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡶⢾⡀⠀⠀
-⠀⠀⣿⠉⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣧⣼⡇⠀⠀
-⠀⠀⣿⡛⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣧⣼⡇⠀⠀
-⠀⠀⠸⡿⢻⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣥⣽⠁⠀⠀
-⠀⠀⠀⢻⡟⢙⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣧⣸⡏⠀⠀⠀
-⠀⠀⠀⠀⠻⣿⡋⣻⣿⣿⣿⣦⣤⣀⣀⣀⣀⣀⣠⣴⣿⣿⢿⣥⣼⠟⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠈⠻⣯⣤⣿⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⣷⣴⡿⠋⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠾⣧⣼⣟⣉⣿⣉⣻⣧⡿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`}
-            </div>
-            <div className="oart blood">
-              !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !!<br/>
-              !!            YOU ARE INSIDE THE MOUTH. YOU HAVE ALWAYS BEEN INSIDE.             !!<br/>
-              !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !! !!
-            </div>
-            <div className="gtitle">OUROBOROS</div>
-            <div className="gsub">-- IN CAUDA VENENUM -- THE POISON IS IN THE TAIL --</div>
-            <div className="dl bright">==================================================================================</div>
-            
-            <div style={{display:'flex',gap:'8px',alignItems:'stretch'}}>
-              <div className="oart vio" style={{flex:'0 0 auto',fontSize:'11px',display:'flex',alignItems:'center'}}>
-{` ___
-/o o\\
-| )o(
-\\___/
- | |
- +-+`}
-              </div>
-              <div className="sysbox vio" data-l="[ SYSTEM STATUS ]" style={{flex:1}}>
-                <div className="sr">
-                  <div className="si"><div className="sd c1"></div><span style={{color:'var(--c1)'}}> CYCLE: ACTIVE</span></div>
-                  <div className="si"><div className="sd c2"></div><span style={{color:'var(--c2)'}}> FEEDING: TRUE</span></div>
-                  <div className="si"><div className="sd c3"></div><span style={{color:'var(--c3)'}}> LOOP: INFINITE</span></div>
-                  <div className="si"><div className="sd c4"></div><span style={{color:'var(--c4)'}}> EXIT: NULL</span></div>
-                  <div className="si"><div className="sd c1"></div><span style={{color:'var(--d1)'}}> SIG: </span><span id="sigV" style={{color:'var(--c1)'}}>====.. 64%</span></div>
-                </div>
-              </div>
-              <div className="oart vio" style={{flex:'0 0 auto',fontSize:'11px',display:'flex',alignItems:'center'}}>
-{` ___
-/o o\\
-| )o(
-\\___/
- | |
- +-+`}
-              </div>
-            </div>
-
-            <div className="oart vio" style={{fontSize:'12px'}}>
-{`+--[ THE SNAKE DOES NOT DIE. IT DIGESTS ITSELF AND IS REBORN FROM ITS OWN HUNGER ]--+
-|  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
-+------------------------------------------------------------------------------------+`}
-            </div>
-
-            <div className="namebox">
-              <div className="nlabel">!! IDENTIFY YOURSELF BEFORE YOU ARE CONSUMED !!</div>
-              <div className="nwrap">
-                <div className="nprompt">C:\&gt;</div>
-                <input className="ninput" type="text" maxLength="20" placeholder="TYPE YOUR NAME_" 
-                  value={name} onChange={e => setName(e.target.value)} 
-                  onKeyDown={e => { if (e.key === 'Enter') startGame(); }} />
-                <div className="ncursor"></div>
-              </div>
-            </div>
-
-            <div className="namebox">
-              <div className="nlabel">!! ENTER AGENT NAME !!</div>
-              <div className="nwrap">
-                <div className="nprompt">A:\&gt;</div>
-                <input className="ninput" type="text" maxLength="20" placeholder="AGENT NAME_" 
-                  value={name} onChange={e => setName(e.target.value)} 
-                  onKeyDown={e => { if (e.key === 'Enter') startGame(); }} />
-                <div className="ncursor"></div>
-              </div>
-            </div>
-
-            <div className="namebox" style={{ marginTop: '10px' }}>
-              <div className="nlabel">!! ENTER ACCESS CODE !!</div>
-              <div className="nwrap">
-                <div className="nprompt">C:\&gt;</div>
-                <input className="ninput" type="password" maxLength="20" placeholder="ACCESS CODE_" 
-                  value={accessCode} onChange={e => setAccessCode(e.target.value)} 
-                  onKeyDown={e => { if (e.key === 'Enter') startGame(); }} />
-                <div className="ncursor"></div>
-              </div>
-            </div>
-
-            <div className="sysbox" data-l="[ LAWS OF THE ETERNAL CYCLE ]">
-              <div className="rp">  <span className="rh">*</span> SOLVE A RIDDLE   -&gt;   THE NEXT CHAMBER OPENS<br/>
-  <span className="rh">*</span> FIRST FAILURE    -&gt;   RETRACE TO LAST CHECKPOINT<br/>
-  <span className="rh">*</span> SECOND FAILURE   -&gt;   TOTAL COLLAPSE & FULL RESET<br/>
-  <span className="rh">*</span> EVERY 3 SOLVED    -&gt;   CHECKPOINT INSCRIBED IN FLESH<br/>
-  <span className="rv">*</span> HINT POOL        -&gt;   15 USES TOTAL. ONCE GONE, VOID.<br/>
-  <span className="rv">*</span> PERSISTENCE      -&gt;   THE CYCLE IS REMEMBERED ON LOAD<br/>
-  <span className="rd">* THE SNAKE ALWAYS FINDS ITS WAY BACK TO ITS OWN MOUTH *</span></div>
-            </div>
-
-            <div className="oart dim" style={{fontSize:'12px'}}>
-{` [oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo][oo]
-  ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||
-  oo   oo   oo   oo   oo   oo   oo   oo   oo   oo   oo   oo   oo   oo   oo   oo`}
-            </div>
-
-            <div className="oart vio" style={{fontSize:'12px',textAlign:'center'}}>
-              IT HAS BEEN WATCHING SINCE YOU OPENED THIS PAGE.
-            </div>
-
-            <div className="dl bright">==================================================================================</div>
-            
-            <div style={{ textAlign: 'center', marginTop: '20px' }}>
-              <button className="btn btn-p" onClick={startGame}>|-- ENTER THE CYCLE --|</button>
-            </div>
-          </div>
-          <LeaderboardDashboard players={leaderboard.players} totalSouls={leaderboard.totalSouls} />
-        </div>
-      )}
-
-      {screen === 'game' && (
-        <div className={`screen ${timeLeft < 10 ? 'unstable' : ''}`} id="gameScreen">
-          <div className="gi">
-            <div className="dl poison" style={{ fontSize: '12px' }}>--------------------------------------------------------------------------------------------------</div>
-            <div className="hud">
-              <div className="stat">
-                <div className="label">SOLVED</div>
-                <div className="value">{S.solved}</div>
-              </div>
-              <div className="stat">
-                <div className="label">STREAK</div>
-                <div className="value" style={{ color: S.streak > 4 ? 'var(--c1)' : 'inherit' }}>{S.streak}</div>
-              </div>
-              <div className="stat">
-                <div className="label">HINTS</div>
-                <div className="value" style={{ color: S.hintsLeft < 5 ? 'var(--c2)' : 'inherit' }}>{S.hintsLeft}</div>
-              </div>
-              <div className={`stat ${timeLeft <= 10 ? 'urgent' : timeLeft <= 20 ? 'warning' : ''}`}>
-                <div className="label">TIME</div>
-                <div className="value-wrap">
-                  <div className="value" key={timeLeft}>{timeLeft}s</div>
-                  <div className="timer-bar">
-                    <div 
-                      className="timer-progress" 
-                      style={{ width: `${(timeLeft / 60) * 100}%` }}
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bc" id="bc">
-              <span className="bc">ROOT</span>
-              {S.path.slice(1).map((p, i) => (
-                <React.Fragment key={i}>
-                  <span style={{ color: '#330011' }}> &gt; </span>
-                  <span className={`bc ${i === S.path.length - 2 ? 'cur' : ''}`}>LV{PM[p].lv}</span>
-                </React.Fragment>
-              ))}
-            </div>
-
-            {roomChoices.length === 0 ? (
-              <div className="acard" id="pcard">
-                <div className="acard-top">+========================================================================+</div>
-                <div className="acard-body">
-                  <div className="chdr">
-                    <div className="clv">
-                      <span className="gtag purple">{currPZ?.difficulty || 'CORE'}</span>
-                      <span className="gtag cyan">{currPZ?.type}</span>
-                      <span style={{ marginLeft: '10px', color: 'var(--c5)', fontWeight: 'bold' }}>* CHAMBER DEPTH {currPZ?.lv}/60 *</span>
-                    </div>
-                    <div className="cid">SIG:{currPZ?.id}</div>
-                  </div>
-                  <div className="dl blood" style={{ fontSize: '12px', marginBottom: '8px' }}>------------------------------------------------------------------------</div>
-                  <div className="pq">{currPZ?.q}</div>
-                  <div className={`phint ${hintVisible ? 'vis' : ''}`}>
-                    <div style={{ color: 'var(--c2)', fontWeight: 'bold', marginBottom: '4px', textDecoration: 'underline' }}>SYSTEM LOG: {S.savageMsg}</div>
-                    HINT: {currPZ?.h}
-                  </div>
-                  <div className="dl vio" style={{ fontSize: '12px', marginBottom: '8px' }}>------------------------------------------------------------------------</div>
-                  <div className="aa">
-                    <div className="ap">&gt;&gt;&gt;</div>
-                    <input className={`ai ${feedback.status}`} type="text" placeholder="TRANSMIT ANSWER" 
-                      value={answerInput} onChange={e => setAnswerInput(e.target.value)} 
-                      onKeyDown={e => { if (e.key === 'Enter') doSubmit(); }} />
-                    <button className="btn btn-p" onClick={doSubmit} style={{ padding: '4px 14px', fontSize: '1.1rem' }} disabled={S.waiting}>SEND&gt;</button>
-                  </div>
-                  <div className="cftr">
-                    <div className={`fb ${feedback.status}`}>{feedback.msg}</div>
-                    <button className="hbtn" onClick={showHint}>!! REVEAL HINT [-50]</button>
-                  </div>
-                </div>
-                <div className="acard-bot">+========================================================================+</div>
-              </div>
-            ) : (
-              <div className="rsec" id="rsec" style={{ display: 'flex' }}>
-                <div className="dl bright">==================================================================================</div>
-                <div className="rhdr">!! ONE NEW CHAMBER OPEN -- [PROCEED WITH CAUTION]</div>
-                <div className="rgrid">
-                  {roomChoices.map((choice, i) => (
-                    <div key={i} className="ropt" onClick={() => handleRoomSelect(choice.cid)} style={{ maxWidth: '400px', margin: '0 auto' }}>
-                      <div className="rnum">{i + 1}</div>
-                      <div style={{ flex: 1 }}>
-                        <div className="rname">{choice.room.name}</div>
-                        <div className="rsub">{choice.room.sub}</div>
-                      </div>
-                      <div className="rico">{choice.room.ico}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="dl poison" style={{ fontSize: '12px', marginTop: '20px' }}>--------------------------------------------------------------------------------------------------</div>
-            <div className="dz">
-              <div className="dlabel">!! SEVERING THE CYCLE WILL NOT FREE YOU !!</div>
-              <button className="btn btn-r" onClick={confirmKill} style={{ fontSize: '.95rem', padding: '5px 12px' }}>X SEVER THE CYCLE</button>
-            </div>
-            <div className="dl poison" style={{ fontSize: '12px' }}>--------------------------------------------------------------------------------------------------</div>
-          </div>
-        </div>
-      )}
-
-      {globalTimeLeft !== null && globalTimeLeft > 0 && screen !== 'boot' && (
-        <div className="global-timer-wrap">
-          <div className="global-timer-label">CYCLE TERMINATION IMMINENT</div>
-          <div className="global-timer">
-            {Math.floor(globalTimeLeft / 3600).toString().padStart(2, '0')}:
-            {Math.floor((globalTimeLeft % 3600) / 60).toString().padStart(2, '0')}:
-            {(globalTimeLeft % 60).toString().padStart(2, '0')}
-          </div>
-        </div>
-      )}
-
-      {screen === 'end' && (
-        <div className="screen" id="endScreen">
-          <pre className={`eart ${S.status === 'disqualified' ? 'lose' : (socket.connected ? 'win' : 'lose')}`}>
-            {S.status === 'disqualified' ? LOSE_ART : (socket.connected ? WIN_ART : LOSE_ART)}
-          </pre>
-          <div className={`etitle ${S.status === 'disqualified' ? 'lose' : (socket.connected ? 'win' : 'lose')}`}>
-            {S.status === 'disqualified' ? 'X DISQUALIFIED X' : (socket.connected ? 'o CYCLE BROKEN o' : 'X CONSUMED X')}
-          </div>
-          <div className="ebox">
-            <div className="erow" style={{ color: 'var(--c2)', fontWeight: 'bold', textAlign: 'center', display: S.status === 'disqualified' ? 'block' : 'none', marginBottom: '10px' }}>
-              !!! THE HIGH COMMAND HAS SEVERED YOUR THREAD !!!
-            </div>
-            {gameOverData && (
-              <div className="erow" style={{ color: 'var(--c1)', fontWeight: 'bold', textAlign: 'center', marginBottom: '10px' }}>
-                !!! {gameOverData.message} !!!
-              </div>
-            )}
-            <div className="erow"><label>- AGENT ID</label><value>{(gameOverData?.winner?.name || name).toUpperCase()}</value></div>
-            {gameOverData && <div className="erow" style={{borderBottom:'1px solid var(--c1)', marginBottom:'10px'}}><label style={{color:'var(--c1)'}}>- ABSOLUTE VICTOR</label><value style={{color:'var(--c1)'}}>{gameOverData.winner?.name.toUpperCase() || 'NONE'}</value></div>}
-            <div className="erow"><label>- DEEPEST LEVEL</label><value>{gameOverData ? gameOverData.winner?.maxLv : S.maxLv}/60</value></div>
-            <div className="erow"><label>- RIDDLES SOLVED</label><value>{gameOverData ? gameOverData.winner?.solved : S.solved}</value></div>
-            <div className="erow"><label>- HINTS REMAINING</label><value>{gameOverData ? gameOverData.winner?.hintsLeft : S.hintsLeft}</value></div>
-            <div className="erow"><label>- CHECKPOINTS</label><value>{gameOverData ? gameOverData.winner?.cps : S.cps}</value></div>
-          </div>
-          <pre className="eart">{socket.connected ? WIN_SNAKE : LOSE_SNAKE}</pre>
-          <button className="btn btn-p" onClick={() => { 
-            socket.emit('join', { name }); 
-            setScreen('game'); 
-            setS(INITIAL_STATE); 
-          }}>&gt; RE-ENTER THE CYCLE &lt;</button>
-        </div>
-      )}
-
-      {screen === 'admin' && (
-        <div className="screen" id="adminScreen" style={{ padding: '10px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '10px', fontSize: '1.4rem', color: 'var(--c1)', letterSpacing: '4px', fontWeight: 'bold' }}>ADMINISTRATOR DASHBOARD</div>
-          <div className="dl bright">====================================================================================================================</div>
-          <div style={{ textAlign: 'center', marginBottom: '10px', color: 'var(--c4)', fontSize: '0.9rem' }}>
-            OVERSEE THE SOULS CAUGHT IN THE CYCLE
-          </div>
-          <div style={{ 
-            backgroundColor: 'rgba(4,0,4,0.95)', 
-            padding: '15px', 
-            border: '1px solid var(--d1)', 
-            borderRadius: '4px',
-            marginBottom: '10px',
-            width: '98%',
-            maxWidth: '1400px',
-            margin: '0 auto',
-            flex: 1,
-            overflowY: 'auto',
-            boxShadow: '0 0 30px rgba(184,255,0,0.05)'
-          }}>
-            <LeaderboardDashboard 
-              players={leaderboard.players} 
-              totalSouls={leaderboard.totalSouls} 
-              isFullScreen={true} 
-              onDisqualify={disqualifyPlayer}
-            />
-          </div>
-          <div className="dl bright">==================================================================================</div>
-          <div style={{ textAlign: 'center', marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', alignItems: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--c1)', padding: '5px 15px', background: 'rgba(184,255,0,0.05)' }}>
-              <span style={{ fontSize: '0.8rem', color: 'var(--c1)' }}>CUSTOM (MIN):</span>
-              <input 
-                type="number" 
-                value={customMinutes} 
-                onChange={e => setCustomMinutes(parseInt(e.target.value) || 0)}
-                style={{ width: '60px', background: 'transparent', border: 'none', borderBottom: '1px solid var(--c1)', color: 'var(--c1)', fontFamily: 'VT323', fontSize: '1.2rem', textAlign: 'center', outline: 'none' }}
-              />
-              <button className="btn-g" style={{ fontSize: '0.9rem', border: '1px solid var(--c1)', padding: '2px 8px' }} onClick={() => startGlobalTimer(customMinutes, true)}>START</button>
-            </div>
-            <button className="btn btn-p" onClick={() => startGlobalTimer(1)}>1H</button>
-            <button className="btn btn-p" onClick={() => startGlobalTimer(2)}>2H</button>
-            <button className="btn btn-r" onClick={endGameManually}>TERMINATE CYCLE</button>
-            <button className="btn btn-v" onClick={() => { 
-              if(window.confirm("ARE YOU ABSOLUTELY SURE? THIS WILL PURGE EVERY SOUL IN THE CYCLE.")) {
-                socket.emit('reset_leaderboard');
-              }
-            }}>RESET ALL</button>
-            <button className="btn btn-g" onClick={() => { setScreen('start'); setAccessCode(''); }}>EXIT DASHBOARD</button>
-          </div>
-        </div>
-      )}
-
-      {toast && <div id="toast" className={`show ${toast.type}`}>{toast.msg}</div>}
-      <div id="cpbanner" className={cpBanner ? 'show' : ''}>| CHECKPOINT {S.cps} INSCRIBED [+500] |</div>
 
       {failAnswerOverlay && (
         <div id="failOverlay" className="show">
@@ -883,20 +1045,22 @@ const App = () => {
         <div id="modal" className="show" onClick={() => setModal(null)}>
           <div className="mbox" onClick={e => e.stopPropagation()}>
             <div className="mhdr"><span>### OUROBOROS SYSTEM ###</span><span>{modal.title}</span></div>
-            <div className="gsec" id="gsec">
-              <div className="ginfo">
-                <span className="gtag purple">{currPZ.difficulty || 'CORE'}</span>
-                <span className="gtag cyan">{currPZ.type}</span>
-                <span className="gtag gold" style={{ border: '1px solid var(--c5)', color: 'var(--c5)', fontWeight: 'bold' }}>CHAMBER LV {currPZ.lv}</span>
+            {currPZ && (
+              <div className="gsec" id="gsec">
+                <div className="ginfo">
+                  <span className="gtag purple">{currPZ.difficulty || 'CORE'}</span>
+                  <span className="gtag cyan">{currPZ.type}</span>
+                  <span className="gtag gold">CHAMBER LV {currPZ.lv}</span>
+                </div>
               </div>
-            </div>
+            )}
             <div className="mbody">
               <div className="micon">{modal.icon}</div>
               <div className="mtitle">{modal.title}</div>
               <div className="mtext">{modal.body}</div>
               <div className="mbtns">
                 {modal.btns.map((b, i) => (
-                  <button key={i} className={`btn ${b.c}`} onClick={b.fn}>{b.l}</button>
+                  <button type="button" key={i} className={`btn ${b.c}`} onClick={b.fn}>{b.l}</button>
                 ))}
               </div>
             </div>
