@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import LeaderboardDashboard from './components/LeaderboardDashboard';
 import PressureLayer from './components/PressureLayer';
-import { Ouroboros, Bite } from './components/Serpent';
 import useVisualViewport from './useVisualViewport';
 import { socket, getSessionId } from './socket';
 import { BOOT, THOUGHTS, WHISPERS, ROOMS, PZ, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE, SAVAGES, TIMER_INSULTS, CHEAT_ROASTS } from './data';
@@ -15,6 +14,22 @@ const INITIAL_STATE = {
   path: ['PZ-INTRO-001'], waiting: false, hintUsed: false, savageMsg: '',
   seenIds: ['PZ-INTRO-001']
 };
+
+const SNAKE_ART = `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣄⣀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⡶⢿⣟⡛⣿⢉⣿⠛⢿⣯⡈⠙⣿⣦⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⡾⠻⣧⣬⣿⣿⣿⣿⣿⡟⠉⣠⣾⣿⠿⠿⠿⢿⣿⣦⠀⠀⠀
+⠀⠀⠀⠀⣠⣾⡋⣻⣾⣿⣿⣿⠿⠟⠛⠛⠛⠀⢻⣿⡇⢀⣴⡶⡄⠈⠛⠀⠀⠀
+⠀⠀⠀⣸⣿⣉⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠈⢿⣇⠈⢿⣤⡿⣦⠀⠀⠀⠀
+⠀⠀⢰⣿⣉⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠀⢻⣦⠾⣆⠀⠀⠀
+⠀⠀⣾⣏⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡶⢾⡀⠀⠀
+⠀⠀⣿⠉⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣧⣼⡇⠀⠀
+⠀⠀⣿⡛⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣧⣼⡇⠀⠀
+⠀⠀⠸⡿⢻⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣥⣽⠁⠀⠀
+⠀⠀⠀⢻⡟⢙⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣧⣸⡏⠀⠀⠀
+⠀⠀⠀⠀⠻⣿⡋⣻⣿⣿⣿⣦⣤⣀⣀⣀⣀⣀⣠⣴⣿⣿⢿⣥⣼⠟⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠻⣯⣤⣿⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⣷⣴⡿⠋⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠾⣧⣼⣟⣉⣿⣉⣻⣧⡿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`;
 
 const SKULL = ` ___
 /o o\\
@@ -907,7 +922,7 @@ const App = () => {
               <div className="screen" id="startScreen">
                 <div className="sw">
                   <div className="dl poison">{rule('#')}</div>
-                  <Ouroboros />
+                  <div className="oart poison snake">{SNAKE_ART}</div>
                   <div className="mouth">!! YOU ARE INSIDE THE MOUTH. YOU HAVE ALWAYS BEEN INSIDE. !!</div>
                   <div className="gtitle">OUROBOROS</div>
                   <div className="gsub">-- IN CAUDA VENENUM -- THE POISON IS IN THE TAIL --</div>
@@ -1184,8 +1199,6 @@ const App = () => {
 
       {failAnswerOverlay && (
         <div id="failOverlay" className="show">
-          <Bite />
-          <div className="bite-flash" />
           <div className="fail-content">
             <div className="fail-label">SYSTEM FAILURE:</div>
             <div className="fail-answer">{failAnswerOverlay.toUpperCase()}</div>
