@@ -71,12 +71,17 @@ const joinPayload = (name, progress) => ({ name, sessionId: getSessionId(), year
 
 const YEARS = [[1, '1ST'], [2, '2ND'], [3, '3RD'], [4, '4TH']];
 
-// Anything that inserts this many characters in one go without the keyboard
-// composing a word (clipboard chips, drag-and-drop, "scan text") is a paste.
-const PASTE_JUMP = 4;
 // Leaving the game this long mid-riddle (app switch, Circle to Search, another window) is a strike.
 const AWAY_MS = 1500;
 const INSULT_MS = 5000;
+
+// Only a real paste gets the BOOOO. Other attempts are roasted under their own name.
+const CHEAT_TITLES = {
+  paste: 'DONT TRY TO CHEAT BOOOO',
+  copy: 'HANDS OFF THE RIDDLE',
+  left: 'CAUGHT LEAVING THE CHAMBER',
+  screenshot: 'NO SCREENSHOTS IN HERE',
+};
 
 const feedText = (f) => {
   switch (f.t) {
@@ -734,9 +739,14 @@ const App = () => {
     sessionStorage.setItem('ouro_strikes', String(strike));
     socket.emit('cheat', { kind });
     buzz([200, 80, 200, 80, 400]);
-    setAnswerInput('');
+    if (kind === 'paste') setAnswerInput('');
     clearTimeout(cheatTimer.current);
-    setCheatOverlay({ id: Date.now(), roast: pick(CHEAT_ROASTS[kind] || CHEAT_ROASTS.left), strike });
+    setCheatOverlay({
+      id: Date.now(),
+      title: CHEAT_TITLES[kind] || CHEAT_TITLES.left,
+      roast: pick(CHEAT_ROASTS[kind] || CHEAT_ROASTS.left),
+      strike
+    });
     // The riddle clock keeps running underneath: cheating costs time.
     cheatTimer.current = setTimeout(() => setCheatOverlay(null), INSULT_MS);
   };
@@ -755,6 +765,8 @@ const App = () => {
       e.preventDefault();
       if (isAnswerBox(e.target)) catchRef.current('paste');
     };
+    // Only the browser's own paste signals count. Typing, swipe typing,
+    // predictions and autocomplete never trigger these.
     const onBeforeInput = (e) => {
       if (!isAnswerBox(e.target)) return;
       const t = e.inputType || '';
@@ -815,20 +827,6 @@ const App = () => {
       window.removeEventListener('pagehide', goAway);
     };
   }, [screen]);
-
-  // Some keyboards (clipboard chips, "scan text") skip the paste event and
-  // just insert text, so also refuse any multi-character jump that isn't a
-  // word being composed by the keyboard.
-  const onAnswerChange = (e) => {
-    const next = e.target.value;
-    const ev = e.nativeEvent;
-    const composing = ev?.isComposing || ev?.inputType === 'insertCompositionText';
-    if (!composing && next.length - answerInput.length >= PASTE_JUMP) {
-      catchCheater('paste');
-      return;
-    }
-    setAnswerInput(next);
-  };
 
   const currPZ = PM[S.id];
   const currLv = currPZ ? currPZ.lv : S.maxLv;
@@ -1053,7 +1051,7 @@ const App = () => {
                               aria-label="Your answer"
                               autoFocus={!IS_TOUCH}
                               autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false} enterKeyHint="send"
-                              value={answerInput} onChange={onAnswerChange} />
+                              value={answerInput} onChange={e => setAnswerInput(e.target.value)} />
                             <button type="submit" className="btn btn-p send" disabled={S.waiting}>SEND&gt;</button>
                           </div>
                           {feedback.msg && <div className={`fb ${feedback.status}`}>{feedback.msg}</div>}
@@ -1190,7 +1188,7 @@ const App = () => {
       {cheatOverlay && (
         <div id="cheatOverlay" key={cheatOverlay.id}>
           <div className="cheat-content">
-            <div className="cheat-title">DONT TRY TO CHEAT BOOOO</div>
+            <div className="cheat-title">{cheatOverlay.title}</div>
             <div className="cheat-roast">{cheatOverlay.roast}</div>
             <div className="cheat-strike">
               STRIKE {cheatOverlay.strike} -- THE ADMIN HAS BEEN NOTIFIED. THE CLOCK DID NOT STOP.
