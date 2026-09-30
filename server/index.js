@@ -56,6 +56,12 @@ const num = (v, min, max) => {
 const cleanName = (name) =>
   String(name ?? '').replace(/[\u0000-\u001f\u007f]/g, '').trim().slice(0, 20) || 'UNKNOWN';
 
+// Year of study: 1-4 only, anything else is treated as unknown.
+const cleanYear = (y) => {
+  const n = Number(y);
+  return Number.isInteger(n) && n >= 1 && n <= 4 ? n : null;
+};
+
 const cleanSession = (id) =>
   typeof id === 'string' && /^[A-Za-z0-9-]{8,64}$/.test(id) ? id : null;
 
@@ -95,6 +101,8 @@ const full = (p) => ({
   cps: p.cps,
   fails: p.fails,
   hintsUsed: p.hintsUsed,
+  year: p.year,
+  cheats: p.cheats,
   time: rankTime(p) / 1000
 });
 
@@ -111,7 +119,7 @@ const boardPayload = (list, rows, mapper) => ({
   online: onlineCount()
 });
 
-function newPlayer(sessionId, name) {
+function newPlayer(sessionId, name, year) {
   const now = Date.now();
   let publicId;
   do { publicId = crypto.randomBytes(6).toString('hex'); } while (publicToSession.has(publicId));
@@ -119,12 +127,15 @@ function newPlayer(sessionId, name) {
     sessionId,
     publicId,
     name,
+    year,
     maxLv: 0,
     score: 0,
     solved: 0,
     cps: 0,
     fails: 0,
     hintsUsed: 0,
+    cheats: 0,
+    lastCheatFeed: 0,
     startTime: now,
     finishTime: null,
     levelUpdateTime: now,
@@ -155,6 +166,8 @@ function applyProgress(player, data, quiet) {
   player.cps = num(data.cps, 0, 1e4);
   player.fails = num(data.fails, 0, 1e6);
   player.hintsUsed = num(data.hintsUsed, 0, 1e6);
+  // Strikes only ever go up: a reload can't wash them off.
+  player.cheats = Math.max(player.cheats, num(data.cheats, 0, 1e4));
   if (player.status === 'dead') player.status = 'active'; // re-entered the cycle
 }
 
@@ -240,13 +253,14 @@ io.on('connection', (socket) => {
         socket.emit('server_full');
         return;
       }
-      player = newPlayer(sessionId, cleanName(data.name));
+      player = newPlayer(sessionId, cleanName(data.name), cleanYear(data.year));
       players.set(sessionId, player);
       publicToSession.set(player.publicId, sessionId);
       totalSoulsConsumed++;
       applyProgress(player, data.progress, true);
     } else {
       player.name = cleanName(data.name || player.name);
+      player.year = cleanYear(data.year) ?? player.year;
       applyProgress(player, data.progress, true);
     }
 
@@ -275,6 +289,22 @@ io.on('connection', (socket) => {
     const player = currentPlayer();
     if (!player) return;
     applyProgress(player, data, false);
+    markDirty();
+  });
+
+  // Caught pasting, copying the riddle or leaving the game mid-riddle
+  on('cheat', (data) => {
+    const player = currentPlayer();
+    if (!player) return;
+    player.cheats = Math.min(player.cheats + 1, 1e4);
+    const kind = typeof data?.kind === 'string' ? data.kind.slice(0, 12) : 'unknown';
+    console.log(`[!] Cheat strike ${player.cheats} for ${player.name}: ${kind}`);
+    // Shame them publicly, but not more than once every 10s each
+    const now = Date.now();
+    if (now - player.lastCheatFeed > 10000) {
+      player.lastCheatFeed = now;
+      pushFeed({ t: 'cheat', n: player.name });
+    }
     markDirty();
   });
 

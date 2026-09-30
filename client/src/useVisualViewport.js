@@ -18,7 +18,13 @@ export default function useVisualViewport() {
       tallest = Math.max(tallest, h);
       root.style.setProperty('--vvh', `${h}px`);
       root.style.setProperty('--vvt', `${vv ? vv.offsetTop : 0}px`);
-      root.classList.toggle('kb-open', h < tallest - 120);
+      const kbOpen = h < tallest - 120;
+      root.classList.toggle('kb-open', kbOpen);
+      // Keep whatever is being typed into visible above the keyboard
+      const active = document.activeElement;
+      if (kbOpen && active?.tagName === 'INPUT') {
+        requestAnimationFrame(() => active.scrollIntoView({ block: 'nearest' }));
+      }
     };
 
     update();

@@ -73,6 +73,8 @@ The server has been load-tested with 1000 and 2000 simulated players (steady ~12
 
 Optional server environment variables: `BOARD_INTERVAL_MS` (leaderboard push interval, default 2000), `MAX_PLAYERS` (default 5000), `CLIENT_ORIGIN` (comma-separated list to restrict CORS to your Netlify domain).
 
+**Cheat strikes (CHEAT column on the admin board).** A strike is added when a player pastes into the answer box (Ctrl+V, long-press Paste, drag-and-drop; normal typing, swipe typing and keyboard suggestions never count), tries to copy the riddle, or leaves the game for more than 1.5s mid-riddle, which is what Circle to Search, switching to ChatGPT/Google or another window looks like. A web page cannot block Circle to Search, screenshots or a second phone outright, so strikes are evidence for you to act on with DQ. Pulling down the notification shade also counts as leaving, so treat a single strike as a warning and a pile of them as a cheater.
+
 If the admin mistypes the code 5 times, that tab stops accepting admin logins; reload the page to try again.
 
 ---

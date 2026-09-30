@@ -177,6 +177,7 @@ input, button, .ropt { cursor: cell; }
 .feed.lv.ahead{color:var(--c2);}
 .feed.fall,.feed.dead,.feed.dq{color:var(--c4);}
 .feed.won{color:var(--c6);}
+.feed.cheat{color:var(--c2);text-shadow:0 0 6px var(--c2);}
 .rankmsg.down{color:var(--c2);text-shadow:0 0 8px var(--c2);}
 .rankmsg.up{color:var(--c1);}
 .lost{color:var(--c4);animation:blink 1s step-end infinite !important;}
@@ -285,6 +286,15 @@ input, button, .ropt { cursor: cell; }
 .sd.c3{background:var(--c3);animation-delay:.7s;}
 .sd.c4{background:var(--c4);animation-delay:.15s;}
 
+/* year of study */
+.years{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:4px;}
+.yr{display:flex;flex-direction:column;align-items:center;gap:0;padding:6px 0 4px;background:transparent;border:1px solid var(--d2);
+  color:#6a3a00;font-family:'VT323',monospace;cursor:pointer;touch-action:manipulation;}
+.yr b{font-size:1.7rem;line-height:1;font-weight:normal;}
+.yr small{font-size:11px;letter-spacing:1px;}
+.yr.on{border-color:var(--c1);color:#000;background:var(--c1);box-shadow:0 0 16px var(--d1);}
+@media (hover:hover){ .yr:not(.on):hover{border-color:var(--c2);color:var(--c2);} }
+
 /* name */
 .namebox{border:1px solid var(--c2);background:var(--sur);padding:8px 12px;box-shadow:0 0 12px var(--d2) inset;}
 .nlabel{display:block;font-size:13px;color:var(--c4);margin-bottom:4px;}
@@ -341,10 +351,9 @@ input, button, .ropt { cursor: cell; }
 .hbtn{background:none;border:1px solid var(--d3);color:#6a3a9a;font-family:'VT323',monospace;font-size:1rem;cursor:pointer;letter-spacing:1px;padding:4px 10px;touch-action:manipulation;}
 .hbtn:hover,.hbtn:active{color:var(--c3);border-color:var(--c3);text-shadow:0 0 6px var(--c3);}
 
-/* ── DOCK ── the floor, where answers go */
-.dock{flex:none;position:relative;z-index:6;background:#000;border-top:1px solid var(--c2);
-  padding:7px 10px 8px;box-shadow:0 -8px 22px rgba(255,0,51,.14);}
-.dock > *{max-width:760px;margin-left:auto;margin-right:auto;}
+/* ── ANSWER BAR ── right under the riddle */
+.answer{margin:2px 0 8px;padding:8px 10px;border:1px solid var(--c2);background:#000;
+  box-shadow:0 0 16px rgba(255,0,51,.18) inset;scroll-margin:12px;}
 .aa{display:flex;gap:8px;align-items:center;}
 .ap{color:var(--c2);font-size:1.3rem;white-space:nowrap;text-shadow:0 0 6px var(--c2);}
 .ai{flex:1;min-width:0;background:transparent;border:none;border-bottom:1px solid var(--c1);border-radius:0;outline:none;color:var(--c1);font-family:'VT323',monospace;font-size:1.45rem;padding:4px 6px;caret-color:var(--c2);}
@@ -352,9 +361,28 @@ input, button, .ropt { cursor: cell; }
 .ai.ok{border-bottom-color:var(--c1);text-shadow:0 0 8px var(--c1);}
 .ai.bad{border-bottom-color:var(--c2);color:var(--c2);animation:shake .4s;}
 .send{padding:5px 14px;font-size:1.2rem;}
-.fb{font-size:1rem;line-height:1.2;margin-bottom:5px;animation:slideIn .2s ease-out;}
+.fb{font-size:1rem;line-height:1.2;margin-top:6px;animation:slideIn .2s ease-out;}
 .fb.ok{color:var(--c1);text-shadow:0 0 6px var(--c1);}
 .fb.bad{color:var(--c2);text-shadow:0 0 8px var(--c2);}
+
+/* ── ANTI-CHEAT ── the riddle can't be selected, dragged or long-pressed */
+.s-game .stage{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;}
+.s-game .stage input{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default;}
+.acard-body{position:relative;overflow:hidden;}
+.acard-body > *{position:relative;}
+.watermark{position:absolute !important;inset:-40%;z-index:0;pointer-events:none;transform:rotate(-24deg);
+  font-size:13px;line-height:34px;letter-spacing:3px;color:rgba(255,0,51,.07);overflow:hidden;word-break:break-all;}
+.ai-note{font-size:11px;line-height:1.3;letter-spacing:1px;color:#2c1030;margin-bottom:6px;}
+/* Hidden while the player is away, so a switcher thumbnail or a late screenshot shows nothing */
+.acard-body.veiled .pq,.acard-body.veiled .phint{filter:blur(14px);opacity:.3;}
+
+#cheatOverlay{position:fixed;inset:0;z-index:9450;display:flex;align-items:center;justify-content:center;padding:20px;
+  background:radial-gradient(ellipse at center,rgba(20,0,0,.94) 30%,rgba(110,0,15,.97) 100%);}
+.cheat-content{text-align:center;max-width:620px;}
+.cheat-title{color:var(--c2);font-size:clamp(2rem,11vw,4.5rem);line-height:1.05;letter-spacing:.08em;
+  text-shadow:0 0 24px var(--c2),0 0 60px var(--d2);animation:shake .15s infinite alternate;}
+.cheat-roast{color:var(--c5);font-size:clamp(1.2rem,5vw,1.8rem);margin:16px 0 14px;letter-spacing:1px;}
+.cheat-strike{color:var(--c4);font-size:1rem;letter-spacing:2px;animation:blink 1s step-end infinite;}
 
 /* rooms */
 .rsec{display:flex;flex-direction:column;gap:8px;}
@@ -460,13 +488,20 @@ input, button, .ropt { cursor: cell; }
 .leaderboard-full .leaderboard-title{color:var(--c1);border-color:var(--c1);text-shadow:0 0 10px var(--c1);}
 .lb-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 18px;font-size:14px;color:var(--c4);letter-spacing:1px;margin-bottom:10px;}
 .lb-meta b{font-weight:normal;}
+.lb-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;}
+.lb-tools .lb-filter{flex:1;min-width:200px;margin-bottom:0;}
+.lb-years{display:flex;gap:4px;}
+.lb-years button{font-family:'VT323',monospace;font-size:1rem;padding:2px 10px;background:#000;border:1px solid var(--d1);color:#5a7a00;cursor:pointer;}
+.lb-years button.on{background:var(--c1);color:#000;border-color:var(--c1);}
+.col-num.cheater{color:#000;background:var(--c2);font-weight:bold;}
+.col-num.dim{color:#333;}
 .lb-filter{width:100%;background:#000;border:1px solid var(--d1);color:var(--c1);font-family:'VT323',monospace;font-size:1.1rem;padding:4px 8px;margin-bottom:10px;outline:none;border-radius:0;}
 .lb-filter:focus{border-color:var(--c1);}
 .lb-empty{text-align:center;padding:30px 10px;color:var(--c2);font-size:14px;letter-spacing:2px;border:1px dashed var(--d2);}
 .lb-more{text-align:center;font-size:13px;color:#5a3a7a;margin-top:8px;letter-spacing:1px;}
 .lb-scroll{overflow:auto;max-height:420px;}
 .leaderboard-full .lb-scroll{max-height:62vh;}
-.lb-table.full{min-width:760px;}
+.lb-table.full{min-width:880px;}
 
 .c1{color:var(--c1);} .c2{color:var(--c2);} .c3{color:var(--c3);} .c4{color:var(--c4);} .c5{color:var(--c5);}
 
@@ -530,12 +565,12 @@ input, button, .ropt { cursor: cell; }
   .hud-feed{font-size:17px;height:20px;line-height:20px;}
   .clock-num{font-size:32px;}
   .clock-bar{height:14px;}
-  .dock .ai{font-size:1.6rem;}
+  .answer .ai{font-size:1.6rem;}
 }
 
 /* Keyboard up: give the riddle every pixel we can */
 .kb-open .ticker.bot,.kb-open #drip{display:none;}
-.kb-open .chdr,.kb-open .acard-top,.kb-open .acard-bot,.kb-open .dl.blood,.kb-open .dz{display:none;}
+.kb-open .chdr,.kb-open .acard-top,.kb-open .acard-bot,.kb-open .dl.blood,.kb-open .dz,.kb-open .ai-note{display:none;}
 .kb-open .acard-body{border-top:1px solid var(--d2);}
 .kb-open .hud{padding-top:3px;padding-bottom:3px;gap:2px;}
 .kb-open .hud-feed{height:15px;line-height:15px;font-size:13px;}

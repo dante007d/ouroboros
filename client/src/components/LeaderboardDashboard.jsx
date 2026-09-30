@@ -4,6 +4,7 @@ const ADMIN_ROWS = 150;
 
 const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen, onDisqualify, meId }) => {
   const [filter, setFilter] = useState('');
+  const [yearFilter, setYearFilter] = useState(0); // 0 = every year
   const hasPlayers = players && players.length > 0;
 
   // Keep each soul's true rank even when the admin filters the list.
@@ -11,6 +12,7 @@ const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen
   const rows = (players || [])
     .map((p, idx) => ({ p, rank: idx + 1 }))
     .filter(({ p }) => !needle || p.name.toUpperCase().includes(needle))
+    .filter(({ p }) => !yearFilter || p.year === yearFilter)
     .slice(0, isFullScreen ? ADMIN_ROWS : 100);
 
   const getStatusLED = (p) => {
@@ -37,13 +39,22 @@ const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen
       </div>
 
       {isFullScreen && (
-        <input
-          className="lb-filter"
-          type="search"
-          placeholder="FIND A SOUL BY NAME_"
-          value={filter}
-          onChange={e => setFilter(e.target.value)}
-        />
+        <div className="lb-tools">
+          <input
+            className="lb-filter"
+            type="search"
+            placeholder="FIND A SOUL BY NAME_"
+            value={filter}
+            onChange={e => setFilter(e.target.value)}
+          />
+          <div className="lb-years" role="group" aria-label="Filter by year">
+            {[0, 1, 2, 3, 4].map(y => (
+              <button key={y} type="button" className={yearFilter === y ? 'on' : ''} onClick={() => setYearFilter(y)}>
+                {y ? `YR ${y}` : 'ALL'}
+              </button>
+            ))}
+          </div>
+        </div>
       )}
 
       {!hasPlayers && (
@@ -60,12 +71,14 @@ const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen
               <span className="col-name">AGENT IDENTITY</span>
               {isFullScreen && (
                 <>
+                  <span className="col-num">YEAR</span>
                   <span className="col-num">LVL</span>
                   <span className="col-num">SOLV</span>
                   <span className="col-time">TIME (S)</span>
                   <span className="col-num">FAIL</span>
                   <span className="col-num">HINT</span>
                   <span className="col-num">CPS</span>
+                  <span className="col-num" title="Cheat strikes: pastes, copies, leaving mid-riddle">CHEAT</span>
                   <span className="col-status">STATUS</span>
                 </>
               )}
@@ -92,12 +105,14 @@ const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen
 
                   {isFullScreen ? (
                     <>
+                      <span className="col-num c4">{p.year ?? '-'}</span>
                       <span className="col-num c5">{p.maxLv}</span>
                       <span className="col-num c1">{p.solved || 0}</span>
                       <span className="col-time c4">{Number(p.time || 0).toFixed(3)}</span>
                       <span className="col-num c2">{p.fails || 0}</span>
                       <span className="col-num c3">{p.hintsUsed || 0}</span>
                       <span className="col-num c5">{p.cps || 0}</span>
+                      <span className={`col-num ${p.cheats ? 'cheater' : 'dim'}`}>{p.cheats || 0}</span>
                       <span className={`col-status st-${p.status}`}>
                         {p.status.toUpperCase()}{p.online === false ? ' (OFF)' : ''}
                       </span>
