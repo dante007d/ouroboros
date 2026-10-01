@@ -3,6 +3,7 @@ import LeaderboardDashboard from './components/LeaderboardDashboard';
 import PressureLayer from './components/PressureLayer';
 import useVisualViewport from './useVisualViewport';
 import { socket, getSessionId } from './socket';
+import { downloadResults } from './exportResults';
 import { BOOT, THOUGHTS, WHISPERS, ROOMS, PZ, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE, SAVAGES, TIMER_INSULTS, CHEAT_ROASTS } from './data';
 
 const PM = {};
@@ -1142,6 +1143,8 @@ const App = () => {
                       socket.emit('reset_leaderboard');
                     }
                   }}>RESET ALL</button>
+                  <button type="button" className="btn btn-p" disabled={!leaderboard.players.length}
+                    onClick={() => downloadResults(leaderboard.players)}>DOWNLOAD RESULTS ({leaderboard.players.length})</button>
                   <button type="button" className="btn btn-g" onClick={exitAdmin}>EXIT DASHBOARD</button>
                 </div>
               </div>
