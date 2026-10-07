@@ -142,7 +142,7 @@ ap("Ages", "A couple averaged 23 years at marriage. 5 years later, with a 1-year
 ap("Growth", "A population grew 20% a year for 3 years to 2,48,832. Population 3 years ago:", 248832 / 1.2**3, ["149299", "207360", "99533"])
 ap("Depreciation", "A machine worth Rs 8,75,000 depreciates 12% a year. Value after 3 years (Rs):", 875000 * 0.88**3, ["560000", "589520", "666400"])
 ap("Directions", "Walk 30 m south, 40 m east, 50 m north, then 40 m west. Distance from start (m):", 20, ["0", "80", "160"])
-ap("Coding", "If A = 1, B = 2, ..., Z = 26, the letter-sum of OUROBOROS is:", letters("OUROBOROS"), None)
+ap("Coding", "If A = 1, B = 2, ..., Z = 26, the letter-sum of KLEINBOTTLE is:", letters("KLEINBOTTLE"), None)
 ap("Cubes", "A 6 cm painted cube is cut into 1 cm cubes. Cubes with exactly one painted face:", 6 * 4**2, ["64", "48", "216"])
 ap("Cubes", "An 8 cm painted cube is cut into 1 cm cubes. Cubes with exactly two painted faces:", 12 * 6, ["96", "48", "56"])
 ap("Partnership", "A invests 3 times as much as B; B's money stays twice as long. Total profit Rs 1,56,000. B's share (Rs):", 156000 * 2 / 5, ["39000", "52000", "93600"])
@@ -229,8 +229,8 @@ def finish(topic, q, ans, wrong):
     q = __import__('re').sub(r"\(([^()]+)\) \(2 d\.p\.\)", r"(\1, 2 d.p.)", q)
     return q, a, opts
 
-out = [{"id": "PZ-INTRO-001", "lv": 0, "q": "What is the name of the serpent which tries to devour itself?",
-        "options": None, "correct": "OUROBOROS", "wrong": ["BASILISK", "JORMUNGANDR", "LEVIATHAN"], "type": "LORE", "topic": "Lore"}]
+out = [{"id": "PZ-INTRO-001", "lv": 0, "q": "Which surface has no inside and no outside, and can only exist in 3D by passing through itself?",
+        "options": None, "correct": "KLEIN BOTTLE", "wrong": ["MOBIUS STRIP", "TORUS", "PENROSE STAIRS"], "type": "LORE", "topic": "Lore"}]
 bodies = []
 for t, q, a, w in M: bodies.append(("MATHS", t, *finish(t, q, a, w)))
 for t, q, a, w in A: bodies.append(("APTITUDE", t, *finish(t, q, a, w)))

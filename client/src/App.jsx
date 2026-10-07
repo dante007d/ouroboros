@@ -845,7 +845,7 @@ const App = () => {
                 <div className="sw">
                   <div className="dl poison">{rule('#')}</div>
                   <div className="ouro-wrap">
-                    <img className="ouro-ring" src="/img/ouroboros-ring.webp" alt="The ouroboros devouring its own tail" width="900" height="900" />
+                    <img className="ouro-ring" src="/img/klein-bottle.webp" alt="A Klein bottle of endless stairways" width="1000" height="831" />
                   </div>
                   <div className="mouth">!! YOU ARE INSIDE THE MOUTH. YOU HAVE ALWAYS BEEN INSIDE. !!</div>
                   <div className="gtitle">KLEIN BOTTLE</div>

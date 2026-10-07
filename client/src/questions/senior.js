@@ -4,12 +4,12 @@ export const SENIOR = [
  {
   "id": "PZ-INTRO-001",
   "lv": 0,
-  "q": "What is the name of the serpent which tries to devour itself?",
+  "q": "Which surface has no inside and no outside, and can only exist in 3D by passing through itself?",
   "options": [
-   "JORMUNGANDR",
-   "LEVIATHAN",
-   "BASILISK",
-   "OUROBOROS"
+   "TORUS",
+   "PENROSE STAIRS",
+   "MOBIUS STRIP",
+   "KLEIN BOTTLE"
   ],
   "a": 3,
   "type": "LORE",
