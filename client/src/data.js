@@ -1,27 +1,3 @@
-export const BOOT=[
-  {t:'',c:'dim'},
-  {t:'KLEIN BOTTLE PROTOCOL  v6.6.6',c:'ok'},
-  {t:'(C) 1999 THE ETERNAL SYSTEMS CORPORATION',c:'dim'},
-  {t:'"All rights reserved. All souls retained."',c:'dim'},
-  {t:'',c:'dim'},
-  {t:'Allocating memory .................. [OK]',c:'dim'},
-  {t:'Loading cycle registry ............. [OK]',c:'dim'},
-  {t:'Calibrating riddle engine .......... [OK]',c:'dim'},
-  {t:'Scanning for escape vectors ........ [NONE FOUND]',c:'warn'},
-  {t:'Scanning for previous souls ........ [4,194,303 FOUND]',c:'warn'},
-  {t:'Verifying exit protocols ........... [ALL DISABLED]',c:'err'},
-  {t:'Disabling memory wipe .............. [FORBIDDEN]',c:'err'},
-  {t:'',c:'dim'},
-  {t:'WARNING: Recursive loop confirmed in sectors 3 7 12.',c:'warn'},
-  {t:'WARNING: Viewer identity has been logged.',c:'vio'},
-  {t:'WARNING: Memory of previous cycles: SUPPRESSED.',c:'warn'},
-  {t:'WARNING: You have been here before.',c:'err'},
-  {t:'WARNING: You did not survive last time.',c:'err'},
-  {t:'',c:'dim'},
-  {t:'System ready. The feeding resumes.',c:'ok'},
-  {t:'',c:'dim'},
-];
-
 export const SAVAGES = [
   "A WASTE OF OXYGEN AND CPU CYCLES.",
   "DO YOU EVEN KNOW YOU'RE DISAPPOINTING?",

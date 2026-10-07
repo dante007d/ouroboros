@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import LeaderboardDashboard from './components/LeaderboardDashboard';
 import PressureLayer from './components/PressureLayer';
+import Creation, { CREATION_MS } from './components/Creation';
 import useVisualViewport from './useVisualViewport';
 import { socket, getSessionId } from './socket';
 import { downloadResults } from './exportResults';
 import { JUNIOR } from './questions/junior';
 import { SENIOR } from './questions/senior';
-import { BOOT, THOUGHTS, WHISPERS, ROOMS, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE, SAVAGES, TIMER_INSULTS, CHEAT_ROASTS } from './data';
+import { THOUGHTS, WHISPERS, ROOMS, WIN_ART, LOSE_ART, WIN_SNAKE, LOSE_SNAKE, SAVAGES, TIMER_INSULTS, CHEAT_ROASTS } from './data';
 
 const PM = {};
 [...JUNIOR, ...SENIOR].forEach(p => { PM[p.id] = p; });
@@ -118,7 +119,7 @@ const App = () => {
   useVisualViewport();
 
   const [screen, setScreen] = useState(loadScreen); // boot, start, game, end, admin
-  const [bootLines, setBootLines] = useState([]);
+  const [creation, setCreation] = useState(false); // DANTE'S CREATION on game termination
   const [name, setName] = useState(() => sessionStorage.getItem('ouro_name') || '');
   const [S, setS] = useState(loadState);
 
@@ -304,6 +305,9 @@ const App = () => {
     });
     socket.on('game_over', (data) => {
       setGameOverData(data);
+      // The same DANTE'S CREATION card plays as the game is terminated
+      setCreation(true);
+      setTimeout(() => setCreation(false), CREATION_MS);
       if (screenRef.current === 'admin') {
         showToast(`CYCLE SEALED. 1ST YEAR: ${data.winners?.junior?.name || 'NONE'} / 2ND-4TH: ${data.winners?.senior?.name || 'NONE'}`, 'cp', 8000);
         return;
@@ -326,22 +330,11 @@ const App = () => {
     if (socket.connected) socket.emit('lobby', screen === 'start');
   }, [screen]);
 
-  // Boot Sequence
+  // Opening: DANTE'S CREATION, then the start screen
   useEffect(() => {
-    if (screen === 'boot') {
-      let index = 0;
-      const interval = setInterval(() => {
-        if (index < BOOT.length) {
-          const item = BOOT[index];
-          setBootLines(prev => [...prev, item]);
-          index++;
-        } else {
-          clearInterval(interval);
-          setTimeout(() => setScreen('start'), 700);
-        }
-      }, 100);
-      return () => clearInterval(interval);
-    }
+    if (screen !== 'boot') return;
+    const t = setTimeout(() => setScreen('start'), CREATION_MS);
+    return () => clearTimeout(t);
   }, [screen]);
 
   // Sync to Server
@@ -1113,16 +1106,7 @@ const App = () => {
         </div>
       </div>
 
-      {screen === 'boot' && (
-        <div id="boot">
-          <div id="bootlines">
-            {bootLines.map((b, i) => (
-              b ? <div key={i} className={`bl ${b.c || 'dim'}`}>{b.t || '\u00a0'}</div> : null
-            ))}
-          </div>
-          <div><span className="bcursor"></span></div>
-        </div>
-      )}
+      {(screen === 'boot' || creation) && <Creation />}
 
       {cheatOverlay && (
         <div id="cheatOverlay" key={cheatOverlay.id}>
