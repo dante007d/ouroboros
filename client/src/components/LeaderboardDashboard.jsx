@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const ADMIN_ROWS = 150;
 
-const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen, onDisqualify, meId }) => {
+const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen, onDisqualify, meId, title }) => {
   const [filter, setFilter] = useState('');
   const [yearFilter, setYearFilter] = useState(0); // 0 = every year
   const hasPlayers = players && players.length > 0;
@@ -29,7 +29,7 @@ const LeaderboardDashboard = ({ players, totalSouls, total, online, isFullScreen
       <div className="scanning-line"></div>
 
       <div className="leaderboard-title">
-        {isFullScreen ? '--- CENTRAL CONTROL: ACTIVE SOULS ---' : '=== LIVE SOULS ==='}
+        {title || (isFullScreen ? '--- CENTRAL CONTROL: ACTIVE SOULS ---' : '=== LIVE SOULS ===')}
       </div>
 
       <div className="lb-meta">

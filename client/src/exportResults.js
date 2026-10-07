@@ -23,7 +23,7 @@ const cell = (v) => {
   return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 };
 
-export function downloadResults(players) {
+export function downloadResults(players, label = 'all') {
   const rows = [COLUMNS.map(([h]) => h).join(',')];
   players.forEach((p, i) => rows.push(COLUMNS.map(([, get]) => cell(get(p, i))).join(',')));
   // BOM so Excel reads names in UTF-8 correctly
@@ -31,7 +31,7 @@ export function downloadResults(players) {
   const stamp = new Date().toISOString().slice(0, 16).replace(/[T:]/g, '-');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `ouroboros-results-${stamp}.csv`;
+  a.download = `ouroboros-${label}-results-${stamp}.csv`;
   document.body.appendChild(a);
   a.click();
   a.remove();

@@ -70,6 +70,11 @@ const ADMIN_DIGEST = codeDigest(ADMIN_CODE);
 
 const markDirty = () => { dirty = true; };
 
+// 1st year and 2nd-4th year play different question sets, so they are
+// ranked, fed and crowned separately.
+const GROUPS = ['junior', 'senior'];
+const groupOf = (p) => (p.year >= 2 ? 'senior' : 'junior');
+
 const pushFeed = (item) => {
   feed.push(item);
   if (feed.length > 6) feed.shift();
@@ -156,9 +161,9 @@ function applyProgress(player, data, quiet) {
   const lv = num(data.maxLv, 0, MAX_LEVEL);
   if (lv > player.maxLv) {
     player.levelUpdateTime = Date.now();
-    if (!quiet && lv >= 1 && Number.isInteger(lv)) pushFeed({ t: 'lv', n: player.name, lv });
+    if (!quiet && lv >= 1 && Number.isInteger(lv)) pushFeed({ t: 'lv', n: player.name, lv, g: groupOf(player) });
   } else if (!quiet && lv < player.maxLv && player.maxLv >= 3) {
-    pushFeed({ t: 'fall', n: player.name, lv: player.maxLv });
+    pushFeed({ t: 'fall', n: player.name, lv: player.maxLv, g: groupOf(player) });
   }
   player.maxLv = lv;
   player.score = num(data.score, 0, 1e9);
@@ -187,13 +192,18 @@ function finishGame() {
   gameEnded = true;
   globalTimer = null;
 
-  const top = ranked()[0];
-  const winner = top && top.status !== 'disqualified' ? top : null;
-  console.log(`[!] Game Over. Winner: ${winner ? winner.name : 'NONE'}`);
+  const list = ranked();
+  const winners = {};
+  for (const g of GROUPS) {
+    const top = list.find(p => groupOf(p) === g);
+    winners[g] = top && top.status !== 'disqualified' ? full(top) : null;
+  }
+  console.log(`[!] Game Over. 1st year: ${winners.junior?.name || 'NONE'} | 2nd-4th year: ${winners.senior?.name || 'NONE'}`);
 
   lastGameOver = {
     at: Date.now(),
-    winner: winner ? full(winner) : null,
+    winners,
+    winner: winners.junior, // older clients
     message: 'THE CYCLE HAS BEEN SEALED. A VICTOR HAS BEEN CHOSEN.'
   };
   io.emit('timer_sync', { remainingMs: null });
@@ -276,6 +286,8 @@ io.on('connection', (socket) => {
     player.online = true;
     player.sentRank = null;
     socket.join('players');
+    for (const g of GROUPS) socket.leave(`players-${g}`);
+    socket.join(`players-${groupOf(player)}`);
 
     socket.emit('joined', { id: player.publicId, status: player.status });
     // Only souls who were in the finished game are shown its end; a fresh
@@ -303,7 +315,7 @@ io.on('connection', (socket) => {
     const now = Date.now();
     if (now - player.lastCheatFeed > 10000) {
       player.lastCheatFeed = now;
-      pushFeed({ t: 'cheat', n: player.name });
+      pushFeed({ t: 'cheat', n: player.name, g: groupOf(player) });
     }
     markDirty();
   });
@@ -314,7 +326,7 @@ io.on('connection', (socket) => {
     if (player && player.status === 'active') {
       applyProgress(player, data, true);
       player.status = 'dead';
-      pushFeed({ t: 'dead', n: player.name });
+      pushFeed({ t: 'dead', n: player.name, g: groupOf(player) });
       markDirty();
     }
   });
@@ -326,7 +338,7 @@ io.on('connection', (socket) => {
       applyProgress(player, data, true);
       player.status = 'won';
       player.finishTime = Date.now();
-      pushFeed({ t: 'won', n: player.name });
+      pushFeed({ t: 'won', n: player.name, g: groupOf(player) });
       markDirty();
     }
   });
@@ -357,7 +369,7 @@ io.on('connection', (socket) => {
     console.log(`[!] Admin action: Disqualifying ${target.name} (${publicId})`);
     target.status = 'disqualified';
     if (target.socketId) io.to(target.socketId).emit('force_dq');
-    pushFeed({ t: 'dq', n: target.name });
+    pushFeed({ t: 'dq', n: target.name, g: groupOf(target) });
     markDirty();
   });
 
@@ -412,21 +424,23 @@ function tick() {
   if (rooms.get('lobby')?.size) io.to('lobby').emit('leaderboard', lobbyCache);
   if (rooms.get('admin')?.size) io.to('admin').emit('leaderboard', boardPayload(list, Infinity, full));
 
-  list.forEach((p, i) => {
-    const rank = i + 1;
-    if (p.socketId && p.sentRank !== rank) {
-      io.sockets.sockets.get(p.socketId)?.emit('rank', rank);
-      p.sentRank = rank;
-    }
-  });
-
-  if (rooms.get('players')?.size) {
-    io.to('players').emit('pulse', {
-      total: list.length,
-      online: lobbyCache.online,
-      leader: list[0] ? { n: list[0].name, lv: list[0].maxLv } : null,
-      feed
+  for (const g of GROUPS) {
+    const group = list.filter(p => groupOf(p) === g);
+    group.forEach((p, i) => {
+      const rank = i + 1;
+      if (p.socketId && p.sentRank !== rank) {
+        io.sockets.sockets.get(p.socketId)?.emit('rank', rank);
+        p.sentRank = rank;
+      }
     });
+    if (rooms.get(`players-${g}`)?.size) {
+      io.to(`players-${g}`).emit('pulse', {
+        total: group.length,
+        online: group.filter(p => p.online).length,
+        leader: group[0] ? { n: group[0].name, lv: group[0].maxLv } : null,
+        feed: feed.filter(f => f.g === g)
+      });
+    }
   }
   feed = [];
 }
