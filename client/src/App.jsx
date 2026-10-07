@@ -697,7 +697,7 @@ const App = () => {
       if (isAnswerBox(e.target)) return;
       e.preventDefault();
       // Whatever they were smuggling out, this is what lands on the clipboard.
-      e.clipboardData?.setData('text/plain', 'I TRIED TO COPY A RIDDLE OUT OF OUROBOROS AND GOT CAUGHT. BOOOO.');
+      e.clipboardData?.setData('text/plain', 'I TRIED TO COPY A RIDDLE OUT OF KLEIN BOTTLE AND GOT CAUGHT. BOOOO.');
       catchRef.current('copy');
     };
     const onNoMenu = (e) => { if (!isAnswerBox(e.target)) e.preventDefault(); };
@@ -848,7 +848,7 @@ const App = () => {
                     <img className="ouro-ring" src="/img/ouroboros-ring.webp" alt="The ouroboros devouring its own tail" width="900" height="900" />
                   </div>
                   <div className="mouth">!! YOU ARE INSIDE THE MOUTH. YOU HAVE ALWAYS BEEN INSIDE. !!</div>
-                  <div className="gtitle">OUROBOROS</div>
+                  <div className="gtitle">KLEIN BOTTLE</div>
                   <div className="gsub">-- IN CAUDA VENENUM -- THE POISON IS IN THE TAIL --</div>
                   <div className="dl bright">{rule('=')}</div>
 
@@ -1151,7 +1151,7 @@ const App = () => {
       {modal && (
         <div id="modal" className="show" onClick={() => setModal(null)}>
           <div className="mbox" onClick={e => e.stopPropagation()}>
-            <div className="mhdr"><span>### OUROBOROS SYSTEM ###</span><span>{modal.title}</span></div>
+            <div className="mhdr"><span>### KLEIN BOTTLE SYSTEM ###</span><span>{modal.title}</span></div>
             {currPZ && (
               <div className="gsec" id="gsec">
                 <div className="ginfo">

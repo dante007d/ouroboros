@@ -1,6 +1,6 @@
 export const BOOT=[
   {t:'',c:'dim'},
-  {t:'OUROBOROS PROTOCOL  v6.6.6',c:'ok'},
+  {t:'KLEIN BOTTLE PROTOCOL  v6.6.6',c:'ok'},
   {t:'(C) 1999 THE ETERNAL SYSTEMS CORPORATION',c:'dim'},
   {t:'"All rights reserved. All souls retained."',c:'dim'},
   {t:'',c:'dim'},
@@ -136,7 +136,7 @@ export const ROOMS=[
 ];
 
 
-export const WIN_ART='  +++++++++++++++++++++\n  +                   +\n  +   CYCLE BROKEN    +\n  +   YOU ENDURED     +\n  +   THE OUROBOROS   +\n  +   -----------     +\n  +   FOR NOW.        +\n  +                   +\n  +++++++++++++++++++++';
-export const LOSE_ART='  +=====================+\n  |   X  X  X  X  X    |\n  |   CONSUMED BY       |\n  |   THE ETERNAL       |\n  |   HUNGER OF THE     |\n  |   OUROBOROS         |\n  |   ------------      |\n  |   YOU WERE FOOD.    |\n  +=====================+';
+export const WIN_ART='  +++++++++++++++++++++\n  +                   +\n  +   CYCLE BROKEN    +\n  +   YOU ENDURED     +\n  + THE KLEIN BOTTLE  +\n  +   -----------     +\n  +   FOR NOW.        +\n  +                   +\n  +++++++++++++++++++++';
+export const LOSE_ART='  +=====================+\n  |   X  X  X  X  X    |\n  |   CONSUMED BY       |\n  |   THE ETERNAL       |\n  |   HUNGER OF THE     |\n  |   KLEIN BOTTLE      |\n  |   ------------      |\n  |   YOU WERE FOOD.    |\n  +=====================+';
 export const WIN_SNAKE='       .  .  o  .  .\n     .    _------_   .\n    .   , (o)(o) ,  .\n   .   /   \\ ^ /   \\ .\n    . |    .-o-.    | .\n     .  \\__________/ .\n       .  .  o  .  .\n   THE SNAKE WILL RETURN';
 export const LOSE_SNAKE='       .  .  X  .  .\n     .   ,--____--,  .\n    .   /  X    X  \\ .\n   .   |  feeding   | .\n    .   \\__________/ .\n     .    ||||||||   .\n       .  .  X  .  .\n   THE SNAKE REMEMBERS';
