@@ -636,19 +636,21 @@ input, button, .ropt { cursor: cell; }
 
 /* ── DANTE'S CREATION (opening + game termination) ── */
 .creation{position:fixed;inset:0;z-index:9600;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  overflow:hidden;animation:creationOut .7s ease-in 3.5s forwards;}
+  overflow:hidden;animation:creationOut .45s ease-in 1.65s forwards;}
+.creation-video{animation:none;}
+.creation-video video{width:100%;height:100%;object-fit:contain;background:#000;}
 .creation-ring{position:absolute;width:min(80vw,520px);aspect-ratio:1;border-radius:50%;
   border:1px solid rgba(184,255,0,.25);box-shadow:0 0 60px rgba(184,255,0,.12),inset 0 0 60px rgba(255,0,51,.15);
-  opacity:0;transform:scale(.4);animation:ringOpen 2.6s cubic-bezier(.2,.8,.2,1) .1s forwards;}
+  opacity:0;transform:scale(.4);animation:ringOpen 1.2s cubic-bezier(.2,.8,.2,1) .05s forwards;}
 .creation-title{position:relative;display:flex;flex-wrap:wrap;justify-content:center;column-gap:.5em;text-align:center;
   font-family:'VT323',monospace;font-size:clamp(2.6rem,13vw,6rem);letter-spacing:.14em;line-height:1.05;
   color:var(--c1);text-shadow:0 0 14px var(--c1),0 0 40px var(--d1);padding:0 16px;max-width:100%;
-  animation:glitch 1.2s ease-in-out 2.4s 1;}
+  animation:glitch .45s ease-in-out 1.1s 1;}
 .creation-word{white-space:nowrap;}
 .creation-word > span{display:inline-block;opacity:0;transform:translateY(18px) scale(1.4);filter:blur(6px);
-  animation:letterIn .5s ease-out forwards;}
+  animation:letterIn .35s ease-out forwards;}
 .creation-line{position:relative;height:2px;width:0;margin-top:14px;background:linear-gradient(90deg,transparent,var(--c2),transparent);
-  box-shadow:0 0 12px var(--c2);animation:lineSweep 1.4s ease-out 1.8s forwards;}
+  box-shadow:0 0 12px var(--c2);animation:lineSweep .7s ease-out .75s forwards;}
 @keyframes letterIn{to{opacity:1;transform:none;filter:none}}
 @keyframes ringOpen{60%{opacity:1}to{opacity:.6;transform:scale(1)}}
 @keyframes lineSweep{to{width:min(80vw,640px)}}
