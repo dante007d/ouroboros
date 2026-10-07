@@ -610,3 +610,25 @@ input, button, .ropt { cursor: cell; }
   .bite-img{opacity:.45 !important;transform:translate(-50%,-50%) scale(1.1) !important;}
   #failOverlay .fail-content{opacity:1 !important;}
 }
+
+/* ── MULTIPLE CHOICE ── */
+.mcq{display:grid;grid-template-columns:1fr;gap:8px;margin:4px 0 10px;}
+@media (min-width:560px){.mcq{grid-template-columns:1fr 1fr;}}
+.opt{display:flex;align-items:center;gap:10px;width:100%;min-height:52px;padding:8px 12px;text-align:left;cursor:pointer;
+  background:#000;border:1px solid var(--d2);color:var(--c5);font-family:'VT323',monospace;font-size:1.25rem;line-height:1.15;
+  touch-action:manipulation;transition:border-color .15s,background-color .15s;}
+.opt-key{flex:none;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid var(--c2);color:var(--c2);}
+.opt-text{flex:1;overflow-wrap:anywhere;}
+@media (hover:hover){.opt:not(:disabled):hover{border-color:var(--c1);background:rgba(184,255,0,.06);}}
+.opt:active:not(:disabled){background:rgba(184,255,0,.12);}
+.opt:disabled{cursor:not-allowed;}
+.opt.chosen.ok{border-color:var(--c1);background:rgba(184,255,0,.15);}
+.opt.chosen.ok .opt-key{background:var(--c1);color:#000;border-color:var(--c1);}
+.opt.chosen.bad{border-color:var(--c2);background:rgba(255,0,51,.15);animation:shake .4s;}
+.opt.chosen.bad .opt-key{background:var(--c2);color:#000;}
+
+/* admin: one results page per year group */
+.admin-tabs{display:flex;gap:8px;width:100%;max-width:1400px;}
+.admin-tab{flex:1;padding:10px 8px;background:#000;border:1px solid var(--d1);color:#5a7a00;font-family:'VT323',monospace;
+  font-size:1.2rem;letter-spacing:2px;cursor:pointer;}
+.admin-tab.on{background:var(--c1);color:#000;border-color:var(--c1);box-shadow:0 0 14px var(--d1);}
