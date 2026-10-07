@@ -31,7 +31,7 @@ export function downloadResults(players, label = 'all') {
   const stamp = new Date().toISOString().slice(0, 16).replace(/[T:]/g, '-');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `ouroboros-${label}-results-${stamp}.csv`;
+  a.download = `klein-bottle-${label}-results-${stamp}.csv`;
   document.body.appendChild(a);
   a.click();
   a.remove();
