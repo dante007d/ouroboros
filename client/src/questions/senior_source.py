@@ -97,9 +97,9 @@ for q, opts, a in Q:
     assert len(opts) == 4 and len(set(opts)) == 4 and a in "ABCD", q
 
 rng = random.Random(2026)
-out = [{"id": "PZ-INTRO-001", "lv": 0, "q": "What is the name of the serpent which tries to devour itself?",
-        "options": ["OUROBOROS", "BASILISK", "JORMUNGANDR", "LEVIATHAN"], "a": 0, "type": "LORE", "topic": "Lore"}]
-rng.shuffle(out[0]["options"]); out[0]["a"] = out[0]["options"].index("OUROBOROS")
+out = [{"id": "PZ-INTRO-001", "lv": 0, "q": "Which surface has no inside and no outside, and can only exist in 3D by passing through itself?",
+        "options": ["KLEIN BOTTLE", "MOBIUS STRIP", "TORUS", "PENROSE STAIRS"], "a": 0, "type": "LORE", "topic": "Lore"}]
+rng.shuffle(out[0]["options"]); out[0]["a"] = out[0]["options"].index("KLEIN BOTTLE")
 for i, (q, opts, a) in enumerate(Q):
     correct = opts["ABCD".index(a)]
     shuffled = opts[:]; rng.shuffle(shuffled)

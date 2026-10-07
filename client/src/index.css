@@ -588,10 +588,11 @@ input, button, .ropt { cursor: cell; }
 }
 
 /* ── THE OUROBOROS (start page) ── */
-.ouro-wrap{width:min(78vw,340px);aspect-ratio:1;margin:0 auto;position:relative;}
-.ouro-ring{width:100%;height:100%;display:block;mix-blend-mode:screen;border-radius:50%;
+.ouro-wrap{width:min(92vw,520px);aspect-ratio:1000/831;margin:0 auto;position:relative;}
+.ouro-ring{width:100%;height:100%;display:block;mix-blend-mode:screen;
   filter:drop-shadow(0 0 10px rgba(255,255,255,.25));
-  animation:ouroTurn 40s linear infinite, breathe 4s ease-in-out infinite;}
+  animation:kleinFloat 9s ease-in-out infinite, breathe 4s ease-in-out infinite;}
+@keyframes kleinFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}
 @keyframes ouroTurn{to{transform:rotate(-360deg)}}
 
 /* ── THE BITE (failure) ── */

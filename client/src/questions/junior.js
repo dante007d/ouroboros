@@ -4,12 +4,12 @@ export const JUNIOR = [
  {
   "id": "PZ-INTRO-001",
   "lv": 0,
-  "q": "What is the name of the serpent which tries to devour itself?",
+  "q": "Which surface has no inside and no outside, and can only exist in 3D by passing through itself?",
   "options": [
-   "OUROBOROS",
-   "LEVIATHAN",
-   "BASILISK",
-   "JORMUNGANDR"
+   "KLEIN BOTTLE",
+   "PENROSE STAIRS",
+   "MOBIUS STRIP",
+   "TORUS"
   ],
   "a": 0,
   "type": "LORE",
@@ -130,12 +130,12 @@ export const JUNIOR = [
  {
   "id": "J-009",
   "lv": 4,
-  "q": "If A = 1, B = 2, ..., Z = 26, the letter-sum of OUROBOROS is:",
+  "q": "If A = 1, B = 2, ..., Z = 26, the letter-sum of KLEINBOTTLE is:",
   "options": [
-   "132",
-   "138",
-   "124",
-   "152"
+   "120",
+   "125",
+   "112",
+   "138"
   ],
   "a": 1,
   "type": "APTITUDE",
